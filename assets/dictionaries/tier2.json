@@ -148,12 +148,6 @@
       "has_special": false
     },
     {
-      "word": "sex",
-      "freq_rank": 650,
-      "length": 3,
-      "has_special": false
-    },
-    {
       "word": "syk",
       "freq_rank": 678,
       "length": 3,
@@ -802,12 +796,6 @@
       "has_special": false
     },
     {
-      "word": "tull",
-      "freq_rank": 1261,
-      "length": 4,
-      "has_special": false
-    },
-    {
       "word": "type",
       "freq_rank": 1267,
       "length": 4,
@@ -816,12 +804,6 @@
     {
       "word": "sees",
       "freq_rank": 1279,
-      "length": 4,
-      "has_special": false
-    },
-    {
-      "word": "sexy",
-      "freq_rank": 1285,
       "length": 4,
       "has_special": false
     },
@@ -991,12 +973,6 @@
       "word": "titt",
       "freq_rank": 1496,
       "length": 4,
-      "has_special": false
-    },
-    {
-      "word": "bedre",
-      "freq_rank": 176,
-      "length": 5,
       "has_special": false
     },
     {
@@ -1378,12 +1354,6 @@
       "has_special": false
     },
     {
-      "word": "dritt",
-      "freq_rank": 599,
-      "length": 5,
-      "has_special": false
-    },
-    {
       "word": "frank",
       "freq_rank": 605,
       "length": 5,
@@ -1422,12 +1392,6 @@
     {
       "word": "leter",
       "freq_rank": 649,
-      "length": 5,
-      "has_special": false
-    },
-    {
-      "word": "idiot",
-      "freq_rank": 664,
       "length": 5,
       "has_special": false
     },
@@ -3000,6 +2964,42 @@
     {
       "word": "kontor",
       "freq_rank": 1294,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "inntil",
+      "freq_rank": 1296,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "pistol",
+      "freq_rank": 1303,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "blodet",
+      "freq_rank": 1309,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "derfra",
+      "freq_rank": 1317,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "morsom",
+      "freq_rank": 1322,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "deilig",
+      "freq_rank": 1323,
       "length": 6,
       "has_special": false
     }

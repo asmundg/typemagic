@@ -17,7 +17,7 @@ class TestConfigBar extends StatelessWidget {
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
-        // Mode and value selector
+        // Sentence count and mode label
         Container(
           padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
           decoration: BoxDecoration(
@@ -27,78 +27,33 @@ class TestConfigBar extends StatelessWidget {
           child: Row(
             mainAxisSize: MainAxisSize.min,
             children: [
-              // Mode selector
-              _ModeChip(
-                label: 'tid',
-                icon: Icons.timer_outlined,
-                selected: config.mode == TestMode.time,
-                onTap: () => onConfigChanged(
-                  config.copyWith(mode: TestMode.time, value: 30),
-                ),
-              ),
-              const SizedBox(width: 4),
-              _ModeChip(
-                label: 'ord',
-                icon: Icons.text_fields,
-                selected: config.mode == TestMode.words,
-                onTap: () => onConfigChanged(
-                  config.copyWith(mode: TestMode.words, value: 25),
-                ),
-              ),
-              const SizedBox(width: 4),
-              _ModeChip(
-                label: 'setninger',
-                icon: Icons.short_text,
-                selected: config.mode == TestMode.sentences,
-                onTap: () => onConfigChanged(
-                  config.copyWith(mode: TestMode.sentences, value: 3),
+              Icon(Icons.short_text, size: 16, color: AppColors.accent),
+              const SizedBox(width: 8),
+              Text(
+                'setninger',
+                style: AppTheme.monoStyleSmall.copyWith(
+                  color: AppColors.accent,
+                  fontWeight: FontWeight.w600,
+                  fontSize: 14,
                 ),
               ),
               const SizedBox(width: 16),
-
-              // Divider
               Container(
                 width: 1,
                 height: 20,
                 color: AppColors.textSubtle,
               ),
               const SizedBox(width: 16),
-
-              // Value options
-              if (config.mode == TestMode.time) ...[
-                for (final secs in [15, 30, 60, 120])
-                  Padding(
-                    padding: const EdgeInsets.only(right: 4),
-                    child: _ValueChip(
-                      label: '$secs',
-                      selected: config.value == secs,
-                      onTap: () =>
-                          onConfigChanged(config.copyWith(value: secs)),
-                    ),
+              for (final count in [1, 3, 5, 10])
+                Padding(
+                  padding: const EdgeInsets.only(right: 4),
+                  child: _ValueChip(
+                    label: '$count',
+                    selected: config.value == count,
+                    onTap: () =>
+                        onConfigChanged(config.copyWith(value: count)),
                   ),
-              ] else if (config.mode == TestMode.words) ...[
-                for (final count in [10, 25, 50, 100])
-                  Padding(
-                    padding: const EdgeInsets.only(right: 4),
-                    child: _ValueChip(
-                      label: '$count',
-                      selected: config.value == count,
-                      onTap: () =>
-                          onConfigChanged(config.copyWith(value: count)),
-                    ),
-                  ),
-              ] else ...[
-                for (final count in [1, 3, 5, 10])
-                  Padding(
-                    padding: const EdgeInsets.only(right: 4),
-                    child: _ValueChip(
-                      label: '$count',
-                      selected: config.value == count,
-                      onTap: () =>
-                          onConfigChanged(config.copyWith(value: count)),
-                    ),
-                  ),
-              ],
+                ),
             ],
           ),
         ),
@@ -144,53 +99,6 @@ class TestConfigBar extends StatelessWidget {
           ),
         ),
       ],
-    );
-  }
-}
-
-class _ModeChip extends StatelessWidget {
-  final String label;
-  final IconData icon;
-  final bool selected;
-  final VoidCallback onTap;
-
-  const _ModeChip({
-    required this.label,
-    required this.icon,
-    required this.selected,
-    required this.onTap,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Material(
-      color: Colors.transparent,
-      child: InkWell(
-        onTap: onTap,
-        borderRadius: BorderRadius.circular(6),
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
-          child: Row(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              Icon(
-                icon,
-                size: 16,
-                color: selected ? AppColors.accent : AppColors.textMuted,
-              ),
-              const SizedBox(width: 6),
-              Text(
-                label,
-                style: AppTheme.monoStyleSmall.copyWith(
-                  color: selected ? AppColors.accent : AppColors.textMuted,
-                  fontWeight: selected ? FontWeight.w600 : FontWeight.w400,
-                  fontSize: 14,
-                ),
-              ),
-            ],
-          ),
-        ),
-      ),
     );
   }
 }

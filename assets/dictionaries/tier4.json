@@ -496,12 +496,6 @@
       "has_special": false
     },
     {
-      "word": "kuk",
-      "freq_rank": 7050,
-      "length": 3,
-      "has_special": false
-    },
-    {
       "word": "sure",
       "freq_rank": 5673,
       "length": 4,
@@ -1098,12 +1092,6 @@
     {
       "word": "flest",
       "freq_rank": 5291,
-      "length": 5,
-      "has_special": false
-    },
-    {
-      "word": "penis",
-      "freq_rank": 5293,
       "length": 5,
       "has_special": false
     },
@@ -2020,12 +2008,6 @@
       "has_special": false
     },
     {
-      "word": "pule",
-      "freq_rank": 7865,
-      "length": 4,
-      "has_special": false
-    },
-    {
       "word": "detalj",
       "freq_rank": 5091,
       "length": 6,
@@ -2890,30 +2872,6 @@
       "has_special": false
     },
     {
-      "word": "livstid",
-      "freq_rank": 4390,
-      "length": 7,
-      "has_special": false
-    },
-    {
-      "word": "monsieur",
-      "freq_rank": 3004,
-      "length": 8,
-      "has_special": false
-    },
-    {
-      "word": "beskytter",
-      "freq_rank": 1617,
-      "length": 9,
-      "has_special": false
-    },
-    {
-      "word": "omvendt",
-      "freq_rank": 4396,
-      "length": 7,
-      "has_special": false
-    },
-    {
       "word": "fremad",
       "freq_rank": 5788,
       "length": 6,
@@ -2929,24 +2887,6 @@
       "word": "dam",
       "freq_rank": 9958,
       "length": 3,
-      "has_special": false
-    },
-    {
-      "word": "gård",
-      "freq_rank": 4403,
-      "length": 4,
-      "has_special": true
-    },
-    {
-      "word": "avhengig",
-      "freq_rank": 3016,
-      "length": 8,
-      "has_special": false
-    },
-    {
-      "word": "fokusere",
-      "freq_rank": 3023,
-      "length": 8,
       "has_special": false
     },
     {
@@ -2998,12 +2938,6 @@
       "has_special": false
     },
     {
-      "word": "nordover",
-      "freq_rank": 3041,
-      "length": 8,
-      "has_special": false
-    },
-    {
       "word": "hakk",
       "freq_rank": 8599,
       "length": 4,
@@ -3016,27 +2950,9 @@
       "has_special": false
     },
     {
-      "word": "innbrudd",
-      "freq_rank": 3056,
-      "length": 8,
-      "has_special": false
-    },
-    {
-      "word": "kilometer",
-      "freq_rank": 1670,
-      "length": 9,
-      "has_special": false
-    },
-    {
       "word": "munk",
       "freq_rank": 8616,
       "length": 4,
-      "has_special": false
-    },
-    {
-      "word": "tiltalt",
-      "freq_rank": 4453,
-      "length": 7,
       "has_special": false
     },
     {
@@ -3052,27 +2968,9 @@
       "has_special": false
     },
     {
-      "word": "leilighet",
-      "freq_rank": 1684,
-      "length": 9,
-      "has_special": false
-    },
-    {
-      "word": "latterlig",
-      "freq_rank": 1685,
-      "length": 9,
-      "has_special": false
-    },
-    {
       "word": "nasjon",
       "freq_rank": 5860,
       "length": 6,
-      "has_special": false
-    },
-    {
-      "word": "britisk",
-      "freq_rank": 4475,
-      "length": 7,
       "has_special": false
     },
     {
@@ -3080,12 +2978,6 @@
       "freq_rank": 7253,
       "length": 5,
       "has_special": false
-    },
-    {
-      "word": "dømme",
-      "freq_rank": 3088,
-      "length": 5,
-      "has_special": true
     },
     {
       "word": "avgang",
@@ -3112,12 +3004,6 @@
       "has_special": false
     },
     {
-      "word": "underlig",
-      "freq_rank": 3124,
-      "length": 8,
-      "has_special": false
-    },
-    {
       "word": "lekse",
       "freq_rank": 7294,
       "length": 5,
@@ -3130,39 +3016,9 @@
       "has_special": false
     },
     {
-      "word": "forsvinne",
-      "freq_rank": 1745,
-      "length": 9,
-      "has_special": false
-    },
-    {
-      "word": "krangel",
-      "freq_rank": 4544,
-      "length": 7,
-      "has_special": false
-    },
-    {
       "word": "felten",
       "freq_rank": 5933,
       "length": 6,
-      "has_special": false
-    },
-    {
-      "word": "situasjon",
-      "freq_rank": 1769,
-      "length": 9,
-      "has_special": false
-    },
-    {
-      "word": "tørr",
-      "freq_rank": 4553,
-      "length": 4,
-      "has_special": true
-    },
-    {
-      "word": "motstand",
-      "freq_rank": 3168,
-      "length": 8,
       "has_special": false
     },
     {
@@ -5770,12 +5626,6 @@
       "has_special": false
     },
     {
-      "word": "kukk",
-      "freq_rank": 10050,
-      "length": 4,
-      "has_special": false
-    },
-    {
       "word": "sigarett",
       "freq_rank": 4497,
       "length": 8,
@@ -6598,12 +6448,6 @@
       "has_special": false
     },
     {
-      "word": "neger",
-      "freq_rank": 9063,
-      "length": 5,
-      "has_special": false
-    },
-    {
       "word": "antagelig",
       "freq_rank": 3518,
       "length": 9,
@@ -7081,12 +6925,6 @@
       "word": "saft",
       "freq_rank": 10678,
       "length": 4,
-      "has_special": false
-    },
-    {
-      "word": "vagina",
-      "freq_rank": 7905,
-      "length": 6,
       "has_special": false
     },
     {
@@ -10450,12 +10288,6 @@
       "has_special": false
     },
     {
-      "word": "ræv",
-      "freq_rank": 9576,
-      "length": 3,
-      "has_special": true
-    },
-    {
       "word": "teknikk",
       "freq_rank": 8191,
       "length": 7,
@@ -13195,12 +13027,6 @@
       "word": "intelligent",
       "freq_rank": 4069,
       "length": 11,
-      "has_special": false
-    },
-    {
-      "word": "orgasme",
-      "freq_rank": 9627,
-      "length": 7,
       "has_special": false
     },
     {
@@ -17008,12 +16834,6 @@
       "has_special": true
     },
     {
-      "word": "drittunge",
-      "freq_rank": 8812,
-      "length": 9,
-      "has_special": false
-    },
-    {
       "word": "frelst",
       "freq_rank": 12980,
       "length": 6,
@@ -18073,12 +17893,6 @@
       "word": "bordell",
       "freq_rank": 12208,
       "length": 7,
-      "has_special": false
-    },
-    {
-      "word": "prostituert",
-      "freq_rank": 6660,
-      "length": 11,
       "has_special": false
     },
     {
@@ -23536,12 +23350,6 @@
       "has_special": false
     },
     {
-      "word": "amfetamin",
-      "freq_rank": 14112,
-      "length": 9,
-      "has_special": false
-    },
-    {
       "word": "helbreder",
       "freq_rank": 14114,
       "length": 9,
@@ -24457,12 +24265,6 @@
       "word": "medvirkning",
       "freq_rank": 12955,
       "length": 11,
-      "has_special": false
-    },
-    {
-      "word": "prostitusjon",
-      "freq_rank": 11583,
-      "length": 12,
       "has_special": false
     },
     {

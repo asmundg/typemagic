@@ -300,7 +300,7 @@ class AchievementChecker {
     );
     tryUnlock(
       'special_marathon',
-      result.config.mode == TestMode.time && result.config.value >= 120,
+      result.duration.inSeconds >= 120,
     );
     tryUnlock('special_vocab', stats.uniqueWordsEncountered >= 1000);
 

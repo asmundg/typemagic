@@ -35,7 +35,28 @@ NORWEGIAN_SPECIAL = set("æøå")
 # Only allow lowercase a-z plus æøå — no hyphens, digits, spaces, etc.
 VALID_WORD_RE = re.compile(r"^[a-zæøå]{2,}$")
 
-# Tier definitions ----------------------------------------------------------
+# Profanity / inappropriate words to exclude (this is a kids' game!)
+BLOCKED_WORDS = {
+    # Norwegian swear words / vulgarities
+    "faen", "jævla", "jævel", "jævlig", "helvete", "helvetes",
+    "dritt", "drittunge", "drittsekk",
+    "fitte", "fitta", "fittetransen",
+    "pikk", "pikken", "kuken", "kuk", "kukk",
+    "ræv", "ræva", "rassen",
+    "hore", "hora", "horebukk",
+    "knull", "knulle", "knullet", "knulling",
+    "pule", "puling", "puler",
+    "tull", # not profane but often misread
+    # Sexual / adult content
+    "sex", "sexy", "porno", "porn", "orgasme", "orgasmen",
+    "penis", "vagina", "prostituert", "prostitusjon",
+    # Slurs / derogatory
+    "neger", "homo", "hæstkansen",
+    "idiot", "idioten", "dåre",
+    # Drug references
+    "heroin", "kokain", "amfetamin",
+}
+
 # Each tier is (name, description, max_freq_rank, min_len, max_len, target_count)
 # max_freq_rank=None means "no rank limit" (full dictionary).
 # target_count is a soft cap — we keep up to this many words.
@@ -97,7 +118,7 @@ def load_ordbank(path: str) -> "set[str]":
     with open(path, encoding="utf-8") as f:
         for line in f:
             w = line.strip().lower()
-            if VALID_WORD_RE.match(w):
+            if VALID_WORD_RE.match(w) and w not in BLOCKED_WORDS:
                 words.add(w)
     print(f"  Loaded {len(words):,} valid words from Ordbank ({path})")
     return words

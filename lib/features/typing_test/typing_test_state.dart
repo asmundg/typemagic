@@ -94,31 +94,21 @@ class TypingTestNotifier extends Notifier<TypingTestState> {
   TypingTestState _createInitialState(TestConfig config) {
     List<String> wordStrings;
 
-    if (config.mode == TestMode.sentences) {
-      final gen = _sentenceGenerator;
-      if (gen != null) {
-        final sentences = generateSentences(
-          gen,
-          count: config.value,
-          tier: config.maxTier,
-        );
-        // Split sentences into individual words
-        wordStrings = sentences
-            .expand((s) => s.split(' '))
-            .where((w) => w.isNotEmpty)
-            .toList();
-      } else {
-        // Fallback to regular words if no Markov model
-        wordStrings = _wordProvider.getWords(config.value * 8,
-            maxTier: config.maxTier,
-            specialCharFocus: config.specialCharFocus);
-      }
-    } else if (config.mode == TestMode.time) {
-      wordStrings = _wordProvider.getWordsForDuration(config.value,
-          maxTier: config.maxTier,
-          specialCharFocus: config.specialCharFocus);
+    final gen = _sentenceGenerator;
+    if (gen != null) {
+      final sentences = generateSentences(
+        gen,
+        count: config.value,
+        tier: config.maxTier,
+      );
+      // Split sentences into individual words
+      wordStrings = sentences
+          .expand((s) => s.split(' '))
+          .where((w) => w.isNotEmpty)
+          .toList();
     } else {
-      wordStrings = _wordProvider.getWords(config.value,
+      // Fallback to random words if no Markov model
+      wordStrings = _wordProvider.getWords(config.value * 8,
           maxTier: config.maxTier,
           specialCharFocus: config.specialCharFocus);
     }
@@ -127,7 +117,6 @@ class TypingTestNotifier extends Notifier<TypingTestState> {
       phase: TypingPhase.waiting,
       config: config,
       words: wordStrings.map((w) => TestWord(w)).toList(),
-      timeLeft: config.mode == TestMode.time ? config.value : 0,
     );
   }
 
@@ -151,7 +140,6 @@ class TypingTestNotifier extends Notifier<TypingTestState> {
       phase: TypingPhase.waiting,
       config: state.config,
       words: words,
-      timeLeft: state.config.mode == TestMode.time ? state.config.value : 0,
     );
   }
 
@@ -182,6 +170,15 @@ class TypingTestNotifier extends Notifier<TypingTestState> {
 
     _updateLiveStats();
     state = state.copyWith(words: List.of(state.words));
+
+    // Auto-finish when last character of last word is typed
+    if (state.isLastWord && word.isComplete) {
+      word.endTime = DateTime.now();
+      if (!word.isCorrect) {
+        _wordProvider.recordWeakWord(word.target);
+      }
+      _finishTest();
+    }
   }
 
   void onBackspace() {
@@ -218,25 +215,12 @@ class TypingTestNotifier extends Notifier<TypingTestState> {
 
     final nextIndex = state.currentWordIndex + 1;
 
-    if ((state.config.mode == TestMode.words ||
-            state.config.mode == TestMode.sentences) &&
-        nextIndex >= state.words.length) {
+    if (nextIndex >= state.words.length) {
       _finishTest();
       return;
     }
 
-    if (nextIndex >= state.words.length) {
-      final moreWords = _wordProvider.getWords(20,
-          maxTier: state.config.maxTier,
-          specialCharFocus: state.config.specialCharFocus);
-      state = state.copyWith(
-        words: [...state.words, ...moreWords.map((w) => TestWord(w))],
-        currentWordIndex: nextIndex,
-      );
-    } else {
-      state = state.copyWith(currentWordIndex: nextIndex);
-    }
-
+    state = state.copyWith(currentWordIndex: nextIndex);
     _updateLiveStats();
   }
 
@@ -244,26 +228,12 @@ class TypingTestNotifier extends Notifier<TypingTestState> {
     _testStartTime = DateTime.now();
     state = state.copyWith(phase: TypingPhase.running);
 
-    if (state.config.mode == TestMode.time) {
-      _timer = Timer.periodic(const Duration(seconds: 1), (_) {
-        final newTimeLeft = state.timeLeft - 1;
-        if (newTimeLeft <= 0) {
-          _finishTest();
-        } else {
-          final elapsed =
-              DateTime.now().difference(_testStartTime!).inMilliseconds;
-          state = state.copyWith(timeLeft: newTimeLeft, elapsedMs: elapsed);
-          _updateLiveStats();
-        }
-      });
-    } else {
-      _timer = Timer.periodic(const Duration(milliseconds: 200), (_) {
-        final elapsed =
-            DateTime.now().difference(_testStartTime!).inMilliseconds;
-        state = state.copyWith(elapsedMs: elapsed);
-        _updateLiveStats();
-      });
-    }
+    _timer = Timer.periodic(const Duration(milliseconds: 200), (_) {
+      final elapsed =
+          DateTime.now().difference(_testStartTime!).inMilliseconds;
+      state = state.copyWith(elapsedMs: elapsed);
+      _updateLiveStats();
+    });
   }
 
   void _updateLiveStats() {
@@ -309,9 +279,7 @@ class TypingTestNotifier extends Notifier<TypingTestState> {
     final wordResults = <WordResult>[];
     final wordWpms = <double>[];
 
-    final completedCount = state.config.mode == TestMode.words
-        ? state.words.length
-        : state.currentWordIndex + 1;
+    final completedCount = state.currentWordIndex + 1;
 
     for (var i = 0; i < completedCount && i < state.words.length; i++) {
       final w = state.words[i];

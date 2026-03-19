@@ -851,10 +851,6 @@ class _PersonalBests extends StatelessWidget {
 
   String _modeName(TestMode mode) {
     switch (mode) {
-      case TestMode.time:
-        return 'Tid';
-      case TestMode.words:
-        return 'Ord';
       case TestMode.sentences:
         return 'Setninger';
     }

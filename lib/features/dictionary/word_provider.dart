@@ -37,7 +37,8 @@ class WordProvider {
 
   WordProvider(this._tiers, this._fallbackWords) : _random = Random();
 
-  /// Get [count] random words respecting tier and special char preferences
+  /// Get [count] random words respecting tier and special char preferences.
+  /// Avoids consecutive duplicates and limits repeats.
   List<String> getWords(
     int count, {
     DifficultyTier maxTier = DifficultyTier.laerling,
@@ -48,14 +49,33 @@ class WordProvider {
 
     final selected = <String>[];
     final weakInject = _weakWords.toList();
+    final usedCounts = <String, int>{};
+
+    // Max times any word can appear — scale with how many we need vs pool size
+    final maxRepeats = count > pool.length ? (count / pool.length).ceil() + 1 : 1;
 
     for (var i = 0; i < count; i++) {
       // 20% chance to inject a weak word if any exist
       if (weakInject.isNotEmpty && _random.nextDouble() < 0.2) {
-        selected.add(weakInject[_random.nextInt(weakInject.length)]);
-      } else {
-        selected.add(pool[_random.nextInt(pool.length)]);
+        final w = weakInject[_random.nextInt(weakInject.length)];
+        selected.add(w);
+        continue;
       }
+
+      // Try up to 10 times to find a non-duplicate word
+      String? pick;
+      for (var attempt = 0; attempt < 10; attempt++) {
+        final candidate = pool[_random.nextInt(pool.length)];
+        final used = usedCounts[candidate] ?? 0;
+        // Reject if: already at max repeats, or same as previous word
+        if (used >= maxRepeats) continue;
+        if (selected.isNotEmpty && selected.last == candidate) continue;
+        pick = candidate;
+        break;
+      }
+      pick ??= pool[_random.nextInt(pool.length)];
+      selected.add(pick);
+      usedCounts[pick] = (usedCounts[pick] ?? 0) + 1;
     }
     return selected;
   }

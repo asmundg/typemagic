@@ -1,5 +1,5 @@
 /// Test mode types
-enum TestMode { time, words, sentences }
+enum TestMode { sentences }
 
 /// Difficulty tier for word selection
 enum DifficultyTier {
@@ -29,17 +29,10 @@ class TestConfig {
     this.specialCharFocus = false,
   });
 
-  static const defaultConfig = TestConfig(mode: TestMode.time, value: 30);
+  static const defaultConfig = TestConfig(mode: TestMode.sentences, value: 3);
 
   String get label {
-    switch (mode) {
-      case TestMode.time:
-        return '${value}s';
-      case TestMode.words:
-        return '$value ord';
-      case TestMode.sentences:
-        return '$value setn.';
-    }
+    return '$value setn.';
   }
 
   TestConfig copyWith({

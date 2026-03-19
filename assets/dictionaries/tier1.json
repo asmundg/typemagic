@@ -718,12 +718,6 @@
       "has_special": false
     },
     {
-      "word": "faen",
-      "freq_rank": 139,
-      "length": 4,
-      "has_special": false
-    },
-    {
       "word": "hele",
       "freq_rank": 140,
       "length": 4,
@@ -1200,6 +1194,12 @@
     {
       "word": "burde",
       "freq_rank": 170,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "bedre",
+      "freq_rank": 176,
       "length": 5,
       "has_special": false
     }

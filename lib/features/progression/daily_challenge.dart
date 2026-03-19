@@ -185,8 +185,8 @@ class DailyChallengeNotifier extends Notifier<DailyChallengeState> {
 
   /// Build a TestConfig for the daily challenge
   TestConfig get dailyConfig => const TestConfig(
-        mode: TestMode.words,
-        value: 25,
+        mode: TestMode.sentences,
+        value: 3,
         maxTier: DifficultyTier.laerling,
       );
 }
