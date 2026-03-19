@@ -1,0 +1,36 @@
+{
+  "tiers": [
+    {
+      "tier": 1,
+      "name": "Nybegynner",
+      "word_count": 200,
+      "file": "tier1.json"
+    },
+    {
+      "tier": 2,
+      "name": "Lærling",
+      "word_count": 500,
+      "file": "tier2.json"
+    },
+    {
+      "tier": 3,
+      "name": "Ordsmith",
+      "word_count": 1500,
+      "file": "tier3.json"
+    },
+    {
+      "tier": 4,
+      "name": "Mester",
+      "word_count": 4295,
+      "file": "tier4.json"
+    },
+    {
+      "tier": 5,
+      "name": "Trollmann",
+      "word_count": 134800,
+      "file": "tier5.json"
+    }
+  ],
+  "total_words": 141295,
+  "generated_at": "2026-03-19T10:53:44.793563+00:00"
+}

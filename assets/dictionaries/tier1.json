@@ -1,0 +1,1207 @@
+{
+  "tier": 1,
+  "name": "Nybegynner",
+  "description": "Top 200 vanligste ord, 2-5 bokstaver",
+  "words": [
+    {
+      "word": "du",
+      "freq_rank": 4,
+      "length": 2,
+      "has_special": false
+    },
+    {
+      "word": "en",
+      "freq_rank": 6,
+      "length": 2,
+      "has_special": false
+    },
+    {
+      "word": "og",
+      "freq_rank": 7,
+      "length": 2,
+      "has_special": false
+    },
+    {
+      "word": "vi",
+      "freq_rank": 10,
+      "length": 2,
+      "has_special": false
+    },
+    {
+      "word": "at",
+      "freq_rank": 21,
+      "length": 2,
+      "has_special": false
+    },
+    {
+      "word": "de",
+      "freq_rank": 24,
+      "length": 2,
+      "has_special": false
+    },
+    {
+      "word": "om",
+      "freq_rank": 28,
+      "length": 2,
+      "has_special": false
+    },
+    {
+      "word": "av",
+      "freq_rank": 29,
+      "length": 2,
+      "has_special": false
+    },
+    {
+      "word": "et",
+      "freq_rank": 32,
+      "length": 2,
+      "has_special": false
+    },
+    {
+      "word": "ja",
+      "freq_rank": 33,
+      "length": 2,
+      "has_special": false
+    },
+    {
+      "word": "ut",
+      "freq_rank": 46,
+      "length": 2,
+      "has_special": false
+    },
+    {
+      "word": "da",
+      "freq_rank": 48,
+      "length": 2,
+      "has_special": false
+    },
+    {
+      "word": "ha",
+      "freq_rank": 51,
+      "length": 2,
+      "has_special": false
+    },
+    {
+      "word": "se",
+      "freq_rank": 60,
+      "length": 2,
+      "has_special": false
+    },
+    {
+      "word": "ta",
+      "freq_rank": 61,
+      "length": 2,
+      "has_special": false
+    },
+    {
+      "word": "si",
+      "freq_rank": 87,
+      "length": 2,
+      "has_special": false
+    },
+    {
+      "word": "la",
+      "freq_rank": 90,
+      "length": 2,
+      "has_special": false
+    },
+    {
+      "word": "ok",
+      "freq_rank": 101,
+      "length": 2,
+      "has_special": false
+    },
+    {
+      "word": "jo",
+      "freq_rank": 103,
+      "length": 2,
+      "has_special": false
+    },
+    {
+      "word": "to",
+      "freq_rank": 105,
+      "length": 2,
+      "has_special": false
+    },
+    {
+      "word": "gi",
+      "freq_rank": 118,
+      "length": 2,
+      "has_special": false
+    },
+    {
+      "word": "ga",
+      "freq_rank": 268,
+      "length": 2,
+      "has_special": false
+    },
+    {
+      "word": "ny",
+      "freq_rank": 300,
+      "length": 2,
+      "has_special": false
+    },
+    {
+      "word": "be",
+      "freq_rank": 340,
+      "length": 2,
+      "has_special": false
+    },
+    {
+      "word": "ei",
+      "freq_rank": 356,
+      "length": 2,
+      "has_special": false
+    },
+    {
+      "word": "ti",
+      "freq_rank": 384,
+      "length": 2,
+      "has_special": false
+    },
+    {
+      "word": "mi",
+      "freq_rank": 412,
+      "length": 2,
+      "has_special": false
+    },
+    {
+      "word": "jeg",
+      "freq_rank": 1,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "det",
+      "freq_rank": 2,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "til",
+      "freq_rank": 13,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "deg",
+      "freq_rank": 14,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "med",
+      "freq_rank": 15,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "meg",
+      "freq_rank": 16,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "han",
+      "freq_rank": 17,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "for",
+      "freq_rank": 18,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "hva",
+      "freq_rank": 19,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "som",
+      "freq_rank": 20,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "den",
+      "freq_rank": 25,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "var",
+      "freq_rank": 26,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "men",
+      "freq_rank": 30,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "her",
+      "freq_rank": 34,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "hun",
+      "freq_rank": 35,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "noe",
+      "freq_rank": 40,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "nei",
+      "freq_rank": 41,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "ham",
+      "freq_rank": 44,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "min",
+      "freq_rank": 45,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "din",
+      "freq_rank": 49,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "oss",
+      "freq_rank": 50,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "fra",
+      "freq_rank": 54,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "der",
+      "freq_rank": 57,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "dem",
+      "freq_rank": 58,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "alt",
+      "freq_rank": 66,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "opp",
+      "freq_rank": 73,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "seg",
+      "freq_rank": 74,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "bra",
+      "freq_rank": 78,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "bli",
+      "freq_rank": 86,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "hei",
+      "freq_rank": 91,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "inn",
+      "freq_rank": 93,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "vel",
+      "freq_rank": 100,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "mer",
+      "freq_rank": 109,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "man",
+      "freq_rank": 113,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "mye",
+      "freq_rank": 115,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "god",
+      "freq_rank": 117,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "nok",
+      "freq_rank": 119,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "dag",
+      "freq_rank": 124,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "enn",
+      "freq_rank": 125,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "ned",
+      "freq_rank": 130,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "mot",
+      "freq_rank": 137,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "ved",
+      "freq_rank": 145,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "dra",
+      "freq_rank": 148,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "tre",
+      "freq_rank": 164,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "tid",
+      "freq_rank": 171,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "hit",
+      "freq_rank": 175,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "sir",
+      "freq_rank": 191,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "sin",
+      "freq_rank": 193,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "far",
+      "freq_rank": 196,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "ute",
+      "freq_rank": 197,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "gir",
+      "freq_rank": 207,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "vei",
+      "freq_rank": 220,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "tro",
+      "freq_rank": 233,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "mor",
+      "freq_rank": 239,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "gud",
+      "freq_rank": 255,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "hos",
+      "freq_rank": 258,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "liv",
+      "freq_rank": 273,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "lei",
+      "freq_rank": 275,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "nye",
+      "freq_rank": 286,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "fem",
+      "freq_rank": 288,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "dit",
+      "freq_rank": 337,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "bak",
+      "freq_rank": 341,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "par",
+      "freq_rank": 371,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "del",
+      "freq_rank": 387,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "bor",
+      "freq_rank": 411,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "ord",
+      "freq_rank": 417,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "all",
+      "freq_rank": 427,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "fin",
+      "freq_rank": 428,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "fyr",
+      "freq_rank": 452,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "mat",
+      "freq_rank": 453,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "tak",
+      "freq_rank": 460,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "ses",
+      "freq_rank": 476,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "tom",
+      "freq_rank": 489,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "hus",
+      "freq_rank": 500,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "ikke",
+      "freq_rank": 5,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "bare",
+      "freq_rank": 36,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "dere",
+      "freq_rank": 38,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "hvor",
+      "freq_rank": 53,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "noen",
+      "freq_rank": 56,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "alle",
+      "freq_rank": 64,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "hvis",
+      "freq_rank": 72,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "takk",
+      "freq_rank": 83,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "hvem",
+      "freq_rank": 89,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "litt",
+      "freq_rank": 92,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "over",
+      "freq_rank": 112,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "selv",
+      "freq_rank": 116,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "hans",
+      "freq_rank": 121,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "gang",
+      "freq_rank": 126,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "sett",
+      "freq_rank": 131,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "mine",
+      "freq_rank": 132,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "ditt",
+      "freq_rank": 135,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "helt",
+      "freq_rank": 136,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "faen",
+      "freq_rank": 139,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "hele",
+      "freq_rank": 140,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "godt",
+      "freq_rank": 144,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "rett",
+      "freq_rank": 149,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "mann",
+      "freq_rank": 151,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "folk",
+      "freq_rank": 152,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "ting",
+      "freq_rank": 159,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "vent",
+      "freq_rank": 161,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "hjem",
+      "freq_rank": 163,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "hold",
+      "freq_rank": 169,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "uten",
+      "freq_rank": 174,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "vite",
+      "freq_rank": 182,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "slik",
+      "freq_rank": 188,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "feil",
+      "freq_rank": 200,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "fant",
+      "freq_rank": 212,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "sted",
+      "freq_rank": 217,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "barn",
+      "freq_rank": 219,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "klar",
+      "freq_rank": 222,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "redd",
+      "freq_rank": 240,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "like",
+      "freq_rank": 246,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "hver",
+      "freq_rank": 254,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "venn",
+      "freq_rank": 256,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "bort",
+      "freq_rank": 263,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "inne",
+      "freq_rank": 265,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "glad",
+      "freq_rank": 267,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "stor",
+      "freq_rank": 271,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "unna",
+      "freq_rank": 285,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "vekk",
+      "freq_rank": 289,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "hatt",
+      "freq_rank": 291,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "jobb",
+      "freq_rank": 316,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "fire",
+      "freq_rank": 334,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "navn",
+      "freq_rank": 336,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "gutt",
+      "freq_rank": 339,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "natt",
+      "freq_rank": 343,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "fort",
+      "freq_rank": 344,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "mens",
+      "freq_rank": 352,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "sine",
+      "freq_rank": 364,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "gode",
+      "freq_rank": 369,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "galt",
+      "freq_rank": 374,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "vise",
+      "freq_rank": 380,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "egen",
+      "freq_rank": 414,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "nytt",
+      "freq_rank": 423,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "lett",
+      "freq_rank": 431,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "legg",
+      "freq_rank": 443,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "skje",
+      "freq_rank": 450,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "leve",
+      "freq_rank": 459,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "enda",
+      "freq_rank": 461,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "seks",
+      "freq_rank": 462,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "best",
+      "freq_rank": 471,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "lang",
+      "freq_rank": 472,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "full",
+      "freq_rank": 474,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "imot",
+      "freq_rank": 481,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "satt",
+      "freq_rank": 485,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "kone",
+      "freq_rank": 486,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "nede",
+      "freq_rank": 491,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "oppe",
+      "freq_rank": 492,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "ring",
+      "freq_rank": 493,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "på",
+      "freq_rank": 11,
+      "length": 2,
+      "has_special": true
+    },
+    {
+      "word": "så",
+      "freq_rank": 22,
+      "length": 2,
+      "has_special": true
+    },
+    {
+      "word": "dette",
+      "freq_rank": 37,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "nå",
+      "freq_rank": 43,
+      "length": 2,
+      "has_special": true
+    },
+    {
+      "word": "igjen",
+      "freq_rank": 59,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "ville",
+      "freq_rank": 62,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "få",
+      "freq_rank": 70,
+      "length": 2,
+      "has_special": true
+    },
+    {
+      "word": "ingen",
+      "freq_rank": 75,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "henne",
+      "freq_rank": 79,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "gå",
+      "freq_rank": 84,
+      "length": 2,
+      "has_special": true
+    },
+    {
+      "word": "eller",
+      "freq_rank": 85,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "etter",
+      "freq_rank": 94,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "denne",
+      "freq_rank": 96,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "aldri",
+      "freq_rank": 99,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "kunne",
+      "freq_rank": 107,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "andre",
+      "freq_rank": 127,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "siden",
+      "freq_rank": 134,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "år",
+      "freq_rank": 138,
+      "length": 2,
+      "has_special": true
+    },
+    {
+      "word": "deres",
+      "freq_rank": 141,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "komme",
+      "freq_rank": 143,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "fordi",
+      "freq_rank": 146,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "mange",
+      "freq_rank": 155,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "finne",
+      "freq_rank": 165,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "burde",
+      "freq_rank": 170,
+      "length": 5,
+      "has_special": false
+    }
+  ]
+}

@@ -1,0 +1,3007 @@
+{
+  "tier": 2,
+  "name": "Lærling",
+  "description": "Top 500 vanlige ord, 2-7 bokstaver",
+  "words": [
+    {
+      "word": "ro",
+      "freq_rank": 518,
+      "length": 2,
+      "has_special": false
+    },
+    {
+      "word": "an",
+      "freq_rank": 551,
+      "length": 2,
+      "has_special": false
+    },
+    {
+      "word": "bo",
+      "freq_rank": 687,
+      "length": 2,
+      "has_special": false
+    },
+    {
+      "word": "by",
+      "freq_rank": 797,
+      "length": 2,
+      "has_special": false
+    },
+    {
+      "word": "tv",
+      "freq_rank": 855,
+      "length": 2,
+      "has_special": false
+    },
+    {
+      "word": "ni",
+      "freq_rank": 901,
+      "length": 2,
+      "has_special": false
+    },
+    {
+      "word": "te",
+      "freq_rank": 1274,
+      "length": 2,
+      "has_special": false
+    },
+    {
+      "word": "km",
+      "freq_rank": 1308,
+      "length": 2,
+      "has_special": false
+    },
+    {
+      "word": "le",
+      "freq_rank": 1326,
+      "length": 2,
+      "has_special": false
+    },
+    {
+      "word": "fy",
+      "freq_rank": 1352,
+      "length": 2,
+      "has_special": false
+    },
+    {
+      "word": "is",
+      "freq_rank": 1358,
+      "length": 2,
+      "has_special": false
+    },
+    {
+      "word": "oi",
+      "freq_rank": 1449,
+      "length": 2,
+      "has_special": false
+    },
+    {
+      "word": "gal",
+      "freq_rank": 531,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "fri",
+      "freq_rank": 546,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "uke",
+      "freq_rank": 547,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "tur",
+      "freq_rank": 560,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "bil",
+      "freq_rank": 566,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "rom",
+      "freq_rank": 579,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "fly",
+      "freq_rank": 584,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "vis",
+      "freq_rank": 592,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "lov",
+      "freq_rank": 628,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "dum",
+      "freq_rank": 642,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "sak",
+      "freq_rank": 645,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "slo",
+      "freq_rank": 648,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "sex",
+      "freq_rank": 650,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "syk",
+      "freq_rank": 678,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "kun",
+      "freq_rank": 722,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "sto",
+      "freq_rank": 723,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "ung",
+      "freq_rank": 725,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "ben",
+      "freq_rank": 751,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "dyr",
+      "freq_rank": 872,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "lik",
+      "freq_rank": 881,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "sju",
+      "freq_rank": 882,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "lys",
+      "freq_rank": 925,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "snu",
+      "freq_rank": 950,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "bob",
+      "freq_rank": 961,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "het",
+      "freq_rank": 1005,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "fru",
+      "freq_rank": 1010,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "lag",
+      "freq_rank": 1022,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "pen",
+      "freq_rank": 1029,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "ene",
+      "freq_rank": 1065,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "jul",
+      "freq_rank": 1142,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "bok",
+      "freq_rank": 1156,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "max",
+      "freq_rank": 1162,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "bry",
+      "freq_rank": 1190,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "hel",
+      "freq_rank": 1225,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "ren",
+      "freq_rank": 1289,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "bar",
+      "freq_rank": 1299,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "vin",
+      "freq_rank": 1306,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "red",
+      "freq_rank": 1333,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "sen",
+      "freq_rank": 1386,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "dan",
+      "freq_rank": 1451,
+      "length": 3,
+      "has_special": false
+    },
+    {
+      "word": "mest",
+      "freq_rank": 512,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "fram",
+      "freq_rank": 516,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "vann",
+      "freq_rank": 525,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "herr",
+      "freq_rank": 533,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "side",
+      "freq_rank": 536,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "pass",
+      "freq_rank": 537,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "fred",
+      "freq_rank": 538,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "lage",
+      "freq_rank": 540,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "ekte",
+      "freq_rank": 544,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "fast",
+      "freq_rank": 550,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "lite",
+      "freq_rank": 552,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "valg",
+      "freq_rank": 567,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "bror",
+      "freq_rank": 569,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "miss",
+      "freq_rank": 572,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "gitt",
+      "freq_rank": 575,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "time",
+      "freq_rank": 587,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "blod",
+      "freq_rank": 591,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "sint",
+      "freq_rank": 595,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "sove",
+      "freq_rank": 600,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "svar",
+      "freq_rank": 602,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "gift",
+      "freq_rank": 606,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "finn",
+      "freq_rank": 610,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "sist",
+      "freq_rank": 614,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "unge",
+      "freq_rank": 615,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "ille",
+      "freq_rank": 617,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "lyst",
+      "freq_rank": 641,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "fare",
+      "freq_rank": 643,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "fall",
+      "freq_rank": 657,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "synd",
+      "freq_rank": 660,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "frem",
+      "freq_rank": 662,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "pris",
+      "freq_rank": 674,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "live",
+      "freq_rank": 680,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "bruk",
+      "freq_rank": 685,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "land",
+      "freq_rank": 691,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "lese",
+      "freq_rank": 703,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "ofte",
+      "freq_rank": 711,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "egne",
+      "freq_rank": 728,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "krig",
+      "freq_rank": 742,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "vant",
+      "freq_rank": 752,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "husk",
+      "freq_rank": 761,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "kort",
+      "freq_rank": 767,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "sjef",
+      "freq_rank": 777,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "plan",
+      "freq_rank": 796,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "kult",
+      "freq_rank": 803,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "vare",
+      "freq_rank": 823,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "dame",
+      "freq_rank": 825,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "fest",
+      "freq_rank": 854,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "kamp",
+      "freq_rank": 866,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "bord",
+      "freq_rank": 873,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "midt",
+      "freq_rank": 900,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "okay",
+      "freq_rank": 908,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "enig",
+      "freq_rank": 915,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "lege",
+      "freq_rank": 916,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "baby",
+      "freq_rank": 919,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "kutt",
+      "freq_rank": 937,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "eier",
+      "freq_rank": 943,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "film",
+      "freq_rank": 995,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "drep",
+      "freq_rank": 1015,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "hund",
+      "freq_rank": 1025,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "moro",
+      "freq_rank": 1034,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "spor",
+      "freq_rank": 1054,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "frue",
+      "freq_rank": 1062,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "halv",
+      "freq_rank": 1073,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "tegn",
+      "freq_rank": 1095,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "gave",
+      "freq_rank": 1099,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "makt",
+      "freq_rank": 1109,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "stol",
+      "freq_rank": 1130,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "lest",
+      "freq_rank": 1133,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "drap",
+      "freq_rank": 1145,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "skip",
+      "freq_rank": 1153,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "dele",
+      "freq_rank": 1155,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "lete",
+      "freq_rank": 1171,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "leke",
+      "freq_rank": 1174,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "hopp",
+      "freq_rank": 1201,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "inni",
+      "freq_rank": 1223,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "mark",
+      "freq_rank": 1229,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "hvit",
+      "freq_rank": 1230,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "bank",
+      "freq_rank": 1236,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "kast",
+      "freq_rank": 1239,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "kyss",
+      "freq_rank": 1248,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "brev",
+      "freq_rank": 1260,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "tull",
+      "freq_rank": 1261,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "type",
+      "freq_rank": 1267,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "sees",
+      "freq_rank": 1279,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "sexy",
+      "freq_rank": 1285,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "kall",
+      "freq_rank": 1305,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "slag",
+      "freq_rank": 1318,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "vakt",
+      "freq_rank": 1319,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "date",
+      "freq_rank": 1330,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "lure",
+      "freq_rank": 1331,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "varm",
+      "freq_rank": 1332,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "sang",
+      "freq_rank": 1334,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "mora",
+      "freq_rank": 1336,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "ende",
+      "freq_rank": 1349,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "hull",
+      "freq_rank": 1350,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "spis",
+      "freq_rank": 1351,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "sann",
+      "freq_rank": 1360,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "tale",
+      "freq_rank": 1366,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "gull",
+      "freq_rank": 1384,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "gale",
+      "freq_rank": 1413,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "city",
+      "freq_rank": 1430,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "ifra",
+      "freq_rank": 1431,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "rent",
+      "freq_rank": 1433,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "reis",
+      "freq_rank": 1438,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "hest",
+      "freq_rank": 1440,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "bety",
+      "freq_rank": 1454,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "form",
+      "freq_rank": 1456,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "pust",
+      "freq_rank": 1463,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "lyve",
+      "freq_rank": 1466,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "team",
+      "freq_rank": 1467,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "dean",
+      "freq_rank": 1485,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "munn",
+      "freq_rank": 1494,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "titt",
+      "freq_rank": 1496,
+      "length": 4,
+      "has_special": false
+    },
+    {
+      "word": "bedre",
+      "freq_rank": 176,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "kveld",
+      "freq_rank": 183,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "lenge",
+      "freq_rank": 189,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "samme",
+      "freq_rank": 194,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "hjelp",
+      "freq_rank": 199,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "snill",
+      "freq_rank": 201,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "disse",
+      "freq_rank": 205,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "pappa",
+      "freq_rank": 206,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "mamma",
+      "freq_rank": 210,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "under",
+      "freq_rank": 216,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "slutt",
+      "freq_rank": 226,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "visst",
+      "freq_rank": 227,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "drepe",
+      "freq_rank": 230,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "hallo",
+      "freq_rank": 232,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "borte",
+      "freq_rank": 238,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "snart",
+      "freq_rank": 241,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "rundt",
+      "freq_rank": 242,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "holde",
+      "freq_rank": 244,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "faren",
+      "freq_rank": 245,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "flere",
+      "freq_rank": 251,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "neste",
+      "freq_rank": 277,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "annen",
+      "freq_rank": 282,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "alene",
+      "freq_rank": 290,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "flott",
+      "freq_rank": 293,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "liten",
+      "freq_rank": 301,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "dø",
+      "freq_rank": 304,
+      "length": 2,
+      "has_special": true
+    },
+    {
+      "word": "grunn",
+      "freq_rank": 307,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "langt",
+      "freq_rank": 317,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "begge",
+      "freq_rank": 335,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "lille",
+      "freq_rank": 358,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "orden",
+      "freq_rank": 367,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "synes",
+      "freq_rank": 368,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "slags",
+      "freq_rank": 383,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "tenke",
+      "freq_rank": 393,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "skyld",
+      "freq_rank": 395,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "klare",
+      "freq_rank": 396,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "bruke",
+      "freq_rank": 398,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "slipp",
+      "freq_rank": 400,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "helst",
+      "freq_rank": 405,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "jente",
+      "freq_rank": 406,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "stopp",
+      "freq_rank": 418,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "rolig",
+      "freq_rank": 421,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "vente",
+      "freq_rank": 433,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "redde",
+      "freq_rank": 434,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "spise",
+      "freq_rank": 435,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "slapp",
+      "freq_rank": 444,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "ringe",
+      "freq_rank": 448,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "sette",
+      "freq_rank": 454,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "mulig",
+      "freq_rank": 466,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "lever",
+      "freq_rank": 479,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "holdt",
+      "freq_rank": 480,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "kjeft",
+      "freq_rank": 494,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "hater",
+      "freq_rank": 501,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "hente",
+      "freq_rank": 503,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "jobbe",
+      "freq_rank": 510,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "tusen",
+      "freq_rank": 524,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "plass",
+      "freq_rank": 541,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "kjent",
+      "freq_rank": 545,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "foran",
+      "freq_rank": 548,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "snakk",
+      "freq_rank": 556,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "legge",
+      "freq_rank": 568,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "stund",
+      "freq_rank": 576,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "mente",
+      "freq_rank": 585,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "verre",
+      "freq_rank": 598,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "dritt",
+      "freq_rank": 599,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "frank",
+      "freq_rank": 605,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "lager",
+      "freq_rank": 611,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "viser",
+      "freq_rank": 620,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "lykke",
+      "freq_rank": 635,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "sitte",
+      "freq_rank": 636,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "reise",
+      "freq_rank": 647,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "leter",
+      "freq_rank": 649,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "idiot",
+      "freq_rank": 664,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "kaffe",
+      "freq_rank": 672,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "sende",
+      "freq_rank": 673,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "skyte",
+      "freq_rank": 679,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "prate",
+      "freq_rank": 682,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "flink",
+      "freq_rank": 693,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "gifte",
+      "freq_rank": 694,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "rette",
+      "freq_rank": 695,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "lurer",
+      "freq_rank": 706,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "herre",
+      "freq_rank": 712,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "masse",
+      "freq_rank": 715,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "skade",
+      "freq_rank": 729,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "stole",
+      "freq_rank": 737,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "skutt",
+      "freq_rank": 738,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "verdt",
+      "freq_rank": 744,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "skrev",
+      "freq_rank": 745,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "hvite",
+      "freq_rank": 755,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "spill",
+      "freq_rank": 776,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "huske",
+      "freq_rank": 783,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "bevis",
+      "freq_rank": 790,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "sover",
+      "freq_rank": 808,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "stolt",
+      "freq_rank": 809,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "sjekk",
+      "freq_rank": 815,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "svart",
+      "freq_rank": 817,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "vinne",
+      "freq_rank": 819,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "rolle",
+      "freq_rank": 820,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "smart",
+      "freq_rank": 829,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "passe",
+      "freq_rank": 834,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "skatt",
+      "freq_rank": 836,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "stikk",
+      "freq_rank": 844,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "drink",
+      "freq_rank": 846,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "bilde",
+      "freq_rank": 847,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "ordne",
+      "freq_rank": 849,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "leder",
+      "freq_rank": 850,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "selge",
+      "freq_rank": 858,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "brukt",
+      "freq_rank": 860,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "ordre",
+      "freq_rank": 863,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "sterk",
+      "freq_rank": 865,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "miste",
+      "freq_rank": 870,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "onkel",
+      "freq_rank": 874,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "deler",
+      "freq_rank": 875,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "øl",
+      "freq_rank": 880,
+      "length": 2,
+      "has_special": true
+    },
+    {
+      "word": "slikt",
+      "freq_rank": 889,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "harry",
+      "freq_rank": 899,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "ligge",
+      "freq_rank": 902,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "forbi",
+      "freq_rank": 922,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "kalle",
+      "freq_rank": 927,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "innen",
+      "freq_rank": 936,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "agent",
+      "freq_rank": 941,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "elske",
+      "freq_rank": 948,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "kaste",
+      "freq_rank": 949,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "blant",
+      "freq_rank": 954,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "meter",
+      "freq_rank": 962,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "dumme",
+      "freq_rank": 972,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "trekk",
+      "freq_rank": 975,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "tilgi",
+      "freq_rank": 979,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "trygg",
+      "freq_rank": 994,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "velge",
+      "freq_rank": 1028,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "enten",
+      "freq_rank": 1041,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "takke",
+      "freq_rank": 1058,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "stakk",
+      "freq_rank": 1061,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "glede",
+      "freq_rank": 1075,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "merke",
+      "freq_rank": 1076,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "stans",
+      "freq_rank": 1078,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "trist",
+      "freq_rank": 1097,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "henry",
+      "freq_rank": 1098,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "fange",
+      "freq_rank": 1103,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "minst",
+      "freq_rank": 1105,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "danse",
+      "freq_rank": 1112,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "fikse",
+      "freq_rank": 1119,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "åh",
+      "freq_rank": 1120,
+      "length": 2,
+      "has_special": true
+    },
+    {
+      "word": "kvitt",
+      "freq_rank": 1122,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "innom",
+      "freq_rank": 1123,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "meget",
+      "freq_rank": 1126,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "lunsj",
+      "freq_rank": 1129,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "tjene",
+      "freq_rank": 1134,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "svare",
+      "freq_rank": 1138,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "frisk",
+      "freq_rank": 1141,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "konge",
+      "freq_rank": 1157,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "glipp",
+      "freq_rank": 1165,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "leser",
+      "freq_rank": 1178,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "knapt",
+      "freq_rank": 1195,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "bytte",
+      "freq_rank": 1204,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "endre",
+      "freq_rank": 1210,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "sikre",
+      "freq_rank": 1214,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "stand",
+      "freq_rank": 1226,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "taper",
+      "freq_rank": 1238,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "glass",
+      "freq_rank": 1241,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "bygge",
+      "freq_rank": 1258,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "leste",
+      "freq_rank": 1259,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "dratt",
+      "freq_rank": 1263,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "greie",
+      "freq_rank": 1264,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "eldre",
+      "freq_rank": 1277,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "lette",
+      "freq_rank": 1310,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "flaks",
+      "freq_rank": 1340,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "synge",
+      "freq_rank": 1345,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "hvile",
+      "freq_rank": 1357,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "vitne",
+      "freq_rank": 1375,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "vilje",
+      "freq_rank": 1376,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "slett",
+      "freq_rank": 1392,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "start",
+      "freq_rank": 1402,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "skape",
+      "freq_rank": 1404,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "karen",
+      "freq_rank": 1405,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "stein",
+      "freq_rank": 1418,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "frykt",
+      "freq_rank": 1422,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "major",
+      "freq_rank": 1429,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "bobby",
+      "freq_rank": 1432,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "ender",
+      "freq_rank": 1435,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "alvor",
+      "freq_rank": 1448,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "går",
+      "freq_rank": 65,
+      "length": 3,
+      "has_special": true
+    },
+    {
+      "word": "bryte",
+      "freq_rank": 1457,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "får",
+      "freq_rank": 80,
+      "length": 3,
+      "has_special": true
+    },
+    {
+      "word": "når",
+      "freq_rank": 81,
+      "length": 3,
+      "has_special": true
+    },
+    {
+      "word": "tross",
+      "freq_rank": 1479,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "neppe",
+      "freq_rank": 1481,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "minne",
+      "freq_rank": 1487,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "skulle",
+      "freq_rank": 102,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "poeng",
+      "freq_rank": 1493,
+      "length": 5,
+      "has_special": false
+    },
+    {
+      "word": "før",
+      "freq_rank": 111,
+      "length": 3,
+      "has_special": true
+    },
+    {
+      "word": "sammen",
+      "freq_rank": 122,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "gjorde",
+      "freq_rank": 123,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "vær",
+      "freq_rank": 128,
+      "length": 3,
+      "has_special": true
+    },
+    {
+      "word": "snakke",
+      "freq_rank": 142,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "alltid",
+      "freq_rank": 153,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "vår",
+      "freq_rank": 162,
+      "length": 3,
+      "has_special": true
+    },
+    {
+      "word": "veldig",
+      "freq_rank": 168,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "hjelpe",
+      "freq_rank": 178,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "morgen",
+      "freq_rank": 179,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "elsker",
+      "freq_rank": 186,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "død",
+      "freq_rank": 202,
+      "length": 3,
+      "has_special": true
+    },
+    {
+      "word": "hennes",
+      "freq_rank": 209,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "eneste",
+      "freq_rank": 214,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "hør",
+      "freq_rank": 215,
+      "length": 3,
+      "has_special": true
+    },
+    {
+      "word": "bør",
+      "freq_rank": 221,
+      "length": 3,
+      "has_special": true
+    },
+    {
+      "word": "holder",
+      "freq_rank": 223,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "penger",
+      "freq_rank": 229,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "finner",
+      "freq_rank": 247,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "verden",
+      "freq_rank": 252,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "heller",
+      "freq_rank": 270,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "sikker",
+      "freq_rank": 276,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "lenger",
+      "freq_rank": 280,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "gjerne",
+      "freq_rank": 283,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "derfor",
+      "freq_rank": 294,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "jobber",
+      "freq_rank": 302,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "ganger",
+      "freq_rank": 314,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "nesten",
+      "freq_rank": 321,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "hjemme",
+      "freq_rank": 328,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "ellers",
+      "freq_rank": 330,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "ferdig",
+      "freq_rank": 347,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "herfra",
+      "freq_rank": 348,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "stille",
+      "freq_rank": 355,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "dollar",
+      "freq_rank": 357,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "engang",
+      "freq_rank": 359,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "ganske",
+      "freq_rank": 370,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "slå",
+      "freq_rank": 377,
+      "length": 3,
+      "has_special": true
+    },
+    {
+      "word": "tenker",
+      "freq_rank": 378,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "ringer",
+      "freq_rank": 382,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "pokker",
+      "freq_rank": 392,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "gammel",
+      "freq_rank": 397,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "viktig",
+      "freq_rank": 402,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "mellom",
+      "freq_rank": 410,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "dør",
+      "freq_rank": 413,
+      "length": 3,
+      "has_special": true
+    },
+    {
+      "word": "kvinne",
+      "freq_rank": 415,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "ligger",
+      "freq_rank": 416,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "riktig",
+      "freq_rank": 426,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "stå",
+      "freq_rank": 430,
+      "length": 3,
+      "has_special": true
+    },
+    {
+      "word": "treffe",
+      "freq_rank": 437,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "setter",
+      "freq_rank": 438,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "bruker",
+      "freq_rank": 465,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "finnes",
+      "freq_rank": 469,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "mindre",
+      "freq_rank": 502,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "spille",
+      "freq_rank": 513,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "sjanse",
+      "freq_rank": 527,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "løp",
+      "freq_rank": 530,
+      "length": 3,
+      "has_special": true
+    },
+    {
+      "word": "driver",
+      "freq_rank": 559,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "straks",
+      "freq_rank": 573,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "tidlig",
+      "freq_rank": 581,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "passer",
+      "freq_rank": 589,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "betale",
+      "freq_rank": 601,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "stoppe",
+      "freq_rank": 621,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "slutte",
+      "freq_rank": 627,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "nær",
+      "freq_rank": 629,
+      "length": 3,
+      "has_special": true
+    },
+    {
+      "word": "sender",
+      "freq_rank": 633,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "middag",
+      "freq_rank": 637,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "skrive",
+      "freq_rank": 639,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "spurte",
+      "freq_rank": 658,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "små",
+      "freq_rank": 669,
+      "length": 3,
+      "has_special": true
+    },
+    {
+      "word": "vakker",
+      "freq_rank": 676,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "farlig",
+      "freq_rank": 684,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "drikke",
+      "freq_rank": 688,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "legger",
+      "freq_rank": 696,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "avtale",
+      "freq_rank": 698,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "nummer",
+      "freq_rank": 699,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "henter",
+      "freq_rank": 704,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "gøy",
+      "freq_rank": 709,
+      "length": 3,
+      "has_special": true
+    },
+    {
+      "word": "datter",
+      "freq_rank": 727,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "enkelt",
+      "freq_rank": 732,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "slippe",
+      "freq_rank": 735,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "råd",
+      "freq_rank": 740,
+      "length": 3,
+      "has_special": true
+    },
+    {
+      "word": "stikke",
+      "freq_rank": 748,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "vinner",
+      "freq_rank": 770,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "rør",
+      "freq_rank": 775,
+      "length": 3,
+      "has_special": true
+    },
+    {
+      "word": "kompis",
+      "freq_rank": 780,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "sjekke",
+      "freq_rank": 782,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "umulig",
+      "freq_rank": 785,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "person",
+      "freq_rank": 788,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "doktor",
+      "freq_rank": 789,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "flytte",
+      "freq_rank": 793,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "mister",
+      "freq_rank": 794,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "farvel",
+      "freq_rank": 801,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "skyter",
+      "freq_rank": 810,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "vanlig",
+      "freq_rank": 816,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "arbeid",
+      "freq_rank": 861,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "iblant",
+      "freq_rank": 862,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "søt",
+      "freq_rank": 890,
+      "length": 3,
+      "has_special": true
+    },
+    {
+      "word": "skaffe",
+      "freq_rank": 907,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "sulten",
+      "freq_rank": 923,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "glemme",
+      "freq_rank": 924,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "ære",
+      "freq_rank": 935,
+      "length": 3,
+      "has_special": true
+    },
+    {
+      "word": "hjerte",
+      "freq_rank": 952,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "øye",
+      "freq_rank": 957,
+      "length": 3,
+      "has_special": true
+    },
+    {
+      "word": "angrep",
+      "freq_rank": 964,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "morges",
+      "freq_rank": 965,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "mening",
+      "freq_rank": 966,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "løs",
+      "freq_rank": 967,
+      "length": 3,
+      "has_special": true
+    },
+    {
+      "word": "kjempe",
+      "freq_rank": 988,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "høy",
+      "freq_rank": 1001,
+      "length": 3,
+      "has_special": true
+    },
+    {
+      "word": "selger",
+      "freq_rank": 1003,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "kaster",
+      "freq_rank": 1009,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "tredje",
+      "freq_rank": 1020,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "heldig",
+      "freq_rank": 1032,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "løy",
+      "freq_rank": 1038,
+      "length": 3,
+      "has_special": true
+    },
+    {
+      "word": "liksom",
+      "freq_rank": 1051,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "oberst",
+      "freq_rank": 1057,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "hvilke",
+      "freq_rank": 1064,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "mål",
+      "freq_rank": 1071,
+      "length": 3,
+      "has_special": true
+    },
+    {
+      "word": "tjener",
+      "freq_rank": 1087,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "pleier",
+      "freq_rank": 1089,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "prater",
+      "freq_rank": 1102,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "gravid",
+      "freq_rank": 1110,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "ekstra",
+      "freq_rank": 1114,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "ansvar",
+      "freq_rank": 1115,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "stemme",
+      "freq_rank": 1118,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "hundre",
+      "freq_rank": 1125,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "politi",
+      "freq_rank": 1127,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "musikk",
+      "freq_rank": 1137,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "herlig",
+      "freq_rank": 1150,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "blå",
+      "freq_rank": 1167,
+      "length": 3,
+      "has_special": true
+    },
+    {
+      "word": "starte",
+      "freq_rank": 1172,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "altfor",
+      "freq_rank": 1189,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "trenge",
+      "freq_rank": 1191,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "trekke",
+      "freq_rank": 1207,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "håp",
+      "freq_rank": 1209,
+      "length": 3,
+      "has_special": true
+    },
+    {
+      "word": "bevise",
+      "freq_rank": 1231,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "velger",
+      "freq_rank": 1232,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "dommer",
+      "freq_rank": 1233,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "nekter",
+      "freq_rank": 1262,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "ansikt",
+      "freq_rank": 1266,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "stjele",
+      "freq_rank": 1268,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "kalles",
+      "freq_rank": 1280,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "gratis",
+      "freq_rank": 1288,
+      "length": 6,
+      "has_special": false
+    },
+    {
+      "word": "hår",
+      "freq_rank": 1290,
+      "length": 3,
+      "has_special": true
+    },
+    {
+      "word": "kontor",
+      "freq_rank": 1294,
+      "length": 6,
+      "has_special": false
+    }
+  ]
+}

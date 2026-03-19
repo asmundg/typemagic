@@ -1,0 +1,3556 @@
+{
+ "starters": [
+  [
+   "Det",
+   "er",
+   0.043103
+  ],
+  [
+   "Han",
+   "liker",
+   0.017241
+  ],
+  [
+   "Vi",
+   "har",
+   0.017241
+  ],
+  [
+   "Vi",
+   "går",
+   0.012931
+  ],
+  [
+   "Jeg",
+   "har",
+   0.012931
+  ],
+  [
+   "Jeg",
+   "er",
+   0.008621
+  ],
+  [
+   "Hunden",
+   "løper",
+   0.008621
+  ],
+  [
+   "Vi",
+   "spiser",
+   0.008621
+  ],
+  [
+   "Stolen",
+   "er",
+   0.008621
+  ],
+  [
+   "Vi",
+   "ser",
+   0.008621
+  ],
+  [
+   "Han",
+   "spiller",
+   0.008621
+  ],
+  [
+   "Barna",
+   "leker",
+   0.008621
+  ],
+  [
+   "De",
+   "bor",
+   0.008621
+  ],
+  [
+   "Suppen",
+   "er",
+   0.008621
+  ],
+  [
+   "Vi",
+   "reiser",
+   0.008621
+  ],
+  [
+   "Vi",
+   "handler",
+   0.008621
+  ],
+  [
+   "Hun",
+   "tar",
+   0.008621
+  ],
+  [
+   "Vi",
+   "feirer",
+   0.008621
+  ],
+  [
+   "Han",
+   "spiser",
+   0.00431
+  ],
+  [
+   "Hun",
+   "liker",
+   0.00431
+  ],
+  [
+   "Katten",
+   "sover",
+   0.00431
+  ],
+  [
+   "Vi",
+   "bor",
+   0.00431
+  ],
+  [
+   "Mor",
+   "lager",
+   0.00431
+  ],
+  [
+   "Far",
+   "kjører",
+   0.00431
+  ],
+  [
+   "Hun",
+   "har",
+   0.00431
+  ],
+  [
+   "De",
+   "leker",
+   0.00431
+  ],
+  [
+   "Boken",
+   "er",
+   0.00431
+  ],
+  [
+   "Jeg",
+   "drikker",
+   0.00431
+  ],
+  [
+   "Han",
+   "sover",
+   0.00431
+  ],
+  [
+   "Huset",
+   "er",
+   0.00431
+  ],
+  [
+   "Døren",
+   "er",
+   0.00431
+  ],
+  [
+   "Hun",
+   "synger",
+   0.00431
+  ],
+  [
+   "Det",
+   "regner",
+   0.00431
+  ],
+  [
+   "Vi",
+   "liker",
+   0.00431
+  ],
+  [
+   "Katten",
+   "er",
+   0.00431
+  ],
+  [
+   "Ballen",
+   "er",
+   0.00431
+  ],
+  [
+   "Maten",
+   "er",
+   0.00431
+  ],
+  [
+   "Jeg",
+   "liker",
+   0.00431
+  ],
+  [
+   "Hun",
+   "leser",
+   0.00431
+  ],
+  [
+   "Han",
+   "sitter",
+   0.00431
+  ],
+  [
+   "Klokken",
+   "er",
+   0.00431
+  ],
+  [
+   "Solen",
+   "skinner",
+   0.00431
+  ],
+  [
+   "Faren",
+   "venter",
+   0.00431
+  ],
+  [
+   "Moren",
+   "er",
+   0.00431
+  ],
+  [
+   "Vi",
+   "tar",
+   0.00431
+  ],
+  [
+   "Toget",
+   "er",
+   0.00431
+  ],
+  [
+   "Hun",
+   "er",
+   0.00431
+  ],
+  [
+   "Vi",
+   "sover",
+   0.00431
+  ],
+  [
+   "Jeg",
+   "ser",
+   0.00431
+  ],
+  [
+   "Fisken",
+   "er",
+   0.00431
+  ],
+  [
+   "Han",
+   "går",
+   0.00431
+  ],
+  [
+   "Jeg",
+   "kjøper",
+   0.00431
+  ],
+  [
+   "Hun",
+   "lager",
+   0.00431
+  ],
+  [
+   "Gutten",
+   "er",
+   0.00431
+  ],
+  [
+   "Jenta",
+   "er",
+   0.00431
+  ],
+  [
+   "De",
+   "er",
+   0.00431
+  ],
+  [
+   "Jeg",
+   "vet",
+   0.00431
+  ],
+  [
+   "Han",
+   "er",
+   0.00431
+  ],
+  [
+   "Bordet",
+   "er",
+   0.00431
+  ],
+  [
+   "Lampen",
+   "er",
+   0.00431
+  ],
+  [
+   "Veien",
+   "er",
+   0.00431
+  ],
+  [
+   "Skogen",
+   "er",
+   0.00431
+  ],
+  [
+   "Sjøen",
+   "er",
+   0.00431
+  ],
+  [
+   "Fjellet",
+   "er",
+   0.00431
+  ],
+  [
+   "Snøen",
+   "er",
+   0.00431
+  ],
+  [
+   "Vinden",
+   "er",
+   0.00431
+  ],
+  [
+   "Regnet",
+   "er",
+   0.00431
+  ],
+  [
+   "Natten",
+   "er",
+   0.00431
+  ],
+  [
+   "Dagen",
+   "er",
+   0.00431
+  ],
+  [
+   "Livet",
+   "er",
+   0.00431
+  ],
+  [
+   "Hagen",
+   "er",
+   0.00431
+  ],
+  [
+   "Parken",
+   "er",
+   0.00431
+  ],
+  [
+   "Gaten",
+   "er",
+   0.00431
+  ],
+  [
+   "Broen",
+   "er",
+   0.00431
+  ],
+  [
+   "Elven",
+   "er",
+   0.00431
+  ],
+  [
+   "Treet",
+   "er",
+   0.00431
+  ],
+  [
+   "Blomsten",
+   "er",
+   0.00431
+  ],
+  [
+   "Eplet",
+   "er",
+   0.00431
+  ],
+  [
+   "Brødet",
+   "er",
+   0.00431
+  ],
+  [
+   "Osten",
+   "er",
+   0.00431
+  ],
+  [
+   "Melken",
+   "er",
+   0.00431
+  ],
+  [
+   "Kaken",
+   "er",
+   0.00431
+  ],
+  [
+   "Bilen",
+   "er",
+   0.00431
+  ],
+  [
+   "Sykkelen",
+   "er",
+   0.00431
+  ],
+  [
+   "Bussen",
+   "er",
+   0.00431
+  ],
+  [
+   "Flyet",
+   "er",
+   0.00431
+  ],
+  [
+   "Båten",
+   "er",
+   0.00431
+  ],
+  [
+   "Tog",
+   "er",
+   0.00431
+  ],
+  [
+   "Vi",
+   "leker",
+   0.00431
+  ],
+  [
+   "De",
+   "løper",
+   0.00431
+  ],
+  [
+   "Han",
+   "hopper",
+   0.00431
+  ],
+  [
+   "Hun",
+   "svømmer",
+   0.00431
+  ],
+  [
+   "Jeg",
+   "maler",
+   0.00431
+  ],
+  [
+   "Vi",
+   "synger",
+   0.00431
+  ],
+  [
+   "De",
+   "danser",
+   0.00431
+  ],
+  [
+   "Hva",
+   "gjør",
+   0.00431
+  ],
+  [
+   "Hvor",
+   "bor",
+   0.00431
+  ],
+  [
+   "Hvor",
+   "er",
+   0.00431
+  ],
+  [
+   "Hva",
+   "heter",
+   0.00431
+  ],
+  [
+   "Har",
+   "du",
+   0.00431
+  ],
+  [
+   "Hva",
+   "spiser",
+   0.00431
+  ],
+  [
+   "Liker",
+   "du",
+   0.00431
+  ],
+  [
+   "Kan",
+   "du",
+   0.00431
+  ],
+  [
+   "Er",
+   "du",
+   0.00431
+  ],
+  [
+   "Skal",
+   "vi",
+   0.00431
+  ],
+  [
+   "Jeg",
+   "skal",
+   0.00431
+  ],
+  [
+   "Hun",
+   "jobber",
+   0.00431
+  ],
+  [
+   "Barna",
+   "går",
+   0.00431
+  ],
+  [
+   "Familien",
+   "spiser",
+   0.00431
+  ],
+  [
+   "Hunden",
+   "vår",
+   0.00431
+  ],
+  [
+   "Katten",
+   "min",
+   0.00431
+  ],
+  [
+   "De",
+   "ser",
+   0.00431
+  ],
+  [
+   "Vi",
+   "drikker",
+   0.00431
+  ],
+  [
+   "Moren",
+   "min",
+   0.00431
+  ],
+  [
+   "Faren",
+   "min",
+   0.00431
+  ],
+  [
+   "Broren",
+   "min",
+   0.00431
+  ],
+  [
+   "Søsteren",
+   "min",
+   0.00431
+  ],
+  [
+   "Bestemor",
+   "lager",
+   0.00431
+  ],
+  [
+   "Bestefar",
+   "forteller",
+   0.00431
+  ],
+  [
+   "Naboen",
+   "vår",
+   0.00431
+  ],
+  [
+   "Skolen",
+   "vår",
+   0.00431
+  ],
+  [
+   "Klassen",
+   "har",
+   0.00431
+  ],
+  [
+   "Læreren",
+   "er",
+   0.00431
+  ],
+  [
+   "De",
+   "spiller",
+   0.00431
+  ],
+  [
+   "Hun",
+   "tegner",
+   0.00431
+  ],
+  [
+   "Han",
+   "skriver",
+   0.00431
+  ],
+  [
+   "Vi",
+   "lærer",
+   0.00431
+  ],
+  [
+   "De",
+   "liker",
+   0.00431
+  ],
+  [
+   "Katten",
+   "jager",
+   0.00431
+  ],
+  [
+   "Fuglen",
+   "sitter",
+   0.00431
+  ],
+  [
+   "Fisken",
+   "svømmer",
+   0.00431
+  ],
+  [
+   "Månen",
+   "er",
+   0.00431
+  ],
+  [
+   "Solen",
+   "går",
+   0.00431
+  ],
+  [
+   "Det",
+   "blåser",
+   0.00431
+  ],
+  [
+   "Vi",
+   "trenger",
+   0.00431
+  ],
+  [
+   "Han",
+   "tar",
+   0.00431
+  ],
+  [
+   "Hun",
+   "kler",
+   0.00431
+  ],
+  [
+   "Det",
+   "snør",
+   0.00431
+  ],
+  [
+   "Isen",
+   "er",
+   0.00431
+  ],
+  [
+   "De",
+   "står",
+   0.00431
+  ],
+  [
+   "Vi",
+   "bygger",
+   0.00431
+  ],
+  [
+   "Våren",
+   "kommer",
+   0.00431
+  ],
+  [
+   "Blomstene",
+   "begynner",
+   0.00431
+  ],
+  [
+   "Vi",
+   "bader",
+   0.00431
+  ],
+  [
+   "De",
+   "griller",
+   0.00431
+  ],
+  [
+   "Han",
+   "fisker",
+   0.00431
+  ],
+  [
+   "Vi",
+   "plukker",
+   0.00431
+  ],
+  [
+   "Høsten",
+   "er",
+   0.00431
+  ],
+  [
+   "Bladene",
+   "faller",
+   0.00431
+  ],
+  [
+   "Vi",
+   "tenner",
+   0.00431
+  ],
+  [
+   "Julen",
+   "er",
+   0.00431
+  ],
+  [
+   "Nyttårsaften",
+   "er",
+   0.00431
+  ],
+  [
+   "Han",
+   "fikk",
+   0.00431
+  ],
+  [
+   "Hun",
+   "ønsker",
+   0.00431
+  ],
+  [
+   "Vi",
+   "baker",
+   0.00431
+  ],
+  [
+   "De",
+   "pynter",
+   0.00431
+  ],
+  [
+   "Maten",
+   "smaker",
+   0.00431
+  ],
+  [
+   "Vi",
+   "lager",
+   0.00431
+  ],
+  [
+   "Hun",
+   "baker",
+   0.00431
+  ],
+  [
+   "Han",
+   "steker",
+   0.00431
+  ],
+  [
+   "Vi",
+   "koker",
+   0.00431
+  ],
+  [
+   "De",
+   "bestiller",
+   0.00431
+  ],
+  [
+   "Smørbrødet",
+   "har",
+   0.00431
+  ],
+  [
+   "Salaten",
+   "er",
+   0.00431
+  ],
+  [
+   "Frokosten",
+   "er",
+   0.00431
+  ],
+  [
+   "Jeg",
+   "går",
+   0.00431
+  ],
+  [
+   "De",
+   "våkner",
+   0.00431
+  ],
+  [
+   "Vi",
+   "pusser",
+   0.00431
+  ],
+  [
+   "Vi",
+   "rydder",
+   0.00431
+  ],
+  [
+   "De",
+   "vasker",
+   0.00431
+  ],
+  [
+   "Oppvaskmaskinen",
+   "er",
+   0.00431
+  ],
+  [
+   "Vi",
+   "støvsuger",
+   0.00431
+  ],
+  [
+   "Han",
+   "klipper",
+   0.00431
+  ],
+  [
+   "Hun",
+   "vanner",
+   0.00431
+  ],
+  [
+   "Vi",
+   "maler",
+   0.00431
+  ],
+  [
+   "De",
+   "reparerer",
+   0.00431
+  ],
+  [
+   "Bilen",
+   "trenger",
+   0.00431
+  ],
+  [
+   "Vi",
+   "fyller",
+   0.00431
+  ],
+  [
+   "Dekkene",
+   "er",
+   0.00431
+  ],
+  [
+   "Han",
+   "vasker",
+   0.00431
+  ],
+  [
+   "Jeg",
+   "gleder",
+   0.00431
+  ],
+  [
+   "Hotellet",
+   "ligger",
+   0.00431
+  ],
+  [
+   "De",
+   "besøker",
+   0.00431
+  ],
+  [
+   "Familien",
+   "reiste",
+   0.00431
+  ],
+  [
+   "Læreren",
+   "forklarte",
+   0.00431
+  ],
+  [
+   "Butikken",
+   "stenger",
+   0.00431
+  ],
+  [
+   "Vi",
+   "feiret",
+   0.00431
+  ],
+  [
+   "Toget",
+   "ankom",
+   0.00431
+  ],
+  [
+   "Restauranten",
+   "serverer",
+   0.00431
+  ],
+  [
+   "Været",
+   "skifter",
+   0.00431
+  ],
+  [
+   "Kommunen",
+   "har",
+   0.00431
+  ],
+  [
+   "Elevene",
+   "hadde",
+   0.00431
+  ],
+  [
+   "Biblioteket",
+   "har",
+   0.00431
+  ],
+  [
+   "Naboen",
+   "inviterte",
+   0.00431
+  ],
+  [
+   "Orkesteret",
+   "øvde",
+   0.00431
+  ],
+  [
+   "Ungdommene",
+   "arrangerte",
+   0.00431
+  ],
+  [
+   "Legene",
+   "anbefaler",
+   0.00431
+  ],
+  [
+   "Flyet",
+   "til",
+   0.00431
+  ],
+  [
+   "Politiet",
+   "etterforsker",
+   0.00431
+  ],
+  [
+   "Brannvesenet",
+   "kom",
+   0.00431
+  ]
+ ],
+ "enders": [
+  [
+   "norge",
+   0.027295
+  ],
+  [
+   "dag",
+   0.014888
+  ],
+  [
+   "du",
+   0.012407
+  ],
+  [
+   "landet",
+   0.012407
+  ],
+  [
+   "stor",
+   0.009926
+  ],
+  [
+   "år",
+   0.009926
+  ],
+  [
+   "samfunnet",
+   0.009926
+  ],
+  [
+   "ute",
+   0.007444
+  ],
+  [
+   "jobb",
+   0.007444
+  ],
+  [
+   "nå",
+   0.007444
+  ],
+  [
+   "hagen",
+   0.007444
+  ],
+  [
+   "is",
+   0.007444
+  ],
+  [
+   "god",
+   0.007444
+  ],
+  [
+   "sent",
+   0.007444
+  ],
+  [
+   "vannet",
+   0.007444
+  ],
+  [
+   "godt",
+   0.007444
+  ],
+  [
+   "sammen",
+   0.007444
+  ],
+  [
+   "vinteren",
+   0.007444
+  ],
+  [
+   "uke",
+   0.007444
+  ],
+  [
+   "dyr",
+   0.007444
+  ],
+  [
+   "kysten",
+   0.007444
+  ],
+  [
+   "byene",
+   0.007444
+  ],
+  [
+   "fremover",
+   0.007444
+  ],
+  [
+   "årene",
+   0.007444
+  ],
+  [
+   "verden",
+   0.007444
+  ],
+  [
+   "tiårene",
+   0.007444
+  ],
+  [
+   "samfunn",
+   0.007444
+  ],
+  [
+   "skolen",
+   0.004963
+  ],
+  [
+   "mat",
+   0.004963
+  ],
+  [
+   "bordet",
+   0.004963
+  ],
+  [
+   "rød",
+   0.004963
+  ],
+  [
+   "kaffe",
+   0.004963
+  ],
+  [
+   "vinter",
+   0.004963
+  ],
+  [
+   "oslo",
+   0.004963
+  ],
+  [
+   "snill",
+   0.004963
+  ],
+  [
+   "lang",
+   0.004963
+  ],
+  [
+   "blå",
+   0.004963
+  ],
+  [
+   "høyt",
+   0.004963
+  ],
+  [
+   "kald",
+   0.004963
+  ],
+  [
+   "varm",
+   0.004963
+  ],
+  [
+   "ny",
+   0.004963
+  ],
+  [
+   "full",
+   0.004963
+  ],
+  [
+   "skogen",
+   0.004963
+  ],
+  [
+   "sommer",
+   0.004963
+  ],
+  [
+   "middag",
+   0.004963
+  ],
+  [
+   "kveld",
+   0.004963
+  ],
+  [
+   "fjellet",
+   0.004963
+  ],
+  [
+   "sommeren",
+   0.004963
+  ],
+  [
+   "året",
+   0.004963
+  ],
+  [
+   "uken",
+   0.004963
+  ],
+  [
+   "høst",
+   0.004963
+  ],
+  [
+   "utvikling",
+   0.004963
+  ],
+  [
+   "fjellene",
+   0.004963
+  ],
+  [
+   "tempo",
+   0.004963
+  ],
+  [
+   "rettssystemet",
+   0.004963
+  ],
+  [
+   "arbeidslivet",
+   0.004963
+  ],
+  [
+   "havområdene",
+   0.004963
+  ],
+  [
+   "retningslinjer",
+   0.004963
+  ],
+  [
+   "pølse",
+   0.002481
+  ],
+  [
+   "lese",
+   0.002481
+  ],
+  [
+   "sofaen",
+   0.002481
+  ],
+  [
+   "parken",
+   0.002481
+  ],
+  [
+   "bror",
+   0.002481
+  ],
+  [
+   "søster",
+   0.002481
+  ],
+  [
+   "melk",
+   0.002481
+  ],
+  [
+   "sengen",
+   0.002481
+  ],
+  [
+   "hvitt",
+   0.002481
+  ],
+  [
+   "lukket",
+   0.002481
+  ],
+  [
+   "film",
+   0.002481
+  ],
+  [
+   "sang",
+   0.002481
+  ],
+  [
+   "fotball",
+   0.002481
+  ],
+  [
+   "hund",
+   0.002481
+  ],
+  [
+   "svart",
+   0.002481
+  ],
+  [
+   "bok",
+   0.002481
+  ],
+  [
+   "fem",
+   0.002481
+  ],
+  [
+   "skinner",
+   0.002481
+  ],
+  [
+   "hjemme",
+   0.002481
+  ],
+  [
+   "bussen",
+   0.002481
+  ],
+  [
+   "sulten",
+   0.002481
+  ],
+  [
+   "tørst",
+   0.002481
+  ],
+  [
+   "tidlig",
+   0.002481
+  ],
+  [
+   "ost",
+   0.002481
+  ],
+  [
+   "fugl",
+   0.002481
+  ],
+  [
+   "barn",
+   0.002481
+  ],
+  [
+   "katt",
+   0.002481
+  ],
+  [
+   "byen",
+   0.002481
+  ],
+  [
+   "brød",
+   0.002481
+  ],
+  [
+   "te",
+   0.002481
+  ],
+  [
+   "bra",
+   0.002481
+  ],
+  [
+   "vær",
+   0.002481
+  ],
+  [
+   "glad",
+   0.002481
+  ],
+  [
+   "venner",
+   0.002481
+  ],
+  [
+   "ikke",
+   0.002481
+  ],
+  [
+   "grønn",
+   0.002481
+  ],
+  [
+   "lite",
+   0.002481
+  ],
+  [
+   "gul",
+   0.002481
+  ],
+  [
+   "mørk",
+   0.002481
+  ],
+  [
+   "hvit",
+   0.002481
+  ],
+  [
+   "tungt",
+   0.002481
+  ],
+  [
+   "stille",
+   0.002481
+  ],
+  [
+   "kort",
+   0.002481
+  ],
+  [
+   "fin",
+   0.002481
+  ],
+  [
+   "bred",
+   0.002481
+  ],
+  [
+   "dyp",
+   0.002481
+  ],
+  [
+   "grønt",
+   0.002481
+  ],
+  [
+   "søtt",
+   0.002481
+  ],
+  [
+   "ferskt",
+   0.002481
+  ],
+  [
+   "stort",
+   0.002481
+  ],
+  [
+   "liten",
+   0.002481
+  ],
+  [
+   "rask",
+   0.002481
+  ],
+  [
+   "fort",
+   0.002481
+  ],
+  [
+   "bilde",
+   0.002481
+  ],
+  [
+   "ring",
+   0.002481
+  ],
+  [
+   "tid",
+   0.002481
+  ],
+  [
+   "meg",
+   0.002481
+  ],
+  [
+   "klar",
+   0.002481
+  ],
+  [
+   "gå",
+   0.002481
+  ],
+  [
+   "morgen",
+   0.002481
+  ],
+  [
+   "sju",
+   0.002481
+  ],
+  [
+   "kontor",
+   0.002481
+  ],
+  [
+   "barnehagen",
+   0.002481
+  ],
+  [
+   "rex",
+   0.002481
+  ],
+  [
+   "sove",
+   0.002481
+  ],
+  [
+   "hyllen",
+   0.002481
+  ],
+  [
+   "butikken",
+   0.002481
+  ],
+  [
+   "kvelden",
+   0.002481
+  ],
+  [
+   "frokost",
+   0.002481
+  ],
+  [
+   "lærer",
+   0.002481
+  ],
+  [
+   "lege",
+   0.002481
+  ],
+  [
+   "tromsø",
+   0.002481
+  ],
+  [
+   "kakene",
+   0.002481
+  ],
+  [
+   "historier",
+   0.002481
+  ],
+  [
+   "katter",
+   0.002481
+  ],
+  [
+   "hus",
+   0.002481
+  ],
+  [
+   "by",
+   0.002481
+  ],
+  [
+   "elever",
+   0.002481
+  ],
+  [
+   "tirsdager",
+   0.002481
+  ],
+  [
+   "friminuttet",
+   0.002481
+  ],
+  [
+   "bilder",
+   0.002481
+  ],
+  [
+   "stil",
+   0.002481
+  ],
+  [
+   "kor",
+   0.002481
+  ],
+  [
+   "ballen",
+   0.002481
+  ],
+  [
+   "mus",
+   0.002481
+  ],
+  [
+   "treet",
+   0.002481
+  ],
+  [
+   "elven",
+   0.002481
+  ],
+  [
+   "natten",
+   0.002481
+  ],
+  [
+   "paraply",
+   0.002481
+  ],
+  [
+   "jakken",
+   0.002481
+  ],
+  [
+   "varmt",
+   0.002481
+  ],
+  [
+   "skøyter",
+   0.002481
+  ],
+  [
+   "ski",
+   0.002481
+  ],
+  [
+   "snowboard",
+   0.002481
+  ],
+  [
+   "snømann",
+   0.002481
+  ],
+  [
+   "snøen",
+   0.002481
+  ],
+  [
+   "snart",
+   0.002481
+  ],
+  [
+   "spire",
+   0.002481
+  ],
+  [
+   "sjøen",
+   0.002481
+  ],
+  [
+   "trærne",
+   0.002481
+  ],
+  [
+   "adventstiden",
+   0.002481
+  ],
+  [
+   "høytid",
+   0.002481
+  ],
+  [
+   "familien",
+   0.002481
+  ],
+  [
+   "mars",
+   0.002481
+  ],
+  [
+   "gave",
+   0.002481
+  ],
+  [
+   "jul",
+   0.002481
+  ],
+  [
+   "desember",
+   0.002481
+  ],
+  [
+   "kveldsmat",
+   0.002481
+  ],
+  [
+   "sjokoladekake",
+   0.002481
+  ],
+  [
+   "grønnsaker",
+   0.002481
+  ],
+  [
+   "restaurant",
+   0.002481
+  ],
+  [
+   "skinke",
+   0.002481
+  ],
+  [
+   "måltidet",
+   0.002481
+  ],
+  [
+   "ti",
+   0.002481
+  ],
+  [
+   "morgenen",
+   0.002481
+  ],
+  [
+   "dagen",
+   0.002481
+  ],
+  [
+   "trening",
+   0.002481
+  ],
+  [
+   "sover",
+   0.002481
+  ],
+  [
+   "vårt",
+   0.002481
+  ],
+  [
+   "lørdag",
+   0.002481
+  ],
+  [
+   "stuen",
+   0.002481
+  ],
+  [
+   "blomstene",
+   0.002481
+  ],
+  [
+   "blått",
+   0.002481
+  ],
+  [
+   "huset",
+   0.002481
+  ],
+  [
+   "olje",
+   0.002481
+  ],
+  [
+   "stasjonen",
+   0.002481
+  ],
+  [
+   "gamle",
+   0.002481
+  ],
+  [
+   "ferien",
+   0.002481
+  ],
+  [
+   "spania",
+   0.002481
+  ],
+  [
+   "stranden",
+   0.002481
+  ],
+  [
+   "gallerier",
+   0.002481
+  ],
+  [
+   "høsten",
+   0.002481
+  ],
+  [
+   "svømmehall",
+   0.002481
+  ],
+  [
+   "låne",
+   0.002481
+  ],
+  [
+   "helgen",
+   0.002481
+  ],
+  [
+   "uker",
+   0.002481
+  ],
+  [
+   "musikkfestival",
+   0.002481
+  ],
+  [
+   "tåke",
+   0.002481
+  ],
+  [
+   "nabolaget",
+   0.002481
+  ],
+  [
+   "stedet",
+   0.002481
+  ],
+  [
+   "utstyr",
+   0.002481
+  ],
+  [
+   "mål",
+   0.002481
+  ],
+  [
+   "rekord",
+   0.002481
+  ],
+  [
+   "galleriet",
+   0.002481
+  ],
+  [
+   "avisene",
+   0.002481
+  ],
+  [
+   "dager",
+   0.002481
+  ],
+  [
+   "vår",
+   0.002481
+  ],
+  [
+   "vikingene",
+   0.002481
+  ],
+  [
+   "eksamen",
+   0.002481
+  ],
+  [
+   "studier",
+   0.002481
+  ],
+  [
+   "helsen",
+   0.002481
+  ],
+  [
+   "turismen",
+   0.002481
+  ],
+  [
+   "sikkert",
+   0.002481
+  ],
+  [
+   "tiden",
+   0.002481
+  ],
+  [
+   "siste",
+   0.002481
+  ],
+  [
+   "statsbudsjett",
+   0.002481
+  ],
+  [
+   "personvern",
+   0.002481
+  ],
+  [
+   "gang",
+   0.002481
+  ],
+  [
+   "miljøpolitikk",
+   0.002481
+  ],
+  [
+   "september",
+   0.002481
+  ],
+  [
+   "rådhuset",
+   0.002481
+  ],
+  [
+   "nød",
+   0.002481
+  ],
+  [
+   "hjelpearbeid",
+   0.002481
+  ],
+  [
+   "skjønnhet",
+   0.002481
+  ],
+  [
+   "turistattraksjon",
+   0.002481
+  ],
+  [
+   "nord",
+   0.002481
+  ],
+  [
+   "kilometer",
+   0.002481
+  ],
+  [
+   "mai",
+   0.002481
+  ],
+  [
+   "tradisjonen",
+   0.002481
+  ],
+  [
+   "verdensarvlisten",
+   0.002481
+  ],
+  [
+   "skulpturpark",
+   0.002481
+  ],
+  [
+   "landemerke",
+   0.002481
+  ],
+  [
+   "landskap",
+   0.002481
+  ],
+  [
+   "norskekysten",
+   0.002481
+  ],
+  [
+   "turmål",
+   0.002481
+  ],
+  [
+   "nasjonalpark",
+   0.002481
+  ],
+  [
+   "europa",
+   0.002481
+  ],
+  [
+   "fjellområdene",
+   0.002481
+  ],
+  [
+   "elver",
+   0.002481
+  ],
+  [
+   "fiskerinæringen",
+   0.002481
+  ],
+  [
+   "ressurser",
+   0.002481
+  ],
+  [
+   "byer",
+   0.002481
+  ],
+  [
+   "fastlandet",
+   0.002481
+  ],
+  [
+   "rundt",
+   0.002481
+  ],
+  [
+   "november",
+   0.002481
+  ],
+  [
+   "timen",
+   0.002481
+  ],
+  [
+   "veier",
+   0.002481
+  ],
+  [
+   "kiwi",
+   0.002481
+  ],
+  [
+   "tradisjon",
+   0.002481
+  ],
+  [
+   "til",
+   0.002481
+  ],
+  [
+   "friluftsliv",
+   0.002481
+  ],
+  [
+   "fritidsaktiviteten",
+   0.002481
+  ],
+  [
+   "naturen",
+   0.002481
+  ],
+  [
+   "samarbeid",
+   0.002481
+  ],
+  [
+   "tidsskrift",
+   0.002481
+  ],
+  [
+   "grad",
+   0.002481
+  ],
+  [
+   "debatten",
+   0.002481
+  ],
+  [
+   "modernisering",
+   0.002481
+  ],
+  [
+   "teknologi",
+   0.002481
+  ],
+  [
+   "statsbudsjettet",
+   0.002481
+  ],
+  [
+   "boliger",
+   0.002481
+  ],
+  [
+   "infrastruktur",
+   0.002481
+  ],
+  [
+   "drift",
+   0.002481
+  ],
+  [
+   "eksportnæringer",
+   0.002481
+  ],
+  [
+   "bioøkonomien",
+   0.002481
+  ],
+  [
+   "klima",
+   0.002481
+  ],
+  [
+   "distriktene",
+   0.002481
+  ],
+  [
+   "næringsutvikling",
+   0.002481
+  ],
+  [
+   "eksport",
+   0.002481
+  ],
+  [
+   "fredsarbeid",
+   0.002481
+  ],
+  [
+   "forpliktelser",
+   0.002481
+  ],
+  [
+   "utviklingsland",
+   0.002481
+  ],
+  [
+   "konflikthåndtering",
+   0.002481
+  ],
+  [
+   "pause",
+   0.002481
+  ],
+  [
+   "landene",
+   0.002481
+  ],
+  [
+   "utviklingspolitikken",
+   0.002481
+  ],
+  [
+   "utslipp",
+   0.002481
+  ],
+  [
+   "miljøproblem",
+   0.002481
+  ],
+  [
+   "klimaendringer",
+   0.002481
+  ],
+  [
+   "klimastrategien",
+   0.002481
+  ],
+  [
+   "klimagassutslipp",
+   0.002481
+  ],
+  [
+   "forventet",
+   0.002481
+  ],
+  [
+   "data",
+   0.002481
+  ],
+  [
+   "myndighetene",
+   0.002481
+  ],
+  [
+   "landegrensene",
+   0.002481
+  ],
+  [
+   "universitetene",
+   0.002481
+  ],
+  [
+   "siden",
+   0.002481
+  ],
+  [
+   "arbeidsliv",
+   0.002481
+  ],
+  [
+   "automatisering",
+   0.002481
+  ],
+  [
+   "innbyggere",
+   0.002481
+  ],
+  [
+   "sikt",
+   0.002481
+  ],
+  [
+   "demokratiet",
+   0.002481
+  ],
+  [
+   "regulering",
+   0.002481
+  ],
+  [
+   "pandemien",
+   0.002481
+  ],
+  [
+   "nordmenn",
+   0.002481
+  ],
+  [
+   "debatt",
+   0.002481
+  ],
+  [
+   "helsevesenet",
+   0.002481
+  ],
+  [
+   "spesialisthelsetjenesten",
+   0.002481
+  ],
+  [
+   "sykdommer",
+   0.002481
+  ],
+  [
+   "rettigheter",
+   0.002481
+  ],
+  [
+   "grunnloven",
+   0.002481
+  ],
+  [
+   "lovgivning",
+   0.002481
+  ]
+ ],
+ "vocab_size": 1340,
+ "tier_counts": {
+  "1": 188,
+  "2": 192,
+  "3": 324,
+  "4": 373,
+  "5": 263
+ },
+ "word_tiers": {
+  "adventstiden": 2,
+  "akademisk": 4,
+  "aksjer": 5,
+  "aktivitet": 4,
+  "aktører": 5,
+  "akutt": 5,
+  "alle": 4,
+  "alltid": 3,
+  "alt": 5,
+  "alvorlige": 5,
+  "ambisiøs": 4,
+  "ambisiøst": 5,
+  "analyse": 5,
+  "anbefaler": 3,
+  "anerkjennelse": 4,
+  "anerkjent": 4,
+  "ankom": 3,
+  "anmeldelser": 3,
+  "ansvaret": 5,
+  "antall": 5,
+  "appelsiner": 3,
+  "arbeider": 5,
+  "arbeidet": 3,
+  "arbeidskraft": 4,
+  "arbeidsledigheten": 3,
+  "arbeidsliv": 4,
+  "arbeidslivet": 4,
+  "arbeidsmarkedet": 4,
+  "arbeidsmiljøloven": 5,
+  "arbeidstilsynets": 5,
+  "arkeologiske": 4,
+  "arkitektfirmaene": 4,
+  "arkitekturen": 4,
+  "arrangerte": 3,
+  "artister": 4,
+  "artsmangfoldet": 4,
+  "at": 3,
+  "august": 3,
+  "automatisering": 4,
+  "av": 3,
+  "avanserte": 4,
+  "avdekker": 4,
+  "avdekket": 5,
+  "avfallshåndteringen": 4,
+  "avgjørende": 4,
+  "avinor": 5,
+  "avisene": 3,
+  "avtale": 4,
+  "bader": 2,
+  "bak": 2,
+  "baker": 2,
+  "balansere": 5,
+  "balanserer": 4,
+  "ballen": 1,
+  "banksystemet": 5,
+  "bare": 3,
+  "barn": 1,
+  "barna": 1,
+  "barnehagen": 2,
+  "barneombudet": 5,
+  "barnevernet": 4,
+  "barns": 4,
+  "bedre": 4,
+  "befolkning": 5,
+  "befolkningen": 4,
+  "befolkningsgrupper": 5,
+  "befolkningsveksten": 4,
+  "begrenset": 5,
+  "begynner": 2,
+  "behandler": 5,
+  "behandlet": 5,
+  "behandling": 4,
+  "behov": 4,
+  "bekjempe": 5,
+  "bensin": 2,
+  "beredskap": 5,
+  "beredskapen": 5,
+  "beregnet": 5,
+  "bergen": 2,
+  "beskyttelse": 5,
+  "beskytter": 4,
+  "beskyttet": 4,
+  "beste": 2,
+  "bestefar": 2,
+  "bestemor": 2,
+  "bestiller": 2,
+  "besøkende": 3,
+  "besøker": 2,
+  "betraktelig": 4,
+  "betydelig": 4,
+  "betydningen": 4,
+  "bevare": 5,
+  "biblioteket": 3,
+  "bidrar": 4,
+  "bil": 1,
+  "bilde": 1,
+  "bilder": 2,
+  "bilen": 1,
+  "biologiske": 5,
+  "bioøkonomien": 4,
+  "bistandsarbeidet": 4,
+  "bistår": 5,
+  "bladene": 2,
+  "blant": 4,
+  "ble": 3,
+  "blitt": 4,
+  "blomsten": 1,
+  "blomstene": 2,
+  "blå": 1,
+  "blåser": 2,
+  "blått": 2,
+  "bok": 1,
+  "boken": 1,
+  "boliger": 3,
+  "boligmarkedet": 4,
+  "boligområdet": 5,
+  "bomstasjoner": 3,
+  "bor": 1,
+  "bordet": 1,
+  "borgere": 5,
+  "bosetting": 4,
+  "bra": 1,
+  "brannvesenet": 3,
+  "bransjer": 4,
+  "bred": 1,
+  "bredt": 4,
+  "broen": 1,
+  "broer": 3,
+  "bror": 1,
+  "broren": 2,
+  "brudd": 5,
+  "bruk": 5,
+  "brukerombudet": 5,
+  "bryggen": 3,
+  "brød": 1,
+  "brødet": 1,
+  "brøytebilene": 3,
+  "bunadene": 3,
+  "bursdagen": 2,
+  "bussen": 1,
+  "butikken": 2,
+  "by": 2,
+  "byen": 1,
+  "byene": 3,
+  "byer": 3,
+  "byggebransjen": 4,
+  "bygger": 2,
+  "bygges": 3,
+  "bygget": 3,
+  "bygninger": 4,
+  "byutvikling": 5,
+  "bålmat": 3,
+  "båten": 1,
+  "bær": 2,
+  "bærekraft": 4,
+  "bærekraftig": 3,
+  "bærekraftige": 5,
+  "bærekraftsmålene": 4,
+  "bøker": 2,
+  "dag": 1,
+  "dagen": 1,
+  "dager": 3,
+  "dagligvarebransjen": 5,
+  "dagligvarer": 3,
+  "danner": 4,
+  "danser": 1,
+  "data": 4,
+  "datatilsynet": 5,
+  "de": 1,
+  "debatt": 4,
+  "debatten": 4,
+  "dekkene": 2,
+  "dekker": 3,
+  "del": 3,
+  "demokratiet": 4,
+  "den": 2,
+  "denne": 4,
+  "departementets": 5,
+  "desember": 2,
+  "design": 4,
+  "designmiljøet": 4,
+  "det": 1,
+  "digitaliseringen": 4,
+  "digitaliseringsprosjekter": 5,
+  "diplomatiet": 4,
+  "direktoratet": 5,
+  "diskriminering": 5,
+  "diskrimineringsombudet": 5,
+  "diskuterer": 3,
+  "diskuterte": 4,
+  "distriktene": 4,
+  "distriktspolitikken": 4,
+  "diversifisert": 5,
+  "dokumenterer": 5,
+  "domstolene": 4,
+  "dramatiske": 3,
+  "drift": 4,
+  "drikker": 1,
+  "du": 1,
+  "dusj": 2,
+  "dyp": 1,
+  "dyr": 3,
+  "dyreliv": 4,
+  "dyrevelferd": 5,
+  "døgnet": 3,
+  "døren": 1,
+  "effektive": 4,
+  "eiendom": 5,
+  "eiendomsutviklerne": 5,
+  "eksamen": 3,
+  "eksisterende": 4,
+  "eksport": 4,
+  "eksporterer": 4,
+  "eksportnæringer": 4,
+  "ekstra": 3,
+  "ekstremvær": 5,
+  "elbiler": 3,
+  "eldreomsorgen": 4,
+  "elektrifiseringen": 4,
+  "elevene": 3,
+  "elever": 2,
+  "elgen": 3,
+  "elsker": 3,
+  "elven": 1,
+  "elver": 3,
+  "en": 1,
+  "endre": 4,
+  "endrer": 4,
+  "endret": 4,
+  "energi": 4,
+  "energieffektivisering": 4,
+  "engasjerer": 4,
+  "enklere": 3,
+  "enn": 4,
+  "enormt": 4,
+  "eplet": 1,
+  "epoker": 4,
+  "er": 1,
+  "et": 1,
+  "etiske": 5,
+  "etter": 2,
+  "etterforsker": 3,
+  "etterlevelse": 5,
+  "eu": 4,
+  "europa": 3,
+  "fagforeningene": 4,
+  "fallende": 5,
+  "faller": 2,
+  "familien": 2,
+  "far": 1,
+  "faren": 1,
+  "fartgrensen": 3,
+  "fastlandet": 3,
+  "feirer": 2,
+  "feires": 3,
+  "feiret": 3,
+  "fem": 1,
+  "fenomen": 3,
+  "fergene": 3,
+  "ferien": 2,
+  "ferskt": 1,
+  "festivalen": 3,
+  "fikk": 2,
+  "film": 1,
+  "filmbransjen": 4,
+  "filmen": 3,
+  "fin": 1,
+  "finansielle": 5,
+  "finanstilsynet": 5,
+  "fine": 2,
+  "finner": 3,
+  "finnes": 3,
+  "fint": 1,
+  "fisk": 2,
+  "fisken": 1,
+  "fisker": 2,
+  "fiskerinæringen": 3,
+  "fjellene": 3,
+  "fjellet": 1,
+  "fjellområdene": 3,
+  "fjor": 5,
+  "fjorden": 3,
+  "fjordene": 3,
+  "flagg": 3,
+  "flere": 3,
+  "flertall": 5,
+  "fly": 2,
+  "flyet": 1,
+  "flyplassinfrastrukturen": 5,
+  "flyrutene": 3,
+  "flytter": 4,
+  "fokuserer": 4,
+  "folkehelsen": 4,
+  "folkehelserapporten": 5,
+  "for": 3,
+  "forbedre": 5,
+  "forbedret": 4,
+  "forbereder": 3,
+  "forbinde": 5,
+  "forbinder": 3,
+  "forbrukere": 5,
+  "forbrukerrettigheter": 5,
+  "forbrukerrådet": 5,
+  "fordeler": 5,
+  "forenkle": 5,
+  "forfatteren": 3,
+  "forklarte": 3,
+  "formidler": 4,
+  "fornybar": 4,
+  "fornyet": 4,
+  "forpliktelser": 4,
+  "forrige": 3,
+  "forskerne": 4,
+  "forskjeller": 5,
+  "forskjellige": 3,
+  "forskning": 4,
+  "forskningen": 3,
+  "forskningsetiske": 5,
+  "forskningsfartøyene": 4,
+  "forskningsinstituttene": 4,
+  "forskningsprosjekter": 5,
+  "forskningsråd": 5,
+  "forskrifter": 5,
+  "forståelsen": 4,
+  "forsvarsbudsjettet": 4,
+  "fort": 1,
+  "forteller": 2,
+  "fortidens": 4,
+  "fortløpende": 5,
+  "fortsatt": 3,
+  "fortsetter": 4,
+  "forurensning": 5,
+  "forurensningen": 4,
+  "forvalter": 5,
+  "forvaltning": 4,
+  "forvaltningen": 5,
+  "forvaltningsnivået": 5,
+  "forvaltningsplaner": 5,
+  "forvaltningsreformen": 5,
+  "forventes": 4,
+  "forventet": 4,
+  "fostret": 4,
+  "fotball": 1,
+  "fotballaget": 3,
+  "fra": 2,
+  "fredsarbeid": 4,
+  "fredsforhandlingene": 4,
+  "frem": 5,
+  "fremme": 5,
+  "fremmer": 5,
+  "fremover": 4,
+  "fremtidens": 4,
+  "fremtidig": 5,
+  "fri": 3,
+  "frihet": 4,
+  "friluftsliv": 3,
+  "friminuttet": 2,
+  "frisk": 2,
+  "fritidsaktiviteten": 3,
+  "frivillig": 4,
+  "frivillige": 3,
+  "frokost": 2,
+  "frokosten": 2,
+  "fugl": 1,
+  "fuglen": 2,
+  "full": 1,
+  "funn": 4,
+  "fylkeskommunen": 5,
+  "fyller": 2,
+  "fått": 3,
+  "færre": 5,
+  "følge": 4,
+  "før": 2,
+  "fører": 4,
+  "ga": 3,
+  "galdhøpiggen": 3,
+  "gallerier": 2,
+  "galleriet": 3,
+  "gamle": 2,
+  "gang": 3,
+  "ganger": 2,
+  "ganske": 2,
+  "gass": 3,
+  "gastronomien": 4,
+  "gaten": 1,
+  "gave": 2,
+  "generelt": 4,
+  "geografisk": 5,
+  "geologisk": 4,
+  "gir": 3,
+  "gitar": 2,
+  "gjennom": 3,
+  "gjennomfører": 5,
+  "gjennomføres": 5,
+  "gjennomførte": 5,
+  "gjennomgikk": 4,
+  "gjennomgår": 4,
+  "gjenopptatt": 4,
+  "gjenspeiler": 4,
+  "gjenvinningssystemet": 4,
+  "gjør": 1,
+  "glad": 1,
+  "gleder": 2,
+  "globalt": 4,
+  "god": 1,
+  "gode": 3,
+  "godt": 1,
+  "grad": 4,
+  "gradvis": 4,
+  "grensekryssende": 5,
+  "gresset": 2,
+  "griller": 2,
+  "grillfest": 3,
+  "grundig": 5,
+  "grunn": 3,
+  "grunnlaget": 4,
+  "grunnleggende": 4,
+  "grunnloven": 4,
+  "grunnlovsendringen": 5,
+  "grunnmuren": 4,
+  "grønn": 1,
+  "grønnere": 4,
+  "grønnsaker": 2,
+  "grønt": 1,
+  "gul": 1,
+  "gutten": 1,
+  "gym": 2,
+  "gå": 1,
+  "går": 1,
+  "gått": 3,
+  "ha": 5,
+  "hadde": 3,
+  "hagen": 1,
+  "han": 1,
+  "handelsavtalen": 4,
+  "handelsbalansen": 5,
+  "handler": 2,
+  "handlingsplanen": 5,
+  "har": 1,
+  "hardangervidda": 3,
+  "hardt": 3,
+  "havbruk": 4,
+  "havbruksindustrien": 4,
+  "havene": 4,
+  "havområdene": 4,
+  "havressursene": 4,
+  "havørnen": 3,
+  "hekker": 3,
+  "hele": 3,
+  "helgen": 3,
+  "helse": 4,
+  "helsedirektoratets": 5,
+  "helsehjelp": 4,
+  "helsen": 3,
+  "helsevesenet": 4,
+  "helt": 4,
+  "hendelser": 5,
+  "hensynet": 5,
+  "heter": 1,
+  "historier": 2,
+  "historiske": 4,
+  "hjelpe": 1,
+  "hjelpearbeid": 3,
+  "hjelper": 3,
+  "hjem": 1,
+  "hjemme": 1,
+  "holder": 3,
+  "holdt": 3,
+  "hopper": 1,
+  "hotellet": 2,
+  "hovedveiene": 5,
+  "hun": 1,
+  "hund": 1,
+  "hunden": 1,
+  "hundre": 4,
+  "hundretusenvis": 4,
+  "hurtigruten": 3,
+  "hus": 2,
+  "huset": 1,
+  "hva": 1,
+  "hver": 2,
+  "hvert": 3,
+  "hvit": 1,
+  "hvitt": 1,
+  "hvor": 1,
+  "hyllen": 2,
+  "hytta": 3,
+  "hytte": 3,
+  "hører": 3,
+  "høring": 5,
+  "høst": 3,
+  "høsten": 2,
+  "høye": 4,
+  "høyere": 5,
+  "høyeste": 3,
+  "høyt": 1,
+  "høytid": 2,
+  "i": 1,
+  "idrettsorganisasjonene": 4,
+  "ikke": 1,
+  "import": 5,
+  "industri": 3,
+  "informasjon": 5,
+  "informasjonssikkerheten": 4,
+  "infrastruktur": 4,
+  "infrastrukturprosjektet": 5,
+  "inn": 3,
+  "innbrudd": 3,
+  "innbyggere": 4,
+  "inneholder": 5,
+  "innen": 4,
+  "innovasjonspolitikken": 4,
+  "innovasjonsstrategien": 5,
+  "innsats": 4,
+  "innsikt": 4,
+  "innvandringspolitikken": 4,
+  "innvirkning": 5,
+  "inspeksjoner": 5,
+  "institusjoner": 4,
+  "institutt": 5,
+  "integrering": 4,
+  "integreringsarbeidet": 4,
+  "integreringspolitikken": 4,
+  "intelligens": 4,
+  "interesse": 4,
+  "interesser": 5,
+  "internasjonal": 4,
+  "internasjonale": 4,
+  "internasjonalisering": 5,
+  "internasjonalt": 4,
+  "investerer": 4,
+  "investeringene": 4,
+  "inviterte": 3,
+  "is": 1,
+  "isbreen": 3,
+  "isen": 2,
+  "jager": 2,
+  "jakken": 2,
+  "jeg": 1,
+  "jenta": 1,
+  "jernbanedirektoratet": 5,
+  "jernbanen": 3,
+  "jobb": 1,
+  "jobber": 2,
+  "jordbruket": 4,
+  "jostedalsbreen": 3,
+  "jotunheimen": 3,
+  "jul": 2,
+  "julen": 2,
+  "juletreet": 2,
+  "justerte": 5,
+  "kaffe": 1,
+  "kaken": 1,
+  "kakene": 2,
+  "kald": 1,
+  "kaldt": 1,
+  "kampen": 3,
+  "kan": 1,
+  "kansellert": 3,
+  "kapasitetsutfordringer": 4,
+  "kartlegger": 4,
+  "kartlegging": 4,
+  "kartverket": 5,
+  "katt": 1,
+  "katten": 1,
+  "katter": 2,
+  "kilometer": 3,
+  "kiwi": 3,
+  "kjent": 3,
+  "kjøkkenet": 4,
+  "kjønnene": 5,
+  "kjøper": 1,
+  "kjørelysene": 3,
+  "kjører": 1,
+  "klager": 5,
+  "klar": 1,
+  "klassen": 2,
+  "kler": 2,
+  "klima": 3,
+  "klimaendringene": 4,
+  "klimaendringer": 4,
+  "klimaforhandlingene": 4,
+  "klimagassutslipp": 4,
+  "klimamål": 5,
+  "klimastrategien": 4,
+  "klimasystemet": 4,
+  "klipper": 2,
+  "klokken": 1,
+  "klærne": 2,
+  "knyttet": 5,
+  "koker": 2,
+  "kollektivtransport": 5,
+  "kollektivtransporten": 3,
+  "kom": 3,
+  "komiteer": 5,
+  "kommer": 2,
+  "kommunen": 3,
+  "kommunenes": 5,
+  "kommuner": 5,
+  "kommunereformen": 5,
+  "kommunevalget": 3,
+  "kompetanseutvikling": 4,
+  "konferansen": 3,
+  "konflikthåndtering": 4,
+  "konkrete": 5,
+  "konkurransetilsynet": 5,
+  "konkurrerer": 4,
+  "konsekvensutredningen": 5,
+  "konserten": 3,
+  "konsumvarer": 5,
+  "kontor": 2,
+  "kontroll": 5,
+  "koordinerer": 5,
+  "kor": 2,
+  "kors": 3,
+  "kort": 1,
+  "kostnadene": 5,
+  "kraftig": 4,
+  "krav": 4,
+  "krever": 4,
+  "kriminalitet": 5,
+  "kroniske": 5,
+  "kulturbudsjettet": 4,
+  "kulturformål": 5,
+  "kulturliv": 4,
+  "kulturmiljøer": 5,
+  "kulturminner": 5,
+  "kulturminnevernet": 4,
+  "kulturrådet": 5,
+  "kultursektoren": 4,
+  "kunnskap": 4,
+  "kunst": 5,
+  "kunstig": 4,
+  "kunstneren": 3,
+  "kvalifisert": 4,
+  "kvalitetssikringssystemet": 5,
+  "kveld": 2,
+  "kvelden": 2,
+  "kveldsmat": 2,
+  "kvikk": 3,
+  "kysten": 3,
+  "kystverket": 5,
+  "lager": 1,
+  "lagt": 5,
+  "laks": 3,
+  "lampen": 1,
+  "land": 4,
+  "landegrensene": 4,
+  "landemerke": 3,
+  "landene": 4,
+  "landet": 3,
+  "landets": 4,
+  "landskap": 3,
+  "lang": 1,
+  "lange": 4,
+  "langs": 3,
+  "langtidsplanen": 5,
+  "lav": 3,
+  "lege": 2,
+  "legemiddelindustrien": 4,
+  "legene": 3,
+  "legger": 4,
+  "leker": 1,
+  "lengste": 3,
+  "lese": 1,
+  "leser": 1,
+  "lever": 3,
+  "ligger": 2,
+  "liker": 1,
+  "likestilling": 5,
+  "likestillings": 5,
+  "likestillingspolitikken": 4,
+  "lite": 1,
+  "liten": 1,
+  "litteraturen": 4,
+  "livet": 1,
+  "lofoten": 3,
+  "lokale": 4,
+  "london": 3,
+  "lov": 3,
+  "lover": 5,
+  "lovgivning": 4,
+  "lukket": 1,
+  "lunsj": 3,
+  "lys": 2,
+  "låne": 3,
+  "lærer": 2,
+  "læreren": 2,
+  "lærerutdanningen": 4,
+  "løper": 1,
+  "lørdag": 2,
+  "mai": 3,
+  "maler": 1,
+  "mange": 2,
+  "mangel": 4,
+  "mangfoldet": 5,
+  "mangfoldig": 4,
+  "mangler": 5,
+  "markedsforholdene": 5,
+  "mars": 2,
+  "mat": 1,
+  "matematikk": 3,
+  "maten": 1,
+  "matfestivalene": 4,
+  "matproduksjon": 5,
+  "mattilsynet": 5,
+  "mattradisjonen": 4,
+  "med": 2,
+  "medførte": 5,
+  "mediemangfoldet": 4,
+  "medisinsk": 3,
+  "meg": 1,
+  "melk": 1,
+  "melken": 1,
+  "mellom": 4,
+  "men": 3,
+  "mener": 5,
+  "menneskelig": 4,
+  "mennesker": 3,
+  "menneskerettighetene": 4,
+  "mer": 4,
+  "mest": 3,
+  "mesteparten": 3,
+  "meteorologisk": 5,
+  "middag": 1,
+  "midler": 5,
+  "midnattssolen": 3,
+  "miljø": 5,
+  "miljødirektoratet": 5,
+  "miljøpolitikk": 3,
+  "miljøproblem": 4,
+  "miljøvernorganisasjonene": 4,
+  "min": 2,
+  "mineralforekomster": 4,
+  "minoritetsspråkene": 4,
+  "minst": 3,
+  "minutter": 3,
+  "moderne": 3,
+  "modernisering": 4,
+  "mor": 1,
+  "moren": 1,
+  "morgen": 2,
+  "morgenen": 2,
+  "mosjon": 3,
+  "mot": 5,
+  "motorveiforbindelse": 5,
+  "mottok": 5,
+  "muligheter": 4,
+  "mus": 2,
+  "museene": 4,
+  "museer": 2,
+  "museet": 3,
+  "musikkfestival": 3,
+  "musikkindustrien": 4,
+  "mye": 2,
+  "myndighetene": 4,
+  "mål": 3,
+  "måltidet": 2,
+  "måneden": 5,
+  "månen": 2,
+  "mørk": 1,
+  "mørkt": 2,
+  "møte": 5,
+  "naboen": 2,
+  "nabolaget": 3,
+  "nasjonal": 5,
+  "nasjonalbiblioteket": 5,
+  "nasjonaldag": 3,
+  "nasjonaldagen": 3,
+  "nasjonale": 4,
+  "nasjonalpark": 3,
+  "natten": 1,
+  "natur": 4,
+  "naturen": 3,
+  "navigasjonssikkerhet": 5,
+  "ned": 2,
+  "nedbørsmengder": 5,
+  "nivå": 4,
+  "noen": 3,
+  "nord": 3,
+  "nord-norge": 3,
+  "nordlyset": 3,
+  "nordmenn": 3,
+  "nordområdepolitikken": 4,
+  "norge": 1,
+  "norges": 3,
+  "norsk": 2,
+  "norske": 3,
+  "norskekysten": 3,
+  "november": 3,
+  "ny": 1,
+  "nye": 4,
+  "nytt": 3,
+  "nyttårsaften": 2,
+  "nå": 1,
+  "næringsdrivende": 5,
+  "næringslivet": 4,
+  "næringsutvikling": 4,
+  "nød": 3,
+  "nøkkel": 4,
+  "obligasjoner": 5,
+  "offentlig": 4,
+  "offentlige": 4,
+  "ofte": 3,
+  "og": 2,
+  "olje": 2,
+  "oljefondet": 5,
+  "oljepriser": 5,
+  "om": 2,
+  "omfattende": 5,
+  "omorganisering": 5,
+  "område": 4,
+  "områder": 4,
+  "omsorgstjenestene": 5,
+  "omstiller": 4,
+  "omstilling": 5,
+  "operahuset": 3,
+  "opp": 3,
+  "oppblomstring": 4,
+  "oppdatert": 5,
+  "oppdaterte": 5,
+  "oppdrettsnæringen": 3,
+  "oppfølging": 5,
+  "oppgave": 4,
+  "oppgaven": 3,
+  "oppholdstillatelse": 5,
+  "opplevd": 4,
+  "opplevelser": 4,
+  "opplever": 4,
+  "opplæring": 5,
+  "oppmerksomhet": 4,
+  "opprettholde": 4,
+  "oppvaskmaskinen": 2,
+  "ordføreren": 3,
+  "organisasjonen": 3,
+  "organiseringen": 4,
+  "orkesteret": 3,
+  "oseanografien": 4,
+  "oslo": 1,
+  "oss": 3,
+  "ost": 1,
+  "osten": 1,
+  "over": 3,
+  "overfor": 4,
+  "pandemien": 4,
+  "paraply": 2,
+  "parken": 1,
+  "parkeringen": 3,
+  "partiene": 3,
+  "pasient": 5,
+  "pause": 4,
+  "pen": 1,
+  "pene": 2,
+  "penger": 3,
+  "pensjonssystemet": 4,
+  "pepperkaker": 2,
+  "personer": 5,
+  "personvern": 3,
+  "personvernbrudd": 5,
+  "personvernlovgivningen": 4,
+  "petroleumsindustrien": 4,
+  "petroleumstilsynet": 5,
+  "pizza": 2,
+  "planer": 5,
+  "plass": 4,
+  "plukker": 2,
+  "polarforskningen": 4,
+  "politiet": 3,
+  "politiske": 4,
+  "populær": 3,
+  "populære": 3,
+  "populært": 3,
+  "portefølje": 5,
+  "posisjon": 4,
+  "poteter": 2,
+  "preget": 4,
+  "preikestolen": 3,
+  "presentert": 5,
+  "presenterte": 3,
+  "pressefrihet": 4,
+  "prestisjeprosjekter": 4,
+  "primærhelsetjenesten": 4,
+  "prinsipp": 4,
+  "prioriterer": 4,
+  "prioritert": 4,
+  "prisene": 3,
+  "priser": 4,
+  "prisstabilitet": 5,
+  "privat": 5,
+  "private": 5,
+  "produserer": 5,
+  "programmering": 4,
+  "prosent": 4,
+  "prosjekt": 5,
+  "psykisk": 4,
+  "publikum": 4,
+  "publiserer": 5,
+  "publiseres": 5,
+  "publisert": 3,
+  "publiserte": 4,
+  "pusser": 2,
+  "pynter": 2,
+  "på": 1,
+  "påbudt": 3,
+  "påskeferie": 3,
+  "påsken": 3,
+  "påvirker": 4,
+  "påvirket": 5,
+  "pølse": 1,
+  "rammen": 4,
+  "rammet": 4,
+  "rapporten": 3,
+  "rapportering": 5,
+  "rask": 1,
+  "raskere": 4,
+  "raskt": 3,
+  "redusere": 4,
+  "reform": 4,
+  "reformert": 4,
+  "regelmessig": 5,
+  "regional": 5,
+  "regionale": 5,
+  "regionen": 4,
+  "regjeringen": 3,
+  "regner": 1,
+  "regnet": 1,
+  "regulering": 4,
+  "reguleringsplanen": 5,
+  "reinsdyr": 3,
+  "reisen": 3,
+  "reiser": 2,
+  "reiste": 3,
+  "rekord": 3,
+  "rekordhøyt": 5,
+  "rema": 3,
+  "renten": 3,
+  "reparerer": 2,
+  "repertoar": 4,
+  "representerer": 4,
+  "ressurser": 3,
+  "restaurant": 2,
+  "restauranten": 3,
+  "resultatene": 4,
+  "resultert": 5,
+  "resulterte": 4,
+  "retningslinjer": 5,
+  "rette": 4,
+  "rettighet": 4,
+  "rettigheter": 4,
+  "rettssystemet": 4,
+  "rex": 2,
+  "riksantikvaren": 5,
+  "riksrevisjonen": 5,
+  "ring": 1,
+  "robuste": 5,
+  "rolle": 4,
+  "roman": 3,
+  "romforskningen": 4,
+  "rommet": 2,
+  "rundt": 3,
+  "rydder": 2,
+  "råd": 5,
+  "rådhuset": 3,
+  "råvarer": 4,
+  "rød": 1,
+  "røde": 3,
+  "sakte": 3,
+  "salaten": 2,
+  "saltbilen": 3,
+  "samarbeid": 4,
+  "samarbeider": 4,
+  "sametinget": 4,
+  "samferdselsbudsjettet": 4,
+  "samfunn": 4,
+  "samfunnet": 3,
+  "samfunnsområder": 5,
+  "samfunnssikkerhet": 5,
+  "samfunnsøkonomiske": 5,
+  "samiske": 4,
+  "samle": 5,
+  "samler": 3,
+  "sammen": 1,
+  "sang": 1,
+  "satte": 3,
+  "sees": 3,
+  "seg": 2,
+  "seiler": 3,
+  "sektor": 4,
+  "semesteret": 3,
+  "sendt": 5,
+  "sengen": 1,
+  "sengs": 2,
+  "sent": 1,
+  "sentralbanken": 5,
+  "sentralbyrå": 5,
+  "sentralt": 4,
+  "sentrum": 3,
+  "sentrumsområdet": 5,
+  "september": 3,
+  "ser": 1,
+  "serverer": 3,
+  "setter": 3,
+  "siden": 4,
+  "sikkerhet": 4,
+  "sikkerhetsrådet": 4,
+  "sikkert": 3,
+  "sikre": 4,
+  "sikrer": 4,
+  "sikres": 4,
+  "sikt": 4,
+  "sin": 3,
+  "siste": 2,
+  "sitt": 3,
+  "sitter": 1,
+  "situasjonen": 4,
+  "sivilombudet": 5,
+  "sjokoladekake": 2,
+  "sju": 2,
+  "sjøen": 1,
+  "sjømatnæringen": 4,
+  "skal": 1,
+  "skaper": 4,
+  "skatteetaten": 5,
+  "ski": 2,
+  "skifter": 3,
+  "skiløperen": 3,
+  "skinke": 2,
+  "skinner": 1,
+  "skjer": 4,
+  "skjønnhet": 3,
+  "skogbruket": 4,
+  "skogen": 1,
+  "skogene": 3,
+  "skolen": 1,
+  "skolene": 4,
+  "skriver": 2,
+  "skulpturpark": 3,
+  "skøyter": 2,
+  "smaker": 2,
+  "smugling": 5,
+  "smørbrødet": 2,
+  "snart": 2,
+  "snill": 1,
+  "snowboard": 2,
+  "snøen": 1,
+  "snømann": 2,
+  "snør": 2,
+  "sofaen": 1,
+  "sognefjorden": 3,
+  "sokkel": 5,
+  "sol": 1,
+  "solen": 1,
+  "som": 4,
+  "sommer": 2,
+  "sommeren": 2,
+  "sove": 2,
+  "sover": 1,
+  "soverommet": 2,
+  "spania": 2,
+  "spekter": 4,
+  "spennende": 3,
+  "spesialisthelsetjenesten": 4,
+  "spiller": 1,
+  "spire": 2,
+  "spiser": 1,
+  "språk": 5,
+  "språkmangfoldet": 5,
+  "språkopplæring": 4,
+  "språkrådet": 5,
+  "stabiliteten": 5,
+  "stadig": 4,
+  "standarder": 5,
+  "starter": 3,
+  "stasjonen": 2,
+  "statistikken": 3,
+  "statistisk": 5,
+  "statlige": 5,
+  "statsbudsjett": 3,
+  "statsbudsjettet": 4,
+  "statsforvalteren": 5,
+  "sted": 3,
+  "stedet": 3,
+  "steget": 3,
+  "steker": 2,
+  "stenger": 3,
+  "sterk": 4,
+  "stil": 2,
+  "stille": 1,
+  "stiller": 4,
+  "stilling": 4,
+  "stjernene": 2,
+  "stolen": 1,
+  "stor": 1,
+  "storbyene": 4,
+  "store": 4,
+  "stort": 1,
+  "stortinget": 3,
+  "stortingsmeldingen": 5,
+  "stranden": 2,
+  "strategi": 5,
+  "strekker": 3,
+  "strekningene": 5,
+  "strenge": 4,
+  "strengere": 4,
+  "strømmen": 3,
+  "studentene": 3,
+  "studier": 3,
+  "stuen": 2,
+  "stykke": 3,
+  "styringsrenten": 5,
+  "styrke": 5,
+  "stå": 2,
+  "står": 2,
+  "større": 4,
+  "største": 3,
+  "støtte": 4,
+  "støvsuger": 2,
+  "sulten": 1,
+  "suppen": 1,
+  "svart": 1,
+  "svært": 3,
+  "svømmehall": 3,
+  "svømmer": 1,
+  "svømmeren": 3,
+  "sykdommer": 4,
+  "sykehuset": 3,
+  "sykehusreformen": 4,
+  "sykkel": 2,
+  "sykkelen": 1,
+  "sykkelveier": 3,
+  "synge": 2,
+  "synger": 1,
+  "sysselsetting": 5,
+  "syttende": 3,
+  "særskilt": 4,
+  "søknader": 5,
+  "søster": 1,
+  "søsteren": 2,
+  "søtt": 1,
+  "taket": 2,
+  "tale": 3,
+  "tall": 5,
+  "tar": 1,
+  "te": 1,
+  "teateret": 3,
+  "teaterinstitusjonene": 4,
+  "tegner": 2,
+  "teknologi": 4,
+  "teknologier": 5,
+  "teknologiske": 4,
+  "teknologiutviklingen": 4,
+  "tema": 4,
+  "tempo": 4,
+  "tennene": 2,
+  "tenner": 2,
+  "ti": 2,
+  "tid": 1,
+  "tiden": 3,
+  "tidlig": 1,
+  "tidligere": 4,
+  "tidsskrift": 4,
+  "til": 1,
+  "tilbyr": 3,
+  "tildelte": 5,
+  "tilpasset": 4,
+  "tilsyn": 5,
+  "tiltak": 5,
+  "tiltaket": 5,
+  "timen": 3,
+  "tirsdager": 2,
+  "tiårene": 4,
+  "tjenester": 4,
+  "tjue": 2,
+  "to": 1,
+  "tog": 1,
+  "toget": 1,
+  "togtilbudet": 5,
+  "tolletaten": 5,
+  "torsken": 3,
+  "tradisjon": 3,
+  "tradisjonell": 3,
+  "tradisjonen": 3,
+  "tradisjoner": 4,
+  "trafikkerte": 5,
+  "trafikkvekst": 5,
+  "transport": 3,
+  "transportplan": 5,
+  "transportpolitikken": 4,
+  "transportsektoren": 4,
+  "transportøkonomisk": 5,
+  "tre": 2,
+  "treet": 1,
+  "trekker": 3,
+  "trene": 3,
+  "trenger": 2,
+  "trening": 2,
+  "trente": 3,
+  "trolltunga": 3,
+  "tromsø": 2,
+  "trues": 4,
+  "tråd": 4,
+  "trærne": 2,
+  "tungt": 1,
+  "tunneler": 3,
+  "tur": 2,
+  "turgåing": 3,
+  "turismen": 3,
+  "turistattraksjon": 3,
+  "turister": 3,
+  "turmål": 3,
+  "tusenvis": 3,
+  "tv": 2,
+  "tverrfaglige": 5,
+  "tvers": 4,
+  "tvister": 5,
+  "tykk": 2,
+  "tåke": 3,
+  "tørst": 1,
+  "uavhengig": 4,
+  "uke": 2,
+  "uken": 3,
+  "uker": 3,
+  "ulike": 4,
+  "understreket": 4,
+  "undervises": 4,
+  "ungdommene": 3,
+  "unikt": 3,
+  "universet": 4,
+  "universitetene": 4,
+  "universitetet": 3,
+  "universitetsstyret": 5,
+  "urbaniseringen": 4,
+  "urett": 5,
+  "urfolksrettighetene": 4,
+  "ut": 3,
+  "utbygd": 3,
+  "utbygging": 5,
+  "utdanning": 4,
+  "utdanningssystemet": 4,
+  "ute": 1,
+  "utenriksministeren": 4,
+  "utenrikspolitikken": 4,
+  "utfordrende": 3,
+  "utfordringer": 4,
+  "utland": 4,
+  "utlendingsdirektoratet": 5,
+  "utsatt": 5,
+  "utslipp": 4,
+  "utsolgt": 3,
+  "utstilling": 3,
+  "utstyr": 3,
+  "utviklet": 4,
+  "utvikling": 3,
+  "utviklingen": 4,
+  "utviklingsland": 4,
+  "utviklingspolitikken": 4,
+  "vakker": 2,
+  "vaksinasjonsprogrammet": 4,
+  "valgkampen": 3,
+  "vanlige": 3,
+  "vanligvis": 3,
+  "vanner": 2,
+  "vannet": 1,
+  "vannkraft": 3,
+  "vant": 3,
+  "varm": 1,
+  "varmt": 2,
+  "varslet": 5,
+  "vasker": 2,
+  "ved": 1,
+  "vedlikehold": 4,
+  "vedtatt": 5,
+  "vedtatte": 5,
+  "vedtok": 3,
+  "vegvesenets": 5,
+  "veien": 1,
+  "veiene": 3,
+  "veier": 3,
+  "veiledning": 5,
+  "veiprosjektet": 5,
+  "vekt": 4,
+  "veldig": 2,
+  "velferdsordningene": 4,
+  "velfungerende": 4,
+  "velgere": 4,
+  "vellykket": 4,
+  "venner": 1,
+  "venter": 1,
+  "verden": 4,
+  "verdens": 4,
+  "verdensarvlisten": 3,
+  "verdikjeden": 5,
+  "verdiskapingen": 4,
+  "vern": 4,
+  "vesentlig": 4,
+  "vet": 1,
+  "vi": 1,
+  "videregående": 5,
+  "vigelandsparken": 3,
+  "vikingene": 3,
+  "viktig": 3,
+  "viktige": 3,
+  "viktigste": 2,
+  "vil": 5,
+  "ville": 3,
+  "vind": 5,
+  "vinden": 1,
+  "vinter": 1,
+  "vinterdekk": 3,
+  "vinteren": 2,
+  "virksomheter": 5,
+  "viser": 3,
+  "viste": 5,
+  "vokser": 3,
+  "vokst": 4,
+  "vurderer": 5,
+  "våkner": 2,
+  "vår": 2,
+  "våren": 2,
+  "vårt": 2,
+  "vær": 1,
+  "være": 3,
+  "været": 3,
+  "ytringsfrihet": 4,
+  "å": 1,
+  "åpnet": 3,
+  "år": 2,
+  "årene": 4,
+  "året": 2,
+  "åtte": 3,
+  "åtti": 3,
+  "økende": 4,
+  "økning": 3,
+  "økonomi": 5,
+  "økonomien": 3,
+  "økt": 4,
+  "ønsker": 2,
+  "ørret": 3,
+  "øvde": 3,
+  "øyer": 3
+ }
+}

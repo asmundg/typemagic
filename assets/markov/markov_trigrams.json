@@ -1,0 +1,12922 @@
+{
+ "jeg er": [
+  [
+   "glad",
+   0.5
+  ],
+  [
+   "sulten",
+   0.5
+  ]
+ ],
+ "er glad": [
+  [
+   "i",
+   0.5
+  ],
+  [
+   ".",
+   0.5
+  ]
+ ],
+ "glad i": [
+  [
+   "dag",
+   1.0
+  ]
+ ],
+ "i dag": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "han spiser": [
+  [
+   "en",
+   1.0
+  ]
+ ],
+ "spiser en": [
+  [
+   "pølse",
+   1.0
+  ]
+ ],
+ "en pølse": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "vi går": [
+  [
+   "på",
+   0.666667
+  ],
+  [
+   "hjem",
+   0.333333
+  ]
+ ],
+ "går på": [
+  [
+   "skolen",
+   0.5
+  ],
+  [
+   "skøyter",
+   0.5
+  ]
+ ],
+ "på skolen": [
+  [
+   ".",
+   0.666667
+  ],
+  [
+   "i",
+   0.333333
+  ]
+ ],
+ "hun liker": [
+  [
+   "å",
+   1.0
+  ]
+ ],
+ "liker å": [
+  [
+   "lese",
+   0.333333
+  ],
+  [
+   "gå",
+   0.166667
+  ],
+  [
+   "sove",
+   0.166667
+  ],
+  [
+   "synge",
+   0.166667
+  ],
+  [
+   "stå",
+   0.166667
+  ]
+ ],
+ "å lese": [
+  [
+   ".",
+   0.5
+  ],
+  [
+   "før",
+   0.5
+  ]
+ ],
+ "det er": [
+  [
+   "sol",
+   0.1
+  ],
+  [
+   "kaldt",
+   0.1
+  ],
+  [
+   "vinter",
+   0.1
+  ],
+  [
+   "tidlig",
+   0.1
+  ],
+  [
+   "sent",
+   0.1
+  ],
+  [
+   "en",
+   0.1
+  ],
+  [
+   "fint",
+   0.1
+  ],
+  [
+   "mange",
+   0.1
+  ],
+  [
+   "varmt",
+   0.1
+  ],
+  [
+   "mørkt",
+   0.1
+  ]
+ ],
+ "er sol": [
+  [
+   "ute",
+   1.0
+  ]
+ ],
+ "sol ute": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "katten sover": [
+  [
+   "på",
+   1.0
+  ]
+ ],
+ "sover på": [
+  [
+   "sofaen",
+   1.0
+  ]
+ ],
+ "på sofaen": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "hunden løper": [
+  [
+   "i",
+   0.5
+  ],
+  [
+   "etter",
+   0.5
+  ]
+ ],
+ "løper i": [
+  [
+   "parken",
+   1.0
+  ]
+ ],
+ "i parken": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "vi bor": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "bor i": [
+  [
+   "norge",
+   0.25
+  ],
+  [
+   "oslo",
+   0.25
+  ],
+  [
+   "tromsø",
+   0.25
+  ],
+  [
+   "en",
+   0.25
+  ]
+ ],
+ "i norge": [
+  [
+   ".",
+   0.647059
+  ],
+  [
+   "er",
+   0.176471
+  ],
+  [
+   "om",
+   0.058824
+  ],
+  [
+   "kan",
+   0.058824
+  ],
+  [
+   "har",
+   0.058824
+  ]
+ ],
+ "mor lager": [
+  [
+   "god",
+   1.0
+  ]
+ ],
+ "lager god": [
+  [
+   "mat",
+   1.0
+  ]
+ ],
+ "god mat": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "far kjører": [
+  [
+   "bil",
+   1.0
+  ]
+ ],
+ "kjører bil": [
+  [
+   "til",
+   1.0
+  ]
+ ],
+ "bil til": [
+  [
+   "jobb",
+   1.0
+  ]
+ ],
+ "til jobb": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "jeg har": [
+  [
+   "en",
+   0.666667
+  ],
+  [
+   "to",
+   0.333333
+  ]
+ ],
+ "har en": [
+  [
+   "bror",
+   0.125
+  ],
+  [
+   "søster",
+   0.125
+  ],
+  [
+   "hund",
+   0.125
+  ],
+  [
+   "katt",
+   0.125
+  ],
+  [
+   "spennende",
+   0.125
+  ],
+  [
+   "uavhengig",
+   0.125
+  ],
+  [
+   "sterk",
+   0.125
+  ],
+  [
+   "diversifisert",
+   0.125
+  ]
+ ],
+ "en bror": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "hun har": [
+  [
+   "en",
+   1.0
+  ]
+ ],
+ "en søster": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "vi spiser": [
+  [
+   "middag",
+   0.5
+  ],
+  [
+   "frokost",
+   0.5
+  ]
+ ],
+ "spiser middag": [
+  [
+   "nå",
+   1.0
+  ]
+ ],
+ "middag nå": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "de leker": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "leker i": [
+  [
+   "hagen",
+   0.5
+  ],
+  [
+   "snøen",
+   0.5
+  ]
+ ],
+ "i hagen": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "boken er": [
+  [
+   "på",
+   1.0
+  ]
+ ],
+ "er på": [
+  [
+   "bordet",
+   0.333333
+  ],
+  [
+   "jobb",
+   0.333333
+  ],
+  [
+   "verdensarvlisten",
+   0.333333
+  ]
+ ],
+ "på bordet": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "jeg drikker": [
+  [
+   "melk",
+   1.0
+  ]
+ ],
+ "drikker melk": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "han sover": [
+  [
+   "i",
+   0.5
+  ],
+  [
+   ".",
+   0.5
+  ]
+ ],
+ "sover i": [
+  [
+   "sengen",
+   1.0
+  ]
+ ],
+ "i sengen": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "stolen er": [
+  [
+   "rød",
+   0.5
+  ],
+  [
+   "grønn",
+   0.5
+  ]
+ ],
+ "er rød": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "huset er": [
+  [
+   "hvitt",
+   1.0
+  ]
+ ],
+ "er hvitt": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "døren er": [
+  [
+   "lukket",
+   1.0
+  ]
+ ],
+ "er lukket": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "vi ser": [
+  [
+   "en",
+   0.5
+  ],
+  [
+   "på",
+   0.5
+  ]
+ ],
+ "ser en": [
+  [
+   "film",
+   0.5
+  ],
+  [
+   "fugl",
+   0.5
+  ]
+ ],
+ "en film": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "hun synger": [
+  [
+   "en",
+   1.0
+  ]
+ ],
+ "synger en": [
+  [
+   "sang",
+   1.0
+  ]
+ ],
+ "en sang": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "han spiller": [
+  [
+   "fotball",
+   0.5
+  ],
+  [
+   "gitar",
+   0.5
+  ]
+ ],
+ "spiller fotball": [
+  [
+   ".",
+   0.5
+  ],
+  [
+   "i",
+   0.5
+  ]
+ ],
+ "er kaldt": [
+  [
+   "ute",
+   1.0
+  ]
+ ],
+ "kaldt ute": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "det regner": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "regner i": [
+  [
+   "dag",
+   1.0
+  ]
+ ],
+ "vi liker": [
+  [
+   "is",
+   1.0
+  ]
+ ],
+ "liker is": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "en hund": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "katten er": [
+  [
+   "svart",
+   1.0
+  ]
+ ],
+ "er svart": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "ballen er": [
+  [
+   "stor",
+   1.0
+  ]
+ ],
+ "er stor": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "maten er": [
+  [
+   "god",
+   1.0
+  ]
+ ],
+ "er god": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "jeg liker": [
+  [
+   "kaffe",
+   1.0
+  ]
+ ],
+ "liker kaffe": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "hun leser": [
+  [
+   "en",
+   1.0
+  ]
+ ],
+ "leser en": [
+  [
+   "bok",
+   1.0
+  ]
+ ],
+ "en bok": [
+  [
+   ".",
+   0.5
+  ],
+  [
+   "til",
+   0.5
+  ]
+ ],
+ "går hjem": [
+  [
+   "nå",
+   1.0
+  ]
+ ],
+ "hjem nå": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "han sitter": [
+  [
+   "ved",
+   1.0
+  ]
+ ],
+ "sitter ved": [
+  [
+   "bordet",
+   1.0
+  ]
+ ],
+ "ved bordet": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "klokken er": [
+  [
+   "fem",
+   1.0
+  ]
+ ],
+ "er fem": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "er vinter": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "solen skinner": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "barna leker": [
+  [
+   "ute",
+   0.5
+  ],
+  [
+   "i",
+   0.5
+  ]
+ ],
+ "leker ute": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "faren venter": [
+  [
+   "hjemme",
+   1.0
+  ]
+ ],
+ "venter hjemme": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "moren er": [
+  [
+   "på",
+   1.0
+  ]
+ ],
+ "på jobb": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "vi tar": [
+  [
+   "bussen",
+   1.0
+  ]
+ ],
+ "tar bussen": [
+  [
+   ".",
+   0.5
+  ],
+  [
+   "til",
+   0.5
+  ]
+ ],
+ "toget er": [
+  [
+   "sent",
+   1.0
+  ]
+ ],
+ "er sent": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "er sulten": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "hun er": [
+  [
+   "tørst",
+   1.0
+  ]
+ ],
+ "er tørst": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "er tidlig": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "vi sover": [
+  [
+   "nå",
+   1.0
+  ]
+ ],
+ "sover nå": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "han liker": [
+  [
+   "å",
+   0.75
+  ],
+  [
+   "ost",
+   0.25
+  ]
+ ],
+ "liker ost": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "jeg ser": [
+  [
+   "en",
+   1.0
+  ]
+ ],
+ "en fugl": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "fisken er": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "er i": [
+  [
+   "vannet",
+   0.5
+  ],
+  [
+   "full",
+   0.5
+  ]
+ ],
+ "i vannet": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "er en": [
+  [
+   "viktig",
+   0.181818
+  ],
+  [
+   "pen",
+   0.090909
+  ],
+  [
+   "fin",
+   0.090909
+  ],
+  [
+   "populær",
+   0.090909
+  ],
+  [
+   "kjent",
+   0.090909
+  ],
+  [
+   "stor",
+   0.090909
+  ],
+  [
+   "norsk",
+   0.090909
+  ],
+  [
+   "av",
+   0.090909
+  ],
+  [
+   "grunnleggende",
+   0.090909
+  ],
+  [
+   "nøkkel",
+   0.090909
+  ]
+ ],
+ "en pen": [
+  [
+   "dag",
+   1.0
+  ]
+ ],
+ "pen dag": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "har to": [
+  [
+   "barn",
+   1.0
+  ]
+ ],
+ "to barn": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "vi har": [
+  [
+   "en",
+   0.25
+  ],
+  [
+   "det",
+   0.25
+  ],
+  [
+   "et",
+   0.25
+  ],
+  [
+   "gym",
+   0.25
+  ]
+ ],
+ "en katt": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "de bor": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "i oslo": [
+  [
+   ".",
+   0.333333
+  ],
+  [
+   "er",
+   0.333333
+  ],
+  [
+   "har",
+   0.333333
+  ]
+ ],
+ "han går": [
+  [
+   "til",
+   1.0
+  ]
+ ],
+ "går til": [
+  [
+   "byen",
+   0.5
+  ],
+  [
+   "sengs",
+   0.5
+  ]
+ ],
+ "til byen": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "jeg kjøper": [
+  [
+   "brød",
+   1.0
+  ]
+ ],
+ "kjøper brød": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "hun lager": [
+  [
+   "te",
+   1.0
+  ]
+ ],
+ "lager te": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "har det": [
+  [
+   "bra",
+   1.0
+  ]
+ ],
+ "det bra": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "er fint": [
+  [
+   "vær",
+   1.0
+  ]
+ ],
+ "fint vær": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "gutten er": [
+  [
+   "glad",
+   1.0
+  ]
+ ],
+ "jenta er": [
+  [
+   "snill",
+   1.0
+  ]
+ ],
+ "er snill": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "de er": [
+  [
+   "venner",
+   0.5
+  ],
+  [
+   "utsatt",
+   0.5
+  ]
+ ],
+ "er venner": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "jeg vet": [
+  [
+   "ikke",
+   1.0
+  ]
+ ],
+ "vet ikke": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "han er": [
+  [
+   "stor",
+   1.0
+  ]
+ ],
+ "er grønn": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "bordet er": [
+  [
+   "lite",
+   1.0
+  ]
+ ],
+ "er lite": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "lampen er": [
+  [
+   "gul",
+   1.0
+  ]
+ ],
+ "er gul": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "veien er": [
+  [
+   "lang",
+   1.0
+  ]
+ ],
+ "er lang": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "skogen er": [
+  [
+   "mørk",
+   1.0
+  ]
+ ],
+ "er mørk": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "sjøen er": [
+  [
+   "blå",
+   1.0
+  ]
+ ],
+ "er blå": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "fjellet er": [
+  [
+   "høyt",
+   1.0
+  ]
+ ],
+ "er høyt": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "snøen er": [
+  [
+   "hvit",
+   1.0
+  ]
+ ],
+ "er hvit": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "vinden er": [
+  [
+   "kald",
+   1.0
+  ]
+ ],
+ "er kald": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "regnet er": [
+  [
+   "tungt",
+   1.0
+  ]
+ ],
+ "er tungt": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "natten er": [
+  [
+   "stille",
+   1.0
+  ]
+ ],
+ "er stille": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "dagen er": [
+  [
+   "kort",
+   1.0
+  ]
+ ],
+ "er kort": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "livet er": [
+  [
+   "godt",
+   1.0
+  ]
+ ],
+ "er godt": [
+  [
+   ".",
+   0.5
+  ],
+  [
+   "utbygd",
+   0.5
+  ]
+ ],
+ "hagen er": [
+  [
+   "fin",
+   1.0
+  ]
+ ],
+ "er fin": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "parken er": [
+  [
+   "stor",
+   1.0
+  ]
+ ],
+ "gaten er": [
+  [
+   "bred",
+   1.0
+  ]
+ ],
+ "er bred": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "broen er": [
+  [
+   "lang",
+   1.0
+  ]
+ ],
+ "elven er": [
+  [
+   "dyp",
+   1.0
+  ]
+ ],
+ "er dyp": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "treet er": [
+  [
+   "grønt",
+   1.0
+  ]
+ ],
+ "er grønt": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "blomsten er": [
+  [
+   "rød",
+   1.0
+  ]
+ ],
+ "eplet er": [
+  [
+   "søtt",
+   1.0
+  ]
+ ],
+ "er søtt": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "brødet er": [
+  [
+   "ferskt",
+   1.0
+  ]
+ ],
+ "er ferskt": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "osten er": [
+  [
+   "god",
+   1.0
+  ]
+ ],
+ "melken er": [
+  [
+   "kald",
+   1.0
+  ]
+ ],
+ "suppen er": [
+  [
+   "varm",
+   0.5
+  ],
+  [
+   "veldig",
+   0.5
+  ]
+ ],
+ "er varm": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "kaken er": [
+  [
+   "stor",
+   1.0
+  ]
+ ],
+ "bilen er": [
+  [
+   "ny",
+   1.0
+  ]
+ ],
+ "er ny": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "sykkelen er": [
+  [
+   "blå",
+   1.0
+  ]
+ ],
+ "bussen er": [
+  [
+   "full",
+   1.0
+  ]
+ ],
+ "er full": [
+  [
+   ".",
+   0.666667
+  ],
+  [
+   "i",
+   0.333333
+  ]
+ ],
+ "flyet er": [
+  [
+   "stort",
+   1.0
+  ]
+ ],
+ "er stort": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "båten er": [
+  [
+   "liten",
+   1.0
+  ]
+ ],
+ "er liten": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "tog er": [
+  [
+   "rask",
+   1.0
+  ]
+ ],
+ "er rask": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "vi leker": [
+  [
+   "sammen",
+   1.0
+  ]
+ ],
+ "leker sammen": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "de løper": [
+  [
+   "fort",
+   1.0
+  ]
+ ],
+ "løper fort": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "han hopper": [
+  [
+   "høyt",
+   1.0
+  ]
+ ],
+ "hopper høyt": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "hun svømmer": [
+  [
+   "godt",
+   1.0
+  ]
+ ],
+ "svømmer godt": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "jeg maler": [
+  [
+   "et",
+   1.0
+  ]
+ ],
+ "maler et": [
+  [
+   "bilde",
+   1.0
+  ]
+ ],
+ "et bilde": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "vi synger": [
+  [
+   "sammen",
+   1.0
+  ]
+ ],
+ "synger sammen": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "de danser": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "danser i": [
+  [
+   "ring",
+   1.0
+  ]
+ ],
+ "i ring": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "hva gjør": [
+  [
+   "du",
+   1.0
+  ]
+ ],
+ "gjør du": [
+  [
+   "?",
+   1.0
+  ]
+ ],
+ "hvor bor": [
+  [
+   "du",
+   1.0
+  ]
+ ],
+ "bor du": [
+  [
+   "?",
+   1.0
+  ]
+ ],
+ "hvor er": [
+  [
+   "du",
+   1.0
+  ]
+ ],
+ "er du": [
+  [
+   "?",
+   0.5
+  ],
+  [
+   "klar",
+   0.5
+  ]
+ ],
+ "hva heter": [
+  [
+   "du",
+   1.0
+  ]
+ ],
+ "heter du": [
+  [
+   "?",
+   1.0
+  ]
+ ],
+ "har du": [
+  [
+   "tid",
+   1.0
+  ]
+ ],
+ "du tid": [
+  [
+   "?",
+   1.0
+  ]
+ ],
+ "hva spiser": [
+  [
+   "du",
+   1.0
+  ]
+ ],
+ "spiser du": [
+  [
+   "?",
+   1.0
+  ]
+ ],
+ "liker du": [
+  [
+   "kaffe",
+   1.0
+  ]
+ ],
+ "du kaffe": [
+  [
+   "?",
+   1.0
+  ]
+ ],
+ "kan du": [
+  [
+   "hjelpe",
+   1.0
+  ]
+ ],
+ "du hjelpe": [
+  [
+   "meg",
+   1.0
+  ]
+ ],
+ "hjelpe meg": [
+  [
+   "?",
+   1.0
+  ]
+ ],
+ "du klar": [
+  [
+   "?",
+   1.0
+  ]
+ ],
+ "skal vi": [
+  [
+   "gå",
+   1.0
+  ]
+ ],
+ "vi gå": [
+  [
+   "?",
+   1.0
+  ]
+ ],
+ "jeg skal": [
+  [
+   "på",
+   1.0
+  ]
+ ],
+ "skal på": [
+  [
+   "skolen",
+   1.0
+  ]
+ ],
+ "skolen i": [
+  [
+   "morgen",
+   1.0
+  ]
+ ],
+ "i morgen": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "spiser frokost": [
+  [
+   "klokken",
+   1.0
+  ]
+ ],
+ "frokost klokken": [
+  [
+   "sju",
+   1.0
+  ]
+ ],
+ "klokken sju": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "hun jobber": [
+  [
+   "på",
+   1.0
+  ]
+ ],
+ "jobber på": [
+  [
+   "et",
+   1.0
+  ]
+ ],
+ "på et": [
+  [
+   "kontor",
+   1.0
+  ]
+ ],
+ "et kontor": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "å gå": [
+  [
+   "tur",
+   1.0
+  ]
+ ],
+ "gå tur": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "tur i": [
+  [
+   "skogen",
+   1.0
+  ]
+ ],
+ "i skogen": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "barna går": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "går i": [
+  [
+   "barnehagen",
+   1.0
+  ]
+ ],
+ "i barnehagen": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "vi reiser": [
+  [
+   "til",
+   0.5
+  ],
+  [
+   "med",
+   0.5
+  ]
+ ],
+ "reiser til": [
+  [
+   "bergen",
+   1.0
+  ]
+ ],
+ "til bergen": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "bergen i": [
+  [
+   "sommer",
+   1.0
+  ]
+ ],
+ "i sommer": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "familien spiser": [
+  [
+   "sammen",
+   1.0
+  ]
+ ],
+ "spiser sammen": [
+  [
+   "hver",
+   1.0
+  ]
+ ],
+ "sammen hver": [
+  [
+   "dag",
+   1.0
+  ]
+ ],
+ "hver dag": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "hunden vår": [
+  [
+   "heter",
+   1.0
+  ]
+ ],
+ "vår heter": [
+  [
+   "rex",
+   1.0
+  ]
+ ],
+ "heter rex": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "katten min": [
+  [
+   "liker",
+   1.0
+  ]
+ ],
+ "min liker": [
+  [
+   "å",
+   1.0
+  ]
+ ],
+ "å sove": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "er mange": [
+  [
+   "bøker",
+   1.0
+  ]
+ ],
+ "mange bøker": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "bøker i": [
+  [
+   "hyllen",
+   1.0
+  ]
+ ],
+ "i hyllen": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "vi handler": [
+  [
+   "mat",
+   0.5
+  ],
+  [
+   "dagligvarer",
+   0.5
+  ]
+ ],
+ "handler mat": [
+  [
+   "på",
+   1.0
+  ]
+ ],
+ "mat på": [
+  [
+   "butikken",
+   1.0
+  ]
+ ],
+ "på butikken": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "hun tar": [
+  [
+   "bussen",
+   0.5
+  ],
+  [
+   "en",
+   0.5
+  ]
+ ],
+ "bussen til": [
+  [
+   "jobb",
+   1.0
+  ]
+ ],
+ "spiller gitar": [
+  [
+   "om",
+   1.0
+  ]
+ ],
+ "gitar om": [
+  [
+   "kvelden",
+   1.0
+  ]
+ ],
+ "om kvelden": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "de ser": [
+  [
+   "på",
+   1.0
+  ]
+ ],
+ "ser på": [
+  [
+   "tv",
+   0.5
+  ],
+  [
+   "stjernene",
+   0.5
+  ]
+ ],
+ "på tv": [
+  [
+   "etter",
+   1.0
+  ]
+ ],
+ "tv etter": [
+  [
+   "middag",
+   1.0
+  ]
+ ],
+ "etter middag": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "vi drikker": [
+  [
+   "kaffe",
+   1.0
+  ]
+ ],
+ "drikker kaffe": [
+  [
+   "til",
+   1.0
+  ]
+ ],
+ "kaffe til": [
+  [
+   "frokost",
+   1.0
+  ]
+ ],
+ "til frokost": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "moren min": [
+  [
+   "er",
+   1.0
+  ]
+ ],
+ "min er": [
+  [
+   "lærer",
+   0.333333
+  ],
+  [
+   "lege",
+   0.333333
+  ],
+  [
+   "ti",
+   0.333333
+  ]
+ ],
+ "er lærer": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "faren min": [
+  [
+   "er",
+   1.0
+  ]
+ ],
+ "er lege": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "broren min": [
+  [
+   "er",
+   1.0
+  ]
+ ],
+ "er ti": [
+  [
+   "år",
+   1.0
+  ]
+ ],
+ "ti år": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "søsteren min": [
+  [
+   "bor",
+   1.0
+  ]
+ ],
+ "min bor": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "i tromsø": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "bestemor lager": [
+  [
+   "de",
+   1.0
+  ]
+ ],
+ "lager de": [
+  [
+   "beste",
+   1.0
+  ]
+ ],
+ "de beste": [
+  [
+   "kakene",
+   1.0
+  ]
+ ],
+ "beste kakene": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "bestefar forteller": [
+  [
+   "fine",
+   1.0
+  ]
+ ],
+ "forteller fine": [
+  [
+   "historier",
+   1.0
+  ]
+ ],
+ "fine historier": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "naboen vår": [
+  [
+   "har",
+   1.0
+  ]
+ ],
+ "vår har": [
+  [
+   "tre",
+   1.0
+  ]
+ ],
+ "har tre": [
+  [
+   "katter",
+   1.0
+  ]
+ ],
+ "tre katter": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "har et": [
+  [
+   "stort",
+   0.5
+  ],
+  [
+   "særskilt",
+   0.5
+  ]
+ ],
+ "et stort": [
+  [
+   "hus",
+   1.0
+  ]
+ ],
+ "stort hus": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "i en": [
+  [
+   "liten",
+   0.5
+  ],
+  [
+   "ambisiøs",
+   0.5
+  ]
+ ],
+ "en liten": [
+  [
+   "by",
+   1.0
+  ]
+ ],
+ "liten by": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "skolen vår": [
+  [
+   "er",
+   1.0
+  ]
+ ],
+ "vår er": [
+  [
+   "ganske",
+   1.0
+  ]
+ ],
+ "er ganske": [
+  [
+   "ny",
+   1.0
+  ]
+ ],
+ "ganske ny": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "klassen har": [
+  [
+   "tjue",
+   1.0
+  ]
+ ],
+ "har tjue": [
+  [
+   "elever",
+   1.0
+  ]
+ ],
+ "tjue elever": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "læreren er": [
+  [
+   "veldig",
+   1.0
+  ]
+ ],
+ "er veldig": [
+  [
+   "snill",
+   0.5
+  ],
+  [
+   "varm",
+   0.5
+  ]
+ ],
+ "veldig snill": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "har gym": [
+  [
+   "på",
+   1.0
+  ]
+ ],
+ "gym på": [
+  [
+   "tirsdager",
+   1.0
+  ]
+ ],
+ "på tirsdager": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "de spiller": [
+  [
+   "fotball",
+   1.0
+  ]
+ ],
+ "fotball i": [
+  [
+   "friminuttet",
+   1.0
+  ]
+ ],
+ "i friminuttet": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "hun tegner": [
+  [
+   "pene",
+   1.0
+  ]
+ ],
+ "tegner pene": [
+  [
+   "bilder",
+   1.0
+  ]
+ ],
+ "pene bilder": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "han skriver": [
+  [
+   "en",
+   1.0
+  ]
+ ],
+ "skriver en": [
+  [
+   "lang",
+   1.0
+  ]
+ ],
+ "en lang": [
+  [
+   "stil",
+   0.5
+  ],
+  [
+   "pause",
+   0.5
+  ]
+ ],
+ "lang stil": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "vi lærer": [
+  [
+   "norsk",
+   1.0
+  ]
+ ],
+ "lærer norsk": [
+  [
+   "på",
+   1.0
+  ]
+ ],
+ "norsk på": [
+  [
+   "skolen",
+   1.0
+  ]
+ ],
+ "de liker": [
+  [
+   "å",
+   1.0
+  ]
+ ],
+ "å synge": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "synge i": [
+  [
+   "kor",
+   1.0
+  ]
+ ],
+ "i kor": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "løper etter": [
+  [
+   "ballen",
+   1.0
+  ]
+ ],
+ "etter ballen": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "katten jager": [
+  [
+   "en",
+   1.0
+  ]
+ ],
+ "jager en": [
+  [
+   "mus",
+   1.0
+  ]
+ ],
+ "en mus": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "fuglen sitter": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "sitter i": [
+  [
+   "treet",
+   1.0
+  ]
+ ],
+ "i treet": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "fisken svømmer": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "svømmer i": [
+  [
+   "elven",
+   1.0
+  ]
+ ],
+ "i elven": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "på stjernene": [
+  [
+   "om",
+   1.0
+  ]
+ ],
+ "stjernene om": [
+  [
+   "natten",
+   1.0
+  ]
+ ],
+ "om natten": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "månen er": [
+  [
+   "full",
+   1.0
+  ]
+ ],
+ "full i": [
+  [
+   "kveld",
+   1.0
+  ]
+ ],
+ "i kveld": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "solen går": [
+  [
+   "ned",
+   1.0
+  ]
+ ],
+ "går ned": [
+  [
+   "bak",
+   1.0
+  ]
+ ],
+ "ned bak": [
+  [
+   "fjellet",
+   1.0
+  ]
+ ],
+ "bak fjellet": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "det blåser": [
+  [
+   "mye",
+   1.0
+  ]
+ ],
+ "blåser mye": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "mye i": [
+  [
+   "dag",
+   0.5
+  ],
+  [
+   "vinter",
+   0.5
+  ]
+ ],
+ "vi trenger": [
+  [
+   "en",
+   1.0
+  ]
+ ],
+ "trenger en": [
+  [
+   "paraply",
+   1.0
+  ]
+ ],
+ "en paraply": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "han tar": [
+  [
+   "på",
+   1.0
+  ]
+ ],
+ "tar på": [
+  [
+   "seg",
+   1.0
+  ]
+ ],
+ "på seg": [
+  [
+   "jakken",
+   0.5
+  ],
+  [
+   "varmt",
+   0.5
+  ]
+ ],
+ "seg jakken": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "hun kler": [
+  [
+   "på",
+   1.0
+  ]
+ ],
+ "kler på": [
+  [
+   "seg",
+   1.0
+  ]
+ ],
+ "seg varmt": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "det snør": [
+  [
+   "mye",
+   1.0
+  ]
+ ],
+ "snør mye": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "i vinter": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "isen er": [
+  [
+   "tykk",
+   1.0
+  ]
+ ],
+ "er tykk": [
+  [
+   "på",
+   1.0
+  ]
+ ],
+ "tykk på": [
+  [
+   "vannet",
+   1.0
+  ]
+ ],
+ "på vannet": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "på skøyter": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "de står": [
+  [
+   "på",
+   1.0
+  ]
+ ],
+ "står på": [
+  [
+   "ski",
+   1.0
+  ]
+ ],
+ "på ski": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "å stå": [
+  [
+   "på",
+   1.0
+  ]
+ ],
+ "stå på": [
+  [
+   "snowboard",
+   1.0
+  ]
+ ],
+ "på snowboard": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "vi bygger": [
+  [
+   "en",
+   1.0
+  ]
+ ],
+ "bygger en": [
+  [
+   "snømann",
+   1.0
+  ]
+ ],
+ "en snømann": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "i snøen": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "våren kommer": [
+  [
+   "snart",
+   1.0
+  ]
+ ],
+ "kommer snart": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "blomstene begynner": [
+  [
+   "å",
+   1.0
+  ]
+ ],
+ "begynner å": [
+  [
+   "spire",
+   1.0
+  ]
+ ],
+ "å spire": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "er varmt": [
+  [
+   "om",
+   1.0
+  ]
+ ],
+ "varmt om": [
+  [
+   "sommeren",
+   1.0
+  ]
+ ],
+ "om sommeren": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "vi bader": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "bader i": [
+  [
+   "sjøen",
+   1.0
+  ]
+ ],
+ "i sjøen": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "de griller": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "griller i": [
+  [
+   "hagen",
+   1.0
+  ]
+ ],
+ "han fisker": [
+  [
+   "ved",
+   1.0
+  ]
+ ],
+ "fisker ved": [
+  [
+   "vannet",
+   1.0
+  ]
+ ],
+ "ved vannet": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "vi plukker": [
+  [
+   "bær",
+   1.0
+  ]
+ ],
+ "plukker bær": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "bær i": [
+  [
+   "skogen",
+   1.0
+  ]
+ ],
+ "høsten er": [
+  [
+   "vakker",
+   1.0
+  ]
+ ],
+ "er vakker": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "vakker i": [
+  [
+   "norge",
+   1.0
+  ]
+ ],
+ "bladene faller": [
+  [
+   "fra",
+   1.0
+  ]
+ ],
+ "faller fra": [
+  [
+   "trærne",
+   1.0
+  ]
+ ],
+ "fra trærne": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "er mørkt": [
+  [
+   "om",
+   1.0
+  ]
+ ],
+ "mørkt om": [
+  [
+   "vinteren",
+   1.0
+  ]
+ ],
+ "om vinteren": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "vi tenner": [
+  [
+   "lys",
+   1.0
+  ]
+ ],
+ "tenner lys": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "lys i": [
+  [
+   "adventstiden",
+   1.0
+  ]
+ ],
+ "i adventstiden": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "julen er": [
+  [
+   "en",
+   1.0
+  ]
+ ],
+ "en fin": [
+  [
+   "høytid",
+   1.0
+  ]
+ ],
+ "fin høytid": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "vi feirer": [
+  [
+   "jul",
+   0.5
+  ],
+  [
+   "bursdagen",
+   0.5
+  ]
+ ],
+ "feirer jul": [
+  [
+   "med",
+   1.0
+  ]
+ ],
+ "jul med": [
+  [
+   "familien",
+   1.0
+  ]
+ ],
+ "med familien": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "nyttårsaften er": [
+  [
+   "den",
+   1.0
+  ]
+ ],
+ "er den": [
+  [
+   "siste",
+   0.2
+  ],
+  [
+   "viktigste",
+   0.2
+  ],
+  [
+   "største",
+   0.2
+  ],
+  [
+   "lengste",
+   0.2
+  ],
+  [
+   "mest",
+   0.2
+  ]
+ ],
+ "den siste": [
+  [
+   "dagen",
+   1.0
+  ]
+ ],
+ "siste dagen": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "dagen i": [
+  [
+   "året",
+   1.0
+  ]
+ ],
+ "i året": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "feirer bursdagen": [
+  [
+   "min",
+   1.0
+  ]
+ ],
+ "bursdagen min": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "min i": [
+  [
+   "mars",
+   1.0
+  ]
+ ],
+ "i mars": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "han fikk": [
+  [
+   "en",
+   1.0
+  ]
+ ],
+ "fikk en": [
+  [
+   "ny",
+   1.0
+  ]
+ ],
+ "en ny": [
+  [
+   "sykkel",
+   0.166667
+  ],
+  [
+   "svømmehall",
+   0.166667
+  ],
+  [
+   "utstilling",
+   0.166667
+  ],
+  [
+   "roman",
+   0.166667
+  ],
+  [
+   "lov",
+   0.166667
+  ],
+  [
+   "strategi",
+   0.166667
+  ]
+ ],
+ "ny sykkel": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "sykkel i": [
+  [
+   "gave",
+   1.0
+  ]
+ ],
+ "i gave": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "hun ønsker": [
+  [
+   "seg",
+   1.0
+  ]
+ ],
+ "ønsker seg": [
+  [
+   "en",
+   1.0
+  ]
+ ],
+ "seg en": [
+  [
+   "bok",
+   1.0
+  ]
+ ],
+ "bok til": [
+  [
+   "jul",
+   1.0
+  ]
+ ],
+ "til jul": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "vi baker": [
+  [
+   "pepperkaker",
+   1.0
+  ]
+ ],
+ "baker pepperkaker": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "pepperkaker i": [
+  [
+   "desember",
+   1.0
+  ]
+ ],
+ "i desember": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "de pynter": [
+  [
+   "juletreet",
+   1.0
+  ]
+ ],
+ "pynter juletreet": [
+  [
+   "sammen",
+   1.0
+  ]
+ ],
+ "juletreet sammen": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "maten smaker": [
+  [
+   "godt",
+   1.0
+  ]
+ ],
+ "smaker godt": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "godt i": [
+  [
+   "dag",
+   1.0
+  ]
+ ],
+ "veldig varm": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "vi lager": [
+  [
+   "pizza",
+   1.0
+  ]
+ ],
+ "lager pizza": [
+  [
+   "til",
+   1.0
+  ]
+ ],
+ "pizza til": [
+  [
+   "kveldsmat",
+   1.0
+  ]
+ ],
+ "til kveldsmat": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "hun baker": [
+  [
+   "en",
+   1.0
+  ]
+ ],
+ "baker en": [
+  [
+   "sjokoladekake",
+   1.0
+  ]
+ ],
+ "en sjokoladekake": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "han steker": [
+  [
+   "fisk",
+   1.0
+  ]
+ ],
+ "steker fisk": [
+  [
+   "til",
+   1.0
+  ]
+ ],
+ "fisk til": [
+  [
+   "middag",
+   1.0
+  ]
+ ],
+ "til middag": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "vi koker": [
+  [
+   "poteter",
+   1.0
+  ]
+ ],
+ "koker poteter": [
+  [
+   "og",
+   1.0
+  ]
+ ],
+ "poteter og": [
+  [
+   "grønnsaker",
+   1.0
+  ]
+ ],
+ "og grønnsaker": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "de bestiller": [
+  [
+   "mat",
+   1.0
+  ]
+ ],
+ "bestiller mat": [
+  [
+   "fra",
+   1.0
+  ]
+ ],
+ "mat fra": [
+  [
+   "en",
+   1.0
+  ]
+ ],
+ "fra en": [
+  [
+   "restaurant",
+   1.0
+  ]
+ ],
+ "en restaurant": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "smørbrødet har": [
+  [
+   "ost",
+   1.0
+  ]
+ ],
+ "har ost": [
+  [
+   "og",
+   1.0
+  ]
+ ],
+ "ost og": [
+  [
+   "skinke",
+   1.0
+  ]
+ ],
+ "og skinke": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "salaten er": [
+  [
+   "frisk",
+   1.0
+  ]
+ ],
+ "er frisk": [
+  [
+   "og",
+   1.0
+  ]
+ ],
+ "frisk og": [
+  [
+   "god",
+   1.0
+  ]
+ ],
+ "og god": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "frokosten er": [
+  [
+   "den",
+   1.0
+  ]
+ ],
+ "den viktigste": [
+  [
+   "måltidet",
+   1.0
+  ]
+ ],
+ "viktigste måltidet": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "jeg går": [
+  [
+   "til",
+   1.0
+  ]
+ ],
+ "til sengs": [
+  [
+   "klokken",
+   1.0
+  ]
+ ],
+ "sengs klokken": [
+  [
+   "ti",
+   1.0
+  ]
+ ],
+ "klokken ti": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "de våkner": [
+  [
+   "tidlig",
+   1.0
+  ]
+ ],
+ "våkner tidlig": [
+  [
+   "om",
+   1.0
+  ]
+ ],
+ "tidlig om": [
+  [
+   "morgenen",
+   1.0
+  ]
+ ],
+ "om morgenen": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "vi pusser": [
+  [
+   "tennene",
+   1.0
+  ]
+ ],
+ "pusser tennene": [
+  [
+   "to",
+   1.0
+  ]
+ ],
+ "tennene to": [
+  [
+   "ganger",
+   1.0
+  ]
+ ],
+ "to ganger": [
+  [
+   "om",
+   1.0
+  ]
+ ],
+ "ganger om": [
+  [
+   "dagen",
+   1.0
+  ]
+ ],
+ "om dagen": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "tar en": [
+  [
+   "dusj",
+   1.0
+  ]
+ ],
+ "en dusj": [
+  [
+   "etter",
+   1.0
+  ]
+ ],
+ "dusj etter": [
+  [
+   "trening",
+   1.0
+  ]
+ ],
+ "etter trening": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "lese før": [
+  [
+   "han",
+   1.0
+  ]
+ ],
+ "før han": [
+  [
+   "sover",
+   1.0
+  ]
+ ],
+ "vi rydder": [
+  [
+   "rommet",
+   1.0
+  ]
+ ],
+ "rydder rommet": [
+  [
+   "vårt",
+   1.0
+  ]
+ ],
+ "rommet vårt": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "de vasker": [
+  [
+   "klærne",
+   1.0
+  ]
+ ],
+ "vasker klærne": [
+  [
+   "på",
+   1.0
+  ]
+ ],
+ "klærne på": [
+  [
+   "lørdag",
+   1.0
+  ]
+ ],
+ "på lørdag": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "oppvaskmaskinen er": [
+  [
+   "full",
+   1.0
+  ]
+ ],
+ "vi støvsuger": [
+  [
+   "stuen",
+   1.0
+  ]
+ ],
+ "støvsuger stuen": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "han klipper": [
+  [
+   "gresset",
+   1.0
+  ]
+ ],
+ "klipper gresset": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "gresset i": [
+  [
+   "hagen",
+   1.0
+  ]
+ ],
+ "hun vanner": [
+  [
+   "blomstene",
+   1.0
+  ]
+ ],
+ "vanner blomstene": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "vi maler": [
+  [
+   "soverommet",
+   1.0
+  ]
+ ],
+ "maler soverommet": [
+  [
+   "blått",
+   1.0
+  ]
+ ],
+ "soverommet blått": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "de reparerer": [
+  [
+   "taket",
+   1.0
+  ]
+ ],
+ "reparerer taket": [
+  [
+   "på",
+   1.0
+  ]
+ ],
+ "taket på": [
+  [
+   "huset",
+   1.0
+  ]
+ ],
+ "på huset": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "bilen trenger": [
+  [
+   "ny",
+   1.0
+  ]
+ ],
+ "trenger ny": [
+  [
+   "olje",
+   1.0
+  ]
+ ],
+ "ny olje": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "vi fyller": [
+  [
+   "bensin",
+   1.0
+  ]
+ ],
+ "fyller bensin": [
+  [
+   "på",
+   1.0
+  ]
+ ],
+ "bensin på": [
+  [
+   "stasjonen",
+   1.0
+  ]
+ ],
+ "på stasjonen": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "dekkene er": [
+  [
+   "gamle",
+   1.0
+  ]
+ ],
+ "er gamle": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "han vasker": [
+  [
+   "bilen",
+   1.0
+  ]
+ ],
+ "vasker bilen": [
+  [
+   "hver",
+   1.0
+  ]
+ ],
+ "bilen hver": [
+  [
+   "uke",
+   1.0
+  ]
+ ],
+ "hver uke": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "jeg gleder": [
+  [
+   "meg",
+   1.0
+  ]
+ ],
+ "gleder meg": [
+  [
+   "til",
+   1.0
+  ]
+ ],
+ "meg til": [
+  [
+   "ferien",
+   1.0
+  ]
+ ],
+ "til ferien": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "reiser med": [
+  [
+   "fly",
+   1.0
+  ]
+ ],
+ "med fly": [
+  [
+   "til",
+   1.0
+  ]
+ ],
+ "fly til": [
+  [
+   "spania",
+   1.0
+  ]
+ ],
+ "til spania": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "hotellet ligger": [
+  [
+   "ved",
+   1.0
+  ]
+ ],
+ "ligger ved": [
+  [
+   "stranden",
+   1.0
+  ]
+ ],
+ "ved stranden": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "de besøker": [
+  [
+   "museer",
+   1.0
+  ]
+ ],
+ "besøker museer": [
+  [
+   "og",
+   1.0
+  ]
+ ],
+ "museer og": [
+  [
+   "gallerier",
+   1.0
+  ]
+ ],
+ "og gallerier": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "familien reiste": [
+  [
+   "til",
+   1.0
+  ]
+ ],
+ "reiste til": [
+  [
+   "fjellene",
+   1.0
+  ]
+ ],
+ "til fjellene": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "fjellene i": [
+  [
+   "sommer",
+   1.0
+  ]
+ ],
+ "læreren forklarte": [
+  [
+   "oppgaven",
+   1.0
+  ]
+ ],
+ "forklarte oppgaven": [
+  [
+   "veldig",
+   1.0
+  ]
+ ],
+ "oppgaven veldig": [
+  [
+   "godt",
+   1.0
+  ]
+ ],
+ "veldig godt": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "butikken stenger": [
+  [
+   "klokken",
+   1.0
+  ]
+ ],
+ "stenger klokken": [
+  [
+   "åtte",
+   1.0
+  ]
+ ],
+ "klokken åtte": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "åtte i": [
+  [
+   "kveld",
+   1.0
+  ]
+ ],
+ "vi feiret": [
+  [
+   "nasjonaldagen",
+   1.0
+  ]
+ ],
+ "feiret nasjonaldagen": [
+  [
+   "med",
+   1.0
+  ]
+ ],
+ "nasjonaldagen med": [
+  [
+   "flagg",
+   1.0
+  ]
+ ],
+ "med flagg": [
+  [
+   "og",
+   1.0
+  ]
+ ],
+ "flagg og": [
+  [
+   "is",
+   1.0
+  ]
+ ],
+ "og is": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "toget ankom": [
+  [
+   "stasjonen",
+   1.0
+  ]
+ ],
+ "ankom stasjonen": [
+  [
+   "ti",
+   1.0
+  ]
+ ],
+ "stasjonen ti": [
+  [
+   "minutter",
+   1.0
+  ]
+ ],
+ "ti minutter": [
+  [
+   "for",
+   1.0
+  ]
+ ],
+ "minutter for": [
+  [
+   "sent",
+   1.0
+  ]
+ ],
+ "for sent": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "restauranten serverer": [
+  [
+   "tradisjonell",
+   1.0
+  ]
+ ],
+ "serverer tradisjonell": [
+  [
+   "norsk",
+   1.0
+  ]
+ ],
+ "tradisjonell norsk": [
+  [
+   "mat",
+   1.0
+  ]
+ ],
+ "norsk mat": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "været skifter": [
+  [
+   "ofte",
+   1.0
+  ]
+ ],
+ "skifter ofte": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "ofte i": [
+  [
+   "norge",
+   1.0
+  ]
+ ],
+ "norge om": [
+  [
+   "høsten",
+   1.0
+  ]
+ ],
+ "om høsten": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "kommunen har": [
+  [
+   "bygget",
+   1.0
+  ]
+ ],
+ "har bygget": [
+  [
+   "en",
+   1.0
+  ]
+ ],
+ "bygget en": [
+  [
+   "ny",
+   1.0
+  ]
+ ],
+ "ny svømmehall": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "elevene hadde": [
+  [
+   "eksamen",
+   1.0
+  ]
+ ],
+ "hadde eksamen": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "eksamen i": [
+  [
+   "matematikk",
+   1.0
+  ]
+ ],
+ "i matematikk": [
+  [
+   "forrige",
+   1.0
+  ]
+ ],
+ "matematikk forrige": [
+  [
+   "uke",
+   1.0
+  ]
+ ],
+ "forrige uke": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "biblioteket har": [
+  [
+   "tusenvis",
+   1.0
+  ]
+ ],
+ "har tusenvis": [
+  [
+   "av",
+   1.0
+  ]
+ ],
+ "tusenvis av": [
+  [
+   "bøker",
+   0.5
+  ],
+  [
+   "kilometer",
+   0.5
+  ]
+ ],
+ "av bøker": [
+  [
+   "å",
+   1.0
+  ]
+ ],
+ "bøker å": [
+  [
+   "låne",
+   1.0
+  ]
+ ],
+ "å låne": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "naboen inviterte": [
+  [
+   "oss",
+   1.0
+  ]
+ ],
+ "inviterte oss": [
+  [
+   "på",
+   1.0
+  ]
+ ],
+ "oss på": [
+  [
+   "grillfest",
+   1.0
+  ]
+ ],
+ "på grillfest": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "grillfest i": [
+  [
+   "helgen",
+   1.0
+  ]
+ ],
+ "i helgen": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "orkesteret øvde": [
+  [
+   "på",
+   1.0
+  ]
+ ],
+ "øvde på": [
+  [
+   "konserten",
+   1.0
+  ]
+ ],
+ "på konserten": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "konserten i": [
+  [
+   "flere",
+   1.0
+  ]
+ ],
+ "i flere": [
+  [
+   "uker",
+   0.5
+  ],
+  [
+   "virksomheter",
+   0.5
+  ]
+ ],
+ "flere uker": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "ungdommene arrangerte": [
+  [
+   "en",
+   1.0
+  ]
+ ],
+ "arrangerte en": [
+  [
+   "stor",
+   1.0
+  ]
+ ],
+ "en stor": [
+  [
+   "musikkfestival",
+   0.333333
+  ],
+  [
+   "industri",
+   0.333333
+  ],
+  [
+   "reform",
+   0.333333
+  ]
+ ],
+ "stor musikkfestival": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "legene anbefaler": [
+  [
+   "å",
+   1.0
+  ]
+ ],
+ "anbefaler å": [
+  [
+   "trene",
+   1.0
+  ]
+ ],
+ "å trene": [
+  [
+   "minst",
+   1.0
+  ]
+ ],
+ "trene minst": [
+  [
+   "tre",
+   1.0
+  ]
+ ],
+ "minst tre": [
+  [
+   "ganger",
+   1.0
+  ]
+ ],
+ "tre ganger": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "ganger i": [
+  [
+   "uken",
+   1.0
+  ]
+ ],
+ "i uken": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "flyet til": [
+  [
+   "london",
+   1.0
+  ]
+ ],
+ "til london": [
+  [
+   "ble",
+   1.0
+  ]
+ ],
+ "london ble": [
+  [
+   "kansellert",
+   1.0
+  ]
+ ],
+ "ble kansellert": [
+  [
+   "på",
+   1.0
+  ]
+ ],
+ "kansellert på": [
+  [
+   "grunn",
+   1.0
+  ]
+ ],
+ "på grunn": [
+  [
+   "av",
+   1.0
+  ]
+ ],
+ "grunn av": [
+  [
+   "tåke",
+   1.0
+  ]
+ ],
+ "av tåke": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "politiet etterforsker": [
+  [
+   "et",
+   1.0
+  ]
+ ],
+ "etterforsker et": [
+  [
+   "innbrudd",
+   1.0
+  ]
+ ],
+ "et innbrudd": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "innbrudd i": [
+  [
+   "nabolaget",
+   1.0
+  ]
+ ],
+ "i nabolaget": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "brannvesenet kom": [
+  [
+   "raskt",
+   1.0
+  ]
+ ],
+ "kom raskt": [
+  [
+   "til",
+   1.0
+  ]
+ ],
+ "raskt til": [
+  [
+   "stedet",
+   1.0
+  ]
+ ],
+ "til stedet": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "sykehuset har": [
+  [
+   "fått",
+   1.0
+  ]
+ ],
+ "har fått": [
+  [
+   "større",
+   0.5
+  ],
+  [
+   "nytt",
+   0.25
+  ],
+  [
+   "økt",
+   0.25
+  ]
+ ],
+ "fått nytt": [
+  [
+   "medisinsk",
+   1.0
+  ]
+ ],
+ "nytt medisinsk": [
+  [
+   "utstyr",
+   1.0
+  ]
+ ],
+ "medisinsk utstyr": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "fotballaget vant": [
+  [
+   "kampen",
+   1.0
+  ]
+ ],
+ "vant kampen": [
+  [
+   "med",
+   1.0
+  ]
+ ],
+ "kampen med": [
+  [
+   "tre",
+   1.0
+  ]
+ ],
+ "med tre": [
+  [
+   "mål",
+   1.0
+  ]
+ ],
+ "tre mål": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "svømmeren satte": [
+  [
+   "ny",
+   1.0
+  ]
+ ],
+ "satte ny": [
+  [
+   "norsk",
+   1.0
+  ]
+ ],
+ "ny norsk": [
+  [
+   "rekord",
+   1.0
+  ]
+ ],
+ "norsk rekord": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "skiløperen trente": [
+  [
+   "hardt",
+   1.0
+  ]
+ ],
+ "trente hardt": [
+  [
+   "hele",
+   1.0
+  ]
+ ],
+ "hardt hele": [
+  [
+   "sommeren",
+   1.0
+  ]
+ ],
+ "hele sommeren": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "kunstneren åpnet": [
+  [
+   "en",
+   1.0
+  ]
+ ],
+ "åpnet en": [
+  [
+   "ny",
+   1.0
+  ]
+ ],
+ "ny utstilling": [
+  [
+   "på",
+   1.0
+  ]
+ ],
+ "utstilling på": [
+  [
+   "galleriet",
+   1.0
+  ]
+ ],
+ "på galleriet": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "forfatteren ga": [
+  [
+   "ut",
+   1.0
+  ]
+ ],
+ "ga ut": [
+  [
+   "en",
+   1.0
+  ]
+ ],
+ "ut en": [
+  [
+   "ny",
+   1.0
+  ]
+ ],
+ "ny roman": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "roman i": [
+  [
+   "høst",
+   1.0
+  ]
+ ],
+ "i høst": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "filmen fikk": [
+  [
+   "gode",
+   1.0
+  ]
+ ],
+ "fikk gode": [
+  [
+   "anmeldelser",
+   1.0
+  ]
+ ],
+ "gode anmeldelser": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "anmeldelser i": [
+  [
+   "avisene",
+   1.0
+  ]
+ ],
+ "i avisene": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "konserten ble": [
+  [
+   "utsolgt",
+   1.0
+  ]
+ ],
+ "ble utsolgt": [
+  [
+   "på",
+   1.0
+  ]
+ ],
+ "utsolgt på": [
+  [
+   "bare",
+   1.0
+  ]
+ ],
+ "på bare": [
+  [
+   "to",
+   1.0
+  ]
+ ],
+ "bare to": [
+  [
+   "dager",
+   1.0
+  ]
+ ],
+ "to dager": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "teateret setter": [
+  [
+   "opp",
+   1.0
+  ]
+ ],
+ "setter opp": [
+  [
+   "et",
+   1.0
+  ]
+ ],
+ "opp et": [
+  [
+   "nytt",
+   1.0
+  ]
+ ],
+ "et nytt": [
+  [
+   "stykke",
+   0.5
+  ],
+  [
+   "statsbudsjett",
+   0.5
+  ]
+ ],
+ "nytt stykke": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "stykke i": [
+  [
+   "vår",
+   1.0
+  ]
+ ],
+ "i vår": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "museet har": [
+  [
+   "en",
+   1.0
+  ]
+ ],
+ "en spennende": [
+  [
+   "utstilling",
+   1.0
+  ]
+ ],
+ "spennende utstilling": [
+  [
+   "om",
+   1.0
+  ]
+ ],
+ "utstilling om": [
+  [
+   "vikingene",
+   1.0
+  ]
+ ],
+ "om vikingene": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "festivalen trekker": [
+  [
+   "besøkende",
+   1.0
+  ]
+ ],
+ "trekker besøkende": [
+  [
+   "fra",
+   1.0
+  ]
+ ],
+ "besøkende fra": [
+  [
+   "hele",
+   0.5
+  ],
+  [
+   "inn",
+   0.5
+  ]
+ ],
+ "fra hele": [
+  [
+   "landet",
+   0.5
+  ],
+  [
+   "samfunnet",
+   0.5
+  ]
+ ],
+ "hele landet": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "konferansen handler": [
+  [
+   "om",
+   1.0
+  ]
+ ],
+ "handler om": [
+  [
+   "bærekraftig",
+   1.0
+  ]
+ ],
+ "om bærekraftig": [
+  [
+   "utvikling",
+   1.0
+  ]
+ ],
+ "bærekraftig utvikling": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "semesteret starter": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "starter i": [
+  [
+   "august",
+   1.0
+  ]
+ ],
+ "i august": [
+  [
+   "hvert",
+   1.0
+  ]
+ ],
+ "august hvert": [
+  [
+   "år",
+   1.0
+  ]
+ ],
+ "hvert år": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "studentene forbereder": [
+  [
+   "seg",
+   1.0
+  ]
+ ],
+ "forbereder seg": [
+  [
+   "til",
+   1.0
+  ]
+ ],
+ "seg til": [
+  [
+   "eksamen",
+   1.0
+  ]
+ ],
+ "til eksamen": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "universitetet tilbyr": [
+  [
+   "mange",
+   1.0
+  ]
+ ],
+ "tilbyr mange": [
+  [
+   "forskjellige",
+   1.0
+  ]
+ ],
+ "mange forskjellige": [
+  [
+   "studier",
+   1.0
+  ]
+ ],
+ "forskjellige studier": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "forskningen viser": [
+  [
+   "at",
+   1.0
+  ]
+ ],
+ "viser at": [
+  [
+   "mosjon",
+   1.0
+  ]
+ ],
+ "at mosjon": [
+  [
+   "er",
+   1.0
+  ]
+ ],
+ "mosjon er": [
+  [
+   "viktig",
+   1.0
+  ]
+ ],
+ "er viktig": [
+  [
+   "for",
+   1.0
+  ]
+ ],
+ "viktig for": [
+  [
+   "helsen",
+   0.25
+  ],
+  [
+   "samfunnet",
+   0.25
+  ],
+  [
+   "fiskerinæringen",
+   0.25
+  ],
+  [
+   "å",
+   0.25
+  ]
+ ],
+ "for helsen": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "rapporten ble": [
+  [
+   "publisert",
+   1.0
+  ]
+ ],
+ "ble publisert": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "publisert i": [
+  [
+   "forrige",
+   1.0
+  ]
+ ],
+ "i forrige": [
+  [
+   "uke",
+   1.0
+  ]
+ ],
+ "statistikken viser": [
+  [
+   "en",
+   1.0
+  ]
+ ],
+ "viser en": [
+  [
+   "økning",
+   1.0
+  ]
+ ],
+ "en økning": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "økning i": [
+  [
+   "turismen",
+   1.0
+  ]
+ ],
+ "i turismen": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "økonomien vokser": [
+  [
+   "sakte",
+   1.0
+  ]
+ ],
+ "vokser sakte": [
+  [
+   ",",
+   1.0
+  ]
+ ],
+ "sakte ,": [
+  [
+   "men",
+   1.0
+  ]
+ ],
+ ", men": [
+  [
+   "sikkert",
+   0.5
+  ],
+  [
+   "større",
+   0.5
+  ]
+ ],
+ "men sikkert": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "prisene på": [
+  [
+   "boliger",
+   1.0
+  ]
+ ],
+ "på boliger": [
+  [
+   "har",
+   1.0
+  ]
+ ],
+ "boliger har": [
+  [
+   "steget",
+   1.0
+  ]
+ ],
+ "har steget": [
+  [
+   "det",
+   1.0
+  ]
+ ],
+ "steget det": [
+  [
+   "siste",
+   1.0
+  ]
+ ],
+ "det siste": [
+  [
+   "året",
+   0.5
+  ],
+  [
+   ".",
+   0.5
+  ]
+ ],
+ "siste året": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "renten er": [
+  [
+   "lav",
+   1.0
+  ]
+ ],
+ "er lav": [
+  [
+   "for",
+   1.0
+  ]
+ ],
+ "lav for": [
+  [
+   "tiden",
+   1.0
+  ]
+ ],
+ "for tiden": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "arbeidsledigheten har": [
+  [
+   "gått",
+   1.0
+  ]
+ ],
+ "har gått": [
+  [
+   "ned",
+   1.0
+  ]
+ ],
+ "gått ned": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "ned i": [
+  [
+   "det",
+   1.0
+  ]
+ ],
+ "i det": [
+  [
+   "norske",
+   0.666667
+  ],
+  [
+   "siste",
+   0.111111
+  ],
+  [
+   "nye",
+   0.111111
+  ],
+  [
+   ".",
+   0.111111
+  ]
+ ],
+ "regjeringen presenterte": [
+  [
+   "et",
+   1.0
+  ]
+ ],
+ "presenterte et": [
+  [
+   "nytt",
+   0.5
+  ],
+  [
+   "ambisiøst",
+   0.5
+  ]
+ ],
+ "nytt statsbudsjett": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "stortinget vedtok": [
+  [
+   "en",
+   1.0
+  ]
+ ],
+ "vedtok en": [
+  [
+   "ny",
+   1.0
+  ]
+ ],
+ "ny lov": [
+  [
+   "om",
+   1.0
+  ]
+ ],
+ "lov om": [
+  [
+   "personvern",
+   1.0
+  ]
+ ],
+ "om personvern": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "valgkampen er": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "i full": [
+  [
+   "gang",
+   1.0
+  ]
+ ],
+ "full gang": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "partiene diskuterer": [
+  [
+   "klima",
+   1.0
+  ]
+ ],
+ "diskuterer klima": [
+  [
+   "og",
+   1.0
+  ]
+ ],
+ "klima og": [
+  [
+   "miljøpolitikk",
+   1.0
+  ]
+ ],
+ "og miljøpolitikk": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "kommunevalget finner": [
+  [
+   "sted",
+   1.0
+  ]
+ ],
+ "finner sted": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "sted i": [
+  [
+   "september",
+   1.0
+  ]
+ ],
+ "i september": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "ordføreren holdt": [
+  [
+   "en",
+   1.0
+  ]
+ ],
+ "holdt en": [
+  [
+   "tale",
+   1.0
+  ]
+ ],
+ "en tale": [
+  [
+   "på",
+   1.0
+  ]
+ ],
+ "tale på": [
+  [
+   "rådhuset",
+   1.0
+  ]
+ ],
+ "på rådhuset": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "det frivillige": [
+  [
+   "arbeidet",
+   1.0
+  ]
+ ],
+ "frivillige arbeidet": [
+  [
+   "er",
+   1.0
+  ]
+ ],
+ "arbeidet er": [
+  [
+   "viktig",
+   1.0
+  ]
+ ],
+ "for samfunnet": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "organisasjonen hjelper": [
+  [
+   "mennesker",
+   1.0
+  ]
+ ],
+ "hjelper mennesker": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "mennesker i": [
+  [
+   "nød",
+   1.0
+  ]
+ ],
+ "i nød": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "røde kors": [
+  [
+   "samler",
+   1.0
+  ]
+ ],
+ "kors samler": [
+  [
+   "inn",
+   1.0
+  ]
+ ],
+ "samler inn": [
+  [
+   "penger",
+   1.0
+  ]
+ ],
+ "inn penger": [
+  [
+   "til",
+   1.0
+  ]
+ ],
+ "penger til": [
+  [
+   "hjelpearbeid",
+   1.0
+  ]
+ ],
+ "til hjelpearbeid": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "naturen i": [
+  [
+   "norge",
+   1.0
+  ]
+ ],
+ "norge er": [
+  [
+   "kjent",
+   0.333333
+  ],
+  [
+   "tilpasset",
+   0.333333
+  ],
+  [
+   "blant",
+   0.333333
+  ]
+ ],
+ "er kjent": [
+  [
+   "for",
+   1.0
+  ]
+ ],
+ "kjent for": [
+  [
+   "sin",
+   0.5
+  ],
+  [
+   "sitt",
+   0.5
+  ]
+ ],
+ "for sin": [
+  [
+   "skjønnhet",
+   1.0
+  ]
+ ],
+ "sin skjønnhet": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "fjordene er": [
+  [
+   "en",
+   1.0
+  ]
+ ],
+ "en populær": [
+  [
+   "turistattraksjon",
+   1.0
+  ]
+ ],
+ "populær turistattraksjon": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "nordlyset kan": [
+  [
+   "sees",
+   1.0
+  ]
+ ],
+ "kan sees": [
+  [
+   "fra",
+   1.0
+  ]
+ ],
+ "sees fra": [
+  [
+   "nord-norge",
+   1.0
+  ]
+ ],
+ "fra nord-norge": [
+  [
+   "om",
+   1.0
+  ]
+ ],
+ "nord-norge om": [
+  [
+   "vinteren",
+   1.0
+  ]
+ ],
+ "midnattssolen er": [
+  [
+   "et",
+   1.0
+  ]
+ ],
+ "er et": [
+  [
+   "unikt",
+   0.166667
+  ],
+  [
+   "moderne",
+   0.166667
+  ],
+  [
+   "populært",
+   0.166667
+  ],
+  [
+   "globalt",
+   0.166667
+  ],
+  [
+   "grunnleggende",
+   0.166667
+  ],
+  [
+   "tema",
+   0.166667
+  ]
+ ],
+ "et unikt": [
+  [
+   "fenomen",
+   1.0
+  ]
+ ],
+ "unikt fenomen": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "fenomen i": [
+  [
+   "nord",
+   1.0
+  ]
+ ],
+ "i nord": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "kysten strekker": [
+  [
+   "seg",
+   1.0
+  ]
+ ],
+ "strekker seg": [
+  [
+   "over",
+   1.0
+  ]
+ ],
+ "seg over": [
+  [
+   "tusenvis",
+   1.0
+  ]
+ ],
+ "over tusenvis": [
+  [
+   "av",
+   1.0
+  ]
+ ],
+ "av kilometer": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "norges nasjonaldag": [
+  [
+   "feires",
+   1.0
+  ]
+ ],
+ "nasjonaldag feires": [
+  [
+   "den",
+   1.0
+  ]
+ ],
+ "feires den": [
+  [
+   "syttende",
+   1.0
+  ]
+ ],
+ "den syttende": [
+  [
+   "mai",
+   1.0
+  ]
+ ],
+ "syttende mai": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "bunadene er": [
+  [
+   "en",
+   1.0
+  ]
+ ],
+ "en viktig": [
+  [
+   "del",
+   0.5
+  ],
+  [
+   "rolle",
+   0.5
+  ]
+ ],
+ "viktig del": [
+  [
+   "av",
+   1.0
+  ]
+ ],
+ "del av": [
+  [
+   "tradisjonen",
+   0.5
+  ],
+  [
+   "klimastrategien",
+   0.5
+  ]
+ ],
+ "av tradisjonen": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "stortinget ligger": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "ligger i": [
+  [
+   "sentrum",
+   1.0
+  ]
+ ],
+ "i sentrum": [
+  [
+   "av",
+   0.5
+  ],
+  [
+   "er",
+   0.5
+  ]
+ ],
+ "sentrum av": [
+  [
+   "oslo",
+   1.0
+  ]
+ ],
+ "av oslo": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "bryggen i": [
+  [
+   "bergen",
+   1.0
+  ]
+ ],
+ "i bergen": [
+  [
+   "er",
+   1.0
+  ]
+ ],
+ "bergen er": [
+  [
+   "på",
+   1.0
+  ]
+ ],
+ "på verdensarvlisten": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "vigelandsparken er": [
+  [
+   "en",
+   1.0
+  ]
+ ],
+ "en kjent": [
+  [
+   "skulpturpark",
+   1.0
+  ]
+ ],
+ "kjent skulpturpark": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "operahuset i": [
+  [
+   "oslo",
+   1.0
+  ]
+ ],
+ "oslo er": [
+  [
+   "et",
+   1.0
+  ]
+ ],
+ "et moderne": [
+  [
+   "landemerke",
+   1.0
+  ]
+ ],
+ "moderne landemerke": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "lofoten er": [
+  [
+   "kjent",
+   1.0
+  ]
+ ],
+ "for sitt": [
+  [
+   "dramatiske",
+   1.0
+  ]
+ ],
+ "sitt dramatiske": [
+  [
+   "landskap",
+   1.0
+  ]
+ ],
+ "dramatiske landskap": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "hurtigruten seiler": [
+  [
+   "langs",
+   1.0
+  ]
+ ],
+ "seiler langs": [
+  [
+   "norskekysten",
+   1.0
+  ]
+ ],
+ "langs norskekysten": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "trolltunga er": [
+  [
+   "et",
+   1.0
+  ]
+ ],
+ "et populært": [
+  [
+   "turmål",
+   1.0
+  ]
+ ],
+ "populært turmål": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "preikestolen trekker": [
+  [
+   "mange",
+   1.0
+  ]
+ ],
+ "trekker mange": [
+  [
+   "turister",
+   1.0
+  ]
+ ],
+ "mange turister": [
+  [
+   "hvert",
+   1.0
+  ]
+ ],
+ "turister hvert": [
+  [
+   "år",
+   1.0
+  ]
+ ],
+ "hardangervidda er": [
+  [
+   "norges",
+   1.0
+  ]
+ ],
+ "er norges": [
+  [
+   "største",
+   1.0
+  ]
+ ],
+ "norges største": [
+  [
+   "nasjonalpark",
+   0.5
+  ],
+  [
+   "dyr",
+   0.5
+  ]
+ ],
+ "største nasjonalpark": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "jotunheimen har": [
+  [
+   "noen",
+   1.0
+  ]
+ ],
+ "har noen": [
+  [
+   "av",
+   1.0
+  ]
+ ],
+ "noen av": [
+  [
+   "de",
+   1.0
+  ]
+ ],
+ "av de": [
+  [
+   "høyeste",
+   1.0
+  ]
+ ],
+ "de høyeste": [
+  [
+   "fjellene",
+   1.0
+  ]
+ ],
+ "høyeste fjellene": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "galdhøpiggen er": [
+  [
+   "det",
+   1.0
+  ]
+ ],
+ "er det": [
+  [
+   "høyeste",
+   1.0
+  ]
+ ],
+ "det høyeste": [
+  [
+   "fjellet",
+   1.0
+  ]
+ ],
+ "høyeste fjellet": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "fjellet i": [
+  [
+   "norge",
+   1.0
+  ]
+ ],
+ "jostedalsbreen er": [
+  [
+   "den",
+   1.0
+  ]
+ ],
+ "den største": [
+  [
+   "isbreen",
+   1.0
+  ]
+ ],
+ "største isbreen": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "isbreen i": [
+  [
+   "europa",
+   1.0
+  ]
+ ],
+ "i europa": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "sognefjorden er": [
+  [
+   "den",
+   1.0
+  ]
+ ],
+ "den lengste": [
+  [
+   "fjorden",
+   1.0
+  ]
+ ],
+ "lengste fjorden": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "fjorden i": [
+  [
+   "norge",
+   1.0
+  ]
+ ],
+ "de norske": [
+  [
+   "havområdene",
+   0.666667
+  ],
+  [
+   "skogene",
+   0.333333
+  ]
+ ],
+ "norske skogene": [
+  [
+   "har",
+   1.0
+  ]
+ ],
+ "skogene har": [
+  [
+   "mange",
+   1.0
+  ]
+ ],
+ "har mange": [
+  [
+   "ville",
+   1.0
+  ]
+ ],
+ "mange ville": [
+  [
+   "dyr",
+   1.0
+  ]
+ ],
+ "ville dyr": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "elgen er": [
+  [
+   "norges",
+   1.0
+  ]
+ ],
+ "største dyr": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "reinsdyr lever": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "lever i": [
+  [
+   "fjellområdene",
+   1.0
+  ]
+ ],
+ "i fjellområdene": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "havørnen hekker": [
+  [
+   "langs",
+   1.0
+  ]
+ ],
+ "hekker langs": [
+  [
+   "kysten",
+   1.0
+  ]
+ ],
+ "langs kysten": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "laks og": [
+  [
+   "ørret",
+   1.0
+  ]
+ ],
+ "og ørret": [
+  [
+   "finnes",
+   1.0
+  ]
+ ],
+ "ørret finnes": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "finnes i": [
+  [
+   "mange",
+   1.0
+  ]
+ ],
+ "i mange": [
+  [
+   "norske",
+   0.5
+  ],
+  [
+   "byer",
+   0.5
+  ]
+ ],
+ "mange norske": [
+  [
+   "elver",
+   1.0
+  ]
+ ],
+ "norske elver": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "torsken er": [
+  [
+   "viktig",
+   1.0
+  ]
+ ],
+ "for fiskerinæringen": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "oppdrettsnæringen er": [
+  [
+   "en",
+   1.0
+  ]
+ ],
+ "stor industri": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "industri i": [
+  [
+   "norge",
+   1.0
+  ]
+ ],
+ "olje og": [
+  [
+   "gass",
+   1.0
+  ]
+ ],
+ "og gass": [
+  [
+   "er",
+   1.0
+  ]
+ ],
+ "gass er": [
+  [
+   "fortsatt",
+   1.0
+  ]
+ ],
+ "er fortsatt": [
+  [
+   "viktige",
+   1.0
+  ]
+ ],
+ "fortsatt viktige": [
+  [
+   "ressurser",
+   1.0
+  ]
+ ],
+ "viktige ressurser": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "vannkraft gir": [
+  [
+   "mesteparten",
+   1.0
+  ]
+ ],
+ "gir mesteparten": [
+  [
+   "av",
+   1.0
+  ]
+ ],
+ "mesteparten av": [
+  [
+   "strømmen",
+   1.0
+  ]
+ ],
+ "av strømmen": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "strømmen i": [
+  [
+   "norge",
+   1.0
+  ]
+ ],
+ "elbiler er": [
+  [
+   "svært",
+   1.0
+  ]
+ ],
+ "er svært": [
+  [
+   "populære",
+   1.0
+  ]
+ ],
+ "svært populære": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "populære i": [
+  [
+   "norge",
+   1.0
+  ]
+ ],
+ "kollektivtransporten er": [
+  [
+   "godt",
+   1.0
+  ]
+ ],
+ "godt utbygd": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "utbygd i": [
+  [
+   "byene",
+   1.0
+  ]
+ ],
+ "i byene": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "sykkelveier bygges": [
+  [
+   "ut",
+   1.0
+  ]
+ ],
+ "bygges ut": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "ut i": [
+  [
+   "mange",
+   1.0
+  ]
+ ],
+ "mange byer": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "jernbanen forbinder": [
+  [
+   "de",
+   1.0
+  ]
+ ],
+ "forbinder de": [
+  [
+   "største",
+   1.0
+  ]
+ ],
+ "de største": [
+  [
+   "byene",
+   1.0
+  ]
+ ],
+ "største byene": [
+  [
+   ".",
+   0.5
+  ],
+  [
+   "er",
+   0.5
+  ]
+ ],
+ "flyrutene dekker": [
+  [
+   "hele",
+   1.0
+  ]
+ ],
+ "dekker hele": [
+  [
+   "landet",
+   1.0
+  ]
+ ],
+ "tunneler gjør": [
+  [
+   "reisen",
+   1.0
+  ]
+ ],
+ "gjør reisen": [
+  [
+   "enklere",
+   1.0
+  ]
+ ],
+ "reisen enklere": [
+  [
+   "gjennom",
+   1.0
+  ]
+ ],
+ "enklere gjennom": [
+  [
+   "fjellene",
+   1.0
+  ]
+ ],
+ "gjennom fjellene": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "broer forbinder": [
+  [
+   "mange",
+   1.0
+  ]
+ ],
+ "forbinder mange": [
+  [
+   "øyer",
+   1.0
+  ]
+ ],
+ "mange øyer": [
+  [
+   "med",
+   1.0
+  ]
+ ],
+ "øyer med": [
+  [
+   "fastlandet",
+   1.0
+  ]
+ ],
+ "med fastlandet": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "fergene er": [
+  [
+   "viktige",
+   1.0
+  ]
+ ],
+ "er viktige": [
+  [
+   "for",
+   1.0
+  ]
+ ],
+ "viktige for": [
+  [
+   "transport",
+   1.0
+  ]
+ ],
+ "for transport": [
+  [
+   "langs",
+   1.0
+  ]
+ ],
+ "transport langs": [
+  [
+   "kysten",
+   1.0
+  ]
+ ],
+ "veiene i": [
+  [
+   "norge",
+   1.0
+  ]
+ ],
+ "norge kan": [
+  [
+   "være",
+   1.0
+  ]
+ ],
+ "kan være": [
+  [
+   "utfordrende",
+   1.0
+  ]
+ ],
+ "være utfordrende": [
+  [
+   "om",
+   1.0
+  ]
+ ],
+ "utfordrende om": [
+  [
+   "vinteren",
+   1.0
+  ]
+ ],
+ "brøytebilene jobber": [
+  [
+   "døgnet",
+   1.0
+  ]
+ ],
+ "jobber døgnet": [
+  [
+   "rundt",
+   1.0
+  ]
+ ],
+ "døgnet rundt": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "saltbilen holder": [
+  [
+   "veiene",
+   1.0
+  ]
+ ],
+ "holder veiene": [
+  [
+   "fri",
+   1.0
+  ]
+ ],
+ "veiene fri": [
+  [
+   "for",
+   1.0
+  ]
+ ],
+ "fri for": [
+  [
+   "is",
+   1.0
+  ]
+ ],
+ "for is": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "vinterdekk er": [
+  [
+   "påbudt",
+   1.0
+  ]
+ ],
+ "er påbudt": [
+  [
+   "fra",
+   1.0
+  ]
+ ],
+ "påbudt fra": [
+  [
+   "november",
+   1.0
+  ]
+ ],
+ "fra november": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "kjørelysene skal": [
+  [
+   "alltid",
+   1.0
+  ]
+ ],
+ "skal alltid": [
+  [
+   "være",
+   1.0
+  ]
+ ],
+ "alltid være": [
+  [
+   "på",
+   1.0
+  ]
+ ],
+ "være på": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "på i": [
+  [
+   "norge",
+   1.0
+  ]
+ ],
+ "fartgrensen er": [
+  [
+   "vanligvis",
+   1.0
+  ]
+ ],
+ "er vanligvis": [
+  [
+   "åtti",
+   1.0
+  ]
+ ],
+ "vanligvis åtti": [
+  [
+   "kilometer",
+   1.0
+  ]
+ ],
+ "åtti kilometer": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "kilometer i": [
+  [
+   "timen",
+   1.0
+  ]
+ ],
+ "i timen": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "bomstasjoner er": [
+  [
+   "vanlige",
+   1.0
+  ]
+ ],
+ "er vanlige": [
+  [
+   "på",
+   1.0
+  ]
+ ],
+ "vanlige på": [
+  [
+   "norske",
+   1.0
+  ]
+ ],
+ "på norske": [
+  [
+   "veier",
+   1.0
+  ]
+ ],
+ "norske veier": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "parkeringen i": [
+  [
+   "sentrum",
+   1.0
+  ]
+ ],
+ "sentrum er": [
+  [
+   "dyr",
+   1.0
+  ]
+ ],
+ "er dyr": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "handler dagligvarer": [
+  [
+   "på",
+   1.0
+  ]
+ ],
+ "dagligvarer på": [
+  [
+   "rema",
+   1.0
+  ]
+ ],
+ "på rema": [
+  [
+   "og",
+   1.0
+  ]
+ ],
+ "rema og": [
+  [
+   "kiwi",
+   1.0
+  ]
+ ],
+ "og kiwi": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "mange nordmenn": [
+  [
+   "har",
+   1.0
+  ]
+ ],
+ "nordmenn har": [
+  [
+   "hytte",
+   1.0
+  ]
+ ],
+ "har hytte": [
+  [
+   "på",
+   1.0
+  ]
+ ],
+ "hytte på": [
+  [
+   "fjellet",
+   1.0
+  ]
+ ],
+ "på fjellet": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "påskeferie på": [
+  [
+   "hytta",
+   1.0
+  ]
+ ],
+ "på hytta": [
+  [
+   "er",
+   1.0
+  ]
+ ],
+ "hytta er": [
+  [
+   "en",
+   1.0
+  ]
+ ],
+ "en norsk": [
+  [
+   "tradisjon",
+   1.0
+  ]
+ ],
+ "norsk tradisjon": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "kvikk lunsj": [
+  [
+   "og",
+   1.0
+  ]
+ ],
+ "lunsj og": [
+  [
+   "appelsiner",
+   1.0
+  ]
+ ],
+ "og appelsiner": [
+  [
+   "hører",
+   1.0
+  ]
+ ],
+ "appelsiner hører": [
+  [
+   "påsken",
+   1.0
+  ]
+ ],
+ "hører påsken": [
+  [
+   "til",
+   1.0
+  ]
+ ],
+ "påsken til": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "nordmenn elsker": [
+  [
+   "friluftsliv",
+   1.0
+  ]
+ ],
+ "elsker friluftsliv": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "turgåing er": [
+  [
+   "den",
+   1.0
+  ]
+ ],
+ "den mest": [
+  [
+   "populære",
+   1.0
+  ]
+ ],
+ "mest populære": [
+  [
+   "fritidsaktiviteten",
+   1.0
+  ]
+ ],
+ "populære fritidsaktiviteten": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "bålmat smaker": [
+  [
+   "ekstra",
+   1.0
+  ]
+ ],
+ "smaker ekstra": [
+  [
+   "godt",
+   1.0
+  ]
+ ],
+ "ekstra godt": [
+  [
+   "ute",
+   1.0
+  ]
+ ],
+ "godt ute": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "ute i": [
+  [
+   "naturen",
+   1.0
+  ]
+ ],
+ "i naturen": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "utenriksministeren understreket": [
+  [
+   "betydningen",
+   1.0
+  ]
+ ],
+ "understreket betydningen": [
+  [
+   "av",
+   1.0
+  ]
+ ],
+ "betydningen av": [
+  [
+   "internasjonalt",
+   1.0
+  ]
+ ],
+ "av internasjonalt": [
+  [
+   "samarbeid",
+   1.0
+  ]
+ ],
+ "internasjonalt samarbeid": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "forskerne publiserte": [
+  [
+   "resultatene",
+   1.0
+  ]
+ ],
+ "publiserte resultatene": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "resultatene i": [
+  [
+   "et",
+   1.0
+  ]
+ ],
+ "i et": [
+  [
+   "anerkjent",
+   1.0
+  ]
+ ],
+ "et anerkjent": [
+  [
+   "tidsskrift",
+   1.0
+  ]
+ ],
+ "anerkjent tidsskrift": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "klimaendringene påvirker": [
+  [
+   "norsk",
+   1.0
+  ]
+ ],
+ "påvirker norsk": [
+  [
+   "natur",
+   1.0
+  ]
+ ],
+ "norsk natur": [
+  [
+   "og",
+   1.0
+  ]
+ ],
+ "natur og": [
+  [
+   "dyreliv",
+   1.0
+  ]
+ ],
+ "og dyreliv": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "dyreliv i": [
+  [
+   "økende",
+   1.0
+  ]
+ ],
+ "i økende": [
+  [
+   "grad",
+   1.0
+  ]
+ ],
+ "økende grad": [
+  [
+   ".",
+   0.5
+  ],
+  [
+   "til",
+   0.5
+  ]
+ ],
+ "digitaliseringen av": [
+  [
+   "offentlige",
+   1.0
+  ]
+ ],
+ "av offentlige": [
+  [
+   "tjenester",
+   1.0
+  ]
+ ],
+ "offentlige tjenester": [
+  [
+   "fortsetter",
+   1.0
+  ]
+ ],
+ "tjenester fortsetter": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "fortsetter i": [
+  [
+   "høyt",
+   1.0
+  ]
+ ],
+ "i høyt": [
+  [
+   "tempo",
+   1.0
+  ]
+ ],
+ "høyt tempo": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "integreringspolitikken står": [
+  [
+   "sentralt",
+   1.0
+  ]
+ ],
+ "står sentralt": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "sentralt i": [
+  [
+   "den",
+   1.0
+  ]
+ ],
+ "i den": [
+  [
+   "politiske",
+   0.5
+  ],
+  [
+   "norske",
+   0.5
+  ]
+ ],
+ "den politiske": [
+  [
+   "debatten",
+   1.0
+  ]
+ ],
+ "politiske debatten": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "helsevesenet står": [
+  [
+   "overfor",
+   1.0
+  ]
+ ],
+ "står overfor": [
+  [
+   "store",
+   0.5
+  ],
+  [
+   "kapasitetsutfordringer",
+   0.5
+  ]
+ ],
+ "overfor store": [
+  [
+   "utfordringer",
+   1.0
+  ]
+ ],
+ "store utfordringer": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "utfordringer i": [
+  [
+   "årene",
+   1.0
+  ]
+ ],
+ "i årene": [
+  [
+   "fremover",
+   1.0
+  ]
+ ],
+ "årene fremover": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "utdanningssystemet gjennomgår": [
+  [
+   "en",
+   1.0
+  ]
+ ],
+ "gjennomgår en": [
+  [
+   "betydelig",
+   1.0
+  ]
+ ],
+ "en betydelig": [
+  [
+   "modernisering",
+   0.5
+  ],
+  [
+   "omorganisering",
+   0.5
+  ]
+ ],
+ "betydelig modernisering": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "næringslivet investerer": [
+  [
+   "tungt",
+   1.0
+  ]
+ ],
+ "investerer tungt": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "tungt i": [
+  [
+   "grønn",
+   1.0
+  ]
+ ],
+ "i grønn": [
+  [
+   "teknologi",
+   1.0
+  ]
+ ],
+ "grønn teknologi": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "kulturbudsjettet ble": [
+  [
+   "økt",
+   1.0
+  ]
+ ],
+ "ble økt": [
+  [
+   "med",
+   0.5
+  ],
+  [
+   "i",
+   0.5
+  ]
+ ],
+ "økt med": [
+  [
+   "fem",
+   1.0
+  ]
+ ],
+ "med fem": [
+  [
+   "prosent",
+   1.0
+  ]
+ ],
+ "fem prosent": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "prosent i": [
+  [
+   "det",
+   1.0
+  ]
+ ],
+ "det nye": [
+  [
+   "statsbudsjettet",
+   0.333333
+  ],
+  [
+   "norske",
+   0.333333
+  ],
+  [
+   "boligområdet",
+   0.333333
+  ]
+ ],
+ "nye statsbudsjettet": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "menneskerettighetene danner": [
+  [
+   "grunnlaget",
+   1.0
+  ]
+ ],
+ "danner grunnlaget": [
+  [
+   "for",
+   1.0
+  ]
+ ],
+ "grunnlaget for": [
+  [
+   "det",
+   1.0
+  ]
+ ],
+ "for det": [
+  [
+   "nye",
+   0.666667
+  ],
+  [
+   "norske",
+   0.333333
+  ]
+ ],
+ "det norske": [
+  [
+   "rettssystemet",
+   0.25
+  ],
+  [
+   "samfunnet",
+   0.25
+  ],
+  [
+   "arbeidslivet",
+   0.125
+  ],
+  [
+   "demokratiet",
+   0.125
+  ],
+  [
+   "helsevesenet",
+   0.125
+  ],
+  [
+   "banksystemet",
+   0.125
+  ]
+ ],
+ "norske rettssystemet": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "den teknologiske": [
+  [
+   "utviklingen",
+   1.0
+  ]
+ ],
+ "teknologiske utviklingen": [
+  [
+   "skaper",
+   1.0
+  ]
+ ],
+ "utviklingen skaper": [
+  [
+   "nye",
+   1.0
+  ]
+ ],
+ "skaper nye": [
+  [
+   "muligheter",
+   1.0
+  ]
+ ],
+ "nye muligheter": [
+  [
+   "for",
+   1.0
+  ]
+ ],
+ "muligheter for": [
+  [
+   "arbeidslivet",
+   1.0
+  ]
+ ],
+ "for arbeidslivet": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "urbaniseringen fører": [
+  [
+   "til",
+   1.0
+  ]
+ ],
+ "fører til": [
+  [
+   "at",
+   1.0
+  ]
+ ],
+ "til at": [
+  [
+   "flere",
+   1.0
+  ]
+ ],
+ "at flere": [
+  [
+   "mennesker",
+   1.0
+  ]
+ ],
+ "flere mennesker": [
+  [
+   "flytter",
+   1.0
+  ]
+ ],
+ "mennesker flytter": [
+  [
+   "til",
+   1.0
+  ]
+ ],
+ "flytter til": [
+  [
+   "byene",
+   1.0
+  ]
+ ],
+ "til byene": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "befolkningsveksten i": [
+  [
+   "storbyene",
+   1.0
+  ]
+ ],
+ "i storbyene": [
+  [
+   "skaper",
+   1.0
+  ]
+ ],
+ "storbyene skaper": [
+  [
+   "behov",
+   1.0
+  ]
+ ],
+ "skaper behov": [
+  [
+   "for",
+   1.0
+  ]
+ ],
+ "behov for": [
+  [
+   "flere",
+   1.0
+  ]
+ ],
+ "for flere": [
+  [
+   "boliger",
+   1.0
+  ]
+ ],
+ "flere boliger": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "distriktspolitikken er": [
+  [
+   "viktig",
+   1.0
+  ]
+ ],
+ "for å": [
+  [
+   "opprettholde",
+   0.142857
+  ],
+  [
+   "sikre",
+   0.142857
+  ],
+  [
+   "møte",
+   0.142857
+  ],
+  [
+   "balansere",
+   0.142857
+  ],
+  [
+   "forenkle",
+   0.142857
+  ],
+  [
+   "bekjempe",
+   0.142857
+  ],
+  [
+   "fremme",
+   0.142857
+  ]
+ ],
+ "å opprettholde": [
+  [
+   "bosetting",
+   1.0
+  ]
+ ],
+ "opprettholde bosetting": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "bosetting i": [
+  [
+   "hele",
+   1.0
+  ]
+ ],
+ "i hele": [
+  [
+   "landet",
+   0.5
+  ],
+  [
+   "verdikjeden",
+   0.5
+  ]
+ ],
+ "samferdselsbudsjettet prioriterer": [
+  [
+   "vedlikehold",
+   1.0
+  ]
+ ],
+ "prioriterer vedlikehold": [
+  [
+   "av",
+   1.0
+  ]
+ ],
+ "vedlikehold av": [
+  [
+   "eksisterende",
+   1.0
+  ]
+ ],
+ "av eksisterende": [
+  [
+   "infrastruktur",
+   1.0
+  ]
+ ],
+ "eksisterende infrastruktur": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "investeringene i": [
+  [
+   "fornybar",
+   1.0
+  ]
+ ],
+ "i fornybar": [
+  [
+   "energi",
+   1.0
+  ]
+ ],
+ "fornybar energi": [
+  [
+   "har",
+   1.0
+  ]
+ ],
+ "energi har": [
+  [
+   "økt",
+   1.0
+  ]
+ ],
+ "har økt": [
+  [
+   "betraktelig",
+   1.0
+  ]
+ ],
+ "økt betraktelig": [
+  [
+   "de",
+   1.0
+  ]
+ ],
+ "betraktelig de": [
+  [
+   "siste",
+   1.0
+  ]
+ ],
+ "de siste": [
+  [
+   "årene",
+   0.5
+  ],
+  [
+   "tiårene",
+   0.5
+  ]
+ ],
+ "siste årene": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "petroleumsindustrien omstiller": [
+  [
+   "seg",
+   1.0
+  ]
+ ],
+ "omstiller seg": [
+  [
+   "gradvis",
+   1.0
+  ]
+ ],
+ "seg gradvis": [
+  [
+   "til",
+   1.0
+  ]
+ ],
+ "gradvis til": [
+  [
+   "grønnere",
+   1.0
+  ]
+ ],
+ "til grønnere": [
+  [
+   "drift",
+   1.0
+  ]
+ ],
+ "grønnere drift": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "fiskerinæringen er": [
+  [
+   "en",
+   1.0
+  ]
+ ],
+ "en av": [
+  [
+   "landets",
+   1.0
+  ]
+ ],
+ "av landets": [
+  [
+   "viktigste",
+   1.0
+  ]
+ ],
+ "landets viktigste": [
+  [
+   "eksportnæringer",
+   1.0
+  ]
+ ],
+ "viktigste eksportnæringer": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "skogbruket spiller": [
+  [
+   "en",
+   1.0
+  ]
+ ],
+ "spiller en": [
+  [
+   "viktig",
+   0.666667
+  ],
+  [
+   "vesentlig",
+   0.333333
+  ]
+ ],
+ "en vesentlig": [
+  [
+   "rolle",
+   1.0
+  ]
+ ],
+ "vesentlig rolle": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "rolle i": [
+  [
+   "den",
+   0.333333
+  ],
+  [
+   "konflikthåndtering",
+   0.333333
+  ],
+  [
+   "det",
+   0.333333
+  ]
+ ],
+ "den norske": [
+  [
+   "bioøkonomien",
+   0.5
+  ],
+  [
+   "mattradisjonen",
+   0.5
+  ]
+ ],
+ "norske bioøkonomien": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "jordbruket i": [
+  [
+   "norge",
+   1.0
+  ]
+ ],
+ "er tilpasset": [
+  [
+   "et",
+   1.0
+  ]
+ ],
+ "tilpasset et": [
+  [
+   "utfordrende",
+   1.0
+  ]
+ ],
+ "et utfordrende": [
+  [
+   "klima",
+   1.0
+  ]
+ ],
+ "utfordrende klima": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "turismen bidrar": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "bidrar i": [
+  [
+   "økende",
+   1.0
+  ]
+ ],
+ "grad til": [
+  [
+   "verdiskapingen",
+   1.0
+  ]
+ ],
+ "til verdiskapingen": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "verdiskapingen i": [
+  [
+   "distriktene",
+   1.0
+  ]
+ ],
+ "i distriktene": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "innovasjonspolitikken legger": [
+  [
+   "til",
+   1.0
+  ]
+ ],
+ "legger til": [
+  [
+   "rette",
+   1.0
+  ]
+ ],
+ "til rette": [
+  [
+   "for",
+   1.0
+  ]
+ ],
+ "rette for": [
+  [
+   "ny",
+   1.0
+  ]
+ ],
+ "for ny": [
+  [
+   "næringsutvikling",
+   1.0
+  ]
+ ],
+ "ny næringsutvikling": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "handelsavtalen med": [
+  [
+   "eu",
+   1.0
+  ]
+ ],
+ "med eu": [
+  [
+   "er",
+   1.0
+  ]
+ ],
+ "eu er": [
+  [
+   "avgjørende",
+   1.0
+  ]
+ ],
+ "er avgjørende": [
+  [
+   "for",
+   1.0
+  ]
+ ],
+ "avgjørende for": [
+  [
+   "norsk",
+   0.333333
+  ],
+  [
+   "fremtidens",
+   0.333333
+  ],
+  [
+   "et",
+   0.333333
+  ]
+ ],
+ "for norsk": [
+  [
+   "eksport",
+   1.0
+  ]
+ ],
+ "norsk eksport": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "utenrikspolitikken balanserer": [
+  [
+   "mellom",
+   1.0
+  ]
+ ],
+ "balanserer mellom": [
+  [
+   "sikkerhet",
+   1.0
+  ]
+ ],
+ "mellom sikkerhet": [
+  [
+   "og",
+   1.0
+  ]
+ ],
+ "sikkerhet og": [
+  [
+   "fredsarbeid",
+   0.5
+  ],
+  [
+   "miljø",
+   0.5
+  ]
+ ],
+ "og fredsarbeid": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "nordområdepolitikken har": [
+  [
+   "fått",
+   1.0
+  ]
+ ],
+ "fått større": [
+  [
+   "oppmerksomhet",
+   1.0
+  ]
+ ],
+ "større oppmerksomhet": [
+  [
+   "de",
+   0.5
+  ],
+  [
+   "i",
+   0.5
+  ]
+ ],
+ "oppmerksomhet de": [
+  [
+   "siste",
+   1.0
+  ]
+ ],
+ "forsvarsbudsjettet ble": [
+  [
+   "økt",
+   1.0
+  ]
+ ],
+ "økt i": [
+  [
+   "tråd",
+   1.0
+  ]
+ ],
+ "i tråd": [
+  [
+   "med",
+   1.0
+  ]
+ ],
+ "tråd med": [
+  [
+   "internasjonale",
+   0.5
+  ],
+  [
+   "etiske",
+   0.5
+  ]
+ ],
+ "med internasjonale": [
+  [
+   "forpliktelser",
+   1.0
+  ]
+ ],
+ "internasjonale forpliktelser": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "bistandsarbeidet fokuserer": [
+  [
+   "på",
+   1.0
+  ]
+ ],
+ "fokuserer på": [
+  [
+   "utdanning",
+   1.0
+  ]
+ ],
+ "på utdanning": [
+  [
+   "og",
+   1.0
+  ]
+ ],
+ "utdanning og": [
+  [
+   "helsehjelp",
+   1.0
+  ]
+ ],
+ "og helsehjelp": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "helsehjelp i": [
+  [
+   "utviklingsland",
+   1.0
+  ]
+ ],
+ "i utviklingsland": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "diplomatiet spiller": [
+  [
+   "en",
+   1.0
+  ]
+ ],
+ "viktig rolle": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "i konflikthåndtering": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "sikkerhetsrådet diskuterte": [
+  [
+   "situasjonen",
+   1.0
+  ]
+ ],
+ "diskuterte situasjonen": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "situasjonen i": [
+  [
+   "regionen",
+   1.0
+  ]
+ ],
+ "i regionen": [
+  [
+   "denne",
+   1.0
+  ]
+ ],
+ "regionen denne": [
+  [
+   "uken",
+   1.0
+  ]
+ ],
+ "denne uken": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "fredsforhandlingene ble": [
+  [
+   "gjenopptatt",
+   1.0
+  ]
+ ],
+ "ble gjenopptatt": [
+  [
+   "etter",
+   1.0
+  ]
+ ],
+ "gjenopptatt etter": [
+  [
+   "en",
+   1.0
+  ]
+ ],
+ "etter en": [
+  [
+   "lang",
+   1.0
+  ]
+ ],
+ "lang pause": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "klimaforhandlingene resulterte": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "resulterte i": [
+  [
+   "en",
+   1.0
+  ]
+ ],
+ "en ambisiøs": [
+  [
+   "avtale",
+   1.0
+  ]
+ ],
+ "ambisiøs avtale": [
+  [
+   "mellom",
+   1.0
+  ]
+ ],
+ "avtale mellom": [
+  [
+   "landene",
+   1.0
+  ]
+ ],
+ "mellom landene": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "bærekraftsmålene danner": [
+  [
+   "rammen",
+   1.0
+  ]
+ ],
+ "danner rammen": [
+  [
+   "for",
+   1.0
+  ]
+ ],
+ "rammen for": [
+  [
+   "den",
+   1.0
+  ]
+ ],
+ "for den": [
+  [
+   "nasjonale",
+   1.0
+  ]
+ ],
+ "den nasjonale": [
+  [
+   "utviklingspolitikken",
+   0.5
+  ],
+  [
+   "beredskapen",
+   0.5
+  ]
+ ],
+ "nasjonale utviklingspolitikken": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "miljøvernorganisasjonene krever": [
+  [
+   "strengere",
+   1.0
+  ]
+ ],
+ "krever strengere": [
+  [
+   "regulering",
+   1.0
+  ]
+ ],
+ "strengere regulering": [
+  [
+   "av",
+   1.0
+  ]
+ ],
+ "regulering av": [
+  [
+   "utslipp",
+   1.0
+  ]
+ ],
+ "av utslipp": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "forurensningen av": [
+  [
+   "havene",
+   1.0
+  ]
+ ],
+ "av havene": [
+  [
+   "er",
+   1.0
+  ]
+ ],
+ "havene er": [
+  [
+   "et",
+   1.0
+  ]
+ ],
+ "et globalt": [
+  [
+   "miljøproblem",
+   1.0
+  ]
+ ],
+ "globalt miljøproblem": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "artsmangfoldet trues": [
+  [
+   "av",
+   1.0
+  ]
+ ],
+ "trues av": [
+  [
+   "menneskelig",
+   1.0
+  ]
+ ],
+ "av menneskelig": [
+  [
+   "aktivitet",
+   1.0
+  ]
+ ],
+ "menneskelig aktivitet": [
+  [
+   "og",
+   1.0
+  ]
+ ],
+ "aktivitet og": [
+  [
+   "klimaendringer",
+   1.0
+  ]
+ ],
+ "og klimaendringer": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "gjenvinningssystemet i": [
+  [
+   "norge",
+   1.0
+  ]
+ ],
+ "er blant": [
+  [
+   "de",
+   0.5
+  ],
+  [
+   "verdens",
+   0.5
+  ]
+ ],
+ "blant de": [
+  [
+   "mest",
+   1.0
+  ]
+ ],
+ "de mest": [
+  [
+   "effektive",
+   0.5
+  ],
+  [
+   "trafikkerte",
+   0.5
+  ]
+ ],
+ "mest effektive": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "effektive i": [
+  [
+   "verden",
+   1.0
+  ]
+ ],
+ "i verden": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "avfallshåndteringen har": [
+  [
+   "blitt",
+   1.0
+  ]
+ ],
+ "har blitt": [
+  [
+   "betydelig",
+   0.5
+  ],
+  [
+   "et",
+   0.5
+  ]
+ ],
+ "blitt betydelig": [
+  [
+   "forbedret",
+   1.0
+  ]
+ ],
+ "betydelig forbedret": [
+  [
+   "de",
+   1.0
+  ]
+ ],
+ "forbedret de": [
+  [
+   "siste",
+   1.0
+  ]
+ ],
+ "siste tiårene": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "energieffektivisering er": [
+  [
+   "en",
+   1.0
+  ]
+ ],
+ "av klimastrategien": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "transportpolitikken legger": [
+  [
+   "vekt",
+   1.0
+  ]
+ ],
+ "legger vekt": [
+  [
+   "på",
+   1.0
+  ]
+ ],
+ "vekt på": [
+  [
+   "å",
+   1.0
+  ]
+ ],
+ "på å": [
+  [
+   "redusere",
+   1.0
+  ]
+ ],
+ "å redusere": [
+  [
+   "klimagassutslipp",
+   1.0
+  ]
+ ],
+ "redusere klimagassutslipp": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "elektrifiseringen av": [
+  [
+   "transportsektoren",
+   1.0
+  ]
+ ],
+ "av transportsektoren": [
+  [
+   "går",
+   1.0
+  ]
+ ],
+ "transportsektoren går": [
+  [
+   "raskere",
+   1.0
+  ]
+ ],
+ "går raskere": [
+  [
+   "enn",
+   1.0
+  ]
+ ],
+ "raskere enn": [
+  [
+   "forventet",
+   1.0
+  ]
+ ],
+ "enn forventet": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "personvernlovgivningen stiller": [
+  [
+   "strenge",
+   1.0
+  ]
+ ],
+ "stiller strenge": [
+  [
+   "krav",
+   1.0
+  ]
+ ],
+ "strenge krav": [
+  [
+   "til",
+   1.0
+  ]
+ ],
+ "krav til": [
+  [
+   "behandling",
+   0.5
+  ],
+  [
+   "sikkerhet",
+   0.5
+  ]
+ ],
+ "til behandling": [
+  [
+   "av",
+   1.0
+  ]
+ ],
+ "behandling av": [
+  [
+   "data",
+   0.5
+  ],
+  [
+   "kroniske",
+   0.5
+  ]
+ ],
+ "av data": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "informasjonssikkerheten har": [
+  [
+   "blitt",
+   1.0
+  ]
+ ],
+ "blitt et": [
+  [
+   "prioritert",
+   1.0
+  ]
+ ],
+ "et prioritert": [
+  [
+   "område",
+   1.0
+  ]
+ ],
+ "prioritert område": [
+  [
+   "for",
+   1.0
+  ]
+ ],
+ "område for": [
+  [
+   "myndighetene",
+   1.0
+  ]
+ ],
+ "for myndighetene": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "forskningsinstituttene samarbeider": [
+  [
+   "på",
+   1.0
+  ]
+ ],
+ "samarbeider på": [
+  [
+   "tvers",
+   1.0
+  ]
+ ],
+ "på tvers": [
+  [
+   "av",
+   1.0
+  ]
+ ],
+ "tvers av": [
+  [
+   "landegrensene",
+   1.0
+  ]
+ ],
+ "av landegrensene": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "akademisk frihet": [
+  [
+   "er",
+   1.0
+  ]
+ ],
+ "frihet er": [
+  [
+   "et",
+   1.0
+  ]
+ ],
+ "et grunnleggende": [
+  [
+   "prinsipp",
+   0.5
+  ],
+  [
+   "nivå",
+   0.5
+  ]
+ ],
+ "grunnleggende prinsipp": [
+  [
+   "ved",
+   1.0
+  ]
+ ],
+ "prinsipp ved": [
+  [
+   "universitetene",
+   1.0
+  ]
+ ],
+ "ved universitetene": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "lærerutdanningen gjennomgikk": [
+  [
+   "en",
+   1.0
+  ]
+ ],
+ "gjennomgikk en": [
+  [
+   "stor",
+   1.0
+  ]
+ ],
+ "stor reform": [
+  [
+   "for",
+   1.0
+  ]
+ ],
+ "reform for": [
+  [
+   "noen",
+   1.0
+  ]
+ ],
+ "for noen": [
+  [
+   "år",
+   1.0
+  ]
+ ],
+ "noen år": [
+  [
+   "siden",
+   1.0
+  ]
+ ],
+ "år siden": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "kompetanseutvikling er": [
+  [
+   "avgjørende",
+   1.0
+  ]
+ ],
+ "for fremtidens": [
+  [
+   "arbeidsliv",
+   1.0
+  ]
+ ],
+ "fremtidens arbeidsliv": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "arbeidsmarkedet endrer": [
+  [
+   "seg",
+   1.0
+  ]
+ ],
+ "endrer seg": [
+  [
+   "raskt",
+   1.0
+  ]
+ ],
+ "seg raskt": [
+  [
+   "som",
+   1.0
+  ]
+ ],
+ "raskt som": [
+  [
+   "følge",
+   1.0
+  ]
+ ],
+ "som følge": [
+  [
+   "av",
+   1.0
+  ]
+ ],
+ "følge av": [
+  [
+   "automatisering",
+   1.0
+  ]
+ ],
+ "av automatisering": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "fagforeningene spiller": [
+  [
+   "en",
+   1.0
+  ]
+ ],
+ "norske arbeidslivet": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "velferdsordningene sikrer": [
+  [
+   "et",
+   1.0
+  ]
+ ],
+ "sikrer et": [
+  [
+   "grunnleggende",
+   1.0
+  ]
+ ],
+ "grunnleggende nivå": [
+  [
+   "for",
+   1.0
+  ]
+ ],
+ "nivå for": [
+  [
+   "alle",
+   1.0
+  ]
+ ],
+ "for alle": [
+  [
+   "innbyggere",
+   1.0
+  ]
+ ],
+ "alle innbyggere": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "pensjonssystemet ble": [
+  [
+   "reformert",
+   1.0
+  ]
+ ],
+ "ble reformert": [
+  [
+   "for",
+   1.0
+  ]
+ ],
+ "reformert for": [
+  [
+   "å",
+   1.0
+  ]
+ ],
+ "å sikre": [
+  [
+   "bærekraft",
+   0.5
+  ],
+  [
+   "barns",
+   0.5
+  ]
+ ],
+ "sikre bærekraft": [
+  [
+   "på",
+   1.0
+  ]
+ ],
+ "bærekraft på": [
+  [
+   "lang",
+   1.0
+  ]
+ ],
+ "på lang": [
+  [
+   "sikt",
+   1.0
+  ]
+ ],
+ "lang sikt": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "domstolene har": [
+  [
+   "en",
+   1.0
+  ]
+ ],
+ "en uavhengig": [
+  [
+   "stilling",
+   1.0
+  ]
+ ],
+ "uavhengig stilling": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "stilling i": [
+  [
+   "det",
+   1.0
+  ]
+ ],
+ "ytringsfrihet er": [
+  [
+   "en",
+   1.0
+  ]
+ ],
+ "en grunnleggende": [
+  [
+   "rettighet",
+   1.0
+  ]
+ ],
+ "grunnleggende rettighet": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "rettighet i": [
+  [
+   "det",
+   1.0
+  ]
+ ],
+ "norske demokratiet": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "pressefrihet er": [
+  [
+   "avgjørende",
+   1.0
+  ]
+ ],
+ "for et": [
+  [
+   "velfungerende",
+   1.0
+  ]
+ ],
+ "et velfungerende": [
+  [
+   "samfunn",
+   1.0
+  ]
+ ],
+ "velfungerende samfunn": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "mediemangfoldet sikres": [
+  [
+   "gjennom",
+   1.0
+  ]
+ ],
+ "sikres gjennom": [
+  [
+   "offentlig",
+   1.0
+  ]
+ ],
+ "gjennom offentlig": [
+  [
+   "støtte",
+   1.0
+  ]
+ ],
+ "offentlig støtte": [
+  [
+   "og",
+   1.0
+  ]
+ ],
+ "støtte og": [
+  [
+   "regulering",
+   1.0
+  ]
+ ],
+ "og regulering": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "kultursektoren ble": [
+  [
+   "hardt",
+   1.0
+  ]
+ ],
+ "ble hardt": [
+  [
+   "rammet",
+   1.0
+  ]
+ ],
+ "hardt rammet": [
+  [
+   "av",
+   1.0
+  ]
+ ],
+ "rammet av": [
+  [
+   "pandemien",
+   1.0
+  ]
+ ],
+ "av pandemien": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "frivillig sektor": [
+  [
+   "bidrar",
+   1.0
+  ]
+ ],
+ "sektor bidrar": [
+  [
+   "enormt",
+   1.0
+  ]
+ ],
+ "bidrar enormt": [
+  [
+   "til",
+   1.0
+  ]
+ ],
+ "enormt til": [
+  [
+   "det",
+   1.0
+  ]
+ ],
+ "til det": [
+  [
+   "norske",
+   1.0
+  ]
+ ],
+ "norske samfunnet": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "idrettsorganisasjonene engasjerer": [
+  [
+   "hundretusenvis",
+   1.0
+  ]
+ ],
+ "engasjerer hundretusenvis": [
+  [
+   "av",
+   1.0
+  ]
+ ],
+ "hundretusenvis av": [
+  [
+   "nordmenn",
+   1.0
+  ]
+ ],
+ "av nordmenn": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "folkehelsen har": [
+  [
+   "generelt",
+   1.0
+  ]
+ ],
+ "har generelt": [
+  [
+   "blitt",
+   1.0
+  ]
+ ],
+ "generelt blitt": [
+  [
+   "bedre",
+   1.0
+  ]
+ ],
+ "blitt bedre": [
+  [
+   "de",
+   1.0
+  ]
+ ],
+ "bedre de": [
+  [
+   "siste",
+   1.0
+  ]
+ ],
+ "psykisk helse": [
+  [
+   "har",
+   1.0
+  ]
+ ],
+ "helse har": [
+  [
+   "fått",
+   1.0
+  ]
+ ],
+ "oppmerksomhet i": [
+  [
+   "offentlig",
+   1.0
+  ]
+ ],
+ "i offentlig": [
+  [
+   "debatt",
+   0.5
+  ],
+  [
+   "og",
+   0.5
+  ]
+ ],
+ "offentlig debatt": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "primærhelsetjenesten er": [
+  [
+   "grunnmuren",
+   1.0
+  ]
+ ],
+ "er grunnmuren": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "grunnmuren i": [
+  [
+   "det",
+   1.0
+  ]
+ ],
+ "norske helsevesenet": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "sykehusreformen endret": [
+  [
+   "organiseringen",
+   1.0
+  ]
+ ],
+ "endret organiseringen": [
+  [
+   "av",
+   1.0
+  ]
+ ],
+ "organiseringen av": [
+  [
+   "spesialisthelsetjenesten",
+   1.0
+  ]
+ ],
+ "av spesialisthelsetjenesten": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "legemiddelindustrien investerer": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "investerer i": [
+  [
+   "forskning",
+   0.5
+  ],
+  [
+   "modernisering",
+   0.5
+  ]
+ ],
+ "i forskning": [
+  [
+   "og",
+   1.0
+  ]
+ ],
+ "forskning og": [
+  [
+   "utvikling",
+   0.5
+  ],
+  [
+   "utdanning",
+   0.25
+  ],
+  [
+   "høyere",
+   0.25
+  ]
+ ],
+ "og utvikling": [
+  [
+   ".",
+   0.5
+  ],
+  [
+   "innen",
+   0.5
+  ]
+ ],
+ "vaksinasjonsprogrammet dekker": [
+  [
+   "et",
+   1.0
+  ]
+ ],
+ "dekker et": [
+  [
+   "bredt",
+   1.0
+  ]
+ ],
+ "et bredt": [
+  [
+   "spekter",
+   0.5
+  ],
+  [
+   "publikum",
+   0.5
+  ]
+ ],
+ "bredt spekter": [
+  [
+   "av",
+   1.0
+  ]
+ ],
+ "spekter av": [
+  [
+   "sykdommer",
+   1.0
+  ]
+ ],
+ "av sykdommer": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "eldreomsorgen står": [
+  [
+   "overfor",
+   1.0
+  ]
+ ],
+ "overfor kapasitetsutfordringer": [
+  [
+   "fremover",
+   1.0
+  ]
+ ],
+ "kapasitetsutfordringer fremover": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "barnevernet har": [
+  [
+   "som",
+   1.0
+  ]
+ ],
+ "har som": [
+  [
+   "oppgave",
+   1.0
+  ]
+ ],
+ "som oppgave": [
+  [
+   "å",
+   1.0
+  ]
+ ],
+ "oppgave å": [
+  [
+   "sikre",
+   0.5
+  ],
+  [
+   "samle",
+   0.5
+  ]
+ ],
+ "sikre barns": [
+  [
+   "rettigheter",
+   1.0
+  ]
+ ],
+ "barns rettigheter": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "likestillingspolitikken har": [
+  [
+   "lange",
+   1.0
+  ]
+ ],
+ "har lange": [
+  [
+   "tradisjoner",
+   1.0
+  ]
+ ],
+ "lange tradisjoner": [
+  [
+   "i",
+   0.5
+  ],
+  [
+   "ved",
+   0.5
+  ]
+ ],
+ "tradisjoner i": [
+  [
+   "norge",
+   1.0
+  ]
+ ],
+ "urfolksrettighetene er": [
+  [
+   "beskyttet",
+   1.0
+  ]
+ ],
+ "er beskyttet": [
+  [
+   "gjennom",
+   1.0
+  ]
+ ],
+ "beskyttet gjennom": [
+  [
+   "grunnloven",
+   1.0
+  ]
+ ],
+ "gjennom grunnloven": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "sametinget representerer": [
+  [
+   "den",
+   1.0
+  ]
+ ],
+ "representerer den": [
+  [
+   "samiske",
+   1.0
+  ]
+ ],
+ "den samiske": [
+  [
+   "befolkningen",
+   1.0
+  ]
+ ],
+ "samiske befolkningen": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "befolkningen i": [
+  [
+   "norge",
+   1.0
+  ]
+ ],
+ "minoritetsspråkene har": [
+  [
+   "et",
+   1.0
+  ]
+ ],
+ "et særskilt": [
+  [
+   "vern",
+   1.0
+  ]
+ ],
+ "særskilt vern": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "vern i": [
+  [
+   "norsk",
+   1.0
+  ]
+ ],
+ "i norsk": [
+  [
+   "lovgivning",
+   0.5
+  ],
+  [
+   "kulturliv",
+   0.5
+  ]
+ ],
+ "norsk lovgivning": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "innvandringspolitikken er": [
+  [
+   "et",
+   1.0
+  ]
+ ],
+ "et tema": [
+  [
+   "som",
+   1.0
+  ]
+ ],
+ "tema som": [
+  [
+   "engasjerer",
+   1.0
+  ]
+ ],
+ "som engasjerer": [
+  [
+   "mange",
+   1.0
+  ]
+ ],
+ "engasjerer mange": [
+  [
+   "velgere",
+   1.0
+  ]
+ ],
+ "mange velgere": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "integreringsarbeidet krever": [
+  [
+   "innsats",
+   1.0
+  ]
+ ],
+ "krever innsats": [
+  [
+   "fra",
+   1.0
+  ]
+ ],
+ "innsats fra": [
+  [
+   "hele",
+   1.0
+  ]
+ ],
+ "hele samfunnet": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "språkopplæring er": [
+  [
+   "en",
+   1.0
+  ]
+ ],
+ "en nøkkel": [
+  [
+   "til",
+   1.0
+  ]
+ ],
+ "nøkkel til": [
+  [
+   "vellykket",
+   1.0
+  ]
+ ],
+ "til vellykket": [
+  [
+   "integrering",
+   1.0
+  ]
+ ],
+ "vellykket integrering": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "boligmarkedet i": [
+  [
+   "de",
+   1.0
+  ]
+ ],
+ "i de": [
+  [
+   "største",
+   0.5
+  ],
+  [
+   "norske",
+   0.5
+  ]
+ ],
+ "byene er": [
+  [
+   "preget",
+   1.0
+  ]
+ ],
+ "er preget": [
+  [
+   "av",
+   1.0
+  ]
+ ],
+ "preget av": [
+  [
+   "høye",
+   1.0
+  ]
+ ],
+ "av høye": [
+  [
+   "priser",
+   1.0
+  ]
+ ],
+ "høye priser": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "byggebransjen opplever": [
+  [
+   "mangel",
+   1.0
+  ]
+ ],
+ "opplever mangel": [
+  [
+   "på",
+   1.0
+  ]
+ ],
+ "mangel på": [
+  [
+   "kvalifisert",
+   1.0
+  ]
+ ],
+ "på kvalifisert": [
+  [
+   "arbeidskraft",
+   1.0
+  ]
+ ],
+ "kvalifisert arbeidskraft": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "arkitekturen i": [
+  [
+   "norske",
+   1.0
+  ]
+ ],
+ "i norske": [
+  [
+   "byer",
+   1.0
+  ]
+ ],
+ "norske byer": [
+  [
+   "gjenspeiler",
+   1.0
+  ]
+ ],
+ "byer gjenspeiler": [
+  [
+   "mange",
+   1.0
+  ]
+ ],
+ "gjenspeiler mange": [
+  [
+   "ulike",
+   1.0
+  ]
+ ],
+ "mange ulike": [
+  [
+   "epoker",
+   1.0
+  ]
+ ],
+ "ulike epoker": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "kulturminnevernet beskytter": [
+  [
+   "historiske",
+   1.0
+  ]
+ ],
+ "beskytter historiske": [
+  [
+   "bygninger",
+   1.0
+  ]
+ ],
+ "historiske bygninger": [
+  [
+   "og",
+   1.0
+  ]
+ ],
+ "bygninger og": [
+  [
+   "områder",
+   1.0
+  ]
+ ],
+ "og områder": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "arkeologiske funn": [
+  [
+   "gir",
+   1.0
+  ]
+ ],
+ "funn gir": [
+  [
+   "ny",
+   1.0
+  ]
+ ],
+ "gir ny": [
+  [
+   "kunnskap",
+   0.5
+  ],
+  [
+   "innsikt",
+   0.5
+  ]
+ ],
+ "ny kunnskap": [
+  [
+   "om",
+   1.0
+  ]
+ ],
+ "kunnskap om": [
+  [
+   "fortidens",
+   1.0
+  ]
+ ],
+ "om fortidens": [
+  [
+   "samfunn",
+   1.0
+  ]
+ ],
+ "fortidens samfunn": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "museene formidler": [
+  [
+   "kunnskap",
+   1.0
+  ]
+ ],
+ "formidler kunnskap": [
+  [
+   "og",
+   1.0
+  ]
+ ],
+ "kunnskap og": [
+  [
+   "opplevelser",
+   1.0
+  ]
+ ],
+ "og opplevelser": [
+  [
+   "til",
+   1.0
+  ]
+ ],
+ "opplevelser til": [
+  [
+   "et",
+   1.0
+  ]
+ ],
+ "til et": [
+  [
+   "bredt",
+   1.0
+  ]
+ ],
+ "bredt publikum": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "litteraturen har": [
+  [
+   "en",
+   1.0
+  ]
+ ],
+ "en sterk": [
+  [
+   "posisjon",
+   1.0
+  ]
+ ],
+ "sterk posisjon": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "posisjon i": [
+  [
+   "norsk",
+   1.0
+  ]
+ ],
+ "norsk kulturliv": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "teaterinstitusjonene tilbyr": [
+  [
+   "et",
+   1.0
+  ]
+ ],
+ "tilbyr et": [
+  [
+   "mangfoldig",
+   1.0
+  ]
+ ],
+ "et mangfoldig": [
+  [
+   "repertoar",
+   1.0
+  ]
+ ],
+ "mangfoldig repertoar": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "filmbransjen har": [
+  [
+   "opplevd",
+   1.0
+  ]
+ ],
+ "har opplevd": [
+  [
+   "en",
+   1.0
+  ]
+ ],
+ "opplevd en": [
+  [
+   "internasjonal",
+   1.0
+  ]
+ ],
+ "en internasjonal": [
+  [
+   "oppblomstring",
+   1.0
+  ]
+ ],
+ "internasjonal oppblomstring": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "musikkindustrien i": [
+  [
+   "norge",
+   1.0
+  ]
+ ],
+ "norge har": [
+  [
+   "fostret",
+   1.0
+  ]
+ ],
+ "har fostret": [
+  [
+   "flere",
+   1.0
+  ]
+ ],
+ "fostret flere": [
+  [
+   "internasjonale",
+   1.0
+  ]
+ ],
+ "flere internasjonale": [
+  [
+   "artister",
+   1.0
+  ]
+ ],
+ "internasjonale artister": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "norske mattradisjonen": [
+  [
+   "opplever",
+   1.0
+  ]
+ ],
+ "mattradisjonen opplever": [
+  [
+   "en",
+   1.0
+  ]
+ ],
+ "opplever en": [
+  [
+   "fornyet",
+   1.0
+  ]
+ ],
+ "en fornyet": [
+  [
+   "interesse",
+   1.0
+  ]
+ ],
+ "fornyet interesse": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "gastronomien har": [
+  [
+   "utviklet",
+   1.0
+  ]
+ ],
+ "har utviklet": [
+  [
+   "seg",
+   1.0
+  ]
+ ],
+ "utviklet seg": [
+  [
+   "kraftig",
+   1.0
+  ]
+ ],
+ "seg kraftig": [
+  [
+   "de",
+   1.0
+  ]
+ ],
+ "kraftig de": [
+  [
+   "siste",
+   1.0
+  ]
+ ],
+ "lokale råvarer": [
+  [
+   "danner",
+   1.0
+  ]
+ ],
+ "råvarer danner": [
+  [
+   "grunnlaget",
+   1.0
+  ]
+ ],
+ "nye norske": [
+  [
+   "kjøkkenet",
+   1.0
+  ]
+ ],
+ "norske kjøkkenet": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "matfestivalene trekker": [
+  [
+   "besøkende",
+   1.0
+  ]
+ ],
+ "fra inn": [
+  [
+   "og",
+   1.0
+  ]
+ ],
+ "inn og": [
+  [
+   "utland",
+   0.5
+  ],
+  [
+   "bevare",
+   0.5
+  ]
+ ],
+ "og utland": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "sjømatnæringen eksporterer": [
+  [
+   "til",
+   1.0
+  ]
+ ],
+ "eksporterer til": [
+  [
+   "mer",
+   1.0
+  ]
+ ],
+ "til mer": [
+  [
+   "enn",
+   1.0
+  ]
+ ],
+ "mer enn": [
+  [
+   "hundre",
+   1.0
+  ]
+ ],
+ "enn hundre": [
+  [
+   "land",
+   1.0
+  ]
+ ],
+ "hundre land": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "havbruksindustrien er": [
+  [
+   "blant",
+   1.0
+  ]
+ ],
+ "blant verdens": [
+  [
+   "mest",
+   1.0
+  ]
+ ],
+ "verdens mest": [
+  [
+   "avanserte",
+   1.0
+  ]
+ ],
+ "mest avanserte": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "bærekraftig forvaltning": [
+  [
+   "av",
+   1.0
+  ]
+ ],
+ "forvaltning av": [
+  [
+   "havressursene",
+   0.5
+  ],
+  [
+   "kulturminner",
+   0.5
+  ]
+ ],
+ "av havressursene": [
+  [
+   "er",
+   1.0
+  ]
+ ],
+ "havressursene er": [
+  [
+   "helt",
+   1.0
+  ]
+ ],
+ "er helt": [
+  [
+   "avgjørende",
+   1.0
+  ]
+ ],
+ "helt avgjørende": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "forskningsfartøyene kartlegger": [
+  [
+   "livet",
+   1.0
+  ]
+ ],
+ "kartlegger livet": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "livet i": [
+  [
+   "de",
+   1.0
+  ]
+ ],
+ "norske havområdene": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "teknologiutviklingen innen": [
+  [
+   "havbruk",
+   1.0
+  ]
+ ],
+ "innen havbruk": [
+  [
+   "skjer",
+   1.0
+  ]
+ ],
+ "havbruk skjer": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "skjer i": [
+  [
+   "raskt",
+   1.0
+  ]
+ ],
+ "i raskt": [
+  [
+   "tempo",
+   1.0
+  ]
+ ],
+ "raskt tempo": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "norsk design": [
+  [
+   "har",
+   1.0
+  ]
+ ],
+ "design har": [
+  [
+   "fått",
+   1.0
+  ]
+ ],
+ "fått økt": [
+  [
+   "internasjonal",
+   1.0
+  ]
+ ],
+ "økt internasjonal": [
+  [
+   "anerkjennelse",
+   1.0
+  ]
+ ],
+ "internasjonal anerkjennelse": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "arkitektfirmaene konkurrerer": [
+  [
+   "om",
+   1.0
+  ]
+ ],
+ "konkurrerer om": [
+  [
+   "prestisjeprosjekter",
+   1.0
+  ]
+ ],
+ "om prestisjeprosjekter": [
+  [
+   "over",
+   1.0
+  ]
+ ],
+ "prestisjeprosjekter over": [
+  [
+   "hele",
+   1.0
+  ]
+ ],
+ "over hele": [
+  [
+   "verden",
+   0.5
+  ],
+  [
+   "landet",
+   0.5
+  ]
+ ],
+ "hele verden": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "designmiljøet i": [
+  [
+   "oslo",
+   1.0
+  ]
+ ],
+ "oslo har": [
+  [
+   "vokst",
+   1.0
+  ]
+ ],
+ "har vokst": [
+  [
+   "betydelig",
+   1.0
+  ]
+ ],
+ "vokst betydelig": [
+  [
+   "de",
+   1.0
+  ]
+ ],
+ "betydelig de": [
+  [
+   "siste",
+   1.0
+  ]
+ ],
+ "programmering og": [
+  [
+   "teknologi",
+   1.0
+  ]
+ ],
+ "og teknologi": [
+  [
+   "undervises",
+   1.0
+  ]
+ ],
+ "teknologi undervises": [
+  [
+   "stadig",
+   1.0
+  ]
+ ],
+ "undervises stadig": [
+  [
+   "tidligere",
+   1.0
+  ]
+ ],
+ "stadig tidligere": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "tidligere i": [
+  [
+   "skolene",
+   1.0
+  ]
+ ],
+ "i skolene": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "kunstig intelligens": [
+  [
+   "forventes",
+   1.0
+  ]
+ ],
+ "intelligens forventes": [
+  [
+   "å",
+   1.0
+  ]
+ ],
+ "forventes å": [
+  [
+   "endre",
+   1.0
+  ]
+ ],
+ "å endre": [
+  [
+   "mange",
+   1.0
+  ]
+ ],
+ "endre mange": [
+  [
+   "bransjer",
+   1.0
+  ]
+ ],
+ "mange bransjer": [
+  [
+   "fremover",
+   1.0
+  ]
+ ],
+ "bransjer fremover": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "romforskningen gir": [
+  [
+   "ny",
+   1.0
+  ]
+ ],
+ "ny innsikt": [
+  [
+   "om",
+   1.0
+  ]
+ ],
+ "innsikt om": [
+  [
+   "universet",
+   1.0
+  ]
+ ],
+ "om universet": [
+  [
+   "og",
+   1.0
+  ]
+ ],
+ "universet og": [
+  [
+   "vår",
+   1.0
+  ]
+ ],
+ "og vår": [
+  [
+   "plass",
+   1.0
+  ]
+ ],
+ "vår plass": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "plass i": [
+  [
+   "det",
+   1.0
+  ]
+ ],
+ "polarforskningen har": [
+  [
+   "lange",
+   1.0
+  ]
+ ],
+ "tradisjoner ved": [
+  [
+   "norske",
+   1.0
+  ]
+ ],
+ "ved norske": [
+  [
+   "institusjoner",
+   1.0
+  ]
+ ],
+ "norske institusjoner": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "oseanografien bidrar": [
+  [
+   "til",
+   1.0
+  ]
+ ],
+ "bidrar til": [
+  [
+   "forståelsen",
+   1.0
+  ]
+ ],
+ "til forståelsen": [
+  [
+   "av",
+   1.0
+  ]
+ ],
+ "forståelsen av": [
+  [
+   "klimasystemet",
+   1.0
+  ]
+ ],
+ "av klimasystemet": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "geologisk kartlegging": [
+  [
+   "avdekker",
+   1.0
+  ]
+ ],
+ "kartlegging avdekker": [
+  [
+   "nye",
+   1.0
+  ]
+ ],
+ "avdekker nye": [
+  [
+   "mineralforekomster",
+   1.0
+  ]
+ ],
+ "nye mineralforekomster": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "grunnlovsendringen ble": [
+  [
+   "vedtatt",
+   1.0
+  ]
+ ],
+ "ble vedtatt": [
+  [
+   "med",
+   1.0
+  ]
+ ],
+ "vedtatt med": [
+  [
+   "kvalifisert",
+   1.0
+  ]
+ ],
+ "med kvalifisert": [
+  [
+   "flertall",
+   1.0
+  ]
+ ],
+ "kvalifisert flertall": [
+  [
+   "etter",
+   1.0
+  ]
+ ],
+ "flertall etter": [
+  [
+   "grundig",
+   1.0
+  ]
+ ],
+ "etter grundig": [
+  [
+   "debatt",
+   1.0
+  ]
+ ],
+ "grundig debatt": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "debatt i": [
+  [
+   "stortinget",
+   1.0
+  ]
+ ],
+ "i stortinget": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "konsekvensutredningen viste": [
+  [
+   "at",
+   1.0
+  ]
+ ],
+ "viste at": [
+  [
+   "tiltaket",
+   1.0
+  ]
+ ],
+ "at tiltaket": [
+  [
+   "ville",
+   1.0
+  ]
+ ],
+ "tiltaket ville": [
+  [
+   "ha",
+   1.0
+  ]
+ ],
+ "ville ha": [
+  [
+   "begrenset",
+   1.0
+  ]
+ ],
+ "ha begrenset": [
+  [
+   "innvirkning",
+   1.0
+  ]
+ ],
+ "begrenset innvirkning": [
+  [
+   "på",
+   1.0
+  ]
+ ],
+ "innvirkning på": [
+  [
+   "det",
+   1.0
+  ]
+ ],
+ "på det": [
+  [
+   "biologiske",
+   1.0
+  ]
+ ],
+ "det biologiske": [
+  [
+   "mangfoldet",
+   1.0
+  ]
+ ],
+ "biologiske mangfoldet": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "forvaltningsreformen medførte": [
+  [
+   "en",
+   1.0
+  ]
+ ],
+ "medførte en": [
+  [
+   "betydelig",
+   1.0
+  ]
+ ],
+ "betydelig omorganisering": [
+  [
+   "av",
+   1.0
+  ]
+ ],
+ "omorganisering av": [
+  [
+   "det",
+   1.0
+  ]
+ ],
+ "av det": [
+  [
+   "regionale",
+   1.0
+  ]
+ ],
+ "det regionale": [
+  [
+   "forvaltningsnivået",
+   1.0
+  ]
+ ],
+ "regionale forvaltningsnivået": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "handlingsplanen for": [
+  [
+   "likestilling",
+   1.0
+  ]
+ ],
+ "for likestilling": [
+  [
+   "mellom",
+   1.0
+  ]
+ ],
+ "likestilling mellom": [
+  [
+   "kjønnene",
+   1.0
+  ]
+ ],
+ "mellom kjønnene": [
+  [
+   "inneholder",
+   1.0
+  ]
+ ],
+ "kjønnene inneholder": [
+  [
+   "konkrete",
+   1.0
+  ]
+ ],
+ "inneholder konkrete": [
+  [
+   "tiltak",
+   1.0
+  ]
+ ],
+ "konkrete tiltak": [
+  [
+   "på",
+   1.0
+  ]
+ ],
+ "tiltak på": [
+  [
+   "flere",
+   1.0
+  ]
+ ],
+ "på flere": [
+  [
+   "samfunnsområder",
+   1.0
+  ]
+ ],
+ "flere samfunnsområder": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "innovasjonsstrategien prioriterer": [
+  [
+   "forskning",
+   1.0
+  ]
+ ],
+ "prioriterer forskning": [
+  [
+   "og",
+   1.0
+  ]
+ ],
+ "utvikling innen": [
+  [
+   "bærekraftige",
+   1.0
+  ]
+ ],
+ "innen bærekraftige": [
+  [
+   "teknologier",
+   1.0
+  ]
+ ],
+ "bærekraftige teknologier": [
+  [
+   "og",
+   1.0
+  ]
+ ],
+ "teknologier og": [
+  [
+   "grønn",
+   1.0
+  ]
+ ],
+ "og grønn": [
+  [
+   "omstilling",
+   1.0
+  ]
+ ],
+ "grønn omstilling": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "konkurransetilsynet gjennomførte": [
+  [
+   "en",
+   1.0
+  ]
+ ],
+ "gjennomførte en": [
+  [
+   "omfattende",
+   1.0
+  ]
+ ],
+ "en omfattende": [
+  [
+   "analyse",
+   1.0
+  ]
+ ],
+ "omfattende analyse": [
+  [
+   "av",
+   1.0
+  ]
+ ],
+ "analyse av": [
+  [
+   "markedsforholdene",
+   1.0
+  ]
+ ],
+ "av markedsforholdene": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "markedsforholdene i": [
+  [
+   "dagligvarebransjen",
+   1.0
+  ]
+ ],
+ "i dagligvarebransjen": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "universitetsstyret vedtok": [
+  [
+   "en",
+   1.0
+  ]
+ ],
+ "ny strategi": [
+  [
+   "for",
+   1.0
+  ]
+ ],
+ "strategi for": [
+  [
+   "internasjonalisering",
+   1.0
+  ]
+ ],
+ "for internasjonalisering": [
+  [
+   "av",
+   1.0
+  ]
+ ],
+ "internasjonalisering av": [
+  [
+   "forskning",
+   1.0
+  ]
+ ],
+ "av forskning": [
+  [
+   "og",
+   1.0
+  ]
+ ],
+ "og utdanning": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "kommunereformen har": [
+  [
+   "resultert",
+   1.0
+  ]
+ ],
+ "har resultert": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "resultert i": [
+  [
+   "færre",
+   1.0
+  ]
+ ],
+ "i færre": [
+  [
+   ",",
+   1.0
+  ]
+ ],
+ "færre ,": [
+  [
+   "men",
+   1.0
+  ]
+ ],
+ "men større": [
+  [
+   "og",
+   1.0
+  ]
+ ],
+ "større og": [
+  [
+   "mer",
+   1.0
+  ]
+ ],
+ "og mer": [
+  [
+   "robuste",
+   1.0
+  ]
+ ],
+ "mer robuste": [
+  [
+   "kommuner",
+   1.0
+  ]
+ ],
+ "robuste kommuner": [
+  [
+   "over",
+   1.0
+  ]
+ ],
+ "kommuner over": [
+  [
+   "hele",
+   1.0
+  ]
+ ],
+ "folkehelserapporten dokumenterer": [
+  [
+   "store",
+   1.0
+  ]
+ ],
+ "dokumenterer store": [
+  [
+   "forskjeller",
+   1.0
+  ]
+ ],
+ "store forskjeller": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "forskjeller i": [
+  [
+   "helse",
+   1.0
+  ]
+ ],
+ "i helse": [
+  [
+   "mellom",
+   0.5
+  ],
+  [
+   "og",
+   0.5
+  ]
+ ],
+ "helse mellom": [
+  [
+   "ulike",
+   1.0
+  ]
+ ],
+ "mellom ulike": [
+  [
+   "befolkningsgrupper",
+   1.0
+  ]
+ ],
+ "ulike befolkningsgrupper": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "infrastrukturprosjektet vil": [
+  [
+   "forbinde",
+   1.0
+  ]
+ ],
+ "vil forbinde": [
+  [
+   "de",
+   1.0
+  ]
+ ],
+ "forbinde de": [
+  [
+   "to",
+   1.0
+  ]
+ ],
+ "de to": [
+  [
+   "byene",
+   1.0
+  ]
+ ],
+ "to byene": [
+  [
+   "med",
+   1.0
+  ]
+ ],
+ "byene med": [
+  [
+   "en",
+   1.0
+  ]
+ ],
+ "med en": [
+  [
+   "moderne",
+   1.0
+  ]
+ ],
+ "en moderne": [
+  [
+   "motorveiforbindelse",
+   1.0
+  ]
+ ],
+ "moderne motorveiforbindelse": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "stortingsmeldingen om": [
+  [
+   "langtidsplanen",
+   1.0
+  ]
+ ],
+ "om langtidsplanen": [
+  [
+   "for",
+   1.0
+  ]
+ ],
+ "langtidsplanen for": [
+  [
+   "forskning",
+   1.0
+  ]
+ ],
+ "for forskning": [
+  [
+   "og",
+   1.0
+  ]
+ ],
+ "og høyere": [
+  [
+   "utdanning",
+   1.0
+  ]
+ ],
+ "høyere utdanning": [
+  [
+   "ble",
+   0.5
+  ],
+  [
+   "bygger",
+   0.5
+  ]
+ ],
+ "utdanning ble": [
+  [
+   "lagt",
+   1.0
+  ]
+ ],
+ "ble lagt": [
+  [
+   "frem",
+   1.0
+  ]
+ ],
+ "lagt frem": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "frem i": [
+  [
+   "høst",
+   1.0
+  ]
+ ],
+ "kvalitetssikringssystemet for": [
+  [
+   "høyere",
+   1.0
+  ]
+ ],
+ "for høyere": [
+  [
+   "utdanning",
+   1.0
+  ]
+ ],
+ "utdanning bygger": [
+  [
+   "på",
+   1.0
+  ]
+ ],
+ "bygger på": [
+  [
+   "internasjonale",
+   1.0
+  ]
+ ],
+ "på internasjonale": [
+  [
+   "standarder",
+   1.0
+  ]
+ ],
+ "internasjonale standarder": [
+  [
+   "og",
+   1.0
+  ]
+ ],
+ "standarder og": [
+  [
+   "retningslinjer",
+   1.0
+  ]
+ ],
+ "og retningslinjer": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "handelsbalansen ble": [
+  [
+   "påvirket",
+   1.0
+  ]
+ ],
+ "ble påvirket": [
+  [
+   "av",
+   1.0
+  ]
+ ],
+ "påvirket av": [
+  [
+   "fallende",
+   1.0
+  ]
+ ],
+ "av fallende": [
+  [
+   "oljepriser",
+   1.0
+  ]
+ ],
+ "fallende oljepriser": [
+  [
+   "og",
+   1.0
+  ]
+ ],
+ "oljepriser og": [
+  [
+   "økt",
+   1.0
+  ]
+ ],
+ "og økt": [
+  [
+   "import",
+   1.0
+  ]
+ ],
+ "økt import": [
+  [
+   "av",
+   1.0
+  ]
+ ],
+ "import av": [
+  [
+   "konsumvarer",
+   1.0
+  ]
+ ],
+ "av konsumvarer": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "reguleringsplanen for": [
+  [
+   "det",
+   1.0
+  ]
+ ],
+ "nye boligområdet": [
+  [
+   "ble",
+   1.0
+  ]
+ ],
+ "boligområdet ble": [
+  [
+   "sendt",
+   1.0
+  ]
+ ],
+ "ble sendt": [
+  [
+   "ut",
+   1.0
+  ]
+ ],
+ "sendt ut": [
+  [
+   "på",
+   1.0
+  ]
+ ],
+ "ut på": [
+  [
+   "offentlig",
+   1.0
+  ]
+ ],
+ "på offentlig": [
+  [
+   "høring",
+   1.0
+  ]
+ ],
+ "offentlig høring": [
+  [
+   "denne",
+   1.0
+  ]
+ ],
+ "høring denne": [
+  [
+   "måneden",
+   1.0
+  ]
+ ],
+ "denne måneden": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "eiendomsutviklerne presenterte": [
+  [
+   "et",
+   1.0
+  ]
+ ],
+ "et ambisiøst": [
+  [
+   "prosjekt",
+   1.0
+  ]
+ ],
+ "ambisiøst prosjekt": [
+  [
+   "for",
+   1.0
+  ]
+ ],
+ "prosjekt for": [
+  [
+   "bærekraftig",
+   1.0
+  ]
+ ],
+ "for bærekraftig": [
+  [
+   "byutvikling",
+   1.0
+  ]
+ ],
+ "bærekraftig byutvikling": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "byutvikling i": [
+  [
+   "sentrumsområdet",
+   1.0
+  ]
+ ],
+ "i sentrumsområdet": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "transportøkonomisk institutt": [
+  [
+   "har",
+   1.0
+  ]
+ ],
+ "institutt har": [
+  [
+   "beregnet",
+   1.0
+  ]
+ ],
+ "har beregnet": [
+  [
+   "de",
+   1.0
+  ]
+ ],
+ "beregnet de": [
+  [
+   "samfunnsøkonomiske",
+   1.0
+  ]
+ ],
+ "de samfunnsøkonomiske": [
+  [
+   "kostnadene",
+   1.0
+  ]
+ ],
+ "samfunnsøkonomiske kostnadene": [
+  [
+   "ved",
+   1.0
+  ]
+ ],
+ "kostnadene ved": [
+  [
+   "veiprosjektet",
+   1.0
+  ]
+ ],
+ "ved veiprosjektet": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "fylkeskommunen har": [
+  [
+   "ansvaret",
+   1.0
+  ]
+ ],
+ "har ansvaret": [
+  [
+   "for",
+   1.0
+  ]
+ ],
+ "ansvaret for": [
+  [
+   "videregående",
+   0.5
+  ],
+  [
+   "navigasjonssikkerhet",
+   0.5
+  ]
+ ],
+ "for videregående": [
+  [
+   "opplæring",
+   1.0
+  ]
+ ],
+ "videregående opplæring": [
+  [
+   "og",
+   1.0
+  ]
+ ],
+ "opplæring og": [
+  [
+   "regional",
+   1.0
+  ]
+ ],
+ "og regional": [
+  [
+   "kollektivtransport",
+   1.0
+  ]
+ ],
+ "regional kollektivtransport": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "statsforvalteren fører": [
+  [
+   "tilsyn",
+   1.0
+  ]
+ ],
+ "fører tilsyn": [
+  [
+   "med",
+   1.0
+  ]
+ ],
+ "tilsyn med": [
+  [
+   "kommunenes",
+   0.5
+  ],
+  [
+   "matproduksjon",
+   0.5
+  ]
+ ],
+ "med kommunenes": [
+  [
+   "etterlevelse",
+   1.0
+  ]
+ ],
+ "kommunenes etterlevelse": [
+  [
+   "av",
+   1.0
+  ]
+ ],
+ "etterlevelse av": [
+  [
+   "lover",
+   1.0
+  ]
+ ],
+ "av lover": [
+  [
+   "og",
+   1.0
+  ]
+ ],
+ "lover og": [
+  [
+   "forskrifter",
+   1.0
+  ]
+ ],
+ "og forskrifter": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "datatilsynet mottok": [
+  [
+   "et",
+   1.0
+  ]
+ ],
+ "mottok et": [
+  [
+   "rekordhøyt",
+   1.0
+  ]
+ ],
+ "et rekordhøyt": [
+  [
+   "antall",
+   1.0
+  ]
+ ],
+ "rekordhøyt antall": [
+  [
+   "klager",
+   1.0
+  ]
+ ],
+ "antall klager": [
+  [
+   "knyttet",
+   1.0
+  ]
+ ],
+ "klager knyttet": [
+  [
+   "til",
+   1.0
+  ]
+ ],
+ "knyttet til": [
+  [
+   "personvernbrudd",
+   1.0
+  ]
+ ],
+ "til personvernbrudd": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "personvernbrudd i": [
+  [
+   "fjor",
+   1.0
+  ]
+ ],
+ "i fjor": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "riksrevisjonen avdekket": [
+  [
+   "mangler",
+   1.0
+  ]
+ ],
+ "avdekket mangler": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "mangler i": [
+  [
+   "departementets",
+   0.5
+  ],
+  [
+   "helse",
+   0.5
+  ]
+ ],
+ "i departementets": [
+  [
+   "oppfølging",
+   1.0
+  ]
+ ],
+ "departementets oppfølging": [
+  [
+   "av",
+   1.0
+  ]
+ ],
+ "oppfølging av": [
+  [
+   "vedtatte",
+   1.0
+  ]
+ ],
+ "av vedtatte": [
+  [
+   "klimamål",
+   1.0
+  ]
+ ],
+ "vedtatte klimamål": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "norges forskningsråd": [
+  [
+   "tildelte",
+   1.0
+  ]
+ ],
+ "forskningsråd tildelte": [
+  [
+   "midler",
+   1.0
+  ]
+ ],
+ "tildelte midler": [
+  [
+   "til",
+   1.0
+  ]
+ ],
+ "midler til": [
+  [
+   "flere",
+   0.5
+  ],
+  [
+   "kunst",
+   0.5
+  ]
+ ],
+ "til flere": [
+  [
+   "tverrfaglige",
+   1.0
+  ]
+ ],
+ "flere tverrfaglige": [
+  [
+   "forskningsprosjekter",
+   1.0
+  ]
+ ],
+ "tverrfaglige forskningsprosjekter": [
+  [
+   "om",
+   1.0
+  ]
+ ],
+ "forskningsprosjekter om": [
+  [
+   "bærekraft",
+   1.0
+  ]
+ ],
+ "om bærekraft": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "finanstilsynet vurderer": [
+  [
+   "fortløpende",
+   1.0
+  ]
+ ],
+ "vurderer fortløpende": [
+  [
+   "den",
+   1.0
+  ]
+ ],
+ "fortløpende den": [
+  [
+   "finansielle",
+   1.0
+  ]
+ ],
+ "den finansielle": [
+  [
+   "stabiliteten",
+   1.0
+  ]
+ ],
+ "finansielle stabiliteten": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "stabiliteten i": [
+  [
+   "det",
+   1.0
+  ]
+ ],
+ "norske banksystemet": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "arbeidstilsynets inspeksjoner": [
+  [
+   "avdekket",
+   1.0
+  ]
+ ],
+ "inspeksjoner avdekket": [
+  [
+   "brudd",
+   1.0
+  ]
+ ],
+ "avdekket brudd": [
+  [
+   "på",
+   1.0
+  ]
+ ],
+ "brudd på": [
+  [
+   "arbeidsmiljøloven",
+   1.0
+  ]
+ ],
+ "på arbeidsmiljøloven": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "arbeidsmiljøloven i": [
+  [
+   "flere",
+   1.0
+  ]
+ ],
+ "flere virksomheter": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "petroleumstilsynet stiller": [
+  [
+   "strenge",
+   1.0
+  ]
+ ],
+ "til sikkerhet": [
+  [
+   "og",
+   1.0
+  ]
+ ],
+ "og miljø": [
+  [
+   "på",
+   1.0
+  ]
+ ],
+ "miljø på": [
+  [
+   "norsk",
+   1.0
+  ]
+ ],
+ "på norsk": [
+  [
+   "sokkel",
+   1.0
+  ]
+ ],
+ "norsk sokkel": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "helsedirektoratets retningslinjer": [
+  [
+   "for",
+   1.0
+  ]
+ ],
+ "retningslinjer for": [
+  [
+   "behandling",
+   1.0
+  ]
+ ],
+ "for behandling": [
+  [
+   "av",
+   1.0
+  ]
+ ],
+ "av kroniske": [
+  [
+   "sykdommer",
+   1.0
+  ]
+ ],
+ "kroniske sykdommer": [
+  [
+   "ble",
+   1.0
+  ]
+ ],
+ "sykdommer ble": [
+  [
+   "oppdatert",
+   1.0
+  ]
+ ],
+ "ble oppdatert": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "oppdatert i": [
+  [
+   "år",
+   1.0
+  ]
+ ],
+ "i år": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "utlendingsdirektoratet behandlet": [
+  [
+   "et",
+   1.0
+  ]
+ ],
+ "behandlet et": [
+  [
+   "betydelig",
+   1.0
+  ]
+ ],
+ "et betydelig": [
+  [
+   "antall",
+   1.0
+  ]
+ ],
+ "betydelig antall": [
+  [
+   "søknader",
+   1.0
+  ]
+ ],
+ "antall søknader": [
+  [
+   "om",
+   1.0
+  ]
+ ],
+ "søknader om": [
+  [
+   "beskyttelse",
+   1.0
+  ]
+ ],
+ "om beskyttelse": [
+  [
+   "og",
+   1.0
+  ]
+ ],
+ "beskyttelse og": [
+  [
+   "oppholdstillatelse",
+   1.0
+  ]
+ ],
+ "og oppholdstillatelse": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "kystverket har": [
+  [
+   "ansvaret",
+   1.0
+  ]
+ ],
+ "for navigasjonssikkerhet": [
+  [
+   "og",
+   1.0
+  ]
+ ],
+ "navigasjonssikkerhet og": [
+  [
+   "beredskap",
+   1.0
+  ]
+ ],
+ "og beredskap": [
+  [
+   "mot",
+   1.0
+  ]
+ ],
+ "beredskap mot": [
+  [
+   "akutt",
+   1.0
+  ]
+ ],
+ "mot akutt": [
+  [
+   "forurensning",
+   1.0
+  ]
+ ],
+ "akutt forurensning": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "meteorologisk institutt": [
+  [
+   "varslet",
+   1.0
+  ]
+ ],
+ "institutt varslet": [
+  [
+   "ekstremvær",
+   1.0
+  ]
+ ],
+ "varslet ekstremvær": [
+  [
+   "med",
+   1.0
+  ]
+ ],
+ "ekstremvær med": [
+  [
+   "kraftig",
+   1.0
+  ]
+ ],
+ "med kraftig": [
+  [
+   "vind",
+   1.0
+  ]
+ ],
+ "kraftig vind": [
+  [
+   "og",
+   1.0
+  ]
+ ],
+ "vind og": [
+  [
+   "store",
+   1.0
+  ]
+ ],
+ "og store": [
+  [
+   "nedbørsmengder",
+   1.0
+  ]
+ ],
+ "store nedbørsmengder": [
+  [
+   "langs",
+   1.0
+  ]
+ ],
+ "nedbørsmengder langs": [
+  [
+   "kysten",
+   1.0
+  ]
+ ],
+ "vegvesenets planer": [
+  [
+   "for",
+   1.0
+  ]
+ ],
+ "planer for": [
+  [
+   "utbygging",
+   1.0
+  ]
+ ],
+ "for utbygging": [
+  [
+   "av",
+   1.0
+  ]
+ ],
+ "utbygging av": [
+  [
+   "hovedveiene",
+   1.0
+  ]
+ ],
+ "av hovedveiene": [
+  [
+   "ble",
+   1.0
+  ]
+ ],
+ "hovedveiene ble": [
+  [
+   "presentert",
+   1.0
+  ]
+ ],
+ "ble presentert": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "presentert i": [
+  [
+   "nasjonal",
+   1.0
+  ]
+ ],
+ "i nasjonal": [
+  [
+   "transportplan",
+   1.0
+  ]
+ ],
+ "nasjonal transportplan": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "jernbanedirektoratet arbeider": [
+  [
+   "med",
+   1.0
+  ]
+ ],
+ "arbeider med": [
+  [
+   "å",
+   1.0
+  ]
+ ],
+ "med å": [
+  [
+   "forbedre",
+   0.5
+  ],
+  [
+   "styrke",
+   0.5
+  ]
+ ],
+ "å forbedre": [
+  [
+   "togtilbudet",
+   1.0
+  ]
+ ],
+ "forbedre togtilbudet": [
+  [
+   "på",
+   1.0
+  ]
+ ],
+ "togtilbudet på": [
+  [
+   "de",
+   1.0
+  ]
+ ],
+ "på de": [
+  [
+   "mest",
+   1.0
+  ]
+ ],
+ "mest trafikkerte": [
+  [
+   "strekningene",
+   1.0
+  ]
+ ],
+ "trafikkerte strekningene": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "avinor investerer": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "i modernisering": [
+  [
+   "av",
+   1.0
+  ]
+ ],
+ "modernisering av": [
+  [
+   "flyplassinfrastrukturen",
+   1.0
+  ]
+ ],
+ "av flyplassinfrastrukturen": [
+  [
+   "for",
+   1.0
+  ]
+ ],
+ "flyplassinfrastrukturen for": [
+  [
+   "å",
+   1.0
+  ]
+ ],
+ "å møte": [
+  [
+   "fremtidig",
+   1.0
+  ]
+ ],
+ "møte fremtidig": [
+  [
+   "trafikkvekst",
+   1.0
+  ]
+ ],
+ "fremtidig trafikkvekst": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "oljefondet har": [
+  [
+   "en",
+   1.0
+  ]
+ ],
+ "en diversifisert": [
+  [
+   "portefølje",
+   1.0
+  ]
+ ],
+ "diversifisert portefølje": [
+  [
+   "av",
+   1.0
+  ]
+ ],
+ "portefølje av": [
+  [
+   "aksjer",
+   1.0
+  ]
+ ],
+ "av aksjer": [
+  [
+   ",",
+   1.0
+  ]
+ ],
+ "aksjer ,": [
+  [
+   "obligasjoner",
+   1.0
+  ]
+ ],
+ ", obligasjoner": [
+  [
+   "og",
+   1.0
+  ]
+ ],
+ "obligasjoner og": [
+  [
+   "eiendom",
+   1.0
+  ]
+ ],
+ "og eiendom": [
+  [
+   "over",
+   1.0
+  ]
+ ],
+ "eiendom over": [
+  [
+   "hele",
+   1.0
+  ]
+ ],
+ "sentralbanken justerte": [
+  [
+   "styringsrenten",
+   1.0
+  ]
+ ],
+ "justerte styringsrenten": [
+  [
+   "for",
+   1.0
+  ]
+ ],
+ "styringsrenten for": [
+  [
+   "å",
+   1.0
+  ]
+ ],
+ "å balansere": [
+  [
+   "hensynet",
+   1.0
+  ]
+ ],
+ "balansere hensynet": [
+  [
+   "til",
+   1.0
+  ]
+ ],
+ "hensynet til": [
+  [
+   "prisstabilitet",
+   1.0
+  ]
+ ],
+ "til prisstabilitet": [
+  [
+   "og",
+   1.0
+  ]
+ ],
+ "prisstabilitet og": [
+  [
+   "sysselsetting",
+   1.0
+  ]
+ ],
+ "og sysselsetting": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "skatteetaten gjennomfører": [
+  [
+   "omfattende",
+   1.0
+  ]
+ ],
+ "gjennomfører omfattende": [
+  [
+   "digitaliseringsprosjekter",
+   1.0
+  ]
+ ],
+ "omfattende digitaliseringsprosjekter": [
+  [
+   "for",
+   1.0
+  ]
+ ],
+ "digitaliseringsprosjekter for": [
+  [
+   "å",
+   1.0
+  ]
+ ],
+ "å forenkle": [
+  [
+   "rapportering",
+   1.0
+  ]
+ ],
+ "forenkle rapportering": [
+  [
+   "og",
+   1.0
+  ]
+ ],
+ "rapportering og": [
+  [
+   "kontroll",
+   1.0
+  ]
+ ],
+ "og kontroll": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "tolletaten samarbeider": [
+  [
+   "internasjonalt",
+   1.0
+  ]
+ ],
+ "samarbeider internasjonalt": [
+  [
+   "for",
+   1.0
+  ]
+ ],
+ "internasjonalt for": [
+  [
+   "å",
+   1.0
+  ]
+ ],
+ "å bekjempe": [
+  [
+   "grensekryssende",
+   1.0
+  ]
+ ],
+ "bekjempe grensekryssende": [
+  [
+   "kriminalitet",
+   1.0
+  ]
+ ],
+ "grensekryssende kriminalitet": [
+  [
+   "og",
+   1.0
+  ]
+ ],
+ "kriminalitet og": [
+  [
+   "smugling",
+   1.0
+  ]
+ ],
+ "og smugling": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "mattilsynet fører": [
+  [
+   "tilsyn",
+   1.0
+  ]
+ ],
+ "med matproduksjon": [
+  [
+   "og",
+   1.0
+  ]
+ ],
+ "matproduksjon og": [
+  [
+   "dyrevelferd",
+   1.0
+  ]
+ ],
+ "og dyrevelferd": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "dyrevelferd i": [
+  [
+   "hele",
+   1.0
+  ]
+ ],
+ "hele verdikjeden": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "miljødirektoratet koordinerer": [
+  [
+   "arbeidet",
+   1.0
+  ]
+ ],
+ "koordinerer arbeidet": [
+  [
+   "med",
+   1.0
+  ]
+ ],
+ "arbeidet med": [
+  [
+   "forvaltningsplaner",
+   1.0
+  ]
+ ],
+ "med forvaltningsplaner": [
+  [
+   "for",
+   1.0
+  ]
+ ],
+ "forvaltningsplaner for": [
+  [
+   "de",
+   1.0
+  ]
+ ],
+ "for de": [
+  [
+   "norske",
+   1.0
+  ]
+ ],
+ "kartverket produserer": [
+  [
+   "og",
+   1.0
+  ]
+ ],
+ "produserer og": [
+  [
+   "forvalter",
+   1.0
+  ]
+ ],
+ "og forvalter": [
+  [
+   "geografisk",
+   1.0
+  ]
+ ],
+ "forvalter geografisk": [
+  [
+   "informasjon",
+   1.0
+  ]
+ ],
+ "geografisk informasjon": [
+  [
+   "for",
+   1.0
+  ]
+ ],
+ "informasjon for": [
+  [
+   "bruk",
+   1.0
+  ]
+ ],
+ "for bruk": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "bruk i": [
+  [
+   "offentlig",
+   1.0
+  ]
+ ],
+ "offentlig og": [
+  [
+   "privat",
+   1.0
+  ]
+ ],
+ "og privat": [
+  [
+   "sektor",
+   1.0
+  ]
+ ],
+ "privat sektor": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "statistisk sentralbyrå": [
+  [
+   "publiserer",
+   1.0
+  ]
+ ],
+ "sentralbyrå publiserer": [
+  [
+   "regelmessig",
+   1.0
+  ]
+ ],
+ "publiserer regelmessig": [
+  [
+   "oppdaterte",
+   1.0
+  ]
+ ],
+ "regelmessig oppdaterte": [
+  [
+   "tall",
+   1.0
+  ]
+ ],
+ "oppdaterte tall": [
+  [
+   "om",
+   1.0
+  ]
+ ],
+ "tall om": [
+  [
+   "økonomi",
+   1.0
+  ]
+ ],
+ "om økonomi": [
+  [
+   ",",
+   1.0
+  ]
+ ],
+ "økonomi ,": [
+  [
+   "befolkning",
+   1.0
+  ]
+ ],
+ ", befolkning": [
+  [
+   "og",
+   1.0
+  ]
+ ],
+ "befolkning og": [
+  [
+   "samfunn",
+   1.0
+  ]
+ ],
+ "og samfunn": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "nasjonalbiblioteket har": [
+  [
+   "som",
+   1.0
+  ]
+ ],
+ "å samle": [
+  [
+   "inn",
+   1.0
+  ]
+ ],
+ "samle inn": [
+  [
+   "og",
+   1.0
+  ]
+ ],
+ "og bevare": [
+  [
+   "alt",
+   1.0
+  ]
+ ],
+ "bevare alt": [
+  [
+   "som",
+   1.0
+  ]
+ ],
+ "alt som": [
+  [
+   "publiseres",
+   1.0
+  ]
+ ],
+ "som publiseres": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "publiseres i": [
+  [
+   "norge",
+   1.0
+  ]
+ ],
+ "riksantikvaren gir": [
+  [
+   "råd",
+   1.0
+  ]
+ ],
+ "gir råd": [
+  [
+   "og",
+   1.0
+  ]
+ ],
+ "råd og": [
+  [
+   "veiledning",
+   1.0
+  ]
+ ],
+ "og veiledning": [
+  [
+   "om",
+   1.0
+  ]
+ ],
+ "veiledning om": [
+  [
+   "vern",
+   0.5
+  ],
+  [
+   "forbrukerrettigheter",
+   0.5
+  ]
+ ],
+ "om vern": [
+  [
+   "og",
+   1.0
+  ]
+ ],
+ "vern og": [
+  [
+   "forvaltning",
+   1.0
+  ]
+ ],
+ "og forvaltning": [
+  [
+   "av",
+   1.0
+  ]
+ ],
+ "av kulturminner": [
+  [
+   "og",
+   1.0
+  ]
+ ],
+ "kulturminner og": [
+  [
+   "kulturmiljøer",
+   1.0
+  ]
+ ],
+ "og kulturmiljøer": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "direktoratet for": [
+  [
+   "samfunnssikkerhet",
+   1.0
+  ]
+ ],
+ "for samfunnssikkerhet": [
+  [
+   "koordinerer",
+   1.0
+  ]
+ ],
+ "samfunnssikkerhet koordinerer": [
+  [
+   "den",
+   1.0
+  ]
+ ],
+ "koordinerer den": [
+  [
+   "nasjonale",
+   1.0
+  ]
+ ],
+ "nasjonale beredskapen": [
+  [
+   "mot",
+   1.0
+  ]
+ ],
+ "beredskapen mot": [
+  [
+   "alvorlige",
+   1.0
+  ]
+ ],
+ "mot alvorlige": [
+  [
+   "hendelser",
+   1.0
+  ]
+ ],
+ "alvorlige hendelser": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "sivilombudet behandler": [
+  [
+   "klager",
+   1.0
+  ]
+ ],
+ "behandler klager": [
+  [
+   "fra",
+   1.0
+  ]
+ ],
+ "klager fra": [
+  [
+   "borgere",
+   1.0
+  ]
+ ],
+ "fra borgere": [
+  [
+   "som",
+   1.0
+  ]
+ ],
+ "borgere som": [
+  [
+   "mener",
+   1.0
+  ]
+ ],
+ "som mener": [
+  [
+   "de",
+   1.0
+  ]
+ ],
+ "mener de": [
+  [
+   "er",
+   1.0
+  ]
+ ],
+ "er utsatt": [
+  [
+   "for",
+   1.0
+  ]
+ ],
+ "utsatt for": [
+  [
+   "urett",
+   1.0
+  ]
+ ],
+ "for urett": [
+  [
+   "fra",
+   1.0
+  ]
+ ],
+ "urett fra": [
+  [
+   "forvaltningen",
+   1.0
+  ]
+ ],
+ "fra forvaltningen": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "pasient og": [
+  [
+   "brukerombudet",
+   1.0
+  ]
+ ],
+ "og brukerombudet": [
+  [
+   "bistår",
+   1.0
+  ]
+ ],
+ "brukerombudet bistår": [
+  [
+   "personer",
+   1.0
+  ]
+ ],
+ "bistår personer": [
+  [
+   "som",
+   1.0
+  ]
+ ],
+ "personer som": [
+  [
+   "opplever",
+   1.0
+  ]
+ ],
+ "som opplever": [
+  [
+   "mangler",
+   1.0
+  ]
+ ],
+ "opplever mangler": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "helse og": [
+  [
+   "omsorgstjenestene",
+   1.0
+  ]
+ ],
+ "og omsorgstjenestene": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "likestillings og": [
+  [
+   "diskrimineringsombudet",
+   1.0
+  ]
+ ],
+ "og diskrimineringsombudet": [
+  [
+   "arbeider",
+   1.0
+  ]
+ ],
+ "diskrimineringsombudet arbeider": [
+  [
+   "for",
+   1.0
+  ]
+ ],
+ "arbeider for": [
+  [
+   "å",
+   1.0
+  ]
+ ],
+ "å fremme": [
+  [
+   "likestilling",
+   1.0
+  ]
+ ],
+ "fremme likestilling": [
+  [
+   "og",
+   1.0
+  ]
+ ],
+ "likestilling og": [
+  [
+   "bekjempe",
+   1.0
+  ]
+ ],
+ "og bekjempe": [
+  [
+   "diskriminering",
+   1.0
+  ]
+ ],
+ "bekjempe diskriminering": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "forbrukerrådet gir": [
+  [
+   "veiledning",
+   1.0
+  ]
+ ],
+ "gir veiledning": [
+  [
+   "om",
+   1.0
+  ]
+ ],
+ "om forbrukerrettigheter": [
+  [
+   "og",
+   1.0
+  ]
+ ],
+ "forbrukerrettigheter og": [
+  [
+   "bistår",
+   1.0
+  ]
+ ],
+ "og bistår": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "bistår i": [
+  [
+   "tvister",
+   1.0
+  ]
+ ],
+ "i tvister": [
+  [
+   "mellom",
+   1.0
+  ]
+ ],
+ "tvister mellom": [
+  [
+   "forbrukere",
+   1.0
+  ]
+ ],
+ "mellom forbrukere": [
+  [
+   "og",
+   1.0
+  ]
+ ],
+ "forbrukere og": [
+  [
+   "næringsdrivende",
+   1.0
+  ]
+ ],
+ "og næringsdrivende": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "barneombudet fremmer": [
+  [
+   "barns",
+   1.0
+  ]
+ ],
+ "fremmer barns": [
+  [
+   "interesser",
+   1.0
+  ]
+ ],
+ "barns interesser": [
+  [
+   "og",
+   1.0
+  ]
+ ],
+ "interesser og": [
+  [
+   "rettigheter",
+   1.0
+  ]
+ ],
+ "og rettigheter": [
+  [
+   "overfor",
+   1.0
+  ]
+ ],
+ "rettigheter overfor": [
+  [
+   "offentlige",
+   1.0
+  ]
+ ],
+ "overfor offentlige": [
+  [
+   "og",
+   1.0
+  ]
+ ],
+ "offentlige og": [
+  [
+   "private",
+   1.0
+  ]
+ ],
+ "og private": [
+  [
+   "aktører",
+   1.0
+  ]
+ ],
+ "private aktører": [
+  [
+   ".",
+   1.0
+  ]
+ ],
+ "språkrådet arbeider": [
+  [
+   "med",
+   1.0
+  ]
+ ],
+ "å styrke": [
+  [
+   "norsk",
+   1.0
+  ]
+ ],
+ "styrke norsk": [
+  [
+   "språk",
+   1.0
+  ]
+ ],
+ "norsk språk": [
+  [
+   "og",
+   1.0
+  ]
+ ],
+ "språk og": [
+  [
+   "språkmangfoldet",
+   1.0
+  ]
+ ],
+ "og språkmangfoldet": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "språkmangfoldet i": [
+  [
+   "det",
+   1.0
+  ]
+ ],
+ "kulturrådet fordeler": [
+  [
+   "statlige",
+   1.0
+  ]
+ ],
+ "fordeler statlige": [
+  [
+   "midler",
+   1.0
+  ]
+ ],
+ "statlige midler": [
+  [
+   "til",
+   1.0
+  ]
+ ],
+ "til kunst": [
+  [
+   "og",
+   1.0
+  ]
+ ],
+ "kunst og": [
+  [
+   "kulturformål",
+   1.0
+  ]
+ ],
+ "og kulturformål": [
+  [
+   "over",
+   1.0
+  ]
+ ],
+ "kulturformål over": [
+  [
+   "hele",
+   1.0
+  ]
+ ],
+ "forskningsetiske komiteer": [
+  [
+   "sikrer",
+   1.0
+  ]
+ ],
+ "komiteer sikrer": [
+  [
+   "at",
+   1.0
+  ]
+ ],
+ "sikrer at": [
+  [
+   "forskning",
+   1.0
+  ]
+ ],
+ "at forskning": [
+  [
+   "gjennomføres",
+   1.0
+  ]
+ ],
+ "forskning gjennomføres": [
+  [
+   "i",
+   1.0
+  ]
+ ],
+ "gjennomføres i": [
+  [
+   "tråd",
+   1.0
+  ]
+ ],
+ "med etiske": [
+  [
+   "retningslinjer",
+   1.0
+  ]
+ ],
+ "etiske retningslinjer": [
+  [
+   ".",
+   1.0
+  ]
+ ]
+}
