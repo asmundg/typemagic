@@ -22,6 +22,7 @@ class TypingTestState {
   final double liveWpm;
   final double liveAccuracy;
   final TestResult? result;
+  final List<Achievement> newlyUnlocked;
 
   const TypingTestState({
     this.phase = TypingPhase.waiting,
@@ -33,6 +34,7 @@ class TypingTestState {
     this.liveWpm = 0,
     this.liveAccuracy = 100,
     this.result,
+    this.newlyUnlocked = const [],
   });
 
   TestWord? get currentWord =>
@@ -50,6 +52,7 @@ class TypingTestState {
     double? liveWpm,
     double? liveAccuracy,
     TestResult? result,
+    List<Achievement>? newlyUnlocked,
   }) {
     return TypingTestState(
       phase: phase ?? this.phase,
@@ -61,6 +64,7 @@ class TypingTestState {
       liveWpm: liveWpm ?? this.liveWpm,
       liveAccuracy: liveAccuracy ?? this.liveAccuracy,
       result: result ?? this.result,
+      newlyUnlocked: newlyUnlocked ?? this.newlyUnlocked,
     );
   }
 }
@@ -185,7 +189,18 @@ class TypingTestNotifier extends Notifier<TypingTestState> {
     if (state.phase != TypingPhase.running) return;
 
     final word = state.currentWord;
-    if (word == null || word.typed.isEmpty) return;
+    if (word == null) return;
+
+    if (word.typed.isEmpty) {
+      // Backspace at start of word → go back to previous word
+      if (state.currentWordIndex > 0) {
+        final prevIndex = state.currentWordIndex - 1;
+        final prevWord = state.words[prevIndex];
+        prevWord.endTime = null;
+        state = state.copyWith(currentWordIndex: prevIndex);
+      }
+      return;
+    }
 
     final pos = word.typed.length - 1;
     final current = word.typed.toString();
@@ -266,7 +281,7 @@ class TypingTestNotifier extends Notifier<TypingTestState> {
     );
   }
 
-  void _finishTest() {
+  Future<void> _finishTest() async {
     _stopTimer();
 
     final duration = _testStartTime != null
@@ -365,11 +380,18 @@ class TypingTestNotifier extends Notifier<TypingTestState> {
         totalWordsTyped: totalStats.totalWords,
         totalTestsCompleted: totalStats.totalTests,
       );
-      ref.read(achievementProvider.notifier).checkAndUnlock(
+      final newNames = await ref.read(achievementProvider.notifier).checkAndUnlock(
             result,
             xpState,
             statsAgg,
           );
+      if (newNames.isNotEmpty) {
+        final achievements = ref.read(achievementProvider);
+        final unlocked = achievements
+            .where((a) => newNames.contains(a.name))
+            .toList();
+        state = state.copyWith(newlyUnlocked: unlocked);
+      }
     } catch (_) {}
   }
 

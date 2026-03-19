@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../core/theme.dart';
 import '../../core/models.dart';
+import '../achievements/achievement_system.dart';
 import 'typing_test_state.dart';
 import 'results_screen.dart';
 import '../../widgets/test_config_bar.dart';
@@ -188,6 +189,7 @@ class _TypingTestScreenState extends ConsumerState<TypingTestScreen>
                           animation: _summaryController!,
                           builder: (context, _) => _SummaryPanel(
                             result: testState.result!,
+                            newlyUnlocked: testState.newlyUnlocked,
                             slideOffset: _summarySlide?.value ?? 0,
                             opacity: _summaryFade?.value ?? 0,
                             onRestart: () {
@@ -228,6 +230,7 @@ class _TypingTestScreenState extends ConsumerState<TypingTestScreen>
 
 class _SummaryPanel extends StatelessWidget {
   final TestResult result;
+  final List<Achievement> newlyUnlocked;
   final double slideOffset;
   final double opacity;
   final VoidCallback onRestart;
@@ -236,6 +239,7 @@ class _SummaryPanel extends StatelessWidget {
 
   const _SummaryPanel({
     required this.result,
+    this.newlyUnlocked = const [],
     required this.slideOffset,
     required this.opacity,
     required this.onRestart,
@@ -252,6 +256,13 @@ class _SummaryPanel extends StatelessWidget {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
+            // Achievement banner (if any)
+            if (newlyUnlocked.isNotEmpty)
+              Padding(
+                padding: const EdgeInsets.only(bottom: 16),
+                child: _AchievementBanner(achievements: newlyUnlocked),
+              ),
+
             // Main stats row
             Container(
               padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 20),
@@ -618,6 +629,149 @@ class _SpaceWidget extends StatelessWidget {
               ),
             )
           : null,
+    );
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Achievement unlock banner with staggered pop-in
+// ---------------------------------------------------------------------------
+
+class _AchievementBanner extends StatefulWidget {
+  final List<Achievement> achievements;
+  const _AchievementBanner({required this.achievements});
+
+  @override
+  State<_AchievementBanner> createState() => _AchievementBannerState();
+}
+
+class _AchievementBannerState extends State<_AchievementBanner>
+    with SingleTickerProviderStateMixin {
+  late AnimationController _controller;
+
+  @override
+  void initState() {
+    super.initState();
+    _controller = AnimationController(
+      vsync: this,
+      duration: Duration(milliseconds: 600 + widget.achievements.length * 200),
+    )..forward();
+  }
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return AnimatedBuilder(
+      animation: _controller,
+      builder: (context, _) {
+        return Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            // "Ny prestasjon!" header
+            _buildHeader(),
+            const SizedBox(height: 10),
+            // Achievement badges
+            Wrap(
+              spacing: 12,
+              runSpacing: 8,
+              alignment: WrapAlignment.center,
+              children: [
+                for (var i = 0; i < widget.achievements.length; i++)
+                  _buildBadge(widget.achievements[i], i),
+              ],
+            ),
+          ],
+        );
+      },
+    );
+  }
+
+  Widget _buildHeader() {
+    final headerProgress = Curves.easeOut.transform(
+      (_controller.value * 3.0).clamp(0.0, 1.0),
+    );
+    return Opacity(
+      opacity: headerProgress,
+      child: Transform.scale(
+        scale: 0.8 + 0.2 * headerProgress,
+        child: Text(
+          widget.achievements.length == 1
+              ? '🏆 Ny prestasjon!'
+              : '🏆 ${widget.achievements.length} nye prestasjoner!',
+          style: AppTheme.monoStyleSmall.copyWith(
+            color: AppColors.gold,
+            fontWeight: FontWeight.w700,
+            fontSize: 15,
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget _buildBadge(Achievement achievement, int index) {
+    final total = _controller.duration!.inMilliseconds;
+    final startMs = 300 + index * 200;
+    final endMs = startMs + 400;
+    final t = ((_controller.value * total - startMs) / (endMs - startMs))
+        .clamp(0.0, 1.0);
+    final progress = Curves.elasticOut.transform(t);
+
+    return Transform.scale(
+      scale: progress,
+      child: Opacity(
+        opacity: t.clamp(0.0, 1.0),
+        child: Container(
+          padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 8),
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              colors: [
+                AppColors.gold.withValues(alpha: 0.15),
+                AppColors.accent.withValues(alpha: 0.08),
+              ],
+            ),
+            borderRadius: BorderRadius.circular(10),
+            border: Border.all(
+              color: AppColors.gold.withValues(alpha: 0.4),
+            ),
+          ),
+          child: Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Text(
+                achievement.icon,
+                style: const TextStyle(fontSize: 22),
+              ),
+              const SizedBox(width: 8),
+              Column(
+                mainAxisSize: MainAxisSize.min,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    achievement.name,
+                    style: AppTheme.monoStyleSmall.copyWith(
+                      color: AppColors.gold,
+                      fontWeight: FontWeight.w700,
+                      fontSize: 13,
+                    ),
+                  ),
+                  Text(
+                    achievement.description,
+                    style: AppTheme.monoStyleSmall.copyWith(
+                      color: AppColors.textMuted,
+                      fontSize: 11,
+                    ),
+                  ),
+                ],
+              ),
+            ],
+          ),
+        ),
+      ),
     );
   }
 }
