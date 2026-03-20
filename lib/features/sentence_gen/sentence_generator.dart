@@ -11,7 +11,7 @@ class SentenceGenerator {
   final Map<String, List<_Transition>> _trigrams;
   final Map<String, List<_Transition>> _bigrams;
   final List<String> _starters; // sentence-starting bigrams ("w1 w2")
-  final Set<String> _enders; // words that can end a sentence
+  final Map<String, double> _enders; // words that can end a sentence + prob
   final Random _random;
 
   static const _lambda3 = 0.7;
@@ -22,7 +22,7 @@ class SentenceGenerator {
     required Map<String, List<_Transition>> trigrams,
     required Map<String, List<_Transition>> bigrams,
     required List<String> starters,
-    required Set<String> enders,
+    required Map<String, double> enders,
   })  : _trigrams = trigrams,
         _bigrams = bigrams,
         _starters = starters,
@@ -80,8 +80,14 @@ class SentenceGenerator {
       words.add(next.word);
       totalScore += next.prob;
 
-      // Can stop at a natural ending after minWords
-      if (words.length >= minWords && _enders.contains(next.word)) break;
+      // Probabilistic ending: higher-prob enders + longer sentences stop sooner
+      final enderProb = _enders[next.word];
+      if (words.length >= minWords && enderProb != null) {
+        // Linear ramp: at minWords → base chance, at maxWords → certain
+        final progress = (words.length - minWords) / (maxWords - minWords);
+        final stopChance = enderProb * 10 * (0.3 + 0.7 * progress);
+        if (_random.nextDouble() < stopChance) break;
+      }
     }
 
     if (words.length < minWords) return null;
@@ -245,18 +251,18 @@ final sentenceGeneratorProvider =
       startersList.add('${arr[0]} ${arr[1]}');
     }
 
-    // Parse enders: [[word, prob], ...] → word strings
-    final endersSet = <String>{};
+    // Parse enders: [[word, prob], ...] → word → probability map
+    final endersMap = <String, double>{};
     for (final e in metaData['enders'] as List) {
       final arr = e as List;
-      endersSet.add(arr[0] as String);
+      endersMap[arr[0] as String] = (arr[1] as num).toDouble();
     }
 
     return SentenceGenerator._(
       trigrams: trigrams,
       bigrams: bigrams,
       starters: startersList,
-      enders: endersSet,
+      enders: endersMap,
     );
   } catch (e) {
     // Markov model not available yet
