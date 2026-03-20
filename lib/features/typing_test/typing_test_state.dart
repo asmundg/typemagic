@@ -100,10 +100,12 @@ class TypingTestNotifier extends Notifier<TypingTestState> {
 
     final gen = _sentenceGenerator;
     if (gen != null) {
+      final tierVocab = _wordProvider.getVocabularySet(config.maxTier);
       final sentences = generateSentences(
         gen,
         count: config.value,
         tier: config.maxTier,
+        tierVocab: tierVocab.isNotEmpty ? tierVocab : null,
       );
       // Split sentences into individual words
       wordStrings = sentences

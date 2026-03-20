@@ -12,7 +12,6 @@ class SentenceGenerator {
   final Map<String, List<_Transition>> _bigrams;
   final List<String> _starters; // sentence-starting bigrams ("w1 w2")
   final Set<String> _enders; // words that can end a sentence
-  final Set<String>? _tierVocab; // vocabulary filter by tier
   final Random _random;
 
   static const _lambda3 = 0.7;
@@ -24,27 +23,27 @@ class SentenceGenerator {
     required Map<String, List<_Transition>> bigrams,
     required List<String> starters,
     required Set<String> enders,
-    Set<String>? tierVocab,
   })  : _trigrams = trigrams,
         _bigrams = bigrams,
         _starters = starters,
         _enders = enders,
-        _tierVocab = tierVocab,
         _random = Random();
 
   /// Generate a sentence with [minWords] to [maxWords] words.
   /// [temperature] controls randomness (0.5 = predictable, 1.2 = creative).
+  /// [tierVocab] restricts Markov sampling to words in this set (with fallback).
   String generate({
     int minWords = 5,
     int maxWords = 12,
     double temperature = 0.8,
+    Set<String>? tierVocab,
   }) {
     if (_starters.isEmpty) return _fallbackSentence();
 
     // Try up to 3 candidates, pick the most natural one
     final candidates = <_SentenceCandidate>[];
     for (var attempt = 0; attempt < 3; attempt++) {
-      final result = _generateOne(minWords, maxWords, temperature);
+      final result = _generateOne(minWords, maxWords, temperature, tierVocab);
       if (result != null) candidates.add(result);
     }
 
@@ -56,7 +55,7 @@ class SentenceGenerator {
   }
 
   _SentenceCandidate? _generateOne(
-      int minWords, int maxWords, double temperature) {
+      int minWords, int maxWords, double temperature, Set<String>? tierVocab) {
     final starter = _starters[_random.nextInt(_starters.length)];
     final parts = starter.split(' ');
     if (parts.length < 2) return null;
@@ -68,7 +67,7 @@ class SentenceGenerator {
     for (var i = 0; i < maxWords - 2; i++) {
       final w1 = words[words.length - 2];
       final w2 = words[words.length - 1];
-      final next = _sampleNext(w1, w2, temperature);
+      final next = _sampleNext(w1, w2, temperature, tierVocab);
 
       if (next == null) break;
 
@@ -102,27 +101,35 @@ class SentenceGenerator {
     );
   }
 
-  _Transition? _sampleNext(String w1, String w2, double temperature) {
+  _Transition? _sampleNext(
+      String w1, String w2, double temperature, Set<String>? tierVocab) {
     final triKey = '$w1 $w2';
     final triTransitions = _trigrams[triKey];
     final biTransitions = _bigrams[w2];
 
     if (triTransitions == null && biTransitions == null) return null;
 
-    // Build interpolated distribution
+    // Build interpolated distribution. Out-of-vocabulary words are dampened
+    // rather than removed so Markov chains don't dead-end, but in-vocab words
+    // are strongly preferred (~20×).
+    const outOfVocabDampen = 0.05;
     final combined = <String, double>{};
 
     if (triTransitions != null) {
       for (final t in triTransitions) {
-        if (_tierVocab != null && !_tierVocab.contains(t.word)) continue;
-        combined[t.word] = (combined[t.word] ?? 0) + _lambda3 * t.prob;
+        final w = (tierVocab != null && !tierVocab.contains(t.word))
+            ? outOfVocabDampen
+            : 1.0;
+        combined[t.word] = (combined[t.word] ?? 0) + _lambda3 * t.prob * w;
       }
     }
 
     if (biTransitions != null) {
       for (final t in biTransitions) {
-        if (_tierVocab != null && !_tierVocab.contains(t.word)) continue;
-        combined[t.word] = (combined[t.word] ?? 0) + _lambda2 * t.prob;
+        final w = (tierVocab != null && !tierVocab.contains(t.word))
+            ? outOfVocabDampen
+            : 1.0;
+        combined[t.word] = (combined[t.word] ?? 0) + _lambda2 * t.prob * w;
       }
     }
 
@@ -257,11 +264,13 @@ final sentenceGeneratorProvider =
   }
 });
 
-/// Generate sentences for a typing test
+/// Generate sentences for a typing test.
+/// [tierVocab] constrains word choices to the given vocabulary set.
 List<String> generateSentences(
   SentenceGenerator generator, {
   required int count,
   DifficultyTier tier = DifficultyTier.laerling,
+  Set<String>? tierVocab,
 }) {
   final config = _tierConfigs[tier] ?? const _TierConfig(0.8, 5, 12);
   return List.generate(
@@ -270,6 +279,7 @@ List<String> generateSentences(
       minWords: config.minWords,
       maxWords: config.maxWords,
       temperature: config.temperature,
+      tierVocab: tierVocab,
     ),
   );
 }

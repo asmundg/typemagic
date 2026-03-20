@@ -602,9 +602,9 @@ class _WordWidget extends StatelessWidget {
           : AppColors.incorrect;
     }
 
-    // Cursor position — next character to type
+    // Cursor position — not yet typed, keep muted
     if (index == word.typed.length) {
-      return AppColors.textPrimary;
+      return AppColors.textMuted;
     }
 
     return AppColors.textMuted;
@@ -617,18 +617,21 @@ class _SpaceWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    if (!showCursor) return const SizedBox(width: 12);
+    // TextDecoration.underline doesn't render on whitespace-only text,
+    // so we draw the underline with a bottom border instead.
+    final lineHeight = AppTheme.monoStyle.fontSize! * (AppTheme.monoStyle.height ?? 1.0);
     return SizedBox(
       width: 12,
-      child: showCursor
-          ? Text(
-              ' ',
-              style: AppTheme.monoStyle.copyWith(
-                decoration: TextDecoration.underline,
-                decorationColor: AppColors.cursor,
-                decorationThickness: 2.5,
-              ),
-            )
-          : null,
+      height: lineHeight,
+      child: Align(
+        alignment: Alignment.bottomCenter,
+        child: Container(
+          width: 12,
+          height: 2.5,
+          color: AppColors.cursor,
+        ),
+      ),
     );
   }
 }

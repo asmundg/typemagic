@@ -74,15 +74,23 @@ def main() -> None:
     ok = run_step("Dictionary builder", dict_cmd)
     results.append(("Dictionary builder", ok))
 
-    # --- Step 2: Markov chain builder (bootstrap) ---------------------------
+    # --- Step 2: Markov chain builder ----------------------------------------
     markov_out = os.path.join(output_dir, "markov")
+    ngram_dir = os.path.join(data_dir, "nb_ngrams")
     markov_cmd = [
         sys.executable, os.path.join(SCRIPT_DIR, "build_markov_model.py"),
         "--bootstrap",
         "--output", markov_out,
         "--assets-dir", output_dir,
     ]
-    ok = run_step("Markov chain builder (bootstrap)", markov_cmd)
+    # Add NB corpus n-grams if available (from download_nb_ngrams.sh)
+    if os.path.isdir(ngram_dir):
+        markov_cmd.insert(3, "--ngram-dir")
+        markov_cmd.insert(4, ngram_dir)
+        label = "Markov chain builder (bootstrap + NB corpus)"
+    else:
+        label = "Markov chain builder (bootstrap only)"
+    ok = run_step(label, markov_cmd)
     results.append(("Markov chain builder", ok))
 
     # --- Summary -----------------------------------------------------------

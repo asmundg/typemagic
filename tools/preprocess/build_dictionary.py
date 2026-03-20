@@ -33,7 +33,7 @@ from typing import Optional
 
 NORWEGIAN_SPECIAL = set("æøå")
 # Only allow lowercase a-z plus æøå — no hyphens, digits, spaces, etc.
-VALID_WORD_RE = re.compile(r"^[a-zæøå]{2,}$")
+VALID_WORD_RE = re.compile(r"^[a-zæøå]+$")
 
 # Profanity / inappropriate words to exclude (this is a kids' game!)
 BLOCKED_WORDS = {
@@ -64,9 +64,9 @@ TIERS = [
     {
         "tier": 1,
         "name": "Nybegynner",
-        "description": "Top 200 vanligste ord, 2-5 bokstaver",
+        "description": "Top 200 vanligste ord, 1-5 bokstaver",
         "max_freq_rank": 500,   # look within top-500 ranked words …
-        "min_len": 2,
+        "min_len": 1,
         "max_len": 5,
         "target_count": 200,    # … and keep up to 200
     },
@@ -104,7 +104,7 @@ TIERS = [
         "max_freq_rank": None,
         "min_len": 2,
         "max_len": None,
-        "target_count": None,   # keep all
+        "target_count": 10000,  # cap at 10k (was unlimited)
     },
 ]
 
@@ -269,6 +269,18 @@ def main() -> None:
     ordbank = load_ordbank(ordbank_path)
     freq    = load_frequencies(freq_path)
     max_rank = max(freq.values()) if freq else 50000
+
+    # Include high-frequency words even if they're not in the Ordbank.
+    # These are very common function words (er, har, kan, …) that may be
+    # absent from dictionary word lists but are essential for typing practice.
+    freq_supplement = {
+        w for w, rank in freq.items()
+        if rank <= 500 and VALID_WORD_RE.match(w) and w not in BLOCKED_WORDS
+    }
+    supplement_count = len(freq_supplement - ordbank)
+    ordbank = ordbank | freq_supplement
+    if supplement_count:
+        print(f"  Added {supplement_count} high-frequency words not in Ordbank")
 
     # 2. Build tiers (each tier's words are exclusive — no duplicates across tiers)
     print("\nBuilding tiers …")

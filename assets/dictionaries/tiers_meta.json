@@ -21,16 +21,16 @@
     {
       "tier": 4,
       "name": "Mester",
-      "word_count": 4262,
+      "word_count": 4393,
       "file": "tier4.json"
     },
     {
       "tier": 5,
       "name": "Trollmann",
-      "word_count": 134796,
+      "word_count": 10000,
       "file": "tier5.json"
     }
   ],
-  "total_words": 141258,
-  "generated_at": "2026-03-19T12:32:41.734401+00:00"
+  "total_words": 16593,
+  "generated_at": "2026-03-20T06:32:41.709313+00:00"
 }

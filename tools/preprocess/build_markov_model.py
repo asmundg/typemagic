@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
 """Build a Markov chain model for Norwegian sentence generation.
 
-Supports two modes:
+Supports three modes:
   A) From NB N-gram corpus (Nasjonalbiblioteket):
        python3 build_markov_model.py --ngram-dir /path/to/ngrams --output ../../assets/markov/
   B) Bootstrap from curated sentence corpus:
        python3 build_markov_model.py --bootstrap --output ../../assets/markov/
+  C) Hybrid (recommended — bootstrap provides starters/structure, NB adds frequency data):
+       python3 build_markov_model.py --bootstrap --ngram-dir /path/to/ngrams --output ../../assets/markov/
 
 Output (JSON, loadable by Dart):
   - markov_trigrams.json  — trigram transition table
@@ -552,8 +554,13 @@ def is_sentence_end(token: str) -> bool:
 
 
 def is_clean(word: str) -> bool:
-    """Return False if word is profane or obviously garbage."""
-    return word.lower() not in PROFANITY
+    """Return False if word is profane, punctuation, or not a real word."""
+    if word.lower() in PROFANITY:
+        return False
+    # Must contain at least one letter
+    if not any(c.isalpha() for c in word):
+        return False
+    return True
 
 
 # ---------------------------------------------------------------------------
@@ -576,15 +583,14 @@ class MarkovModelBuilder:
 
         # Track vocabulary
         for t in tokens:
-            if not is_sentence_end(t) and t not in (",", ":", ";"):
-                if is_clean(t):
-                    self.vocab[t.lower()] += weight
-                    if tier is not None:
-                        cur = self.word_tiers.get(t.lower(), 99)
-                        self.word_tiers[t.lower()] = min(cur, tier)
+            if not is_sentence_end(t) and is_clean(t):
+                self.vocab[t.lower()] += weight
+                if tier is not None:
+                    cur = self.word_tiers.get(t.lower(), 99)
+                    self.word_tiers[t.lower()] = min(cur, tier)
 
         # Identify starters: first two real words of the sentence
-        real = [t for t in tokens if not is_sentence_end(t) and t not in (",", ":", ";")]
+        real = [t for t in tokens if is_clean(t)]
         if len(real) >= 2:
             self.starters[(real[0], real[1])] += weight
 
@@ -592,7 +598,7 @@ class MarkovModelBuilder:
         for i, t in enumerate(tokens):
             if is_sentence_end(t) and i > 0:
                 prev = tokens[i - 1]
-                if not is_sentence_end(prev) and prev not in (",", ":", ";"):
+                if is_clean(prev):
                     self.enders[prev.lower()] += weight
 
         # Build bigrams (over all tokens including punctuation)
@@ -608,26 +614,73 @@ class MarkovModelBuilder:
                 self.trigram_counts[(w1, w2)][w3] += weight
 
     def add_ngram_file(self, path: str, n: int):
-        """Parse an NB N-gram corpus file (tab-separated: words<TAB>freq)."""
+        """Parse an NB N-gram corpus file.
+
+        Supports two formats:
+          A) NB Språkbanken:  <freq> <w1> <w2> …     (space-separated, freq first)
+          B) Tab-separated:   <w1> <w2> …\\t<freq>    (words first, freq last)
+
+        Sentence boundary tokens (<s>, </s>) are skipped.
+        """
         count = 0
         with open(path, "r", encoding="utf-8") as f:
             for line in f:
                 line = line.strip()
                 if not line:
                     continue
-                parts = line.rsplit("\t", 1)
-                if len(parts) != 2:
-                    continue
-                words_part, freq_str = parts
-                try:
-                    freq = int(freq_str)
-                except ValueError:
-                    continue
-                words = words_part.split()
-                if len(words) != n:
+
+                # Try tab-separated format first (words\tfreq)
+                tab_parts = line.rsplit("\t", 1)
+                if len(tab_parts) == 2:
+                    words_part, freq_str = tab_parts
+                    try:
+                        freq = int(freq_str)
+                        words = words_part.split()
+                    except ValueError:
+                        freq = None
+                        words = None
+                else:
+                    freq = None
+                    words = None
+
+                # Fall back to NB format (freq words...)
+                if freq is None:
+                    space_parts = line.split()
+                    if len(space_parts) >= 2:
+                        try:
+                            freq = int(space_parts[0])
+                            words = space_parts[1:]
+                        except ValueError:
+                            continue
+                    else:
+                        continue
+
+                if words is None or len(words) != n:
                     continue
 
-                # Filter profanity
+                # Handle sentence-boundary tokens for starters/enders
+                has_start = "<s>" in words
+                has_end = "</s>" in words
+
+                if has_start or has_end:
+                    if n == 3:
+                        # <s> w1 w2 → sentence starter
+                        if words[0] == "<s>" and words[1] != "</s>" and words[2] != "</s>":
+                            w1, w2 = words[1].lower(), words[2].lower()
+                            if is_clean(words[1]) and is_clean(words[2]):
+                                self.starters[(w1, w2)] += freq
+                        # w1 w2 </s> → sentence ender
+                        # Often "w1 . </s>" — use w1 (word before punct)
+                        if words[2] == "</s>" and words[0] != "<s>":
+                            if words[1] in (".", "!", "?", "…"):
+                                # Punctuation ending — real ender is w0
+                                if is_clean(words[0]):
+                                    self.enders[words[0].lower()] += freq
+                            elif words[1] != "<s>" and is_clean(words[1]):
+                                self.enders[words[1].lower()] += freq
+                    continue
+
+                # Filter profanity and non-word tokens
                 if not all(is_clean(w) for w in words):
                     continue
 
@@ -643,12 +696,8 @@ class MarkovModelBuilder:
                     self.vocab[w2] += freq
                     self.vocab[w3] += freq
 
-                    # Heuristic starters: capitalised first word
-                    if words[0][0].isupper():
-                        self.starters[(w1, w2)] += freq
-
-                    # Heuristic enders: last word before a period-like token
-                    if w3 == ".":
+                    # Heuristic enders: word before sentence-final punctuation
+                    if w3 in (".", "!", "?", "…"):
                         self.enders[w2] += freq
 
                 count += 1
@@ -665,53 +714,95 @@ class MarkovModelBuilder:
         total = sum(c for _, c in items)
         return [[tok, round(c / total, 6)] for tok, c in items]
 
-    def build(self, vocab_filter: set[str] | None = None) -> dict:
-        """Build the final model dictionaries."""
+    def build(self, vocab_filter: set[str] | None = None,
+              min_bigram_freq: int = 5,
+              min_trigram_freq: int = 3,
+              max_bigram_contexts: int = 15000,
+              max_trigram_contexts: int = 30000,
+              max_starters: int = 500,
+              max_enders: int = 500) -> dict:
+        """Build the final model dictionaries.
+
+        Args:
+            vocab_filter: Set of allowed words (None = no filter).
+            min_bigram_freq: Drop bigram contexts with total count below this.
+            min_trigram_freq: Drop trigram contexts with total count below this.
+            max_bigram_contexts: Keep at most this many bigram contexts (by frequency).
+            max_trigram_contexts: Keep at most this many trigram contexts (by frequency).
+            max_starters: Keep at most this many sentence starters.
+            max_enders: Keep at most this many sentence enders.
+        """
         # Optional vocab filtering
         if vocab_filter:
             print(f"  Filtering against vocabulary of {len(vocab_filter):,} words …")
 
         def ok(w: str) -> bool:
-            if is_sentence_end(w) or w in (",", ":", ";"):
+            if is_sentence_end(w):
                 return True
+            if not is_clean(w):
+                return False
             if vocab_filter and w not in vocab_filter and len(w) > 1:
                 return False
             return True
 
-        # Build bigram model
-        bigrams = {}
+        # Build bigram model (prune by frequency, cap total contexts)
+        bigrams_raw = {}
         for w1, followers in self.bigram_counts.items():
             if not ok(w1):
                 continue
             filtered = Counter({w2: c for w2, c in followers.items() if ok(w2)})
-            if filtered:
-                bigrams[w1] = self._normalise(filtered, top_k=30)
+            total = sum(filtered.values())
+            if filtered and total >= min_bigram_freq:
+                bigrams_raw[(w1, total)] = filtered
+
+        # Keep top contexts by frequency
+        sorted_bi = sorted(bigrams_raw.items(), key=lambda x: x[0][1], reverse=True)
+        if len(sorted_bi) > max_bigram_contexts:
+            sorted_bi = sorted_bi[:max_bigram_contexts]
+
+        bigrams = {}
+        for (w1, _total), filtered in sorted_bi:
+            bigrams[w1] = self._normalise(filtered, top_k=15)
         print(f"  Bigram contexts: {len(bigrams):,}")
 
-        # Build trigram model
-        trigrams = {}
+        # Build trigram model (prune by frequency, cap total contexts)
+        trigrams_raw = {}
         for (w1, w2), followers in self.trigram_counts.items():
             if not ok(w1) or not ok(w2):
                 continue
             filtered = Counter({w3: c for w3, c in followers.items() if ok(w3)})
-            if filtered:
-                key = f"{w1} {w2}"  # JSON keys must be strings
-                trigrams[key] = self._normalise(filtered, top_k=20)
+            total = sum(filtered.values())
+            if filtered and total >= min_trigram_freq:
+                key = f"{w1} {w2}"
+                trigrams_raw[(key, total)] = filtered
+
+        sorted_tri = sorted(trigrams_raw.items(), key=lambda x: x[0][1], reverse=True)
+        if len(sorted_tri) > max_trigram_contexts:
+            sorted_tri = sorted_tri[:max_trigram_contexts]
+
+        trigrams = {}
+        for (key, _total), filtered in sorted_tri:
+            trigrams[key] = self._normalise(filtered, top_k=10)
         print(f"  Trigram contexts: {len(trigrams):,}")
 
-        # Build starters
+        # Build starters — collect many, then filter
         starter_list = []
-        for (w1, w2), count in self.starters.most_common(200):
+        for (w1, w2), count in self.starters.most_common(max_starters * 5):
             if ok(w1) and ok(w2):
                 starter_list.append([w1, w2, count])
+            if len(starter_list) >= max_starters:
+                break
         total_s = sum(s[2] for s in starter_list) if starter_list else 1
         starters = [[s[0], s[1], round(s[2] / total_s, 6)] for s in starter_list]
         print(f"  Sentence starters: {len(starters)}")
 
         # Build enders
-        ender_items = [
-            (w, c) for w, c in self.enders.most_common(300) if ok(w)
-        ]
+        ender_items = []
+        for w, c in self.enders.most_common(max_enders * 5):
+            if ok(w):
+                ender_items.append((w, c))
+            if len(ender_items) >= max_enders:
+                break
         total_e = sum(c for _, c in ender_items) if ender_items else 1
         enders = [[w, round(c / total_e, 6)] for w, c in ender_items]
         print(f"  Sentence enders: {len(enders)}")
@@ -747,17 +838,22 @@ def load_vocab_filter(assets_dir: str) -> set[str] | None:
 
     # Try tier files first
     tier_files = sorted(assets.glob("dictionaries/tier*.json"))
+    # Exclude metadata files
+    tier_files = [f for f in tier_files if "meta" not in f.name]
     if tier_files:
         for tf in tier_files:
             try:
                 with open(tf, "r", encoding="utf-8") as f:
                     data = json.load(f)
-                if isinstance(data, list):
+                if isinstance(data, dict) and "words" in data:
+                    # Format: {"words": [{"word": "...", ...}, ...]}
+                    for entry in data["words"]:
+                        if isinstance(entry, dict) and "word" in entry:
+                            vocab.add(entry["word"].lower())
+                        elif isinstance(entry, str):
+                            vocab.add(entry.lower())
+                elif isinstance(data, list):
                     vocab.update(w.lower() for w in data if isinstance(w, str))
-                elif isinstance(data, dict):
-                    for v in data.values():
-                        if isinstance(v, list):
-                            vocab.update(w.lower() for w in v if isinstance(w, str))
             except Exception as e:
                 print(f"  Warning: could not load {tf}: {e}")
         if vocab:
@@ -792,15 +888,14 @@ def main():
     parser = argparse.ArgumentParser(
         description="Build Markov chain model for Norwegian sentence generation"
     )
-    mode = parser.add_mutually_exclusive_group(required=True)
-    mode.add_argument(
+    parser.add_argument(
         "--ngram-dir",
         help="Path to extracted NB N-gram corpus directory",
     )
-    mode.add_argument(
+    parser.add_argument(
         "--bootstrap",
         action="store_true",
-        help="Build model from curated sentence corpus",
+        help="Include curated sentence corpus (can combine with --ngram-dir)",
     )
     parser.add_argument(
         "--output", "-o",
@@ -812,6 +907,22 @@ def main():
         default=None,
         help="Path to assets directory (for vocabulary filter). "
              "Defaults to ../../assets/ relative to this script.",
+    )
+    parser.add_argument(
+        "--min-bigram-freq", type=int, default=50,
+        help="Drop bigram contexts with total count below this (default: 50)",
+    )
+    parser.add_argument(
+        "--min-trigram-freq", type=int, default=20,
+        help="Drop trigram contexts with total count below this (default: 20)",
+    )
+    parser.add_argument(
+        "--max-bigram-contexts", type=int, default=3000,
+        help="Keep at most this many bigram contexts (default: 3000)",
+    )
+    parser.add_argument(
+        "--max-trigram-contexts", type=int, default=5000,
+        help="Keep at most this many trigram contexts (default: 5000)",
     )
     args = parser.parse_args()
 
@@ -826,6 +937,9 @@ def main():
     out_dir = Path(args.output)
     out_dir.mkdir(parents=True, exist_ok=True)
 
+    if not args.bootstrap and not args.ngram_dir:
+        parser.error("Provide at least one of --bootstrap or --ngram-dir")
+
     builder = MarkovModelBuilder()
 
     if args.bootstrap:
@@ -839,7 +953,7 @@ def main():
             total += len(sentences)
         print(f"  Total: {total} sentences")
 
-    elif args.ngram_dir:
+    if args.ngram_dir:
         print(f"=== NB corpus mode: reading from {args.ngram_dir} ===")
         ngram_path = Path(args.ngram_dir)
         if not ngram_path.is_dir():
@@ -876,26 +990,32 @@ def main():
 
     # Build the model
     print("\n--- Building model ---")
-    model = builder.build(vocab_filter=vocab_filter)
+    model = builder.build(
+        vocab_filter=vocab_filter,
+        min_bigram_freq=args.min_bigram_freq,
+        min_trigram_freq=args.min_trigram_freq,
+        max_bigram_contexts=args.max_bigram_contexts,
+        max_trigram_contexts=args.max_trigram_contexts,
+    )
 
     # Write output files
     print("\n--- Writing output ---")
 
     bigram_path = out_dir / "markov_bigrams.json"
     with open(bigram_path, "w", encoding="utf-8") as f:
-        json.dump(model["bigrams"], f, ensure_ascii=False, indent=1)
+        json.dump(model["bigrams"], f, ensure_ascii=False, separators=(",", ":"))
     size_b = bigram_path.stat().st_size
     print(f"  {bigram_path} ({size_b:,} bytes)")
 
     trigram_path = out_dir / "markov_trigrams.json"
     with open(trigram_path, "w", encoding="utf-8") as f:
-        json.dump(model["trigrams"], f, ensure_ascii=False, indent=1)
+        json.dump(model["trigrams"], f, ensure_ascii=False, separators=(",", ":"))
     size_t = trigram_path.stat().st_size
     print(f"  {trigram_path} ({size_t:,} bytes)")
 
     meta_path = out_dir / "markov_meta.json"
     with open(meta_path, "w", encoding="utf-8") as f:
-        json.dump(model["meta"], f, ensure_ascii=False, indent=1)
+        json.dump(model["meta"], f, ensure_ascii=False, separators=(",", ":"))
     size_m = meta_path.stat().st_size
     print(f"  {meta_path} ({size_m:,} bytes)")
 
@@ -959,8 +1079,8 @@ def generate_sample(model: dict, max_len: int = 20) -> str:
         words.append(chosen)
 
         # Stop if we hit an ender and sentence is long enough
-        if len(words) >= 4 and chosen in enders:
-            if random.random() < 0.4:
+        if len(words) >= 8 and chosen in enders:
+            if random.random() < 0.3:
                 break
 
     # Capitalise first word, add period

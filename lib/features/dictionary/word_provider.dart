@@ -130,6 +130,18 @@ class WordProvider {
       _tiers.values.fold(0, (sum, list) => sum + list.length);
 
   int wordsInTier(DifficultyTier tier) => _tiers[tier]?.length ?? 0;
+
+  /// Returns a lowercase vocabulary set for all tiers up to [maxTier].
+  /// Used to constrain the sentence generator's Markov sampling.
+  Set<String> getVocabularySet(DifficultyTier maxTier) {
+    final vocab = <String>{};
+    for (final tier in DifficultyTier.values) {
+      if (tier.level > maxTier.level) break;
+      final words = _tiers[tier] ?? [];
+      vocab.addAll(words.map((w) => w.word.toLowerCase()));
+    }
+    return vocab;
+  }
 }
 
 /// Loads the tiered word provider from bundled assets
