@@ -6,6 +6,7 @@ import '../dictionary/word_provider.dart';
 import '../sentence_gen/sentence_generator.dart';
 import '../stats/stats_repository.dart';
 import '../progression/xp_system.dart';
+import '../progression/daily_challenge.dart';
 import '../achievements/achievement_system.dart';
 
 /// Possible states of the typing test
@@ -372,6 +373,11 @@ class TypingTestNotifier extends Notifier<TypingTestState> {
     try {
       final xp = calculateXP(result);
       ref.read(xpProvider.notifier).addXP(xp);
+    } catch (_) {}
+
+    // Record practice day for streak tracking
+    try {
+      ref.read(dailyChallengeProvider.notifier).recordPracticeDay();
     } catch (_) {}
 
     // Check achievements

@@ -180,6 +180,47 @@ class DailyChallengeNotifier extends Notifier<DailyChallengeState> {
     }
   }
 
+  /// Record that the user practiced today (any test completion).
+  /// Increments the streak if this is the first practice of the day.
+  Future<void> recordPracticeDay() async {
+    final todayStr = _todayKey();
+
+    // Already recorded today — nothing to do
+    if (state.dateKey == todayStr && state.isCompleted) return;
+
+    final box = await Hive.openBox(_hiveBoxName);
+    final lastCompletedKey =
+        box.get('last_completed_key', defaultValue: '') as String;
+
+    // Already recorded today via Hive (handles app restart within same day)
+    if (lastCompletedKey == todayStr) return;
+
+    final yesterdayKey =
+        _dateToKey(DateTime.now().subtract(const Duration(days: 1)));
+    final streakAlive = lastCompletedKey == yesterdayKey;
+    final baseStreak = streakAlive ? state.currentStreak : 0;
+    final newStreak = baseStreak + 1;
+    final newBest =
+        newStreak > state.bestStreak ? newStreak : state.bestStreak;
+
+    state = state.copyWith(
+      isCompleted: true,
+      currentStreak: newStreak,
+      bestStreak: newBest,
+      dateKey: todayStr,
+    );
+
+    try {
+      await box.put('date_key', todayStr);
+      await box.put('is_completed', true);
+      await box.put('current_streak', newStreak);
+      await box.put('best_streak', newBest);
+      await box.put('last_completed_key', todayStr);
+    } catch (_) {
+      // Persistence failed — state is still updated in memory
+    }
+  }
+
   /// Check if the daily challenge has words ready
   bool get hasWords => state.todaysWords.isNotEmpty;
 

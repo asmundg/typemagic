@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:google_fonts/google_fonts.dart';
 import '../../core/theme.dart';
 import '../../core/models.dart';
 import '../achievements/achievement_system.dart';
+import '../progression/daily_challenge.dart';
 import 'typing_test_state.dart';
 import 'results_screen.dart';
 import '../../widgets/test_config_bar.dart';
@@ -153,7 +155,13 @@ class _TypingTestScreenState extends ConsumerState<TypingTestScreen>
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      const XPBar(),
+                      Row(
+                        children: [
+                          const Expanded(child: XPBar()),
+                          const SizedBox(width: 12),
+                          _CompactStreakBadge(),
+                        ],
+                      ),
                       const SizedBox(height: 16),
                       TestConfigBar(
                         config: testState.config,
@@ -774,6 +782,48 @@ class _AchievementBannerState extends State<_AchievementBanner>
             ],
           ),
         ),
+      ),
+    );
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Compact streak badge for the typing screen
+// ---------------------------------------------------------------------------
+
+class _CompactStreakBadge extends ConsumerWidget {
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final challengeState = ref.watch(dailyChallengeProvider);
+    final streak = challengeState.currentStreak;
+
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
+      decoration: BoxDecoration(
+        color: AppColors.surface,
+        borderRadius: BorderRadius.circular(8),
+        border: streak > 0
+            ? Border.all(
+                color: AppColors.accent.withValues(alpha: 0.2), width: 1)
+            : null,
+      ),
+      child: Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Text(
+            streak > 0 ? '🔥' : '💤',
+            style: const TextStyle(fontSize: 14),
+          ),
+          const SizedBox(width: 4),
+          Text(
+            '$streak',
+            style: GoogleFonts.jetBrainsMono(
+              fontSize: 14,
+              fontWeight: FontWeight.w600,
+              color: streak > 0 ? AppColors.accent : AppColors.textMuted,
+            ),
+          ),
+        ],
       ),
     );
   }

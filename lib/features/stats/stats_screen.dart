@@ -5,6 +5,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:intl/intl.dart';
 import '../../core/models.dart';
 import '../../core/theme.dart';
+import '../progression/daily_challenge.dart';
 import 'stats_repository.dart';
 
 class StatsScreen extends ConsumerStatefulWidget {
@@ -21,11 +22,13 @@ class _StatsScreenState extends ConsumerState<StatsScreen> {
   Widget build(BuildContext context) {
     final repo = ref.read(statsRepositoryProvider);
     final totalStats = repo.getTotalStats();
+    final practiceStats = repo.getPracticeStats(days: 7);
     final dailyStats =
         repo.getDailyStats(days: _selectedDays > 0 ? _selectedDays : null);
     final keyStats = repo.getKeyStatsAggregate();
     final personalBests = repo.getPersonalBests();
     final recentHistory = repo.getHistory(limit: 50);
+    final challengeState = ref.watch(dailyChallengeProvider);
 
     return SingleChildScrollView(
       padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 24),
@@ -35,6 +38,15 @@ class _StatsScreenState extends ConsumerState<StatsScreen> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
+              // Streak + practice stats
+              _StreakAndPractice(
+                streak: challengeState.currentStreak,
+                bestStreak: challengeState.bestStreak,
+                totalStats: totalStats,
+                practiceStats: practiceStats,
+              ),
+              const SizedBox(height: 32),
+
               // Overview cards
               _OverviewCards(stats: totalStats),
               const SizedBox(height: 32),
@@ -74,6 +86,139 @@ class _StatsScreenState extends ConsumerState<StatsScreen> {
             ],
           ),
         ),
+      ),
+    );
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Streak + daily practice stats
+// ---------------------------------------------------------------------------
+
+class _StreakAndPractice extends StatelessWidget {
+  final int streak;
+  final int bestStreak;
+  final TotalStats totalStats;
+  final PracticeStats practiceStats;
+
+  const _StreakAndPractice({
+    required this.streak,
+    required this.bestStreak,
+    required this.totalStats,
+    required this.practiceStats,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        // Streak row
+        Row(
+          children: [
+            _StreakBadge(streak: streak, bestStreak: bestStreak),
+          ],
+        ),
+        const SizedBox(height: 16),
+
+        // 7-day practice summary
+        const _SectionTitle(text: 'Siste 7 dager'),
+        const SizedBox(height: 12),
+        Wrap(
+          spacing: 12,
+          runSpacing: 12,
+          children: [
+            _StatCard(
+              label: 'Tegn skrevet',
+              value: _formatCount(totalStats.totalChars),
+            ),
+            _StatCard(
+              label: 'Total tid',
+              value: _formatDuration(totalStats.totalTime),
+            ),
+            _StatCard(
+              label: 'Snitt tegn/dag',
+              value: _formatCount(practiceStats.avgCharsPerDay.round()),
+              color: AppColors.speedLine,
+            ),
+            _StatCard(
+              label: 'Snitt tid/dag',
+              value: _formatDuration(practiceStats.avgTimePerDay),
+              color: AppColors.speedLine,
+            ),
+            _StatCard(
+              label: 'Aktive dager',
+              value: '${practiceStats.activeDays}/7',
+              color: AppColors.accent,
+            ),
+          ],
+        ),
+      ],
+    );
+  }
+
+  String _formatCount(int n) {
+    if (n >= 1000) return '${(n / 1000).toStringAsFixed(1)}k';
+    return '$n';
+  }
+
+  String _formatDuration(Duration d) {
+    if (d.inMinutes < 1) return '${d.inSeconds}s';
+    if (d.inHours < 1) return '${d.inMinutes}m';
+    return '${d.inHours}t ${d.inMinutes % 60}m';
+  }
+}
+
+class _StreakBadge extends StatelessWidget {
+  final int streak;
+  final int bestStreak;
+
+  const _StreakBadge({required this.streak, required this.bestStreak});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+      decoration: BoxDecoration(
+        color: AppColors.surface,
+        borderRadius: BorderRadius.circular(12),
+        border: streak > 0
+            ? Border.all(
+                color: AppColors.accent.withValues(alpha: 0.3), width: 1)
+            : null,
+      ),
+      child: Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Text(
+            streak > 0 ? '🔥' : '💤',
+            style: const TextStyle(fontSize: 24),
+          ),
+          const SizedBox(width: 10),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                '$streak ${streak == 1 ? 'dag' : 'dager'} på rad',
+                style: GoogleFonts.jetBrainsMono(
+                  fontSize: 18,
+                  fontWeight: FontWeight.w700,
+                  color: streak > 0
+                      ? AppColors.accent
+                      : AppColors.textMuted,
+                ),
+              ),
+              if (bestStreak > streak)
+                Text(
+                  'Beste: $bestStreak dager',
+                  style: TextStyle(
+                    color: AppColors.textSubtle,
+                    fontSize: 12,
+                  ),
+                ),
+            ],
+          ),
+        ],
       ),
     );
   }

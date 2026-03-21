@@ -22,6 +22,7 @@ class TotalStats {
   final int totalTests;
   final Duration totalTime;
   final int totalWords;
+  final int totalChars;
   final double avgWpm;
   final double avgAccuracy;
 
@@ -29,8 +30,26 @@ class TotalStats {
     required this.totalTests,
     required this.totalTime,
     required this.totalWords,
+    required this.totalChars,
     required this.avgWpm,
     required this.avgAccuracy,
+  });
+}
+
+/// Rolling-window practice statistics.
+class PracticeStats {
+  final int totalChars;
+  final Duration totalTime;
+  final double avgCharsPerDay;
+  final Duration avgTimePerDay;
+  final int activeDays;
+
+  const PracticeStats({
+    required this.totalChars,
+    required this.totalTime,
+    required this.avgCharsPerDay,
+    required this.avgTimePerDay,
+    required this.activeDays,
   });
 }
 
@@ -158,6 +177,7 @@ class StatsRepository {
         totalTests: 0,
         totalTime: Duration.zero,
         totalWords: 0,
+        totalChars: 0,
         avgWpm: 0,
         avgAccuracy: 0,
       );
@@ -166,6 +186,7 @@ class StatsRepository {
     int totalTests = 0;
     int totalMs = 0;
     int totalWords = 0;
+    int totalChars = 0;
     double sumWpm = 0;
     double sumAccuracy = 0;
 
@@ -175,6 +196,7 @@ class StatsRepository {
         totalTests++;
         totalMs += result.duration.inMilliseconds;
         totalWords += result.wordCount;
+        totalChars += result.totalChars;
         sumWpm += result.wpm;
         sumAccuracy += result.accuracy;
       } catch (_) {
@@ -186,8 +208,45 @@ class StatsRepository {
       totalTests: totalTests,
       totalTime: Duration(milliseconds: totalMs),
       totalWords: totalWords,
+      totalChars: totalChars,
       avgWpm: totalTests > 0 ? sumWpm / totalTests : 0,
       avgAccuracy: totalTests > 0 ? sumAccuracy / totalTests : 0,
+    );
+  }
+
+  /// Get practice stats over a rolling window of [days] days.
+  PracticeStats getPracticeStats({int days = 7}) {
+    final cutoff = DateTime.now().subtract(Duration(days: days));
+
+    int totalChars = 0;
+    int totalMs = 0;
+    final activeDates = <String>{};
+
+    for (final value in _box.values) {
+      try {
+        final result = _resultFromJson(value as Map);
+        if (result.completedAt.isAfter(cutoff)) {
+          totalChars += result.totalChars;
+          totalMs += result.duration.inMilliseconds;
+          final d = result.completedAt;
+          activeDates.add(
+            '${d.year}-${d.month.toString().padLeft(2, '0')}-${d.day.toString().padLeft(2, '0')}',
+          );
+        }
+      } catch (_) {
+        // Skip malformed entries
+      }
+    }
+
+    final activeDayCount = activeDates.length;
+    return PracticeStats(
+      totalChars: totalChars,
+      totalTime: Duration(milliseconds: totalMs),
+      avgCharsPerDay: activeDayCount > 0 ? totalChars / activeDayCount : 0,
+      avgTimePerDay: activeDayCount > 0
+          ? Duration(milliseconds: totalMs ~/ activeDayCount)
+          : Duration.zero,
+      activeDays: activeDayCount,
     );
   }
 
