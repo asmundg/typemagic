@@ -79,7 +79,7 @@ flutter analyze
 
 ## Validation
 
-Always run `flutter analyze` after making code changes and before committing. The 3 pre-existing `info` diagnostics in `tools/generate_examples.dart` are known and acceptable — no other warnings or errors should be introduced.
+Always run `flutter analyze` after making code changes and before committing. It should report **no issues**.
 
 ## Conventions
 

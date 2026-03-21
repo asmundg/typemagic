@@ -6,13 +6,15 @@
 /// Output is written to docs/example_sentences.md so it can be tracked in git.
 /// Re-running with the same seed produces identical output — use this to verify
 /// generator changes.
+library;
+
 import 'dart:convert';
 import 'dart:io';
 
 // We can't import from package:typemagic/... because it pulls in Flutter.
 // Instead, load the core file directly via a relative import.
-import '../lib/features/sentence_gen/sentence_generator_core.dart';
-import '../lib/core/models.dart';
+import 'package:typemagic/features/sentence_gen/sentence_generator_core.dart';
+import 'package:typemagic/core/models.dart';
 
 void main(List<String> args) {
   final seed = _intArg(args, 'seed') ?? 42;
