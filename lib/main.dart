@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
+import 'package:url_launcher/url_launcher.dart';
 import 'core/theme.dart';
 import 'core/app_init.dart';
+import 'core/update_checker.dart';
 import 'features/typing_test/typing_test_screen.dart';
 import 'features/stats/stats_screen.dart';
 import 'features/achievements/trophy_case_screen.dart';
@@ -71,19 +73,64 @@ class TypeMagicApp extends ConsumerWidget {
   }
 }
 
-class AppShell extends StatelessWidget {
+class AppShell extends ConsumerWidget {
   final Widget child;
   const AppShell({super.key, required this.child});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     final location = GoRouterState.of(context).uri.path;
+    final update = ref.watch(updateCheckProvider);
     return Scaffold(
       backgroundColor: AppColors.background,
       body: Column(
         children: [
           _NavBar(currentPath: location),
+          if (update case AsyncData(value: final info) when info.updateAvailable)
+            _UpdateBanner(info: info),
           Expanded(child: child),
+        ],
+      ),
+    );
+  }
+}
+
+class _UpdateBanner extends StatelessWidget {
+  final UpdateInfo info;
+  const _UpdateBanner({required this.info});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: double.infinity,
+      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+      color: AppColors.accent.withValues(alpha: 0.15),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Text(
+            'Ny versjon tilgjengelig: v${info.latestVersion}',
+            style: AppTheme.monoStyleSmall.copyWith(
+              color: AppColors.accent,
+              fontSize: 13,
+            ),
+          ),
+          const SizedBox(width: 12),
+          MouseRegion(
+            cursor: SystemMouseCursors.click,
+            child: GestureDetector(
+              onTap: () => launchUrl(Uri.parse(info.releaseUrl)),
+              child: Text(
+                'Last ned →',
+                style: AppTheme.monoStyleSmall.copyWith(
+                  color: AppColors.accent,
+                  fontSize: 13,
+                  fontWeight: FontWeight.w700,
+                  decoration: TextDecoration.underline,
+                ),
+              ),
+            ),
+          ),
         ],
       ),
     );

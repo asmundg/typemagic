@@ -69,6 +69,27 @@ class Achievement {
   }
 }
 
+/// Speed badge tiers, ordered by ascending WPM threshold.
+const List<({int wpm, String icon, String name})> speedBadgeTiers = [
+  (wpm: 10, icon: '🐌', name: 'Snegle'),
+  (wpm: 25, icon: '🏃', name: 'Jogger'),
+  (wpm: 40, icon: '💨', name: 'Sprinter'),
+  (wpm: 60, icon: '⚡', name: 'Lynet'),
+  (wpm: 80, icon: '🚀', name: 'Supersonisk'),
+  (wpm: 100, icon: '🛸', name: 'Mach 10'),
+];
+
+/// Returns the highest speed badge earned for [wpm], or null if below 10 WPM.
+({String icon, String name})? speedBadgeForWpm(double wpm) {
+  ({String icon, String name})? best;
+  for (final tier in speedBadgeTiers) {
+    if (wpm >= tier.wpm) {
+      best = (icon: tier.icon, name: tier.name);
+    }
+  }
+  return best;
+}
+
 /// All achievement definitions
 final List<Achievement> allAchievements = [
   // Speed

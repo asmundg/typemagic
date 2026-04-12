@@ -271,6 +271,27 @@ class _SummaryPanel extends StatelessWidget {
                 child: _AchievementBanner(achievements: newlyUnlocked),
               ),
 
+            // Speed badge
+            if (speedBadgeForWpm(result.wpm) case final badge?)
+              Padding(
+                padding: const EdgeInsets.only(bottom: 12),
+                child: Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Text(badge.icon, style: const TextStyle(fontSize: 24)),
+                    const SizedBox(width: 8),
+                    Text(
+                      badge.name,
+                      style: AppTheme.monoStyleSmall.copyWith(
+                        color: AppColors.accent,
+                        fontWeight: FontWeight.w600,
+                        fontSize: 16,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+
             // Main stats row
             Container(
               padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 20),

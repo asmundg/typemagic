@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../core/theme.dart';
 import '../../core/models.dart';
+import '../achievements/achievement_system.dart';
 
 class ResultsScreen extends StatelessWidget {
   final TestResult result;
@@ -40,7 +41,26 @@ class ResultsScreen extends StatelessWidget {
                   ),
                 ],
               ),
-              const SizedBox(height: 32),
+              // Speed badge
+              if (speedBadgeForWpm(result.wpm) case final badge?)
+                Padding(
+                  padding: const EdgeInsets.only(bottom: 24),
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Text(badge.icon, style: const TextStyle(fontSize: 24)),
+                      const SizedBox(width: 8),
+                      Text(
+                        badge.name,
+                        style: AppTheme.monoStyleSmall.copyWith(
+                          color: AppColors.accent,
+                          fontWeight: FontWeight.w600,
+                          fontSize: 16,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
 
               // Secondary stats
               Container(
