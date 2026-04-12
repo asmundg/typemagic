@@ -11,6 +11,7 @@ import 'results_screen.dart';
 import '../../widgets/test_config_bar.dart';
 import '../../widgets/xp_bar.dart';
 import '../../widgets/confetti_overlay.dart';
+import '../../widgets/words_display.dart';
 
 class TypingTestScreen extends ConsumerStatefulWidget {
   const TypingTestScreen({super.key});
@@ -171,7 +172,7 @@ class _TypingTestScreenState extends ConsumerState<TypingTestScreen>
                       const SizedBox(height: 24),
                       _LiveStatsBar(state: testState),
                       const SizedBox(height: 32),
-                      _WordsDisplay(state: testState),
+                      WordsDisplay(state: testState),
                       const SizedBox(height: 48),
 
                       // Hint text or summary panel
@@ -538,129 +539,6 @@ class _StatChip extends StatelessWidget {
             ),
           ),
       ],
-    );
-  }
-}
-
-class _WordsDisplay extends StatelessWidget {
-  final TypingTestState state;
-  const _WordsDisplay({required this.state});
-
-  @override
-  Widget build(BuildContext context) {
-    return SizedBox(
-      height: 140,
-      child: Wrap(
-        spacing: 0, // we handle spacing manually for cursor-on-space
-        runSpacing: 8,
-        children: [
-          for (var i = 0; i < state.words.length && i < state.currentWordIndex + 40; i++) ...[
-            _WordWidget(
-              word: state.words[i],
-              isCurrent: i == state.currentWordIndex,
-              isPast: i < state.currentWordIndex,
-            ),
-            // Space between words — show cursor underline if current word is fully typed
-            _SpaceWidget(
-              showCursor: i == state.currentWordIndex &&
-                  state.words[i].typed.length >= state.words[i].target.length,
-            ),
-          ],
-        ],
-      ),
-    );
-  }
-}
-
-class _WordWidget extends StatelessWidget {
-  final TestWord word;
-  final bool isCurrent;
-  final bool isPast;
-
-  const _WordWidget({
-    required this.word,
-    required this.isCurrent,
-    required this.isPast,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return RichText(
-      text: TextSpan(
-        style: AppTheme.monoStyle,
-        children: [
-          for (var i = 0; i < word.target.length; i++)
-            TextSpan(
-              text: word.target[i],
-              style: TextStyle(
-                color: _charColor(i),
-                decoration: _isAtCursor(i)
-                    ? TextDecoration.underline
-                    : TextDecoration.none,
-                decorationColor: AppColors.cursor,
-                decorationThickness: 2.5,
-              ),
-            ),
-          // Show extra typed characters
-          if (word.typed.length > word.target.length)
-            TextSpan(
-              text: word.typed.toString().substring(word.target.length),
-              style: const TextStyle(color: AppColors.extra),
-            ),
-        ],
-      ),
-    );
-  }
-
-  bool _isAtCursor(int index) {
-    return isCurrent && index == word.typed.length;
-  }
-
-  Color _charColor(int index) {
-    if (isPast) {
-      return word.charStates[index] == CharState.correct
-          ? AppColors.correct
-          : AppColors.incorrect;
-    }
-    if (!isCurrent) return AppColors.textMuted;
-
-    // Current word — already typed characters
-    if (index < word.typed.length) {
-      return word.charStates[index] == CharState.correct
-          ? AppColors.correct
-          : AppColors.incorrect;
-    }
-
-    // Cursor position — not yet typed, keep muted
-    if (index == word.typed.length) {
-      return AppColors.textMuted;
-    }
-
-    return AppColors.textMuted;
-  }
-}
-
-class _SpaceWidget extends StatelessWidget {
-  final bool showCursor;
-  const _SpaceWidget({required this.showCursor});
-
-  @override
-  Widget build(BuildContext context) {
-    if (!showCursor) return const SizedBox(width: 12);
-    // TextDecoration.underline doesn't render on whitespace-only text,
-    // so we draw the underline with a bottom border instead.
-    final lineHeight = AppTheme.monoStyle.fontSize! * (AppTheme.monoStyle.height ?? 1.0);
-    return SizedBox(
-      width: 12,
-      height: lineHeight,
-      child: Align(
-        alignment: Alignment.bottomCenter,
-        child: Container(
-          width: 12,
-          height: 2.5,
-          color: AppColors.cursor,
-        ),
-      ),
     );
   }
 }

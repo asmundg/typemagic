@@ -998,6 +998,8 @@ class _PersonalBests extends StatelessWidget {
     switch (mode) {
       case TestMode.sentences:
         return 'Setninger';
+      case TestMode.drill:
+        return 'Øvelse';
     }
   }
 }

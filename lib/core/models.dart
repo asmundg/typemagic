@@ -1,5 +1,5 @@
 /// Test mode types
-enum TestMode { sentences }
+enum TestMode { sentences, drill }
 
 /// Difficulty tier for word selection
 enum DifficultyTier {
@@ -32,7 +32,12 @@ class TestConfig {
   static const defaultConfig = TestConfig(mode: TestMode.sentences, value: 3);
 
   String get label {
-    return '$value setn.';
+    switch (mode) {
+      case TestMode.sentences:
+        return '$value setn.';
+      case TestMode.drill:
+        return '$value ord';
+    }
   }
 
   TestConfig copyWith({

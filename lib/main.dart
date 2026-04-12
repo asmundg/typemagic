@@ -8,6 +8,7 @@ import 'core/update_checker.dart';
 import 'features/typing_test/typing_test_screen.dart';
 import 'features/stats/stats_screen.dart';
 import 'features/achievements/trophy_case_screen.dart';
+import 'features/touch_training/training_menu_screen.dart';
 import 'features/settings/settings_screen.dart';
 import 'features/settings/settings_state.dart';
 
@@ -47,6 +48,11 @@ final _router = GoRouter(
           path: '/trophies',
           pageBuilder: (context, state) =>
               _fadePage(const TrophyCaseScreen(), state),
+        ),
+        GoRoute(
+          path: '/training',
+          pageBuilder: (context, state) =>
+              _fadePage(const TrainingMenuScreen(), state),
         ),
         GoRoute(
           path: '/settings',
@@ -181,6 +187,14 @@ class _NavBar extends StatelessWidget {
             tooltip: 'Statistikk',
             active: currentPath == '/stats',
             onTap: () => context.go('/stats'),
+          ),
+          const SizedBox(width: 12),
+          // Training link
+          _NavIcon(
+            emoji: '🖐️',
+            tooltip: 'Tastaturtrening',
+            active: currentPath == '/training',
+            onTap: () => context.go('/training'),
           ),
           const SizedBox(width: 12),
           // Trophies link

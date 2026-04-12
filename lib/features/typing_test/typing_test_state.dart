@@ -139,6 +139,18 @@ class TypingTestNotifier extends Notifier<TypingTestState> {
     state = _createInitialState(state.config);
   }
 
+  /// Start a drill with pre-generated words.
+  void startDrill(List<String> words) {
+    _stopTimer();
+    _keyStats.clear();
+    final config = TestConfig(mode: TestMode.drill, value: words.length);
+    state = TypingTestState(
+      phase: TypingPhase.waiting,
+      config: config,
+      words: words.map((w) => TestWord(w)).toList(),
+    );
+  }
+
   void retry() {
     _stopTimer();
     _keyStats.clear();
@@ -369,38 +381,41 @@ class TypingTestNotifier extends Notifier<TypingTestState> {
       // Don't crash the app if persistence fails
     }
 
-    // Award XP
-    try {
-      final xp = calculateXP(result);
-      ref.read(xpProvider.notifier).addXP(xp);
-    } catch (_) {}
+    // Skip XP, streaks, and achievements for drill mode
+    if (state.config.mode != TestMode.drill) {
+      // Award XP
+      try {
+        final xp = calculateXP(result);
+        ref.read(xpProvider.notifier).addXP(xp);
+      } catch (_) {}
 
-    // Record practice day for streak tracking
-    try {
-      ref.read(dailyChallengeProvider.notifier).recordPracticeDay();
-    } catch (_) {}
+      // Record practice day for streak tracking
+      try {
+        ref.read(dailyChallengeProvider.notifier).recordPracticeDay();
+      } catch (_) {}
 
-    // Check achievements
-    try {
-      final xpState = ref.read(xpProvider);
-      final totalStats = ref.read(statsRepositoryProvider).getTotalStats();
-      final statsAgg = StatsAggregates(
-        totalWordsTyped: totalStats.totalWords,
-        totalTestsCompleted: totalStats.totalTests,
-      );
-      final newNames = await ref.read(achievementProvider.notifier).checkAndUnlock(
-            result,
-            xpState,
-            statsAgg,
-          );
-      if (newNames.isNotEmpty) {
-        final achievements = ref.read(achievementProvider);
-        final unlocked = achievements
-            .where((a) => newNames.contains(a.name))
-            .toList();
-        state = state.copyWith(newlyUnlocked: unlocked);
-      }
-    } catch (_) {}
+      // Check achievements
+      try {
+        final xpState = ref.read(xpProvider);
+        final totalStats = ref.read(statsRepositoryProvider).getTotalStats();
+        final statsAgg = StatsAggregates(
+          totalWordsTyped: totalStats.totalWords,
+          totalTestsCompleted: totalStats.totalTests,
+        );
+        final newNames = await ref.read(achievementProvider.notifier).checkAndUnlock(
+              result,
+              xpState,
+              statsAgg,
+            );
+        if (newNames.isNotEmpty) {
+          final achievements = ref.read(achievementProvider);
+          final unlocked = achievements
+              .where((a) => newNames.contains(a.name))
+              .toList();
+          state = state.copyWith(newlyUnlocked: unlocked);
+        }
+      } catch (_) {}
+    }
   }
 
   void _stopTimer() {
