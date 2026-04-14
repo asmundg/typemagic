@@ -11,6 +11,7 @@ class AppSettings {
   final int defaultTestValue; // 30, 25, 3
   final int defaultTier; // 1-5
   final String fontSize; // 'small', 'medium', 'large'
+  final int minAccuracy; // 0 = off, otherwise minimum accuracy % (e.g. 80, 90, 95)
 
   const AppSettings({
     this.themeId = 'dark',
@@ -21,6 +22,7 @@ class AppSettings {
     this.defaultTestValue = 30,
     this.defaultTier = 1,
     this.fontSize = 'medium',
+    this.minAccuracy = 0,
   });
 
   AppSettings copyWith({
@@ -32,6 +34,7 @@ class AppSettings {
     int? defaultTestValue,
     int? defaultTier,
     String? fontSize,
+    int? minAccuracy,
   }) {
     return AppSettings(
       themeId: themeId ?? this.themeId,
@@ -42,6 +45,7 @@ class AppSettings {
       defaultTestValue: defaultTestValue ?? this.defaultTestValue,
       defaultTier: defaultTier ?? this.defaultTier,
       fontSize: fontSize ?? this.fontSize,
+      minAccuracy: minAccuracy ?? this.minAccuracy,
     );
   }
 }
@@ -66,6 +70,7 @@ class SettingsNotifier extends Notifier<AppSettings> {
       defaultTestValue: prefs.getInt('${_prefix}defaultTestValue') ?? 30,
       defaultTier: prefs.getInt('${_prefix}defaultTier') ?? 1,
       fontSize: prefs.getString('${_prefix}fontSize') ?? 'medium',
+      minAccuracy: prefs.getInt('${_prefix}minAccuracy') ?? 0,
     );
   }
 
@@ -79,6 +84,7 @@ class SettingsNotifier extends Notifier<AppSettings> {
     await prefs.setInt('${_prefix}defaultTestValue', state.defaultTestValue);
     await prefs.setInt('${_prefix}defaultTier', state.defaultTier);
     await prefs.setString('${_prefix}fontSize', state.fontSize);
+    await prefs.setInt('${_prefix}minAccuracy', state.minAccuracy);
   }
 
   void setTheme(String themeId) {
@@ -118,6 +124,11 @@ class SettingsNotifier extends Notifier<AppSettings> {
 
   void setFontSize(String size) {
     state = state.copyWith(fontSize: size);
+    _save();
+  }
+
+  void setMinAccuracy(int value) {
+    state = state.copyWith(minAccuracy: value.clamp(0, 100));
     _save();
   }
 

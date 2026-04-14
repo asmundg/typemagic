@@ -115,9 +115,10 @@ class _TypingTestScreenState extends ConsumerState<TypingTestScreen>
   Widget build(BuildContext context) {
     final testState = ref.watch(typingTestProvider);
 
-    // Trigger finish animation when phase transitions to finished
+    // Trigger finish animation when phase transitions to finished (not on failure)
     if (testState.phase == TypingPhase.finished &&
         testState.result != null &&
+        !testState.failed &&
         _summaryController == null) {
       WidgetsBinding.instance.addPostFrameCallback((_) {
         _triggerFinishAnimation();
@@ -193,6 +194,21 @@ class _TypingTestScreenState extends ConsumerState<TypingTestScreen>
                         ),
                       if (testState.phase == TypingPhase.finished &&
                           testState.result != null &&
+                          testState.failed)
+                        _FailedPanel(
+                          result: testState.result!,
+                          onRestart: () {
+                            _resetAnimations();
+                            ref.read(typingTestProvider.notifier).restart();
+                          },
+                          onRetry: () {
+                            _resetAnimations();
+                            ref.read(typingTestProvider.notifier).retry();
+                          },
+                        ),
+                      if (testState.phase == TypingPhase.finished &&
+                          testState.result != null &&
+                          !testState.failed &&
                           _summaryController != null)
                         AnimatedBuilder(
                           animation: _summaryController!,
@@ -219,8 +235,8 @@ class _TypingTestScreenState extends ConsumerState<TypingTestScreen>
               ),
             ),
 
-            // Confetti overlay
-            if (_showConfetti)
+            // Confetti overlay (not on failure)
+            if (_showConfetti && !testState.failed)
               Positioned.fill(
                 child: ConfettiOverlay(
                   onComplete: () => setState(() => _showConfetti = false),
@@ -236,6 +252,92 @@ class _TypingTestScreenState extends ConsumerState<TypingTestScreen>
 // ---------------------------------------------------------------------------
 // Summary panel shown inline after finishing
 // ---------------------------------------------------------------------------
+
+class _FailedPanel extends StatelessWidget {
+  final TestResult result;
+  final VoidCallback onRestart;
+  final VoidCallback onRetry;
+
+  const _FailedPanel({
+    required this.result,
+    required this.onRestart,
+    required this.onRetry,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        Container(
+          padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 20),
+          decoration: BoxDecoration(
+            color: AppColors.incorrect.withValues(alpha: 0.08),
+            borderRadius: BorderRadius.circular(14),
+            border: Border.all(
+              color: AppColors.incorrect.withValues(alpha: 0.3),
+            ),
+          ),
+          child: Column(
+            children: [
+              Text(
+                'Nøyaktighet for lav',
+                style: AppTheme.monoStyle.copyWith(
+                  color: AppColors.incorrect,
+                  fontSize: 20,
+                  fontWeight: FontWeight.w600,
+                ),
+              ),
+              const SizedBox(height: 8),
+              Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  _SummaryBigStat(
+                    value: '${result.accuracy.round()}%',
+                    label: 'nøyaktighet',
+                    color: AppColors.incorrect,
+                  ),
+                  const SizedBox(width: 48),
+                  _SummaryBigStat(
+                    value: '${result.wpm.round()}',
+                    label: 'wpm',
+                    color: AppColors.textMuted,
+                  ),
+                ],
+              ),
+            ],
+          ),
+        ),
+        const SizedBox(height: 16),
+        Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            _SummaryButton(
+              label: 'prøv igjen',
+              icon: Icons.replay,
+              onTap: onRetry,
+            ),
+            const SizedBox(width: 10),
+            _SummaryButton(
+              label: 'nye setninger',
+              icon: Icons.refresh,
+              onTap: onRestart,
+              primary: true,
+            ),
+          ],
+        ),
+        const SizedBox(height: 12),
+        Text(
+          'tab nye setninger  •  esc prøv igjen',
+          style: AppTheme.monoStyleSmall.copyWith(
+            color: AppColors.textSubtle,
+            fontSize: 12,
+          ),
+        ),
+      ],
+    );
+  }
+}
 
 class _SummaryPanel extends StatelessWidget {
   final TestResult result;

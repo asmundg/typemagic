@@ -251,6 +251,7 @@ Audio can be toggled and volume-adjusted in settings.
 | Default test value | `defaultTestValue` | int | 3 |
 | Default tier | `defaultTier` | 1–5 | 1 |
 | Font size | `fontSize` | small, medium, large | medium |
+| Min accuracy | `minAccuracy` | 0 (off), 80, 90, 95 | 0 |
 
 Persisted via SharedPreferences. Reset-all available in settings screen.
 

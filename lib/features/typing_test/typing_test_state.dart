@@ -8,6 +8,7 @@ import '../stats/stats_repository.dart';
 import '../progression/xp_system.dart';
 import '../progression/daily_challenge.dart';
 import '../achievements/achievement_system.dart';
+import '../settings/settings_state.dart';
 
 /// Possible states of the typing test
 enum TypingPhase { waiting, running, finished }
@@ -24,6 +25,7 @@ class TypingTestState {
   final double liveAccuracy;
   final TestResult? result;
   final List<Achievement> newlyUnlocked;
+  final bool failed;
 
   const TypingTestState({
     this.phase = TypingPhase.waiting,
@@ -36,6 +38,7 @@ class TypingTestState {
     this.liveAccuracy = 100,
     this.result,
     this.newlyUnlocked = const [],
+    this.failed = false,
   });
 
   TestWord? get currentWord =>
@@ -54,6 +57,7 @@ class TypingTestState {
     double? liveAccuracy,
     TestResult? result,
     List<Achievement>? newlyUnlocked,
+    bool? failed,
   }) {
     return TypingTestState(
       phase: phase ?? this.phase,
@@ -66,6 +70,7 @@ class TypingTestState {
       liveAccuracy: liveAccuracy ?? this.liveAccuracy,
       result: result ?? this.result,
       newlyUnlocked: newlyUnlocked ?? this.newlyUnlocked,
+      failed: failed ?? this.failed,
     );
   }
 }
@@ -243,6 +248,15 @@ class TypingTestNotifier extends Notifier<TypingTestState> {
       _wordProvider.recordWeakWord(word.target);
     }
 
+    // Check minimum accuracy at word boundary (skip drills)
+    if (state.config.mode != TestMode.drill) {
+      final minAcc = ref.read(settingsProvider).minAccuracy;
+      if (minAcc > 0 && state.liveAccuracy < minAcc) {
+        _failTest();
+        return;
+      }
+    }
+
     final nextIndex = state.currentWordIndex + 1;
 
     if (nextIndex >= state.words.length) {
@@ -296,7 +310,76 @@ class TypingTestNotifier extends Notifier<TypingTestState> {
     );
   }
 
+  void _failTest() {
+    if (state.phase == TypingPhase.finished) return;
+    _stopTimer();
+
+    final duration = _testStartTime != null
+        ? DateTime.now().difference(_testStartTime!)
+        : Duration.zero;
+
+    int totalCorrect = 0;
+    int totalIncorrect = 0;
+    int totalChars = 0;
+    final wordResults = <WordResult>[];
+
+    final completedCount = state.currentWordIndex + 1;
+
+    for (var i = 0; i < completedCount && i < state.words.length; i++) {
+      final w = state.words[i];
+      w.endTime ??= DateTime.now();
+      totalCorrect += w.correctChars;
+      totalIncorrect += w.incorrectChars;
+      totalChars += w.typed.length;
+
+      final wd = w.duration ?? const Duration(milliseconds: 500);
+      final wordMinutes = wd.inMilliseconds / 60000.0;
+      final wordWpm =
+          wordMinutes > 0 ? (w.target.length / 5.0) / wordMinutes : 0.0;
+
+      wordResults.add(WordResult(
+        target: w.target,
+        typed: w.typed.toString(),
+        correct: w.isCorrect,
+        duration: wd,
+        wpm: wordWpm,
+      ));
+    }
+
+    totalCorrect += (completedCount - 1).clamp(0, 999);
+    totalChars += (completedCount - 1).clamp(0, 999);
+
+    final minutes = duration.inMilliseconds / 60000.0;
+    final wpm = minutes > 0 ? (totalCorrect / 5.0) / minutes : 0.0;
+    final rawWpm = minutes > 0 ? (totalChars / 5.0) / minutes : 0.0;
+    final accuracy =
+        totalChars > 0 ? (totalCorrect / totalChars.toDouble()) * 100.0 : 100.0;
+
+    final result = TestResult(
+      wpm: wpm,
+      rawWpm: rawWpm,
+      accuracy: accuracy.clamp(0.0, 100.0),
+      consistency: 0,
+      correctChars: totalCorrect,
+      incorrectChars: totalIncorrect,
+      totalChars: totalChars,
+      wordCount: completedCount,
+      duration: duration,
+      config: state.config,
+      wordResults: wordResults,
+      keyStats: Map.from(_keyStats),
+      completedAt: DateTime.now(),
+    );
+
+    state = state.copyWith(
+      phase: TypingPhase.finished,
+      result: result,
+      failed: true,
+    );
+  }
+
   Future<void> _finishTest() async {
+    if (state.phase == TypingPhase.finished) return;
     _stopTimer();
 
     final duration = _testStartTime != null

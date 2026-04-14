@@ -97,6 +97,16 @@ class SettingsScreen extends ConsumerWidget {
               ),
               const SizedBox(height: 16),
               _ChipRow(
+                label: 'Minimum nøyaktighet',
+                options: const ['0', '80', '90', '95'],
+                labels: const ['Av', '80%', '90%', '95%'],
+                selected: '${settings.minAccuracy}',
+                colors: tc,
+                onSelect: (v) =>
+                    ref.read(settingsProvider.notifier).setMinAccuracy(int.parse(v)),
+              ),
+              const SizedBox(height: 16),
+              _ChipRow(
                 label: 'Standard testmodus',
                 options: const ['time', 'words', 'sentences'],
                 labels: const ['Tid', 'Ord', 'Setninger'],
