@@ -59,7 +59,7 @@ jobs:
           staged = '  return StagedUpdate(\n'
           install = 'Future<void> installUpdate(\n'
           assert staged in s and install in s, 'updater anchors moved'
-          s = s.replace(staged, f"  {log}('staged ${{workDir.path}}\\n', mode: FileMode.append);\n" + staged)
+          s = s.replace(staged, f"  {log}('staged ' + workDir.path + '\\n', mode: FileMode.append);\n" + staged)
           s = s.replace(install, install.replace('installUpdate', '_installUpdate') )
           s += f'''
           Future<void> installUpdate(StagedUpdate update, {{required bool relaunch}}) async {{
