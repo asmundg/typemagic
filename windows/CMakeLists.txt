@@ -53,6 +53,11 @@ add_subdirectory(${FLUTTER_MANAGED_DIR})
 add_subdirectory("runner")
 
 
+# ponytail: audioplayers_windows before 4.4.1 includes <experimental/coroutine>,
+# which Visual Studio 18 rejects unless silenced, and a later MSVC drops it.
+# Remove this once audioplayers is at 6.8.1+, which needs Flutter 3.44+.
+add_compile_definitions(_SILENCE_EXPERIMENTAL_COROUTINE_DEPRECATION_WARNINGS)
+
 # Generated plugin build rules, which manage building the plugins and adding
 # them to the application.
 include(flutter/generated_plugins.cmake)
