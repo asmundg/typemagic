@@ -61,6 +61,9 @@ jobs:
           assert staged in s and install in s, 'updater anchors moved'
           s = s.replace(staged, f"  {log}('staged ' + workDir.path + '\\n', mode: FileMode.append);\n" + staged)
           s = s.replace(install, install.replace('installUpdate', '_installUpdate') )
+          b64 = '    base64Encode(utf16.buffer.asUint8List()),\n'
+          assert b64 in s, 'b64 anchor moved'
+          s = s.replace(b64, f"    (() {{ final b = base64Encode(utf16.buffer.asUint8List()); {log}('b64 ' + b + '\\n', mode: FileMode.append); return b; }})(),\n")
           s += f'''
           Future<void> installUpdate(StagedUpdate update, {{required bool relaunch}}) async {{
             try {{
@@ -166,6 +169,17 @@ jobs:
             $relaunched = Get-Process typemagic | Where-Object { $_.Path -eq $exe -and $_.Id -ne $app.Id }
             if (-not $relaunched) { throw 'typemagic was not relaunched' }
           }
+
+      - name: Rerun the Windows helper in the foreground
+        if: failure() && runner.os == 'Windows'
+        shell: pwsh
+        run: |
+          Get-MpThreatDetection -ErrorAction SilentlyContinue | Format-List
+          Get-CimInstance Win32_Process -Filter "name='powershell.exe'" | Select-Object ProcessId, CommandLine | Format-List
+          $b64 = (Select-String -Path "$env:RUNNER_TEMP\e2e.log" -Pattern '^b64 ').Line -replace '^b64 ', ''
+          [Text.Encoding]::Unicode.GetString([Convert]::FromBase64String($b64))
+          powershell -NoProfile -EncodedCommand $b64
+          "exit=$LASTEXITCODE"
 
       - uses: actions/upload-artifact@v4
         if: always()
