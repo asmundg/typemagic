@@ -73,7 +73,14 @@ jobs:
 
       # The app asks the GitHub API unauthenticated, which allows 60 calls an
       # hour per IP. Runners share IPs, so print where we stand.
-      - run: curl -s https://api.github.com/rate_limit | python3 -c 'import json,sys; print(json.load(sys.stdin)["rate"])'
+      - name: Check the runner has API calls left
+        run: |
+          curl -s https://api.github.com/rate_limit | python3 -c '
+          import json, sys
+          rate = json.load(sys.stdin)["rate"]
+          print(rate)
+          assert rate["remaining"] > 0, "runner IP is out of GitHub API calls; rerun later"
+          '
 
       - name: Run on macOS
         if: runner.os == 'macOS'
