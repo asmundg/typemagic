@@ -166,25 +166,33 @@ Future<void> installUpdate(
     return;
   }
 
+  // Nothing may reach stdout: the pipe breaks when the app exits.
   final script =
       '''
 \$ErrorActionPreference = 'Stop'
-Start-Transcript -Path ${_psQuote('${update.workDir}\\install.log')}
-Wait-Process -Id $pid -ErrorAction SilentlyContinue
-robocopy ${_psQuote(update.stagedPath)} ${_psQuote(update.installPath)} /E /MOVE /R:20 /W:1 /NP
-if (\$LASTEXITCODE -ge 8) { throw "robocopy failed with \$LASTEXITCODE" }
-${relaunch ? "Start-Process ${_psQuote('${update.installPath}\\typemagic.exe')}" : ''}
+\$ProgressPreference = 'SilentlyContinue'
+\$log = ${_psQuote('${update.workDir}\\install.log')}
+try {
+  Wait-Process -Id $pid -ErrorAction SilentlyContinue
+  robocopy ${_psQuote(update.stagedPath)} ${_psQuote(update.installPath)} /E /MOVE /R:20 /W:1 /NP "/LOG+:\$log" | Out-Null
+  if (\$LASTEXITCODE -ge 8) { throw "robocopy failed with \$LASTEXITCODE" }
+  ${relaunch ? "Start-Process ${_psQuote('${update.installPath}\\typemagic.exe')}" : ''}
+} catch {
+  Add-Content -Path \$log -Value \$_
+}
 ''';
   // -EncodedCommand takes base64 of UTF-16LE, which sidesteps quoting.
   final utf16 = ByteData(script.length * 2);
   for (var i = 0; i < script.length; i++) {
     utf16.setUint16(i * 2, script.codeUnitAt(i), Endian.little);
   }
+  // A detached start gives the child no console, and powershell.exe exits at
+  // once without one. A normal start hides the console, and on Windows the
+  // child outlives the app.
   await Process.start('powershell', [
     '-NoProfile',
-    '-WindowStyle',
-    'Hidden',
+    '-NonInteractive',
     '-EncodedCommand',
     base64Encode(utf16.buffer.asUint8List()),
-  ], mode: ProcessStartMode.detached);
+  ]);
 }
