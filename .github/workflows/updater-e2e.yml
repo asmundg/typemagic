@@ -48,6 +48,34 @@ jobs:
           open(p, 'w', encoding='utf-8').write(s)
           EOF
 
+      # Writes where the update was staged and any install error to
+      # RUNNER_TEMP, since the app has no console.
+      - name: Instrument the updater
+        run: |
+          python3 - <<'EOF'
+          p = 'lib/core/updater.dart'
+          s = open(p, encoding='utf-8').read()
+          log = "File('${Platform.environment['RUNNER_TEMP']}/e2e.log').writeAsStringSync"
+          staged = '  return StagedUpdate(\n'
+          install = 'Future<void> installUpdate(\n'
+          assert staged in s and install in s, 'updater anchors moved'
+          s = s.replace(staged, f"  {log}('staged ${{workDir.path}}\\n', mode: FileMode.append);\n" + staged)
+          s = s.replace(install, install.replace('installUpdate', '_installUpdate') )
+          s += f'''
+          Future<void> installUpdate(StagedUpdate update, {{required bool relaunch}}) async {{
+            try {{
+              await _installUpdate(update, relaunch: relaunch);
+              {log}('install started\\n', mode: FileMode.append);
+            }} catch (e, st) {{
+              {log}('install failed: $e\\n$st\\n', mode: FileMode.append);
+              rethrow;
+            }}
+          }}
+          '''
+          open(p, 'w', encoding='utf-8').write(s)
+          EOF
+          tail -15 lib/core/updater.dart
+
       - name: Expected executable from the latest release
         run: |
           mkdir release
@@ -98,7 +126,7 @@ jobs:
             [ "$(shasum -a 256 "$app/Contents/MacOS/typemagic" | cut -d' ' -f1)" = "$(cat expected.sha)" ] && break
             sleep 1
           done
-          cat "$TMPDIR"/typemagic-update-*/install.log || true
+          cat "$RUNNER_TEMP/e2e.log" "$TMPDIR"/typemagic-update-*/install.log || true
           [ "$(shasum -a 256 "$app/Contents/MacOS/typemagic" | cut -d' ' -f1)" = "$(cat expected.sha)" ]
           if [ "${{ matrix.trigger }}" = tap ]; then
             sleep 5
@@ -129,6 +157,8 @@ jobs:
             if ((Get-FileHash $exe).Hash -eq $expected) { break }
             Start-Sleep 1
           }
+          Get-Content "$env:RUNNER_TEMP\e2e.log" -ErrorAction SilentlyContinue
+          Get-ChildItem ((Get-Content "$env:RUNNER_TEMP\e2e.log" -First 1) -replace '^staged ', '') -ErrorAction SilentlyContinue
           Get-Content "$env:TEMP\typemagic-update-*\install.log" -ErrorAction SilentlyContinue
           if ((Get-FileHash $exe).Hash -ne $expected) { throw 'typemagic.exe was not replaced' }
           if ('${{ matrix.trigger }}' -eq 'tap') {
