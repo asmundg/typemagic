@@ -38,11 +38,11 @@ jobs:
         run: |
           python3 - <<'EOF'
           p = 'lib/main.dart'
-          s = open(p).read()
+          s = open(p, encoding='utf-8').read()
           anchor = 'const _UpdateBanner({required this.text, this.action, this.onTap});\n\n  @override\n  Widget build(BuildContext context) {\n'
           assert anchor in s, 'banner anchor moved'
           s = s.replace(anchor, anchor + '    if (onTap != null) Future.delayed(const Duration(seconds: 5), onTap);\n')
-          open(p, 'w').write(s)
+          open(p, 'w', encoding='utf-8').write(s)
           EOF
 
       - name: Expected executable from the latest release
@@ -54,7 +54,8 @@ jobs:
             shasum -a 256 release/typemagic.app/Contents/MacOS/typemagic | cut -d' ' -f1 > expected.sha
           else
             gh release download -R "$GITHUB_REPOSITORY" -p typemagic-windows.zip -D release
-            tar -xf release/typemagic-windows.zip -C release
+            # Git Bash's GNU tar cannot read zips; the app uses this one too.
+            /c/Windows/System32/tar.exe -xf release/typemagic-windows.zip -C release
             sha256sum release/typemagic.exe | cut -d' ' -f1 > expected.sha
           fi
           cat expected.sha
@@ -69,6 +70,10 @@ jobs:
             flutter build windows --release --build-name=0.0.1
             cp -r build/windows/x64/runner/Release "$RUNNER_TEMP/tm"
           fi
+
+      # The app asks the GitHub API unauthenticated, which allows 60 calls an
+      # hour per IP. Runners share IPs, so print where we stand.
+      - run: curl -s https://api.github.com/rate_limit | python3 -c 'import json,sys; print(json.load(sys.stdin)["rate"])'
 
       - name: Run on macOS
         if: runner.os == 'macOS'
