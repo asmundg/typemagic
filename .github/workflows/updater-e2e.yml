@@ -98,7 +98,7 @@ jobs:
             [ "$(shasum -a 256 "$app/Contents/MacOS/typemagic" | cut -d' ' -f1)" = "$(cat expected.sha)" ] && break
             sleep 1
           done
-          cat "$TMPDIR"/typemagic-update-*/install.log
+          cat "$TMPDIR"/typemagic-update-*/install.log || true
           [ "$(shasum -a 256 "$app/Contents/MacOS/typemagic" | cut -d' ' -f1)" = "$(cat expected.sha)" ]
           if [ "${{ matrix.trigger }}" = tap ]; then
             sleep 5
@@ -117,15 +117,29 @@ jobs:
             if (Get-ChildItem "$env:TEMP\typemagic-update-*\unpacked\typemagic.exe" -ErrorAction SilentlyContinue) { break }
             Start-Sleep 1
           }
+          Add-Type -AssemblyName System.Windows.Forms, System.Drawing
+          $screen = [System.Windows.Forms.Screen]::PrimaryScreen.Bounds
+          $shot = New-Object System.Drawing.Bitmap $screen.Width, $screen.Height
+          [System.Drawing.Graphics]::FromImage($shot).CopyFromScreen($screen.Location, [System.Drawing.Point]::Empty, $screen.Size)
+          $shot.Save('screen.png')
+          Get-Process typemagic -ErrorAction SilentlyContinue | Format-Table Id, Path, StartTime
+          Get-ChildItem "$env:TEMP\typemagic-update-*" -Recurse -Depth 1 -ErrorAction SilentlyContinue | Select-Object FullName
           if ('${{ matrix.trigger }}' -eq 'quit') { $app.CloseMainWindow() | Out-Null }
           for ($i = 0; $i -lt 120; $i++) {
             if ((Get-FileHash $exe).Hash -eq $expected) { break }
             Start-Sleep 1
           }
-          Get-Content "$env:TEMP\typemagic-update-*\install.log"
+          Get-Content "$env:TEMP\typemagic-update-*\install.log" -ErrorAction SilentlyContinue
           if ((Get-FileHash $exe).Hash -ne $expected) { throw 'typemagic.exe was not replaced' }
           if ('${{ matrix.trigger }}' -eq 'tap') {
             Start-Sleep 5
             $relaunched = Get-Process typemagic | Where-Object { $_.Path -eq $exe -and $_.Id -ne $app.Id }
             if (-not $relaunched) { throw 'typemagic was not relaunched' }
           }
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: screen-${{ matrix.os }}-${{ matrix.trigger }}
+          path: screen.png
+          if-no-files-found: ignore

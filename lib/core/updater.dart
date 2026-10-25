@@ -115,7 +115,9 @@ Future<StagedUpdate?> _stageUpdate() async {
     // ditto keeps the bundle's symlinks and permissions intact.
     await _run('ditto', ['-x', '-k', zip.path, unpacked.path]);
   } else {
-    await _run('tar', ['-xf', zip.path, '-C', unpacked.path]);
+    // The bsdtar Windows ships reads zips; a GNU tar earlier on PATH does not.
+    final tar = '${Platform.environment['SystemRoot']}\\System32\\tar.exe';
+    await _run(tar, ['-xf', zip.path, '-C', unpacked.path]);
   }
   await zip.delete();
 
