@@ -1,10 +1,11 @@
+import 'dart:io';
+import 'dart:ui' show AppExitResponse;
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
-import 'package:url_launcher/url_launcher.dart';
 import 'core/theme.dart';
 import 'core/app_init.dart';
-import 'core/update_checker.dart';
+import 'core/updater.dart';
 import 'features/typing_test/typing_test_screen.dart';
 import 'features/stats/stats_screen.dart';
 import 'features/achievements/trophy_case_screen.dart';
@@ -64,11 +65,37 @@ final _router = GoRouter(
   ],
 );
 
-class TypeMagicApp extends ConsumerWidget {
+class TypeMagicApp extends ConsumerStatefulWidget {
   const TypeMagicApp({super.key});
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  ConsumerState<TypeMagicApp> createState() => _TypeMagicAppState();
+}
+
+class _TypeMagicAppState extends ConsumerState<TypeMagicApp> {
+  late final AppLifecycleListener _lifecycle;
+
+  @override
+  void initState() {
+    super.initState();
+    // Quitting with a downloaded update installs it, so the next launch is new.
+    _lifecycle = AppLifecycleListener(
+      onExitRequested: () async {
+        final update = ref.read(updateProvider).value;
+        if (update != null) await installUpdate(update, relaunch: false);
+        return AppExitResponse.exit;
+      },
+    );
+  }
+
+  @override
+  void dispose() {
+    _lifecycle.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
     final themeId = ref.watch(settingsProvider.select((s) => s.themeId));
     return MaterialApp.router(
       title: 'TypeMagic',
@@ -86,14 +113,23 @@ class AppShell extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final location = GoRouterState.of(context).uri.path;
-    final update = ref.watch(updateCheckProvider);
+    final update = ref.watch(updateProvider);
     return Scaffold(
       backgroundColor: AppColors.background,
       body: Column(
         children: [
           _NavBar(currentPath: location),
-          if (update case AsyncData(value: final info) when info.updateAvailable)
-            _UpdateBanner(info: info),
+          if (update case AsyncData(value: final StagedUpdate staged))
+            _UpdateBanner(
+              text: 'Versjon ${staged.version} er klar',
+              action: 'Start på nytt →',
+              onTap: () async {
+                await installUpdate(staged, relaunch: true);
+                exit(0);
+              },
+            ),
+          if (update case AsyncError(:final error))
+            _UpdateBanner(text: 'Oppdatering feilet: $error'),
           Expanded(child: child),
         ],
       ),
@@ -102,8 +138,10 @@ class AppShell extends ConsumerWidget {
 }
 
 class _UpdateBanner extends StatelessWidget {
-  final UpdateInfo info;
-  const _UpdateBanner({required this.info});
+  final String text;
+  final String? action;
+  final VoidCallback? onTap;
+  const _UpdateBanner({required this.text, this.action, this.onTap});
 
   @override
   Widget build(BuildContext context) {
@@ -114,29 +152,33 @@ class _UpdateBanner extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text(
-            'Ny versjon tilgjengelig: v${info.latestVersion}',
-            style: AppTheme.monoStyleSmall.copyWith(
-              color: AppColors.accent,
-              fontSize: 13,
-            ),
-          ),
-          const SizedBox(width: 12),
-          MouseRegion(
-            cursor: SystemMouseCursors.click,
-            child: GestureDetector(
-              onTap: () => launchUrl(Uri.parse(info.releaseUrl)),
-              child: Text(
-                'Last ned →',
-                style: AppTheme.monoStyleSmall.copyWith(
-                  color: AppColors.accent,
-                  fontSize: 13,
-                  fontWeight: FontWeight.w700,
-                  decoration: TextDecoration.underline,
-                ),
+          Flexible(
+            child: Text(
+              text,
+              style: AppTheme.monoStyleSmall.copyWith(
+                color: AppColors.accent,
+                fontSize: 13,
               ),
             ),
           ),
+          if (action != null) ...[
+            const SizedBox(width: 12),
+            MouseRegion(
+              cursor: SystemMouseCursors.click,
+              child: GestureDetector(
+                onTap: onTap,
+                child: Text(
+                  action!,
+                  style: AppTheme.monoStyleSmall.copyWith(
+                    color: AppColors.accent,
+                    fontSize: 13,
+                    fontWeight: FontWeight.w700,
+                    decoration: TextDecoration.underline,
+                  ),
+                ),
+              ),
+            ),
+          ],
         ],
       ),
     );
@@ -161,10 +203,7 @@ class _NavBar extends StatelessWidget {
               child: Row(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  Text(
-                    '⌨️',
-                    style: TextStyle(fontSize: 20),
-                  ),
+                  Text('⌨️', style: TextStyle(fontSize: 20)),
                   const SizedBox(width: 8),
                   Text(
                     'TypeMagic',

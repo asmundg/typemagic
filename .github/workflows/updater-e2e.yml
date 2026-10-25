@@ -1,0 +1,116 @@
+# Builds the app as version 0.0.1, lets it update itself to the latest release,
+# and checks that the installed executable is the release's.
+name: Updater e2e
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - lib/core/updater.dart
+      - lib/main.dart
+      - .github/workflows/updater-e2e.yml
+
+jobs:
+  e2e:
+    name: ${{ matrix.os }} / ${{ matrix.trigger }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [macos-latest, windows-latest]
+        # quit: closing the app installs the update.
+        # tap: the banner's restart button installs and relaunches.
+        trigger: [quit, tap]
+    env:
+      GH_TOKEN: ${{ github.token }}
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - uses: actions/checkout@v4
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+      - run: flutter pub get
+
+      - name: Make the banner tap itself
+        if: matrix.trigger == 'tap'
+        run: |
+          python3 - <<'EOF'
+          p = 'lib/main.dart'
+          s = open(p).read()
+          anchor = 'const _UpdateBanner({required this.text, this.action, this.onTap});\n\n  @override\n  Widget build(BuildContext context) {\n'
+          assert anchor in s, 'banner anchor moved'
+          s = s.replace(anchor, anchor + '    if (onTap != null) Future.delayed(const Duration(seconds: 5), onTap);\n')
+          open(p, 'w').write(s)
+          EOF
+
+      - name: Expected executable from the latest release
+        run: |
+          mkdir release
+          if [ "$RUNNER_OS" = macOS ]; then
+            gh release download -R "$GITHUB_REPOSITORY" -p typemagic-macos.zip -D release
+            ditto -x -k release/typemagic-macos.zip release
+            shasum -a 256 release/typemagic.app/Contents/MacOS/typemagic | cut -d' ' -f1 > expected.sha
+          else
+            gh release download -R "$GITHUB_REPOSITORY" -p typemagic-windows.zip -D release
+            tar -xf release/typemagic-windows.zip -C release
+            sha256sum release/typemagic.exe | cut -d' ' -f1 > expected.sha
+          fi
+          cat expected.sha
+
+      - name: Build and install 0.0.1
+        run: |
+          if [ "$RUNNER_OS" = macOS ]; then
+            flutter build macos --release --build-name=0.0.1
+            mkdir -p "$RUNNER_TEMP/apps"
+            ditto build/macos/Build/Products/Release/typemagic.app "$RUNNER_TEMP/apps/typemagic.app"
+          else
+            flutter build windows --release --build-name=0.0.1
+            cp -r build/windows/x64/runner/Release "$RUNNER_TEMP/tm"
+          fi
+
+      - name: Run on macOS
+        if: runner.os == 'macOS'
+        run: |
+          app="$RUNNER_TEMP/apps/typemagic.app"
+          open "$app"
+          for i in $(seq 120); do ls -d "$TMPDIR"/typemagic-update-*/unpacked/typemagic.app 2>/dev/null && break; sleep 1; done
+          if [ "${{ matrix.trigger }}" = quit ]; then
+            osascript -e "tell application \"$app\" to quit" || true
+          fi
+          for i in $(seq 120); do
+            [ "$(shasum -a 256 "$app/Contents/MacOS/typemagic" | cut -d' ' -f1)" = "$(cat expected.sha)" ] && break
+            sleep 1
+          done
+          cat "$TMPDIR"/typemagic-update-*/install.log
+          [ "$(shasum -a 256 "$app/Contents/MacOS/typemagic" | cut -d' ' -f1)" = "$(cat expected.sha)" ]
+          if [ "${{ matrix.trigger }}" = tap ]; then
+            sleep 5
+            pgrep -fl "$app/Contents/MacOS/typemagic"
+          fi
+
+      - name: Run on Windows
+        if: runner.os == 'Windows'
+        shell: pwsh
+        run: |
+          $dir = Join-Path $env:RUNNER_TEMP 'tm'
+          $exe = Join-Path $dir 'typemagic.exe'
+          $expected = (Get-Content expected.sha).Trim()
+          $app = Start-Process $exe -PassThru
+          for ($i = 0; $i -lt 120; $i++) {
+            if (Get-ChildItem "$env:TEMP\typemagic-update-*\unpacked\typemagic.exe" -ErrorAction SilentlyContinue) { break }
+            Start-Sleep 1
+          }
+          if ('${{ matrix.trigger }}' -eq 'quit') { $app.CloseMainWindow() | Out-Null }
+          for ($i = 0; $i -lt 120; $i++) {
+            if ((Get-FileHash $exe).Hash -eq $expected) { break }
+            Start-Sleep 1
+          }
+          Get-Content "$env:TEMP\typemagic-update-*\install.log"
+          if ((Get-FileHash $exe).Hash -ne $expected) { throw 'typemagic.exe was not replaced' }
+          if ('${{ matrix.trigger }}' -eq 'tap') {
+            Start-Sleep 5
+            $relaunched = Get-Process typemagic | Where-Object { $_.Path -eq $exe -and $_.Id -ne $app.Id }
+            if (-not $relaunched) { throw 'typemagic was not relaunched' }
+          }
