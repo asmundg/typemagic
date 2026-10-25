@@ -9,6 +9,9 @@ on:
       - lib/core/updater.dart
       - lib/main.dart
       - .github/workflows/updater-e2e.yml
+      - macos/**
+      - windows/**
+      - pubspec.*
 
 jobs:
   e2e:
