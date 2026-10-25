@@ -1,0 +1,189 @@
+# Builds the app as version 0.0.1, lets it update itself to the latest release,
+# and checks that the installed executable is the release's.
+name: Updater e2e
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - lib/core/updater.dart
+      - lib/main.dart
+      - .github/workflows/updater-e2e.yml
+      - macos/**
+      - windows/**
+      - pubspec.*
+
+jobs:
+  e2e:
+    name: ${{ matrix.os }} / ${{ matrix.trigger }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [macos-latest, windows-latest]
+        # quit: closing the app installs the update.
+        # tap: the banner's restart button installs and relaunches.
+        trigger: [quit, tap]
+    env:
+      GH_TOKEN: ${{ github.token }}
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - uses: actions/checkout@v4
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+      - run: flutter pub get
+
+      - name: Make the banner tap itself
+        if: matrix.trigger == 'tap'
+        run: |
+          python3 - <<'EOF'
+          p = 'lib/main.dart'
+          s = open(p, encoding='utf-8').read()
+          anchor = 'const _UpdateBanner({required this.text, this.action, this.onTap});\n\n  @override\n  Widget build(BuildContext context) {\n'
+          assert anchor in s, 'banner anchor moved'
+          s = s.replace(anchor, anchor + '    if (onTap != null) Future.delayed(const Duration(seconds: 5), onTap);\n')
+          open(p, 'w', encoding='utf-8').write(s)
+          EOF
+
+      # Writes where the update was staged and any install error to
+      # RUNNER_TEMP, since the app has no console.
+      - name: Instrument the updater
+        run: |
+          python3 - <<'EOF'
+          p = 'lib/core/updater.dart'
+          s = open(p, encoding='utf-8').read()
+          log = "File('${Platform.environment['RUNNER_TEMP']}/e2e.log').writeAsStringSync"
+          staged = '  return StagedUpdate(\n'
+          install = 'Future<void> installUpdate(\n'
+          assert staged in s and install in s, 'updater anchors moved'
+          s = s.replace(staged, f"  {log}('staged ' + workDir.path + '\\n', mode: FileMode.append);\n" + staged)
+          s = s.replace(install, install.replace('installUpdate', '_installUpdate') )
+          b64 = '    base64Encode(utf16.buffer.asUint8List()),\n'
+          assert b64 in s, 'b64 anchor moved'
+          s = s.replace(b64, f"    (() {{ final b = base64Encode(utf16.buffer.asUint8List()); {log}('b64 ' + b + '\\n', mode: FileMode.append); return b; }})(),\n")
+          s += f'''
+          Future<void> installUpdate(StagedUpdate update, {{required bool relaunch}}) async {{
+            try {{
+              await _installUpdate(update, relaunch: relaunch);
+              {log}('install started\\n', mode: FileMode.append);
+            }} catch (e, st) {{
+              {log}('install failed: $e\\n$st\\n', mode: FileMode.append);
+              rethrow;
+            }}
+          }}
+          '''
+          open(p, 'w', encoding='utf-8').write(s)
+          EOF
+          tail -15 lib/core/updater.dart
+
+      - name: Expected executable from the latest release
+        run: |
+          mkdir release
+          if [ "$RUNNER_OS" = macOS ]; then
+            gh release download -R "$GITHUB_REPOSITORY" -p typemagic-macos.zip -D release
+            ditto -x -k release/typemagic-macos.zip release
+            shasum -a 256 release/typemagic.app/Contents/MacOS/typemagic | cut -d' ' -f1 > expected.sha
+          else
+            gh release download -R "$GITHUB_REPOSITORY" -p typemagic-windows.zip -D release
+            # Git Bash's GNU tar cannot read zips; the app uses this one too.
+            /c/Windows/System32/tar.exe -xf release/typemagic-windows.zip -C release
+            sha256sum release/typemagic.exe | cut -d' ' -f1 > expected.sha
+          fi
+          cat expected.sha
+
+      - name: Build and install 0.0.1
+        run: |
+          if [ "$RUNNER_OS" = macOS ]; then
+            flutter build macos --release --build-name=0.0.1
+            mkdir -p "$RUNNER_TEMP/apps"
+            ditto build/macos/Build/Products/Release/typemagic.app "$RUNNER_TEMP/apps/typemagic.app"
+          else
+            flutter build windows --release --build-name=0.0.1
+            cp -r build/windows/x64/runner/Release "$RUNNER_TEMP/tm"
+          fi
+
+      # The app asks the GitHub API unauthenticated, which allows 60 calls an
+      # hour per IP. Runners share IPs, so print where we stand.
+      - name: Check the runner has API calls left
+        run: |
+          curl -s https://api.github.com/rate_limit | python3 -c '
+          import json, sys
+          rate = json.load(sys.stdin)["rate"]
+          print(rate)
+          assert rate["remaining"] > 0, "runner IP is out of GitHub API calls; rerun later"
+          '
+
+      - name: Run on macOS
+        if: runner.os == 'macOS'
+        run: |
+          app="$RUNNER_TEMP/apps/typemagic.app"
+          open "$app"
+          for i in $(seq 120); do ls -d "$TMPDIR"/typemagic-update-*/unpacked/typemagic.app 2>/dev/null && break; sleep 1; done
+          if [ "${{ matrix.trigger }}" = quit ]; then
+            osascript -e "tell application \"$app\" to quit" || true
+          fi
+          for i in $(seq 120); do
+            [ "$(shasum -a 256 "$app/Contents/MacOS/typemagic" | cut -d' ' -f1)" = "$(cat expected.sha)" ] && break
+            sleep 1
+          done
+          cat "$RUNNER_TEMP/e2e.log" "$TMPDIR"/typemagic-update-*/install.log || true
+          [ "$(shasum -a 256 "$app/Contents/MacOS/typemagic" | cut -d' ' -f1)" = "$(cat expected.sha)" ]
+          if [ "${{ matrix.trigger }}" = tap ]; then
+            sleep 5
+            pgrep -fl "$app/Contents/MacOS/typemagic"
+          fi
+
+      - name: Run on Windows
+        if: runner.os == 'Windows'
+        shell: pwsh
+        run: |
+          $dir = Join-Path $env:RUNNER_TEMP 'tm'
+          $exe = Join-Path $dir 'typemagic.exe'
+          $expected = (Get-Content expected.sha).Trim()
+          $app = Start-Process $exe -PassThru
+          for ($i = 0; $i -lt 120; $i++) {
+            if (Get-ChildItem "$env:TEMP\typemagic-update-*\unpacked\typemagic.exe" -ErrorAction SilentlyContinue) { break }
+            Start-Sleep 1
+          }
+          Add-Type -AssemblyName System.Windows.Forms, System.Drawing
+          $screen = [System.Windows.Forms.Screen]::PrimaryScreen.Bounds
+          $shot = New-Object System.Drawing.Bitmap $screen.Width, $screen.Height
+          [System.Drawing.Graphics]::FromImage($shot).CopyFromScreen($screen.Location, [System.Drawing.Point]::Empty, $screen.Size)
+          $shot.Save('screen.png')
+          Get-Process typemagic -ErrorAction SilentlyContinue | Format-Table Id, Path, StartTime
+          Get-ChildItem "$env:TEMP\typemagic-update-*" -Recurse -Depth 1 -ErrorAction SilentlyContinue | Select-Object FullName
+          if ('${{ matrix.trigger }}' -eq 'quit') { $app.CloseMainWindow() | Out-Null }
+          for ($i = 0; $i -lt 120; $i++) {
+            if ((Get-FileHash $exe).Hash -eq $expected) { break }
+            Start-Sleep 1
+          }
+          Get-Content "$env:RUNNER_TEMP\e2e.log" -ErrorAction SilentlyContinue
+          Get-ChildItem ((Get-Content "$env:RUNNER_TEMP\e2e.log" -First 1) -replace '^staged ', '') -ErrorAction SilentlyContinue
+          Get-Content "$env:TEMP\typemagic-update-*\install.log" -ErrorAction SilentlyContinue
+          if ((Get-FileHash $exe).Hash -ne $expected) { throw 'typemagic.exe was not replaced' }
+          if ('${{ matrix.trigger }}' -eq 'tap') {
+            Start-Sleep 5
+            $relaunched = Get-Process typemagic | Where-Object { $_.Path -eq $exe -and $_.Id -ne $app.Id }
+            if (-not $relaunched) { throw 'typemagic was not relaunched' }
+          }
+
+      - name: Rerun the Windows helper in the foreground
+        if: failure() && runner.os == 'Windows'
+        shell: pwsh
+        run: |
+          Get-MpThreatDetection -ErrorAction SilentlyContinue | Format-List
+          Get-CimInstance Win32_Process -Filter "name='powershell.exe'" | Select-Object ProcessId, CommandLine | Format-List
+          $b64 = (Select-String -Path "$env:RUNNER_TEMP\e2e.log" -Pattern '^b64 ').Line -replace '^b64 ', ''
+          [Text.Encoding]::Unicode.GetString([Convert]::FromBase64String($b64))
+          powershell -NoProfile -EncodedCommand $b64
+          "exit=$LASTEXITCODE"
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: screen-${{ matrix.os }}-${{ matrix.trigger }}
+          path: screen.png
+          if-no-files-found: ignore
